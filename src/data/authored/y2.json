@@ -1,0 +1,197 @@
+{
+ "1": {
+  "objectives": ["Log in and open a program without step-by-step help.", "Explain what we will make this term: a formatted document saved in two places.", "Set my own TypingClub target for the term."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "Sign in, posture check, free practice while the class settles."},
+   {"mins": 10, "title": "Term reveal", "detail": "Term theme: 'Typing & Documents'. Show the finished exemplar fact card they will make by Week 15. Explain the two-tool idea: Microsoft AND Google."},
+   {"mins": 15, "title": "Rules and routine recap", "detail": "Recap the ICT room rules and the 5-step routine from Year 1. Quickfire: who can log in, open Word and close it in under 2 minutes?"},
+   {"mins": 20, "title": "Diagnostic task", "detail": "Type one sentence about the holidays, save it with own name. Note who needs support with typing, saving or the mouse - this sets the groupings for the term."},
+   {"mins": 10, "title": "My target", "detail": "Each pupil writes their TypingClub target on the goal sheet (a star count or a level). Stick to the wall chart. Log out."}
+  ],
+  "activities": ["Login and open speed recap", "One-sentence diagnostic typing task", "Set a personal TypingClub target"],
+  "successCriteria": ["I logged in and opened a program on my own.", "I typed and saved a sentence with my name on it.", "I have written my typing target on the chart."],
+  "resources": [{"label": "TypingClub", "url": "https://www.typingclub.com"}, {"label": "Term overview slide"}, {"label": "Goal sheet + wall chart"}]
+ },
+ "2": {
+  "objectives": ["Keep my fingers on the home row while typing.", "Choose accuracy before speed.", "Reach the end of TypingClub Level 1 by half term."],
+  "plan": [
+   {"mins": 10, "title": "Hands ready", "detail": "F and J bumps, elbows down, eyes on screen. 60-second warm-up drill on the home row only."},
+   {"mins": 15, "title": "Rhythm, not race", "detail": "Model typing slowly with an even beat, then fast and messy. Ask which one scored better. Rule for the term: 'smooth beats fast'."},
+   {"mins": 25, "title": "TypingClub units", "detail": "Independent unit work towards Level 1. Freeze for a posture check every 5 minutes. Support: cover hands with a card for children who peek."},
+   {"mins": 10, "title": "Accuracy stars", "detail": "Each pupil records today's best accuracy on the wall chart. Celebrate anyone above 90% regardless of speed."},
+   {"mins": 10, "title": "Plenary", "detail": "Which letter is hardest to reach? Show it on the keyboard mat and practise ten times. Log out."}
+  ],
+  "activities": ["Home-row warm-up drill", "TypingClub Level 1 progress", "Accuracy wall-chart update"],
+  "successCriteria": ["My fingers start and return to the home row.", "My accuracy is 90% or better in at least one lesson.", "I typed without looking down for a whole exercise."],
+  "resources": [{"label": "TypingClub", "url": "https://www.typingclub.com"}, {"label": "Accuracy wall chart"}, {"label": "Printed keyboard mats"}]
+ },
+ "3": {
+  "objectives": ["Open both Microsoft Word and Google Docs.", "Explain that two different tools can do the same job.", "Type and save my name in each one."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Two tools, one job", "detail": "Side-by-side on the big screen: Word and Docs. Spot the same buttons in both. Analogy: two shops that both sell bread."},
+   {"mins": 20, "title": "Word first", "detail": "Open Word, type full name, make it big, save to OneDrive as name_word.docx. Model each step, pupils copy."},
+   {"mins": 20, "title": "Then Docs", "detail": "Open Docs in the browser, type the same name. Notice: Docs saves by itself - there is no Save button. Rename the document to name_docs."},
+   {"mins": 10, "title": "Spot the difference", "detail": "Class list: what was the same, what was different? Record on the comparison poster. Log out."}
+  ],
+  "activities": ["Side-by-side tool tour", "Type and save in Word", "Type and rename in Google Docs"],
+  "successCriteria": ["I opened Word and Google Docs by myself.", "I typed my name in both.", "I can say one difference between them."],
+  "resources": [{"label": "Microsoft Word (school licence)"}, {"label": "Google Docs", "url": "https://docs.google.com"}, {"label": "Drive vs OneDrive comparison poster"}]
+ },
+ "4": {
+  "objectives": ["Type a paragraph of 3-4 sentences.", "Use full stops and single spaces correctly.", "Save the same paragraph in Word and in Docs."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "What makes a sentence", "detail": "Read the exemplar 'My Weekend' paragraph. Count the sentences, spot the capital letters and full stops."},
+   {"mins": 15, "title": "Plan out loud", "detail": "Talk partners: say your three sentences before typing them. Prompt card: Who? Where? What did you do? How did you feel?"},
+   {"mins": 25, "title": "Type it twice", "detail": "Type the paragraph in Word, then copy the same into Docs. Rule: one space after a full stop, capital letter at the start of each sentence."},
+   {"mins": 10, "title": "Partner proofread", "detail": "Swap seats and check a partner's paragraph for capitals and full stops. Fix and re-save. Log out."}
+  ],
+  "activities": ["Say-it-before-you-type partner talk", "'My Weekend' paragraph in Word and Docs", "Partner proofread"],
+  "successCriteria": ["My paragraph has 3 or more sentences.", "Every sentence starts with a capital and ends with a full stop.", "The paragraph is saved in both Word and Docs."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Printed prompt card"}, {"label": "Teacher exemplar paragraph"}]
+ },
+ "5": {
+  "objectives": ["Highlight text with the mouse or Shift + arrows.", "Apply Bold, Italic and Underline.", "Explain why we make some words stand out."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Why format?", "detail": "Show the same paragraph plain and formatted. Which is easier to read? Rule: formatting helps the reader, it is not decoration."},
+   {"mins": 15, "title": "Highlight first", "detail": "The hard part is selecting text. Practise three ways: click-drag, double-click a word, Shift + arrow keys. Everyone selects the same three words."},
+   {"mins": 25, "title": "B, I, U", "detail": "Open last week's paragraph. Make two important words Bold, the title Italic, one keyword Underlined. Same again in the Docs copy."},
+   {"mins": 10, "title": "Gallery check", "detail": "Show three screens on the projector. Ask: is the formatting helping or shouting? Save and log out."}
+  ],
+  "activities": ["Three ways to select text", "Bold / Italic / Underline on own paragraph", "Helping-or-shouting gallery check"],
+  "successCriteria": ["I can select exactly the words I want.", "I used bold, italic and underline for a reason.", "My changes are saved in both files."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Formatting-toolbar cheat sheet"}, {"label": "Plain vs formatted exemplar"}]
+ },
+ "6": {
+  "objectives": ["Change the font, size and colour of text.", "Choose colours that are easy to read.", "Say why yellow text on white is a bad choice."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Readable or not?", "detail": "Show five colour combinations on the board. Vote readable / not readable. Introduce the word contrast."},
+   {"mins": 20, "title": "Font, size, colour", "detail": "Demo the three dropdowns. Make the title 24pt in a dark colour, the body 12pt in black. Pupils copy on their paragraph."},
+   {"mins": 20, "title": "Design challenge", "detail": "Make the paragraph look good with a maximum of two fonts and two colours. Constraint teaches restraint."},
+   {"mins": 10, "title": "Swap and rate", "detail": "Partner rates readability out of 3. One improvement suggested and applied. Save, log out."}
+  ],
+  "activities": ["Contrast voting starter", "Font / size / colour practice", "Two-fonts-two-colours design challenge"],
+  "successCriteria": ["I changed the font, size and colour of my text.", "My text is easy to read from a metre away.", "I used no more than two fonts."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Contrast basics poster"}, {"label": "Colour combination examples"}]
+ },
+ "7": {
+  "objectives": ["Insert a picture from a folder into my document.", "Resize a picture using the corner handles.", "Move a picture to where I want it."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Corner handles rule", "detail": "Demo stretching a photo from the side (squashed face) versus the corner (still correct). Rule: always drag the corner."},
+   {"mins": 20, "title": "Insert a picture", "detail": "Insert > Picture > from the class picture folder. Pupils choose one image and insert it into their paragraph document."},
+   {"mins": 20, "title": "Resize and place", "detail": "Resize with corner handles to about a third of the page, then drag it beside the text. Repeat in the Docs copy."},
+   {"mins": 10, "title": "Squash spotting", "detail": "Project two examples: one squashed, one correct. Class spots the difference. Save and log out."}
+  ],
+  "activities": ["Corner-handles demo", "Insert image from the class folder", "Squash-spotting plenary"],
+  "successCriteria": ["I inserted a picture into my document.", "My picture is the right shape, not squashed.", "My picture sits where I wanted it."],
+  "resources": [{"label": "Class picture folder (Pixabay / Pexels, pre-downloaded)"}, {"label": "Microsoft Word / Google Docs"}, {"label": "Image-handles handout"}]
+ },
+ "8": {
+  "objectives": ["Save one file to Google Drive and one to Microsoft OneDrive.", "Use the class file-naming rule: Firstname_Topic.", "Find my own file again after saving."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Two clouds", "detail": "Explain: Drive belongs to Google, OneDrive belongs to Microsoft. Both keep the file safe even if the computer breaks."},
+   {"mins": 20, "title": "Naming rule", "detail": "Bad names on the board: doc1, asdf, Untitled. Good names: Aisha_Weekend. Everyone renames their two files to the rule."},
+   {"mins": 20, "title": "Save to both", "detail": "Save the Word file to OneDrive, and check the Docs file is in Drive. Then close everything and find both again - this proves it worked."},
+   {"mins": 10, "title": "Find-it race", "detail": "Timed: open both files from the cloud. Log out."}
+  ],
+  "activities": ["Good name / bad name sort", "Save to OneDrive and Drive", "Find-it-again race"],
+  "successCriteria": ["My file names follow Firstname_Topic.", "One copy is in Drive and one is in OneDrive.", "I can find my files again after closing them."],
+  "resources": [{"label": "Google Drive", "url": "https://drive.google.com"}, {"label": "Microsoft OneDrive"}, {"label": "File-naming rules poster"}]
+ },
+ "9": {
+  "objectives": ["Choose an animal and find three facts about it.", "Type the facts into a fact card layout.", "Work in both Word and Docs without help."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Exemplar study", "detail": "Look at the finished fact card exemplar. Identify the parts: title, 3 facts, picture, caption."},
+   {"mins": 15, "title": "Choose and gather", "detail": "Choose an animal from the class list. Use the printed fact sheet (not open web search) to pick three facts."},
+   {"mins": 25, "title": "Draft the text", "detail": "Type the title and three fact sentences into the template. Formatting comes next week - today is words only."},
+   {"mins": 10, "title": "Read back", "detail": "Read your card to a partner. Does each fact make sense on its own? Save and log out."}
+  ],
+  "activities": ["Exemplar part-spotting", "Choose an animal and pick 3 facts", "Draft the fact card text"],
+  "successCriteria": ["I chose an animal and found three facts.", "My card has a title and three fact sentences.", "My draft is saved in Word and Docs."],
+  "resources": [{"label": "Printed animal fact sheets"}, {"label": "Fact card template"}, {"label": "Microsoft Word / Google Docs"}]
+ },
+ "10": {
+  "objectives": ["Apply formatting and a picture to my fact card.", "Save the finished card to both clouds.", "Check my work against the marking rubric."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Read the rubric", "detail": "Share the exam rubric in pupil language: typed paragraph, 3 formatting changes, one picture, saved twice. Tick list on the wall."},
+   {"mins": 25, "title": "Format and illustrate", "detail": "Apply bold, a title colour and a font change; insert and resize the animal picture. Follow the corner-handles rule."},
+   {"mins": 15, "title": "Save to both clouds", "detail": "Drive and OneDrive, correct file name. Partner checks both saves happened."},
+   {"mins": 10, "title": "Rubric self-check", "detail": "Tick your own rubric. Anything unticked is your job next lesson. Log out."}
+  ],
+  "activities": ["Rubric read-through", "Format and illustrate the fact card", "Self-check against the rubric"],
+  "successCriteria": ["My card has at least three formatting changes.", "My card has a picture that is the right shape.", "My card is saved in both Drive and OneDrive."],
+  "resources": [{"label": "Marking rubric (pupil version)"}, {"label": "Microsoft Word / Google Docs"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "11": {
+  "objectives": ["Type a short paragraph on my own.", "Apply three formatting changes.", "Insert a picture and save the file once as a Google file and once as a Microsoft file."],
+  "plan": [
+   {"mins": 5, "title": "Settle and brief", "detail": "Read the task card aloud twice. Rubric visible on the board. Remind: work alone, hand up for technical help only."},
+   {"mins": 20, "title": "Type the paragraph", "detail": "Given prompt, 3-4 sentences. Circulate silently, note who needs the routine card."},
+   {"mins": 20, "title": "Format and picture", "detail": "Three formatting changes plus one inserted, correctly sized picture from the class folder."},
+   {"mins": 15, "title": "Save twice", "detail": "Save to OneDrive and to Drive with the correct file name. This step carries the most marks - remind at 5 minutes remaining."},
+   {"mins": 10, "title": "Close down", "detail": "Everyone closes files and logs out properly. Collect task cards."}
+  ],
+  "activities": ["Individual practical assessment", "Formatting and image task", "Dual-cloud save"],
+  "successCriteria": ["I typed a paragraph without help.", "I made three formatting changes.", "I inserted a picture correctly.", "I saved the file as both a Google and a Microsoft file."],
+  "resources": [{"label": "Assessment task card"}, {"label": "Marking rubric"}, {"label": "Class picture folder"}]
+ },
+ "12": {
+  "objectives": ["Add a second paragraph to my fact card.", "Write a caption underneath my picture.", "Check a partner's spelling and fix my own."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "What is a caption?", "detail": "Look at captions in a real non-fiction book. A caption tells you what the picture shows in one short line."},
+   {"mins": 25, "title": "Second paragraph", "detail": "Add three more sentences: where the animal lives, what it eats, one surprising fact."},
+   {"mins": 15, "title": "Add the caption", "detail": "Type a one-line caption under the picture in a smaller font size."},
+   {"mins": 10, "title": "Peer spell-check", "detail": "Swap with a partner using the peer-check sheet. Fix at least one thing. Save and log out."}
+  ],
+  "activities": ["Caption hunt in real books", "Write a second paragraph", "Peer spell-check swap"],
+  "successCriteria": ["My card now has two paragraphs.", "My picture has a caption under it.", "I fixed at least one spelling my partner found."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Peer-check sheet"}, {"label": "Non-fiction book examples"}]
+ },
+ "13": {
+  "objectives": ["Pick a colour from my picture and use it for my title.", "Explain why matching colours looks joined-up.", "Apply the idea to my whole card."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Colour matching demo", "detail": "Project a photo of a tiger. Pick the orange from the fur for the title colour. Show before and after - the class always sees the difference immediately."},
+   {"mins": 25, "title": "Apply it", "detail": "Use the font colour dropdown (or eyedropper in Docs) to choose a colour taken from their own picture and apply it to the title."},
+   {"mins": 10, "title": "One more touch", "detail": "Optional: match the caption colour too, but keep body text black for readability."},
+   {"mins": 10, "title": "Before and after", "detail": "Show two or three cards before and after on the projector. Save and log out."}
+  ],
+  "activities": ["Colour-matching demo", "Apply a picture colour to the title", "Before-and-after share"],
+  "successCriteria": ["My title colour comes from my picture.", "My body text is still easy to read.", "I can explain why the card looks joined-up."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Common Sense Education - Design Basics", "url": "https://www.commonsense.org/education"}, {"label": "Before/after exemplars"}]
+ },
+ "14": {
+  "objectives": ["Export or print my fact card.", "Present it to a partner in two full sentences.", "Add my card to the class portfolio wall."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Print or PDF", "detail": "Demo File > Print, and File > Download as PDF. Explain when each is useful. Manage the printer queue by table."},
+   {"mins": 15, "title": "Presentation practice", "detail": "Sentence stems: 'My animal is ___. The most interesting fact is ___.' Practise twice with a partner."},
+   {"mins": 15, "title": "Portfolio wall", "detail": "Pin the printed card to the wall display. Everyone reads three cards from the wall."},
+   {"mins": 10, "title": "Plenary", "detail": "Which card taught you something new? Name it and say why. Log out."}
+  ],
+  "activities": ["Print / PDF export", "Two-sentence presentation practice", "Portfolio wall display"],
+  "successCriteria": ["My card is printed or exported as a PDF.", "I presented my card in two full sentences.", "My card is on the portfolio wall."],
+  "resources": [{"label": "Class printer / PDF export"}, {"label": "Portfolio wall space"}, {"label": "Sentence stem cards"}]
+ },
+ "15": {
+  "objectives": ["Read three classmates' fact cards carefully.", "Write two stars and a wish for someone else's work.", "Say one thing I improved this term."],
+  "plan": [
+   {"mins": 10, "title": "How to give feedback", "detail": "Model a kind wish versus an unkind one. Rule: talk about the work, never the person."},
+   {"mins": 25, "title": "Gallery walk", "detail": "Walk the portfolio wall with sticky notes. Read three cards, leave two stars and one wish on each."},
+   {"mins": 15, "title": "Read my feedback", "detail": "Return to your own card and read the notes left for you. Circle the wish you would act on first."},
+   {"mins": 10, "title": "Term reflection", "detail": "Complete the sentence: 'In ICT this term I got better at ___.' Add it to the portfolio folder."},
+   {"mins": 10, "title": "Celebrate", "detail": "Class round of applause; name three skills learned since August. Log out."}
+  ],
+  "activities": ["Feedback modelling", "Sticky-note gallery walk", "Term reflection sentence"],
+  "successCriteria": ["I gave two stars and a wish on three cards.", "My feedback is kind and about the work.", "I named one thing I got better at this term."],
+  "resources": [{"label": "Sticky notes"}, {"label": "Gallery-walk guide"}, {"label": "Reflection prompt sheet"}]
+ }
+}

@@ -1,0 +1,192 @@
+"use client";
+
+import { useState } from "react";
+import { useAuth } from "@/lib/auth";
+import { useData } from "@/lib/store";
+import { PageHeader } from "@/components/ui";
+import { addDays, formatRange, mondayOf, todayISO } from "@/lib/dates";
+import seed from "@/data/seed.json";
+import type { Lesson, Term, TermWeek } from "@/lib/types";
+
+const SEED = seed as unknown as { terms: Term[]; lessons: Lesson[] };
+
+export default function AdminPage() {
+  const { user, signOut } = useAuth();
+  const { lessons, terms, seed: runSeed, saveTerm, deleteTerm } = useData();
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState<string | null>(null);
+  const [overwrite, setOverwrite] = useState(false);
+
+  const edited = lessons.filter((l) => l.updatedAt).length;
+
+  const doSeed = async () => {
+    const warning = overwrite
+      ? `Overwrite ALL ${SEED.lessons.length} lessons from the scheme of work, including the ${edited} you have edited?`
+      : `Write ${SEED.lessons.length} lessons from the scheme of work, skipping any you have already edited?`;
+    if (!confirm(warning)) return;
+    setBusy(true);
+    setMessage(null);
+    try {
+      const written = await runSeed(SEED, overwrite);
+      setMessage(`Seed complete — ${written} lesson(s) written, ${SEED.lessons.length - written} skipped.`);
+    } catch (e) {
+      setMessage(`Seed failed: ${(e as Error).message}`);
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const addTerm = async () => {
+    const order = terms.length + 1;
+    const name = prompt("Term name", `Term ${order}`);
+    if (!name) return;
+    const id = name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    setBusy(true);
+    try {
+      await saveTerm({ id, name, order, weeks: [] });
+      setMessage(`Created ${name}. Add weeks below, then add lessons from each class page.`);
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const addWeek = async (term: Term) => {
+    const noRaw = prompt("Week number", String((term.weeks.at(-1)?.no ?? 0) + 1));
+    if (!noRaw) return;
+    const startRaw = prompt("Week starting (YYYY-MM-DD, Monday)", mondayOf(todayISO()));
+    if (!startRaw) return;
+    const start = mondayOf(startRaw);
+    const no = Number.parseInt(noRaw, 10);
+    const week: TermWeek = {
+      no,
+      label: `Week ${no}`,
+      start,
+      end: addDays(start, 4),
+      isBreak: false,
+      isExam: false,
+      remark: "",
+    };
+    setBusy(true);
+    try {
+      await saveTerm({ ...term, weeks: [...term.weeks, week].sort((a, b) => a.start.localeCompare(b.start)) });
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const removeWeek = async (term: Term, index: number) => {
+    if (!confirm(`Remove ${term.weeks[index].label} from ${term.name}? Lessons are not deleted.`)) return;
+    setBusy(true);
+    try {
+      await saveTerm({ ...term, weeks: term.weeks.filter((_, i) => i !== index) });
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const removeTerm = async (term: Term) => {
+    if (!confirm(`Delete ${term.name}? Its lessons stay in the database but will be unfiled.`)) return;
+    setBusy(true);
+    try {
+      await deleteTerm(term.id);
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  return (
+    <>
+      <PageHeader title="Admin" subtitle={user?.email ?? undefined} />
+
+      <main className="mx-auto max-w-3xl space-y-3 p-4">
+        <section className="card p-4">
+          <h2 className="text-sm font-bold">Database</h2>
+          <p className="mt-1 text-xs text-[color:var(--muted)]">
+            {lessons.length} lesson(s) live · {edited} edited by you · {terms.length} term(s).
+          </p>
+          <label className="mt-3 flex items-start gap-2 text-xs">
+            <input
+              type="checkbox"
+              className="mt-0.5"
+              checked={overwrite}
+              onChange={(e) => setOverwrite(e.target.checked)}
+            />
+            <span>
+              Overwrite lessons I have edited. Leave this off to keep your own changes and only fill in
+              what is missing.
+            </span>
+          </label>
+          <button className="btn btn-primary mt-3 w-full" onClick={doSeed} disabled={busy}>
+            {busy ? "Working…" : `Seed / re-sync ${SEED.lessons.length} lessons from the SOW`}
+          </button>
+          {message && <p className="mt-3 text-xs text-[color:var(--accent)]">{message}</p>}
+        </section>
+
+        <section className="card p-4">
+          <div className="flex items-center gap-2">
+            <h2 className="flex-1 text-sm font-bold">Terms</h2>
+            <button className="btn btn-sm" onClick={addTerm} disabled={busy}>
+              + Term
+            </button>
+          </div>
+          {terms.length === 0 && (
+            <p className="mt-2 text-xs text-[color:var(--muted)]">No terms yet — seed the database first.</p>
+          )}
+          <div className="mt-3 space-y-4">
+            {terms.map((term) => (
+              <div key={term.id}>
+                <div className="flex items-center gap-2">
+                  <p className="flex-1 text-sm font-semibold">
+                    {term.name}
+                    <span className="ml-2 text-xs font-normal text-[color:var(--muted)]">
+                      {term.weeks.length} weeks
+                    </span>
+                  </p>
+                  <button className="btn btn-sm" onClick={() => addWeek(term)} disabled={busy}>
+                    + Week
+                  </button>
+                  <button
+                    className="btn btn-sm"
+                    style={{ color: "var(--warn)" }}
+                    onClick={() => removeTerm(term)}
+                    disabled={busy}
+                  >
+                    Delete
+                  </button>
+                </div>
+                <ul className="mt-2 space-y-1">
+                  {term.weeks.map((w, i) => (
+                    <li key={`${w.start}-${i}`} className="flex items-center gap-2 text-xs">
+                      <span className="w-20 shrink-0 font-semibold">{w.label}</span>
+                      <span className="flex-1 text-[color:var(--muted)]">{formatRange(w.start, w.end)}</span>
+                      {w.isBreak && <span className="chip">break</span>}
+                      {w.isExam && <span className="chip">exam</span>}
+                      <button
+                        className="btn btn-sm"
+                        onClick={() => removeWeek(term, i)}
+                        disabled={busy}
+                        aria-label={`Remove ${w.label}`}
+                      >
+                        ✕
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="card p-4">
+          <h2 className="text-sm font-bold">Account</h2>
+          <p className="mt-1 text-xs text-[color:var(--muted)]">
+            Signed in as {user?.email}. Only this account can read or write the dashboard.
+          </p>
+          <button className="btn mt-3 w-full" onClick={signOut}>
+            Sign out
+          </button>
+        </section>
+      </main>
+    </>
+  );
+}

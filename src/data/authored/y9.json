@@ -1,0 +1,197 @@
+{
+ "1": {
+  "objectives": ["Describe what IGCSE ICT 0417 involves.", "Complete a diagnostic document task.", "Set improvement targets for the term."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "Baseline WPM and accuracy run."},
+   {"mins": 15, "title": "The IGCSE pathway", "detail": "Walk through the 0417 specification overview: practical papers, the kinds of task, why following a brief exactly matters more than creativity here."},
+   {"mins": 25, "title": "Diagnostic task", "detail": "A Year 8 level document task under timed conditions: headings, a table, an image, saved to a named file. Mark against a simplified rubric."},
+   {"mins": 15, "title": "Gap analysis", "detail": "Return the marks with the rubric. Each pupil identifies two specific gaps - not 'be better' but 'I lost marks for file naming'."},
+   {"mins": 10, "title": "Targets", "detail": "Write two targets in the front of the exercise book, to be reviewed in Week 10. Log out."}
+  ],
+  "activities": ["IGCSE 0417 overview", "Timed diagnostic document task", "Rubric-based gap analysis"],
+  "successCriteria": ["I completed the diagnostic in the time.", "I identified two specific gaps from the rubric.", "My targets are written and measurable."],
+  "resources": [{"label": "Cambridge IGCSE ICT 0417 spec overview", "url": "https://www.cambridgeinternational.org"}, {"label": "Diagnostic task and rubric"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "2": {
+  "objectives": ["Format a document to a precise written brief.", "Use columns, a drop cap and a pull quote.", "Control margins and page breaks."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Read the brief twice", "detail": "Model the IGCSE habit: read, highlight every instruction, tick each as you complete it. Marks come from compliance, not flair."},
+   {"mins": 25, "title": "Columns and features", "detail": "Two columns with a specified gutter, a drop cap on the opening paragraph, a pull quote in a text box."},
+   {"mins": 15, "title": "Page control", "detail": "Set exact margins, insert page breaks before each heading, and use 'keep with next' so headings never sit alone at the bottom of a page."},
+   {"mins": 10, "title": "Brief audit", "detail": "Swap and tick off every instruction on a partner's work. Any untick loses a mark. Log out."}
+  ],
+  "activities": ["Highlight-and-tick brief reading", "Columns, drop cap and pull quote", "Peer brief audit"],
+  "successCriteria": ["My document meets every instruction in the brief.", "My columns, drop cap and pull quote are correctly formatted.", "No heading is stranded at the bottom of a page."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "IGCSE-style layout brief"}, {"label": "Exemplar formatted page"}]
+ },
+ "3": {
+  "objectives": ["Set up a mail merge from a spreadsheet data source.", "Insert merge fields into a document.", "Produce personalised certificates for a whole class."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Why mail merge", "detail": "One template plus one data file equals 30 personalised documents. Ask how long 30 by hand would take - that is the point."},
+   {"mins": 20, "title": "Prepare the data", "detail": "Build the source spreadsheet: FirstName, LastName, Class, Award. Clean headers, no blank rows - a messy source breaks the merge."},
+   {"mins": 25, "title": "Run the merge", "detail": "Start Mail Merge, select recipients, insert merge fields into the certificate template, preview results, finish and merge."},
+   {"mins": 5, "title": "Troubleshoot", "detail": "Common faults: extra spaces around fields, wrong data file selected, fields showing as codes. Log out."}
+  ],
+  "activities": ["Build a clean data source", "Insert merge fields", "Preview and complete a merge"],
+  "successCriteria": ["My data source has clean headers and no blank rows.", "My template uses merge fields, not typed names.", "I produced personalised certificates for the whole list."],
+  "resources": [{"label": "Word Mail Merge + Excel source"}, {"label": "Kevin Stratvert - Mail Merge in Word", "url": "https://www.youtube.com/@KevinStratvert"}, {"label": "Certificate template"}]
+ },
+ "4": {
+  "objectives": ["Explain the terms table, field and record.", "Choose appropriate data types for fields.", "Design a database for a real scenario."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Tables, fields, records", "detail": "Use a printed class register: the whole sheet is the table, a column is a field, a row is a record. Then map it onto the database software."},
+   {"mins": 15, "title": "Data types", "detail": "Text, number, date, currency, boolean. Why store a phone number as text? Because you never do arithmetic with it and leading zeros matter."},
+   {"mins": 25, "title": "Design on paper", "detail": "Choose a scenario - class library, sports fixtures, cafe menu. Design the table: field names, data types, which field is the primary key."},
+   {"mins": 10, "title": "Build the structure", "detail": "Create the table in Access or Base and enter three test records. Log out."}
+  ],
+  "activities": ["Register-as-database analogy", "Data type decisions", "Paper design then build the table"],
+  "successCriteria": ["I can define table, field and record.", "Every field in my design has an appropriate data type.", "I built the table and entered test records."],
+  "resources": [{"label": "Microsoft Access or LibreOffice Base", "url": "https://www.libreoffice.org"}, {"label": "Database design template"}, {"label": "Printed class register"}]
+ },
+ "5": {
+  "objectives": ["Write a query with criteria.", "Combine criteria with AND and OR.", "Add a validation rule to a field."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Asking questions of data", "detail": "A query is a question. 'Show all fiction books' becomes criteria on the Genre field. Demo the query grid: field, show, criteria."},
+   {"mins": 25, "title": "Three queries", "detail": "Build: one single-criterion query, one using AND (fiction AND after 2010), one using OR. Run each and check the results make sense."},
+   {"mins": 20, "title": "Validation rules", "detail": "Add a rule such as Year between 1900 and 2026, with a helpful validation message. Test it by entering 1850 - the rejection is the proof."},
+   {"mins": 5, "title": "Plenary", "detail": "Why is validation better than trusting the typist? Log out."}
+  ],
+  "activities": ["Query grid demo", "Build three queries", "Add and test a validation rule"],
+  "successCriteria": ["My queries return the right records.", "I used AND and OR criteria correctly.", "My validation rule blocks invalid data and explains why."],
+  "resources": [{"label": "Microsoft Access / LibreOffice Base"}, {"label": "Queries and validation reference"}, {"label": "Sample database file"}]
+ },
+ "6": {
+  "objectives": ["Generate a formatted report from a database.", "Group records under headings.", "Add running totals and a cover page."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "From raw data to a report", "detail": "Show a raw table dump versus a grouped, formatted report. The data is the same - presentation is what makes it usable."},
+   {"mins": 25, "title": "Build the report", "detail": "Report wizard: choose fields, group by a sensible field, sort within groups. Then edit the layout in design view."},
+   {"mins": 15, "title": "Totals and cover", "detail": "Add a count or sum in the group footer. Add a cover page with title, your name and the date."},
+   {"mins": 10, "title": "Export and check", "detail": "Export to PDF and check the layout survived. Log out."}
+  ],
+  "activities": ["Raw data vs formatted report", "Build a grouped report", "Add totals and export to PDF"],
+  "successCriteria": ["My report groups records under clear headings.", "It shows a total or count per group.", "The PDF export keeps the layout intact."],
+  "resources": [{"label": "Microsoft Access / LibreOffice Base"}, {"label": "Report-design exemplar"}, {"label": "PDF export"}]
+ },
+ "7": {
+  "objectives": ["Complete an IGCSE-style task in 30 minutes.", "Follow a written brief exactly.", "Save with the exact file name required."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "How examiners mark", "detail": "Walk through a mark scheme: marks for each specified feature, nothing for extras. Creativity that ignores the brief scores zero."},
+   {"mins": 30, "title": "Timed task", "detail": "30-minute specimen-style practical. Strict timing, brief on paper, no discussion."},
+   {"mins": 15, "title": "Mark it yourself", "detail": "Swap and mark against the actual mark scheme. Award marks strictly - being generous helps nobody."},
+   {"mins": 5, "title": "Where marks went", "detail": "Class tally of the most commonly missed marks. Usually file naming and one small formatting instruction. Log out."}
+  ],
+  "activities": ["Mark scheme walkthrough", "30-minute timed practical", "Strict peer marking"],
+  "successCriteria": ["I finished the task within 30 minutes.", "My file name matches the brief exactly.", "I marked a peer's work strictly against the scheme."],
+  "resources": [{"label": "IGCSE ICT 0417 specimen-style brief", "url": "https://www.cambridgeinternational.org"}, {"label": "Mark scheme"}, {"label": "Microsoft Word / Google Docs"}]
+ },
+ "8": {
+  "objectives": ["Improve my timed task against the mark scheme.", "Apply the habit: read the brief twice before starting.", "Save in the required format and name."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Read twice, then start", "detail": "Practise the routine: read, highlight instructions, plan the order of work, then open the software. Two minutes of planning saves ten of rework."},
+   {"mins": 25, "title": "Refine the Week 7 task", "detail": "Return to the task and recover every lost mark: layout, spelling, file name, save format."},
+   {"mins": 15, "title": "Format matters", "detail": "Save as .docx, then as PDF, then as .rtf. Discuss when a brief specifies a format and why it matters to the client."},
+   {"mins": 10, "title": "Re-mark", "detail": "Re-mark the improved version. Record both scores to see the gain. Log out."}
+  ],
+  "activities": ["Read-twice routine practice", "Recover lost marks", "Save in three formats"],
+  "successCriteria": ["My improved version scores higher than the first attempt.", "I saved in the exact format the brief required.", "I can describe my read-the-brief routine."],
+  "resources": [{"label": "IGCSE-style brief and mark scheme"}, {"label": "Refinement checklist"}, {"label": "Microsoft Word / Google Docs"}]
+ },
+ "9": {
+  "objectives": ["Choose a scenario for the combined document and database piece.", "Draft the document to a brief I write myself.", "Identify what the database must store."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Pick a real client", "detail": "Scenarios with a real audience: the school library, a sports day, the canteen. Better work comes from a real user."},
+   {"mins": 15, "title": "Write your own brief", "detail": "Write the brief the way an examiner would: specific, measurable instructions. You will be marked against your own brief."},
+   {"mins": 25, "title": "Draft the document", "detail": "Apply advanced layout from Week 2: columns, styles, captioned images."},
+   {"mins": 10, "title": "Database fields", "detail": "List the fields the database will need and their data types. Log out."}
+  ],
+  "activities": ["Choose a real-client scenario", "Write an examiner-style brief", "Draft the document"],
+  "successCriteria": ["My scenario has a real audience.", "My brief lists specific, checkable instructions.", "My document draft uses advanced layout features."],
+  "resources": [{"label": "Portfolio brief template"}, {"label": "Microsoft Word / Google Docs"}, {"label": "Access / LibreOffice Base"}]
+ },
+ "10": {
+  "objectives": ["Practise all four assessed skills under time pressure.", "Peer-check against an IGCSE-style rubric.", "Review my Week 1 targets."],
+  "plan": [
+   {"mins": 5, "title": "Station briefing", "detail": "Four stations, 15 minutes each, rubric at every station."},
+   {"mins": 15, "title": "Station 1 - Advanced layout", "detail": "Columns, drop cap, pull quote, exact margins, to a written brief."},
+   {"mins": 15, "title": "Station 2 - Database query", "detail": "Two queries with AND/OR criteria on a supplied database."},
+   {"mins": 15, "title": "Station 3 - Mail merge", "detail": "Merge a supplied data file into a template and produce the output."},
+   {"mins": 15, "title": "Station 4 - Timed brief", "detail": "A short brief with an exact file name and save format."},
+   {"mins": 10, "title": "Target review", "detail": "Return to the Week 1 targets. Met, partly met or not yet? Set one target for the exam. Log out."}
+  ],
+  "activities": ["Four-station timed rotation", "Peer marking against the IGCSE rubric", "Week 1 target review"],
+  "successCriteria": ["I completed all four stations in the time.", "My peer marking matched the rubric.", "I reviewed my Week 1 targets honestly."],
+  "resources": [{"label": "Rotation station cards"}, {"label": "IGCSE-style rubric"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "11": {
+  "objectives": ["Follow an IGCSE-style brief for 90 minutes.", "Produce an advanced document plus a database query and report.", "Save every file exactly as specified."],
+  "plan": [
+   {"mins": 5, "title": "Brief", "detail": "Read twice, highlight every instruction. Exact file names on the board. Silent conditions."},
+   {"mins": 35, "title": "Document section", "detail": "Advanced layout to the brief: columns, styles, captioned image, header and footer."},
+   {"mins": 30, "title": "Database section", "detail": "Build or use the supplied table, run the specified queries, generate the report."},
+   {"mins": 15, "title": "Combine and export", "detail": "Bring the database output into the document as required, then export to the specified format."},
+   {"mins": 5, "title": "Submit", "detail": "Every file named exactly as the brief states, in the assessment folder. Check before logging out."}
+  ],
+  "activities": ["90-minute IGCSE-style practical", "Document, query and report production", "Exact-name submission"],
+  "successCriteria": ["My document meets every layout instruction.", "My queries return the records the brief asked for.", "My report is formatted and included.", "Every file name matches the brief exactly."],
+  "resources": [{"label": "Assessment brief"}, {"label": "Marking rubric"}, {"label": "Access / LibreOffice Base"}]
+ },
+ "12": {
+  "objectives": ["Build the portfolio document to my own brief.", "Include columns, a contents list and captioned images.", "Add mail-merge fields for personalisation."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Brief check", "detail": "Re-read your Week 9 brief and list what is still missing from the draft."},
+   {"mins": 35, "title": "Build", "detail": "Two columns where appropriate, automatic contents list, captioned images, header and footer, merge fields where the document is personalised."},
+   {"mins": 10, "title": "Self-audit", "detail": "Tick every instruction in your own brief. Anything unticked is next lesson's job. Save and log out."}
+  ],
+  "activities": ["Brief gap analysis", "Build the portfolio document", "Self-audit against own brief"],
+  "successCriteria": ["My document meets every instruction in my own brief.", "It has a contents list and captioned images.", "Merge fields are in place where personalisation is needed."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Own Week 9 brief"}, {"label": "Exemplar portfolio document"}]
+ },
+ "13": {
+  "objectives": ["Build a database with at least 15 records.", "Apply validation to at least one field.", "Write three queries that answer questions from the brief."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Structure before data", "detail": "Fix field names, data types and the primary key before typing 15 records - changing them later means retyping."},
+   {"mins": 30, "title": "Build and populate", "detail": "Create the table(s), add validation, and enter at least 15 realistic records. Realistic data makes the queries meaningful."},
+   {"mins": 15, "title": "Three queries", "detail": "Each query must answer a real question from the brief. Write the question above each query."},
+   {"mins": 10, "title": "Test the validation", "detail": "Deliberately enter bad data and confirm it is rejected. Save and log out."}
+  ],
+  "activities": ["Structure-first database build", "Enter 15+ realistic records", "Write three purposeful queries"],
+  "successCriteria": ["My database has 15 or more records.", "At least one field has a working validation rule.", "My three queries answer real questions from the brief."],
+  "resources": [{"label": "Microsoft Access / LibreOffice Base"}, {"label": "Project brief"}, {"label": "Queries reference"}]
+ },
+ "14": {
+  "objectives": ["Combine document and database output into one deliverable.", "Produce a client-ready PDF report.", "Check the whole package against the brief."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "What client-ready means", "detail": "No placeholder text, consistent fonts, correct dates, a cover page, and nothing that needs explaining. Show a nearly-good example and find its flaws."},
+   {"mins": 30, "title": "Combine", "detail": "Bring the database report into the document (or supply it as a linked appendix). Ensure numbering, headings and captions are consistent throughout."},
+   {"mins": 15, "title": "Export and inspect", "detail": "Export the whole package as PDF and inspect every page as a client would."},
+   {"mins": 10, "title": "Brief audit", "detail": "Final tick-through of the brief. Save and log out."}
+  ],
+  "activities": ["Client-ready critique", "Combine document and database output", "PDF export and full inspection"],
+  "successCriteria": ["My package contains no placeholder or leftover text.", "Formatting is consistent from cover to last page.", "The PDF is ready to hand to a real client."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Access / LibreOffice Base"}, {"label": "PDF export"}]
+ },
+ "15": {
+  "objectives": ["Present my work as if to a real client in five minutes.", "Demonstrate the database queries live.", "Save the complete package to the portfolio."],
+  "plan": [
+   {"mins": 10, "title": "Rehearse the pitch", "detail": "Structure: here is what you asked for, here is how it works, here are the queries you can run yourself."},
+   {"mins": 35, "title": "Client demo day", "detail": "Five minutes each. Run at least one query live - it is the part that proves the database actually works."},
+   {"mins": 10, "title": "Client questions", "detail": "Audience acts as the client: 'Can it show me only this year's records?' Presenters answer or note it as a future feature."},
+   {"mins": 10, "title": "Portfolio save", "detail": "Document, database file, PDF and brief into the portfolio folder, correctly named."},
+   {"mins": 10, "title": "Looking ahead", "detail": "Which of these skills appears on IGCSE paper tasks? Set one target for Term 2. Log out."}
+  ],
+  "activities": ["Five-minute client demo", "Live query demonstration", "Portfolio save and IGCSE target setting"],
+  "successCriteria": ["I presented within five minutes in a client-facing way.", "I ran a query live and explained the result.", "My complete package is in the portfolio folder."],
+  "resources": [{"label": "Class projector"}, {"label": "Portfolio folder"}, {"label": "Client-brief sheet"}]
+ }
+}

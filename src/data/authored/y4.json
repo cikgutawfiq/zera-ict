@@ -1,0 +1,196 @@
+{
+ "1": {
+  "objectives": ["Set a personal typing accuracy target of 95% or better.", "Describe the term project: a styled 2-page report with a contents list.", "Identify the features of a professional-looking report."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "Sign in, posture check, baseline run to record starting accuracy."},
+   {"mins": 15, "title": "Term reveal", "detail": "Theme: 'Word Power'. Pass round the printed exemplar report. Pupils list what makes it look professional: contents page, headings, captions, page numbers."},
+   {"mins": 15, "title": "Accuracy over speed", "detail": "Show the accuracy dashboard. Explain: 40 WPM at 80% is slower in real life than 25 WPM at 98%, because of all the fixing."},
+   {"mins": 20, "title": "Baseline and target", "detail": "Record baseline accuracy, then write a personal target on the tracker. Everyone aims for 95%+."},
+   {"mins": 10, "title": "Project brief", "detail": "Read the project brief handout together. Note the deadline weeks: draft W9, exam W11, final W15. Log out."}
+  ],
+  "activities": ["Exemplar report feature-spotting", "TypingClub baseline run", "Personal accuracy target setting"],
+  "successCriteria": ["I recorded my baseline accuracy.", "My target is 95% or higher.", "I can name three features of a professional report."],
+  "resources": [{"label": "TypingClub accuracy dashboard", "url": "https://www.typingclub.com"}, {"label": "Project brief handout"}, {"label": "Printed exemplar report"}]
+ },
+ "2": {
+  "objectives": ["Type at 95% accuracy or better in a whole exercise.", "Slow down deliberately to raise accuracy.", "Correct my posture without being reminded."],
+  "plan": [
+   {"mins": 10, "title": "Warm-up drill", "detail": "Home row, then top and bottom row reaches. Slow and even."},
+   {"mins": 15, "title": "The slow-down experiment", "detail": "Same exercise twice: once as fast as possible, once deliberately slow. Compare accuracy scores. Nearly everyone scores higher slowly - let them discover it."},
+   {"mins": 25, "title": "Accuracy push", "detail": "Independent TypingClub with one rule: restart any exercise that drops below 95%. Pause every 5 minutes for posture."},
+   {"mins": 10, "title": "Tracker update", "detail": "Record today's best accuracy on the personal tracker. Compare with the Week 1 baseline."},
+   {"mins": 10, "title": "Plenary", "detail": "Which fingers cause most of your errors? Ring them on the keyboard mat. Log out."}
+  ],
+  "activities": ["Fast vs slow accuracy experiment", "95% restart rule practice", "Error-finger analysis"],
+  "successCriteria": ["I hit 95% accuracy at least once today.", "I restarted exercises rather than accepting a low score.", "I know which fingers cause my errors."],
+  "resources": [{"label": "TypingClub", "url": "https://www.typingclub.com"}, {"label": "Accuracy tracker sheet"}, {"label": "Posture reminder poster"}]
+ },
+ "3": {
+  "objectives": ["Apply Heading 1, 2 and 3 styles consistently.", "Generate an automatic Table of Contents.", "Update the contents list after editing the document."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Why automatic?", "detail": "Show a hand-typed contents page, then delete a section - the page numbers are now wrong. Show the automatic one updating with one click."},
+   {"mins": 20, "title": "Style the document", "detail": "Open the practice text. H1 for the title, H2 for sections, H3 for sub-sections. Insist on real styles - check the navigation pane."},
+   {"mins": 20, "title": "Insert the TOC", "detail": "References > Table of Contents (Word), or Insert > Table of contents (Docs). Watch it populate from the headings."},
+   {"mins": 10, "title": "Break it and fix it", "detail": "Add a new section, then update the TOC. This is the skill that sticks. Save and log out."}
+  ],
+  "activities": ["Manual vs automatic TOC demo", "Apply H1/H2/H3 styles", "Insert and update a Table of Contents"],
+  "successCriteria": ["My document uses three levels of heading style.", "My contents list was generated automatically.", "I updated the contents after adding a section."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Kevin Stratvert - Insert Table of Contents", "url": "https://www.youtube.com/@KevinStratvert"}, {"label": "Styles cheat sheet"}]
+ },
+ "4": {
+  "objectives": ["Insert a table with the right number of rows and columns.", "Format a header row.", "Merge two cells to make a title row."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "When to use a table", "detail": "Show the same data as a paragraph and as a table. Tables are for data with repeating fields, not for layout."},
+   {"mins": 20, "title": "Insert and fill", "detail": "Insert a 4x5 table and type the sample data set. Tab moves to the next cell - teach this, it saves hours."},
+   {"mins": 20, "title": "Style it", "detail": "Bold the header row, apply a table style, adjust column widths so nothing wraps awkwardly."},
+   {"mins": 10, "title": "Merge cells", "detail": "Select the top row, merge, and type a table title. Save and log out."}
+  ],
+  "activities": ["Paragraph vs table comparison", "Insert and fill a data table", "Header row styling and cell merge"],
+  "successCriteria": ["My table has a clear header row.", "The columns are wide enough for their content.", "I merged cells to make a title row."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Sample data set"}, {"label": "Table styling reference"}]
+ },
+ "5": {
+  "objectives": ["Insert an image and add a caption using Insert Caption.", "Explain why automatic figure numbering is better than typing numbers.", "Keep captions consistent across the document."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Figure numbering", "detail": "Show a report with Figure 1, 2, 3. Insert a new image in the middle - automatic numbering renumbers everything, manual does not."},
+   {"mins": 20, "title": "Insert Caption", "detail": "Right-click image > Insert Caption (Word) or use the caption workaround in Docs. Add three captioned images."},
+   {"mins": 20, "title": "Caption style", "detail": "Captions should be short, in a smaller size, and say what the figure shows - not 'picture of a dog' but 'Figure 2: a guide dog in training'."},
+   {"mins": 10, "title": "Consistency check", "detail": "Partner checks all captions look and read the same way. Save and log out."}
+  ],
+  "activities": ["Automatic vs manual numbering demo", "Insert three captioned figures", "Caption consistency peer check"],
+  "successCriteria": ["My images have captions with figure numbers.", "The numbering updates when I add an image.", "All my captions are styled the same way."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Class image folder"}, {"label": "Caption exemplars"}]
+ },
+ "6": {
+  "objectives": ["Add a running header with the report title.", "Add a footer with my name.", "Insert automatic page numbers."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Why headers exist", "detail": "Drop a printed report on the floor and mix the pages. Without page numbers and a header, reassembling is guesswork."},
+   {"mins": 20, "title": "Header and footer", "detail": "Insert > Header: report title. Insert > Footer: own name. Show that editing one page changes all of them."},
+   {"mins": 20, "title": "Page numbers", "detail": "Insert automatic page numbers in the footer, aligned right. Add 'Page X of Y' if the class is confident."},
+   {"mins": 10, "title": "Print preview", "detail": "Check in print preview that headers and numbers appear on every page. Save and log out."}
+  ],
+  "activities": ["Mixed-up pages starter", "Insert header and footer", "Automatic page numbering"],
+  "successCriteria": ["My header shows the report title on every page.", "My footer shows my name.", "Page numbers are automatic, not typed."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Headers and footers handout"}, {"label": "Printed multi-page report"}]
+ },
+ "7": {
+  "objectives": ["Use line and paragraph spacing to make text readable.", "Use indents correctly.", "Compare a wall of text with a well-spaced version."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Wall of text", "detail": "Project the before/after handout. Same words, different spacing. Ask which one they would actually read."},
+   {"mins": 20, "title": "Spacing controls", "detail": "Demo line spacing (1.15 or 1.5), space after paragraph (6-10pt), and first-line indent. Change one at a time so the effect is visible."},
+   {"mins": 20, "title": "Apply to the report", "detail": "Apply consistent spacing to the whole draft. Rule: set it once for the whole document, do not press Enter twice."},
+   {"mins": 10, "title": "Readability rating", "detail": "Partner rates the page out of 5 for readability and suggests one change. Save and log out."}
+  ],
+  "activities": ["Before/after spacing comparison", "Apply document-wide spacing", "Readability peer rating"],
+  "successCriteria": ["My line spacing is consistent throughout.", "I used paragraph spacing instead of blank lines.", "My page looks readable from arm's length."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Before/after spacing handout"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "8": {
+  "objectives": ["Use spellcheck and grammar suggestions with judgement.", "Explain when to ignore a suggestion.", "Proofread using a checklist as well as the software."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "The tool is not always right", "detail": "Work through examples where the suggestion is wrong: names, Malaysian place names, technical words, 'their/there'. Discuss each."},
+   {"mins": 20, "title": "Run the checks", "detail": "Run spellcheck and grammar check on the report draft. For each flag, decide: accept, ignore, or fix differently. Log three decisions on paper."},
+   {"mins": 20, "title": "Human proofread", "detail": "Use the printed checklist for the things software misses: missing words, wrong figure numbers, headings out of order."},
+   {"mins": 10, "title": "Share a catch", "detail": "Who found an error the software missed? Share it. Save and log out."}
+  ],
+  "activities": ["Wrong-suggestion examples", "Run and judge spellcheck flags", "Checklist human proofread"],
+  "successCriteria": ["I checked every flag rather than clicking accept-all.", "I can give an example of a suggestion I correctly ignored.", "I found at least one error the software missed."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Proofreading checklist"}, {"label": "Wrong-suggestion example sheet"}]
+ },
+ "9": {
+  "objectives": ["Draft a 2-page report on my chosen topic.", "Apply the heading structure from the plan.", "Meet the draft deadline."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Plan review", "detail": "Complete the report planning sheet: title, introduction, three sections, conclusion, where the table and images will go."},
+   {"mins": 35, "title": "Draft", "detail": "Type the report body and apply headings as you go. Target: 2 pages of text by the end of the lesson. Circulate with individual targets."},
+   {"mins": 10, "title": "Draft check", "detail": "Navigation pane check: is the structure right? Word count check: is it long enough? Save and log out."}
+  ],
+  "activities": ["Complete the planning sheet", "Draft the 2-page report", "Structure and length check"],
+  "successCriteria": ["My draft covers all the sections in my plan.", "All headings use real styles.", "My draft reaches about two pages."],
+  "resources": [{"label": "Report planning sheet"}, {"label": "Exemplar report"}, {"label": "Microsoft Word / Google Docs"}]
+ },
+ "10": {
+  "objectives": ["Add a TOC, a table, a captioned image and a header/footer to my draft.", "Check my report against the marking rubric.", "Fix everything the rubric says is missing."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Rubric walk-through", "detail": "Read the marking rubric line by line. Pupils highlight anything they have not done yet."},
+   {"mins": 30, "title": "Complete the features", "detail": "Work through the missing features: contents list, one table, one captioned image, header, footer, page numbers."},
+   {"mins": 15, "title": "Peer rubric check", "detail": "Swap and mark your partner's report against the rubric. Give a score and one specific fix."},
+   {"mins": 10, "title": "Fix list", "detail": "Write your top three fixes for next lesson on a sticky note. Save and log out."}
+  ],
+  "activities": ["Rubric highlighting", "Complete missing report features", "Peer rubric marking"],
+  "successCriteria": ["My report has a TOC, a table, a captioned image and a header/footer.", "I marked a partner's work fairly against the rubric.", "I know my three biggest fixes."],
+  "resources": [{"label": "Marking rubric (pupil version)"}, {"label": "Microsoft Word / Google Docs"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "11": {
+  "objectives": ["Produce a styled 2-page report independently in 60 minutes.", "Include an automatic contents list, one table and one captioned image.", "Save with the correct file name."],
+  "plan": [
+   {"mins": 5, "title": "Brief", "detail": "Read the task twice before starting. Rubric on the board. Silent conditions, technical help only."},
+   {"mins": 20, "title": "Structure and text", "detail": "Set headings first, then type the body. Remind at 20 minutes: structure before decoration."},
+   {"mins": 20, "title": "Table and image", "detail": "Insert the table with a header row and the captioned image."},
+   {"mins": 15, "title": "TOC, header, footer", "detail": "Generate the contents list last so it picks up all headings. Add header, footer and page numbers."},
+   {"mins": 10, "title": "Save and close", "detail": "Correct file name, saved to the assessment folder, checked before logging out."}
+  ],
+  "activities": ["60-minute individual practical", "Contents list, table and captioned image", "Correct-name save"],
+  "successCriteria": ["My report is two pages and uses heading styles.", "My contents list was generated automatically.", "I included one table and one captioned image.", "The file is saved with the correct name."],
+  "resources": [{"label": "Assessment task card"}, {"label": "Marking rubric"}, {"label": "Microsoft Word / Google Docs"}]
+ },
+ "12": {
+  "objectives": ["Add a second table and a second image to my report.", "Rewrite my introduction and conclusion.", "Make sure the contents list still matches."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Strong openings", "detail": "Compare two introductions: one that says 'This report is about dogs', one that opens with a fact. Rewrite yours to hook the reader."},
+   {"mins": 25, "title": "Add content", "detail": "Insert a second table and a second captioned image where they add value, not just to fill space."},
+   {"mins": 15, "title": "Conclusion", "detail": "Write a conclusion that answers the question the introduction raised. Three to four sentences."},
+   {"mins": 10, "title": "Update the TOC", "detail": "Refresh the contents list and check page numbers. Save and log out."}
+  ],
+  "activities": ["Introduction rewrite", "Add a second table and image", "TOC refresh"],
+  "successCriteria": ["My introduction hooks the reader.", "My report has two tables and two captioned images.", "My contents list is up to date."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Refinement checklist"}, {"label": "Introduction exemplars"}]
+ },
+ "13": {
+  "objectives": ["Refer to a table or figure by its number in the body text.", "Use a cross-reference so it updates automatically.", "Rebuild the contents list after edits."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Why cross-reference", "detail": "Show 'see Figure 1' typed by hand, then insert a new figure - the reference is now wrong. Show the cross-reference updating itself."},
+   {"mins": 25, "title": "Insert cross-references", "detail": "References > Cross-reference. Add at least two references in the body text: 'as shown in Figure 2' and 'see Table 1'."},
+   {"mins": 10, "title": "Test it", "detail": "Insert a new figure above the others, update fields, and watch every reference renumber."},
+   {"mins": 10, "title": "Rebuild the TOC", "detail": "Update the contents list, check the page numbers, save and log out."}
+  ],
+  "activities": ["Manual vs automatic reference demo", "Insert two cross-references", "Break-and-update test"],
+  "successCriteria": ["My body text refers to at least two figures or tables.", "My references update automatically.", "My contents list is correct after all edits."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Microsoft Support - Cross-references", "url": "https://support.microsoft.com"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "14": {
+  "objectives": ["Suggest three improvements using tracked changes or suggesting mode.", "Accept or reject suggestions on my own work with a reason.", "Explain the difference between editing and suggesting."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Suggesting vs editing", "detail": "Demo both modes. Key idea: a suggestion asks, an edit takes. The author stays in charge."},
+   {"mins": 20, "title": "Peer edit", "detail": "Swap reports. Turn on Track Changes / Suggesting mode. Make three specific suggestions - not 'make it better'."},
+   {"mins": 20, "title": "Accept or reject", "detail": "Back to your own report. For each suggestion, accept or reject and say why to your partner. Rejecting with a good reason is a success, not a failure."},
+   {"mins": 10, "title": "Plenary", "detail": "Which suggestion improved the report most? Save and log out."}
+  ],
+  "activities": ["Suggesting-mode demo", "Peer edit with three suggestions", "Accept/reject with justification"],
+  "successCriteria": ["I made three specific suggestions on a partner's report.", "I accepted or rejected each suggestion on mine with a reason.", "I can explain the difference between suggesting and editing."],
+  "resources": [{"label": "Word Track Changes / Docs Suggesting mode"}, {"label": "Peer-editing guide"}, {"label": "Microsoft Word / Google Docs"}]
+ },
+ "15": {
+  "objectives": ["Export my report as a PDF.", "Present my report to a small group in two minutes.", "Save the final version to the term portfolio folder."],
+  "plan": [
+   {"mins": 10, "title": "Final checks", "detail": "Last pass: update the TOC, check page numbers, check every figure has a caption."},
+   {"mins": 10, "title": "Export to PDF", "detail": "Save as PDF with the correct file name. Open the PDF to check nothing has shifted."},
+   {"mins": 25, "title": "Two-minute presentations", "detail": "Small groups. Structure: what my report is about, one thing I found out, the feature I am proudest of. Timer strictly enforced."},
+   {"mins": 10, "title": "Portfolio save", "detail": "PDF and source document into the term portfolio folder."},
+   {"mins": 10, "title": "Term reflection", "detail": "Name the report feature that was hardest and the one you will use again. Log out."}
+  ],
+  "activities": ["Final document check", "PDF export", "Two-minute group presentation"],
+  "successCriteria": ["My PDF looks the same as my document.", "I presented within the two-minute limit.", "My final report is in the portfolio folder."],
+  "resources": [{"label": "PDF export"}, {"label": "Class shared drive"}, {"label": "Presentation timer"}]
+ }
+}

@@ -1,0 +1,197 @@
+{
+ "1": {
+  "objectives": ["Complete a short diagnostic task independently.", "Set a personal TypingClub target for the term.", "Explain what this term's theme covers: documents and photos."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "Sign in, posture check, free practice."},
+   {"mins": 10, "title": "Term reveal", "detail": "Theme: 'Documents & Photos'. Show the Week 15 exemplar fact-file. Explain: by December you will take your own photos and put them in a properly structured document."},
+   {"mins": 25, "title": "Diagnostic", "detail": "Log in, open Docs, type a sentence about the holidays, save with the correct name. Record on the diagnostic checklist who is secure, nearly there, or needs support."},
+   {"mins": 15, "title": "Set targets", "detail": "Review last year's TypingClub level. Write a target on the goal sheet: a level, a WPM or an accuracy percentage."},
+   {"mins": 10, "title": "Plenary", "detail": "Pair share: one skill you already have, one you want this term. Log out."}
+  ],
+  "activities": ["Diagnostic log-in, type, save task", "TypingClub goal setting", "Pair share of term targets"],
+  "successCriteria": ["I completed the diagnostic without step-by-step help.", "My target is written on the goal sheet.", "I can say what this term is about."],
+  "resources": [{"label": "Diagnostic checklist"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}, {"label": "Term overview poster"}]
+ },
+ "2": {
+  "objectives": ["Reach the top row and bottom row while keeping fingers anchored on the home row.", "Type without looking at my hands for a whole exercise.", "Record my accuracy honestly."],
+  "plan": [
+   {"mins": 10, "title": "Home-row anchor drill", "detail": "60 seconds on ASDF JKL only, then reach for E and C without moving the anchor fingers."},
+   {"mins": 15, "title": "Reach and return", "detail": "Model the reach-and-return motion on the visualiser. The finger goes up and comes straight back - it does not stay there."},
+   {"mins": 25, "title": "TypingClub units", "detail": "Independent unit work on top and bottom rows. Posture freeze every 5 minutes."},
+   {"mins": 10, "title": "No-peek challenge", "detail": "One exercise with a card covering the hands. Accuracy will drop - that is expected and fine."},
+   {"mins": 10, "title": "Chart and reflect", "detail": "Update the accuracy chart. Which row is hardest? Log out."}
+  ],
+  "activities": ["Anchor drill", "Reach-and-return practice", "No-peek exercise"],
+  "successCriteria": ["My anchor fingers stay on the home row.", "I completed a whole exercise without looking down.", "I recorded my real accuracy on the chart."],
+  "resources": [{"label": "TypingClub", "url": "https://www.typingclub.com"}, {"label": "Accuracy wall chart"}, {"label": "Hand-cover cards"}]
+ },
+ "3": {
+  "objectives": ["Apply Heading 1 and Heading 2 styles instead of just making text big.", "Create a bulleted list and a numbered list.", "Explain when to use a numbered list rather than bullets."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Styles vs big bold text", "detail": "Show two documents that look identical. Change the theme - only the styled one updates. Rule: use the Styles panel, not manual formatting."},
+   {"mins": 20, "title": "Apply headings", "detail": "Open the practice text. Apply Heading 1 to the title and Heading 2 to each section. Do it in both Word and Docs."},
+   {"mins": 20, "title": "Two kinds of list", "detail": "Bullets for things in any order (ingredients), numbers for steps in order (a recipe). Pupils make one of each in their document."},
+   {"mins": 10, "title": "Sort it out", "detail": "Quickfire: bullets or numbers? Shopping list, fire drill steps, favourite films, how to log in. Save and log out."}
+  ],
+  "activities": ["Styles vs manual formatting demo", "Apply H1 and H2 to practice text", "Bullets-or-numbers quickfire"],
+  "successCriteria": ["My document uses real heading styles.", "I made one bulleted and one numbered list.", "I can explain when to use each type of list."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Styles panel handout"}, {"label": "Exemplar structured document"}]
+ },
+ "4": {
+  "objectives": ["Frame a photo using the rule of thirds.", "Face the light so my subject is not dark.", "Tap to focus before taking the shot."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Three rules of a good photo", "detail": "Framing (thirds, not dead centre), light (light behind the photographer), focus (tap the subject). Show a good and a bad example of each."},
+   {"mins": 10, "title": "Device rules", "detail": "Handling rules for school tablets: two hands, wrist strap, no photos of people without asking. This is a safeguarding point - be explicit."},
+   {"mins": 25, "title": "Photo walk", "detail": "In pairs, take three photos of one chosen classroom object: one badly lit, one centred, one following all three rules. Comparison is the lesson."},
+   {"mins": 10, "title": "Compare", "detail": "Project a few sets. Class identifies which shot followed the rules and why. Devices returned and counted."}
+  ],
+  "activities": ["Good/bad photo comparison", "Three-photo challenge in pairs", "Class photo critique"],
+  "successCriteria": ["My best photo is well lit and in focus.", "My subject is placed off-centre using the thirds guide.", "I handled the school device safely and only photographed objects."],
+  "resources": [{"label": "Class tablets / school-approved devices"}, {"label": "Rule-of-thirds overlay handout"}, {"label": "Teacher photo gallery (good vs bad)"}]
+ },
+ "5": {
+  "objectives": ["Get my photos from the device into a document.", "Resize an image using corner handles only.", "Use text wrapping so text flows around the picture."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Getting photos across", "detail": "Demo the class upload path: device to Drive folder, then Insert > Image > from Drive. Do this slowly - it is the step that goes wrong most."},
+   {"mins": 15, "title": "Insert and resize", "detail": "Insert their best photo. Resize with corner handles to roughly a third of the page width."},
+   {"mins": 20, "title": "Text wrapping", "detail": "Show In Line vs Square/Wrap Text. Watch the text flow around the picture. Pupils try all three options and pick the best."},
+   {"mins": 10, "title": "Plenary", "detail": "Which wrap setting looked best and why? Save and log out."}
+  ],
+  "activities": ["Device-to-cloud upload", "Insert and resize own photo", "Text-wrap comparison"],
+  "successCriteria": ["My own photo is in my document.", "The image is the right shape and a sensible size.", "Text flows neatly around my picture."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Class upload path instructions"}, {"label": "Text-wrap cheat sheet"}]
+ },
+ "6": {
+  "objectives": ["Explain why we cannot use every image we find online.", "Find an image on a free-to-use site.", "Follow the class rule: own photo first, then free-to-use."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Whose picture is it?", "detail": "Discussion: someone made that photo, the way you made yours. Copyright in child terms - you must ask, or use pictures people have already said yes to."},
+   {"mins": 20, "title": "Free-to-use sites", "detail": "Tour Pixabay, Pexels and Unsplash. Search a topic, download one image to the class folder. Point out the licence line on each site."},
+   {"mins": 15, "title": "Class rule poster", "detail": "Write the rule together: 'Own photo first. Then free-to-use. Never just any Google image.' Pupils copy it into their document as a reminder line."},
+   {"mins": 10, "title": "Quickfire", "detail": "Show four images - which are okay to use? Justify each. Log out."}
+  ],
+  "activities": ["Whose-picture discussion", "Free-to-use site search and download", "Okay-to-use quickfire"],
+  "successCriteria": ["I can explain why a Google image might not be allowed.", "I downloaded an image from a free-to-use site.", "I can say the class image rule."],
+  "resources": [{"label": "Pixabay", "url": "https://pixabay.com"}, {"label": "Pexels", "url": "https://www.pexels.com"}, {"label": "Common Sense Education - Copyright and Fair Use", "url": "https://www.commonsense.org/education"}]
+ },
+ "7": {
+  "objectives": ["Plan a fact-file with a title and three sections.", "Structure it using headings and a bulleted list.", "Include one photo that I took or that is free to use."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Choose a topic", "detail": "A country, an animal or a hobby. Topic must be narrow enough for three sections - steer pupils away from 'sport' towards 'football goalkeeping'."},
+   {"mins": 15, "title": "Plan on paper", "detail": "Planning sheet: title, three section headings, what the picture will show."},
+   {"mins": 25, "title": "Start building", "detail": "Type the title as Heading 1 and the three section headings as Heading 2. Add a bulleted list of at least three points in one section."},
+   {"mins": 10, "title": "Progress check", "detail": "Partner check: can they see the structure at a glance? Save and log out."}
+  ],
+  "activities": ["Topic choice and narrowing", "Paper planning sheet", "Build the heading structure"],
+  "successCriteria": ["My fact-file has a title and three section headings.", "At least one section has a bulleted list.", "I know which photo I am using and where it came from."],
+  "resources": [{"label": "Fact-file planning sheet"}, {"label": "Microsoft Word / Google Docs"}, {"label": "Class picture folder"}]
+ },
+ "8": {
+  "objectives": ["Use spellcheck without accepting every suggestion blindly.", "Read my work aloud to find missing words.", "Fix line spacing, margins and image alignment."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Spellcheck is a hint", "detail": "Show a sentence where the suggestion is wrong ('their' vs 'there'). Rule: the red line tells you to look, not what to write."},
+   {"mins": 20, "title": "Read aloud in pairs", "detail": "Take turns reading each other's fact-file aloud. The reader hears missing words the writer's eyes skip over."},
+   {"mins": 20, "title": "Tidy the layout", "detail": "Set line spacing to 1.15, check margins are even, align images consistently (all left or all right, not random)."},
+   {"mins": 10, "title": "Before and after", "detail": "Project one pupil's before and after. Save and log out."}
+  ],
+  "activities": ["Spellcheck judgement examples", "Paired read-aloud proofreading", "Layout tidy-up pass"],
+  "successCriteria": ["I checked every spellcheck suggestion before accepting it.", "I found and fixed at least one error by reading aloud.", "My spacing and image alignment are consistent."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Proofreading checklist"}, {"label": "Pair-work prompt cards"}]
+ },
+ "9": {
+  "objectives": ["Finish my fact-file to the checklist.", "Add a caption to my image.", "Write a sources line crediting any picture I used."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "What a source line looks like", "detail": "Model: 'Photo: my own' or 'Photo: Pexels, free to use'. One line at the bottom in small text."},
+   {"mins": 30, "title": "Finish the fact-file", "detail": "Complete all three sections, add the captioned image, add the sources line. Circulate with the checklist and give one next step per pupil."},
+   {"mins": 10, "title": "Checklist self-mark", "detail": "Tick the checklist. Unticked items are homework for the revision lesson."},
+   {"mins": 10, "title": "Plenary", "detail": "Two pupils share their fact-file on the projector. Save and log out."}
+  ],
+  "activities": ["Source-line modelling", "Finish and caption the fact-file", "Checklist self-mark"],
+  "successCriteria": ["My fact-file is complete with headings, a list and an image.", "My image has a caption.", "I credited where my picture came from."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Captions and sources examples"}, {"label": "Completion checklist"}]
+ },
+ "10": {
+  "objectives": ["Practise all four exam skills at speed.", "Identify which skill I am weakest at.", "Answer copyright questions confidently."],
+  "plan": [
+   {"mins": 5, "title": "Station briefing", "detail": "Four stations, 15 minutes each, rotation on the timer."},
+   {"mins": 15, "title": "Station 1 - Styles and lists", "detail": "Apply H1/H2 and both list types to an unformatted text file, against the clock."},
+   {"mins": 15, "title": "Station 2 - Image work", "detail": "Insert, resize, caption and wrap an image correctly."},
+   {"mins": 15, "title": "Station 3 - TypingClub", "detail": "Speed run: best accuracy in 10 minutes."},
+   {"mins": 15, "title": "Station 4 - Copyright quiz", "detail": "Ten quickfire cards: can I use this image? Justify."},
+   {"mins": 5, "title": "Weakest link", "detail": "Each pupil names the station they found hardest and writes it on a sticky note for the teacher. Log out."}
+  ],
+  "activities": ["4-station timed rotation", "Copyright quickfire quiz", "Self-identified weakest skill"],
+  "successCriteria": ["I completed all four stations.", "I know which skill I need to practise most.", "I answered the copyright questions with a reason."],
+  "resources": [{"label": "Rotation station cards"}, {"label": "Past exam-style tasks"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "11": {
+  "objectives": ["Create a one-page fact-file independently.", "Use headings and a bulleted list correctly.", "Include a captioned image that is my own or copyright-safe."],
+  "plan": [
+   {"mins": 5, "title": "Brief and rubric", "detail": "Read the task twice. Rubric visible. Remind about the sources line - it carries marks."},
+   {"mins": 25, "title": "Build the document", "detail": "Title, sections, headings, list. Silent working. Technical help only."},
+   {"mins": 25, "title": "Image and caption", "detail": "Insert an image from own photos or a free-to-use site, resize, caption, add the source."},
+   {"mins": 10, "title": "Save and submit", "detail": "Correct file name, saved to the assessment folder. Check the save happened before logging out."},
+   {"mins": 5, "title": "Close down", "detail": "Log out, collect task cards."}
+  ],
+  "activities": ["Individual practical assessment", "Headings, list and image task", "Correct-name save to the assessment folder"],
+  "successCriteria": ["My fact-file fits on one page and uses heading styles.", "It contains a bulleted list.", "My image is captioned and copyright-safe.", "I saved it with the correct name."],
+  "resources": [{"label": "Assessment task card"}, {"label": "Marking rubric"}, {"label": "Free-to-use image sites"}]
+ },
+ "12": {
+  "objectives": ["Choose a new topic for a longer fact-file.", "Plan a title, intro, three sub-headings, images and sources.", "Justify my plan to a partner."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Two pages, not one", "detail": "Show a 2-page exemplar. Notice: an introduction, more depth per section, two images."},
+   {"mins": 15, "title": "Topic choice", "detail": "New topic, different from Week 7. Use the class ideas list. Narrow it down with the teacher."},
+   {"mins": 25, "title": "Plan on paper", "detail": "Full plan: title, intro sentence, three sub-headings with two facts each, two image ideas with sources."},
+   {"mins": 10, "title": "Pitch it", "detail": "30-second pitch to a partner: what is your fact-file about and why did you choose it? Collect plans."}
+  ],
+  "activities": ["2-page exemplar study", "Topic selection and narrowing", "Paper plan and partner pitch"],
+  "successCriteria": ["My plan has a title, intro and three sub-headings.", "I have two image ideas and know where they come from.", "I pitched my plan clearly to a partner."],
+  "resources": [{"label": "Planning sheet"}, {"label": "2-page exemplar fact-file"}, {"label": "Class topic ideas list"}]
+ },
+ "13": {
+  "objectives": ["Build a two-page document from my plan.", "Apply Heading 1 and Heading 2 consistently.", "Insert at least two images."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Set up the document", "detail": "Title as H1, three sub-headings as H2 before typing any body text. Structure first, content second."},
+   {"mins": 35, "title": "Build", "detail": "Type the intro and section content from the plan. Insert both images with correct sizing and wrapping. Circulate with targeted support."},
+   {"mins": 10, "title": "Structure check", "detail": "Use the document outline view (Docs) or navigation pane (Word) to check the headings are real styles. Save and log out."}
+  ],
+  "activities": ["Structure-first setup", "Type from the plan", "Outline view structure check"],
+  "successCriteria": ["My document runs to about two pages.", "All headings use real styles, not manual formatting.", "I have inserted at least two images."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Image folder"}, {"label": "Styles panel handout"}]
+ },
+ "14": {
+  "objectives": ["Review a partner's fact-file against a checklist.", "Act on at least three suggestions.", "Add a footer with my name and the date."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Peer review", "detail": "Swap machines. Complete the peer-review checklist on your partner's work: structure, images, spelling, sources. Write three specific suggestions."},
+   {"mins": 20, "title": "Act on the feedback", "detail": "Back to your own file. Fix at least three suggested improvements. Tick them off as you go."},
+   {"mins": 15, "title": "Headers and footers", "detail": "Demo Insert > Footer. Add name and date. Show that it repeats on both pages automatically."},
+   {"mins": 10, "title": "Plenary", "detail": "Which suggestion improved your work most? Save and log out."}
+  ],
+  "activities": ["Checklist peer review", "Act on three improvements", "Insert a footer"],
+  "successCriteria": ["I gave three specific, kind suggestions.", "I improved my own work in three ways.", "My footer shows my name and the date on both pages."],
+  "resources": [{"label": "Peer-review checklist"}, {"label": "Header/footer demo"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "15": {
+  "objectives": ["Export my fact-file as a PDF.", "Give specific feedback in a gallery walk.", "Save my finished work into the term portfolio folder."],
+  "plan": [
+   {"mins": 10, "title": "Export to PDF", "detail": "File > Download / Save as PDF. Explain why PDF: the layout cannot move and anyone can open it."},
+   {"mins": 25, "title": "Gallery walk", "detail": "Files open on screens or printed on desks. Walk and read three fact-files, leaving two stars and a wish on sticky notes."},
+   {"mins": 15, "title": "Read and respond", "detail": "Return to your own work, read the feedback, and note one thing to carry into next term."},
+   {"mins": 10, "title": "Portfolio save", "detail": "PDF plus source document into the term portfolio folder, named correctly."},
+   {"mins": 10, "title": "Term reflection", "detail": "Three things I can do now: styles, photos, copyright. Log out."}
+  ],
+  "activities": ["PDF export", "Sticky-note gallery walk", "Portfolio save and reflection"],
+  "successCriteria": ["My fact-file is exported as a PDF.", "I gave specific feedback on three pieces of work.", "My files are in the term portfolio folder."],
+  "resources": [{"label": "Class printer / PDF export"}, {"label": "Sticky notes"}, {"label": "Portfolio folder"}]
+ }
+}

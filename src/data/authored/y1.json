@@ -1,0 +1,197 @@
+{
+ "1": {
+  "objectives": ["Name the four main parts of a computer: screen, keyboard, mouse, system unit.", "Log in to a school computer using my own class login card.", "Say two ICT room rules in my own words."],
+  "plan": [
+   {"mins": 10, "title": "Welcome circle", "detail": "Sit on the carpet. Show the ICT room: where to line up, where bags go, how to carry a chair. Term theme reveal: 'Buttons, Clicks & Keys'."},
+   {"mins": 15, "title": "Parts of a computer", "detail": "Hold up the flashcards one at a time. Class repeats the word, then points to the real part on their own machine. Play 'Simon says point to the...'."},
+   {"mins": 15, "title": "Class rules together", "detail": "Agree 4 rules: dry hands, walk not run, gentle hands on equipment, ask before printing. Each child signs the class-rules poster."},
+   {"mins": 20, "title": "First log in", "detail": "Hand out login cards. Model on the big screen: type username, press Tab, type password, press Enter. Circulate - most will need the username typed with them."},
+   {"mins": 10, "title": "Log out and line up", "detail": "Model the log-out routine. Everyone logs out, pushes in chairs, and says one part of the computer as the exit ticket."}
+  ],
+  "activities": ["Flashcard 'point to the part' game", "Sign the class rules poster", "Login race in pairs (confident child supports partner)"],
+  "successCriteria": ["I can point to the screen, keyboard, mouse and system unit.", "I can log in with help and log out on my own.", "I can name one ICT room rule."],
+  "resources": [{"label": "BBC Bitesize KS1 - Parts of a Computer", "url": "https://www.bbc.co.uk/bitesize/topics/zbhgjxs"}, {"label": "Parts-of-a-computer flashcards (printed)"}, {"label": "Class-rules poster + marker"}]
+ },
+ "2": {
+  "objectives": ["Hold the mouse correctly with my hand resting on it.", "Point and single-click on a target.", "Double-click to open, and click-and-drag to move an object."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "Sit tall, feet flat. Free-explore TypingClub while the class settles."},
+   {"mins": 10, "title": "Mouse grip demo", "detail": "Big-screen demo: hand rests on the mouse, index finger on the left button, wrist on the desk. Everyone copies without clicking - 'ghost practice'."},
+   {"mins": 20, "title": "Click and double-click", "detail": "ABCya! Mouse Practice: point-and-click level first, then the double-click level. Say the rhythm out loud: 'tap-tap, quick!'."},
+   {"mins": 20, "title": "Drag and drop", "detail": "Move to a drag-and-drop puzzle game. Rule: press, hold, move, let go. Pair weaker mouse control with a confident partner."},
+   {"mins": 10, "title": "Plenary", "detail": "Thumbs up / thumbs down: which was hardest - click, double-click or drag? Log-out routine."}
+  ],
+  "activities": ["ABCya! Mouse Practice", "Cursor Chaser accuracy game", "Drag-and-drop jigsaw in pairs"],
+  "successCriteria": ["I hold the mouse with my hand resting, not gripping.", "I can single-click a small target first time.", "I can drag an object where I want it."],
+  "resources": [{"label": "ABCya! Mouse Practice", "url": "https://www.abcya.com/games/mouse_practice"}, {"label": "ictgames - Cursor Chaser", "url": "https://www.ictgames.com"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "3": {
+  "objectives": ["Sign in to TypingClub with my own class login.", "Sit with good typing posture: back straight, feet flat, wrists up.", "Put my fingers on the home row and complete two beginner units."],
+  "plan": [
+   {"mins": 10, "title": "Posture chant", "detail": "Feet flat, back straight, elbows down, eyes on the screen. Practise the pose three times before anyone touches a keyboard."},
+   {"mins": 15, "title": "Sign in together", "detail": "Login cards out. Model TypingClub sign-in on the big screen, one field at a time. Circulate - the first sign-in always takes longest."},
+   {"mins": 15, "title": "Home row hands", "detail": "Show the two bumps on F and J. Everyone finds them with eyes closed. Left hand ASDF, right hand JKL. Repeat the chant."},
+   {"mins": 20, "title": "Units 1 and 2", "detail": "Work through the first two beginner units. Freeze the class every 5 minutes for a posture check."},
+   {"mins": 10, "title": "Stars and log out", "detail": "Everyone shows their star count to a partner. Praise accuracy, not speed. Log-out routine."}
+  ],
+  "activities": ["TypingClub beginner units 1-2", "Eyes-closed 'find the bumps' challenge", "Posture freeze checks"],
+  "successCriteria": ["I can sign in to TypingClub with my card.", "I can find F and J without looking.", "I finished two units with my fingers on the home row."],
+  "resources": [{"label": "TypingClub", "url": "https://www.typingclub.com"}, {"label": "Class login cards"}, {"label": "Posture poster (projected)"}]
+ },
+ "4": {
+  "objectives": ["Find the space bar, Enter and Backspace on the keyboard.", "Use Backspace to fix a mistake instead of asking for help.", "Type my own first name correctly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "Straight into TypingClub for 10 minutes. Posture check at 5 minutes."},
+   {"mins": 10, "title": "Keyboard treasure hunt", "detail": "Call out a key - space bar, Enter, Backspace, Shift - children point to it on the printed keyboard mat, then on the real keyboard."},
+   {"mins": 20, "title": "Space, Enter, Backspace", "detail": "Open a blank document. Type letters, press space, press Enter to go down a line. Deliberately type a wrong letter and fix it with Backspace - celebrate mistakes."},
+   {"mins": 20, "title": "Type my name", "detail": "Type first name. Show how Shift makes the capital letter. Model with a name card. Type it three times, each one neater than the last."},
+   {"mins": 10, "title": "Show a partner", "detail": "Partner checks: is the first letter a capital? Are the letters in the right order? Log out."}
+  ],
+  "activities": ["Keyboard mat treasure hunt", "Backspace fix-it challenge", "Name typing x3"],
+  "successCriteria": ["I can find the space bar, Enter and Backspace.", "I fix my own typing mistakes with Backspace.", "I can type my first name with a capital letter."],
+  "resources": [{"label": "TypingClub", "url": "https://www.typingclub.com"}, {"label": "Printed keyboard mats"}, {"label": "Name cards"}]
+ },
+ "5": {
+  "objectives": ["Open Tux Paint (or Microsoft Paint) from the desktop.", "Use the Brush, Stamp and Fill tools to make a picture.", "Save my picture into the class folder."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes of TypingClub, posture check."},
+   {"mins": 10, "title": "Gallery inspiration", "detail": "Show 3 exemplar pictures. Ask: which tool made this line? Which made this shape? Introduce today's prompt: 'my favourite place'."},
+   {"mins": 15, "title": "Tool tour", "detail": "Demo Brush (choose colour, change size), Stamp (pick a picture, click to place) and Fill (click inside a shape). Children copy each step on their own screen."},
+   {"mins": 25, "title": "Create", "detail": "Free creation time with the prompt. Circulate and name the tools out loud as children use them: 'you used the Fill tool there'."},
+   {"mins": 10, "title": "Save it", "detail": "Model saving: File > Save, type first name, click Save. Everyone saves before the log-out routine."}
+  ],
+  "activities": ["Tool-tour copy demo", "'My favourite place' picture", "Save with own name"],
+  "successCriteria": ["I can open the painting program by myself.", "I used at least two different tools in my picture.", "My picture is saved with my name on it."],
+  "resources": [{"label": "Tux Paint (free)", "url": "https://tuxpaint.org"}, {"label": "Microsoft Paint (alternative)"}, {"label": "Teacher exemplar gallery"}]
+ },
+ "6": {
+  "objectives": ["Follow the whole computer routine: log in, open, save, close, log out.", "Give my file a sensible name.", "Find and reopen a picture I saved last week."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Routine card", "detail": "Hand out the printed routine card. Read the 5 steps together as a chant: log in, open, save, close, log out."},
+   {"mins": 20, "title": "Find last week's picture", "detail": "Open File Explorer, go to the class folder, find their own name, double-click to reopen. This is the trickiest part - pair up early finishers as helpers."},
+   {"mins": 20, "title": "Add and re-save", "detail": "Add one new thing to the picture, then Save again. Discuss: the file keeps the same name, the picture is updated."},
+   {"mins": 10, "title": "Routine race", "detail": "Timed run through the full 5-step routine. Everyone claps for the class, not individuals. Log out."}
+  ],
+  "activities": ["Find-my-file hunt", "Add-and-resave", "Timed routine race"],
+  "successCriteria": ["I can find my own file in the class folder.", "I save my work with a name that makes sense.", "I can do the whole routine with one reminder or fewer."],
+  "resources": [{"label": "Windows File Explorer"}, {"label": "Class shared drive"}, {"label": "Printed 5-step routine card"}]
+ },
+ "7": {
+  "objectives": ["Explain that some things are private: my name, my address and my photos.", "Say what to do if something online feels wrong - tell a trusted adult.", "Name one trusted adult I could tell."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Jessie & Friends", "detail": "Watch ThinkUKnow 'Jessie & Friends' Episode 1. Pause at the decision point and ask: what should she do?"},
+   {"mins": 15, "title": "Private or share?", "detail": "Sorting game: hold up cards (my favourite colour / my home address / my pet's name / my school photo). Class votes private or okay-to-share, then discuss."},
+   {"mins": 20, "title": "Trusted adults hand", "detail": "Draw round a hand; write or draw a trusted adult on each finger. This goes into the portfolio folder."},
+   {"mins": 10, "title": "Class promise", "detail": "Say the class online-safety rule together: 'If something feels wrong, I tell a trusted adult.' Log out."}
+  ],
+  "activities": ["Jessie & Friends Ep. 1 + discussion", "Private-or-share sorting cards", "Trusted-adults hand drawing"],
+  "successCriteria": ["I can name two things that should stay private.", "I know to tell a trusted adult if something feels wrong.", "I can name at least one trusted adult."],
+  "resources": [{"label": "ThinkUKnow - Jessie & Friends", "url": "https://www.thinkuknow.co.uk/4_7/"}, {"label": "'Chicken Clicking' by Jeanne Willis"}, {"label": "Private/share sorting cards"}]
+ },
+ "8": {
+  "objectives": ["Choose my best piece of work and say why it is my best.", "Save or print it into my portfolio folder.", "Tell a partner one thing I am proud of."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Choosing my best", "detail": "Open the class folder and look at all their pictures. Sentence stem on the board: 'I chose this one because...'."},
+   {"mins": 20, "title": "Tidy it up", "detail": "Open the chosen picture and improve one thing - a colour, a missing detail, a title stamp. Save it again."},
+   {"mins": 15, "title": "Into the portfolio", "detail": "Print (or save to the portfolio folder). Stick the printed cover sheet on the front and write their name on it."},
+   {"mins": 10, "title": "Proud partners", "detail": "Turn to a partner: 'I am proud of... because...'. Two or three share with the whole class. Log out."}
+  ],
+  "activities": ["Choose-my-best review", "One improvement edit", "Proud-partner share"],
+  "successCriteria": ["I chose a piece of work and gave a reason.", "My work is in my portfolio folder with my name.", "I told a partner one thing I am proud of."],
+  "resources": [{"label": "Tux Paint / Microsoft Paint"}, {"label": "Class printer"}, {"label": "Portfolio cover sheets"}]
+ },
+ "9": {
+  "objectives": ["Move sensibly between four ICT stations.", "Show the skills I have learned this term without being told each step.", "Ask for help using words, not just a raised hand."],
+  "plan": [
+   {"mins": 10, "title": "Station briefing", "detail": "Explain the four stations and the rotation signal (timer bell). Groups of 4-5, 12 minutes per station."},
+   {"mins": 12, "title": "Station 1 - Mouse game", "detail": "Click and drag accuracy game. Observe grip and control, tick the checklist."},
+   {"mins": 12, "title": "Station 2 - TypingClub", "detail": "Independent unit work. Observe posture and home-row hand position."},
+   {"mins": 12, "title": "Station 3 - Paint", "detail": "Free drawing with at least two tools. Observe tool choice and independence."},
+   {"mins": 12, "title": "Station 4 - Log in and save race", "detail": "Full routine from log-in to save. Observe who still needs the routine card."},
+   {"mins": 10, "title": "Checklist reveal", "detail": "Show each child their ticked checklist. Name one thing to practise next week. Log out."}
+  ],
+  "activities": ["4-station skills rotation", "Teacher observation checklist", "Next-step target per child"],
+  "successCriteria": ["I moved between stations quietly when the timer went.", "I did each station task without step-by-step help.", "I know one thing to practise next week."],
+  "resources": [{"label": "Per-pupil skills checklist"}, {"label": "Station cards + timer"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "10": {
+  "objectives": ["Recall the parts of the computer and the log-in routine.", "Complete the practical task steps in the right order.", "Say one online-safety rule out loud, clearly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Quickfire recap", "detail": "Slide recap: point to the part, name it, chant the 5-step routine, say the safety rule together."},
+   {"mins": 25, "title": "Rehearse the practical", "detail": "In pairs, one child does the exam task while the partner reads the task card aloud, then swap. Task: log in, open Paint, draw a guided picture, save with own name, log out."},
+   {"mins": 15, "title": "Trouble spots", "detail": "Reteach the two steps most children fumbled - usually saving with the right name, and finding the program icon."},
+   {"mins": 10, "title": "Safety rule rehearsal", "detail": "Each child practises saying their safety rule to a partner in one clear sentence. Log out."}
+  ],
+  "activities": ["Recap slide quickfire", "Paired practical rehearsal", "Safety-rule speaking practice"],
+  "successCriteria": ["I can do the practical steps in order with a partner reading them.", "I can save a file with my own name.", "I can say one online-safety rule in a full sentence."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "11": {
+  "objectives": ["Complete the Term 1 practical task on my own.", "Save my work with my own name.", "Answer one online-safety question out loud."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start. Explain: this is a 'show me what you can do' task, not a test to worry about. Everyone gets a turn."},
+   {"mins": 15, "title": "Group A practical", "detail": "First group works through the task while the rest do independent TypingClub. Observe against the checklist."},
+   {"mins": 15, "title": "Group B practical", "detail": "Second group. Same task, same checklist."},
+   {"mins": 15, "title": "Group C practical", "detail": "Third group. Same task, same checklist."},
+   {"mins": 15, "title": "Safety question + close", "detail": "One-to-one: 'Tell me one rule for staying safe online.' Record the answer. Praise every child by name."}
+  ],
+  "activities": ["Individual observed practical: log in, open Paint, guided drawing, save, log out", "Spoken online-safety question", "TypingClub while waiting"],
+  "successCriteria": ["I logged in by myself.", "I controlled the mouse to complete the drawing.", "I saved the picture with my name and logged out.", "I gave one online-safety rule out loud."],
+  "resources": [{"label": "Observation checklist"}, {"label": "Assessment rubric"}, {"label": "Guided drawing task card"}]
+ },
+ "12": {
+  "objectives": ["Plan a 4-page book before I start on the computer.", "Decide what goes on each page.", "Sketch my ideas on the storyboard sheet."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Look at a real book", "detail": "Share a simple picture book. Notice: each page has one idea and one picture. Show the finished teacher exemplar of 'My First Digital Book'."},
+   {"mins": 10, "title": "The four pages", "detail": "Page 1 = my name. Page 2 = my family. Page 3 = my pet or favourite toy. Page 4 = things I like. Write the four headings on the board."},
+   {"mins": 30, "title": "Storyboard time", "detail": "Sketch all four pages on paper with coloured pencils. No computers this lesson - planning first is the whole point. Circulate and ask 'what will you draw here?'."},
+   {"mins": 10, "title": "Tell your plan", "detail": "Partners describe their four pages to each other. Collect storyboards in for next week."}
+  ],
+  "activities": ["Picture-book exemplar study", "4-page paper storyboard", "Tell-your-plan partner talk"],
+  "successCriteria": ["My storyboard has all four pages sketched.", "Each page has one clear idea.", "I can tell a partner what each page will show."],
+  "resources": [{"label": "Printed storyboard sheets"}, {"label": "Coloured pencils"}, {"label": "Teacher exemplar book"}]
+ },
+ "13": {
+  "objectives": ["Draw each page of my book using the paint tools.", "Save each page with a clear name: page1, page2, page3, page4.", "Follow my own plan from last week."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Plans back out", "detail": "Return the storyboards. Model naming: page1, page2 - no capitals, no spaces. Write the naming rule on the board."},
+   {"mins": 40, "title": "Draw and save", "detail": "Draw page by page, saving each one before starting the next. Rule on the board: 'finish a page, save a page'. Most children manage 2-3 pages today."},
+   {"mins": 10, "title": "Check the folder", "detail": "Open the class folder and check the file names are right. Fix any that are wrong together. Log out."}
+  ],
+  "activities": ["Draw pages 1-4 from the storyboard", "Save-as-you-go naming practice", "Folder name check"],
+  "successCriteria": ["My drawings match my plan.", "Each page is saved separately.", "My file names follow the page1, page2 rule."],
+  "resources": [{"label": "Tux Paint / Microsoft Paint"}, {"label": "Class shared drive"}, {"label": "Storyboards from Week 12"}]
+ },
+ "14": {
+  "objectives": ["Open a blank Word document.", "Type a one-line title for each page.", "Use the Shift key to make a capital letter at the start."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Shift key demo", "detail": "Show the exemplar title page. Demo: hold Shift, press the letter, let go. Practise 'A a A a' in the air, then on screen."},
+   {"mins": 15, "title": "Open Word and set up", "detail": "Open a blank document, type name at the top, press Enter twice. Model on the big screen at pupil pace."},
+   {"mins": 25, "title": "Type the four titles", "detail": "One title per line, each starting with a capital. Backspace to fix mistakes. Support: printed title strips to copy from."},
+   {"mins": 10, "title": "Save and share", "detail": "Save as titles.docx into their folder. Partner reads the titles aloud to check they make sense. Log out."}
+  ],
+  "activities": ["Shift-key air practice", "Type 4 page titles in Word", "Partner read-aloud check"],
+  "successCriteria": ["I opened a new Word document by myself.", "I typed a title for each of my four pages.", "Each title starts with a capital letter."],
+  "resources": [{"label": "Microsoft Word"}, {"label": "Printed keyboard mats"}, {"label": "Teacher exemplar title page"}]
+ },
+ "15": {
+  "objectives": ["Present my digital book to a small group.", "Give a friend one 'star' - something I liked about their book.", "Save my finished work into the portfolio folder."],
+  "plan": [
+   {"mins": 10, "title": "Rehearse with a partner", "detail": "Practise the sentence: 'This is my book. My favourite page is ___ because ___.'"},
+   {"mins": 25, "title": "Show and tell", "detail": "Groups of five at the projector or around a screen. Each child gets two minutes. Audience sits with hands still and eyes on the speaker."},
+   {"mins": 15, "title": "Star stickers", "detail": "After each presenter, one listener gives a star: 'I liked ___'. Everyone gets at least one star sticker."},
+   {"mins": 10, "title": "Portfolio save", "detail": "Save all four pages plus the titles document into the portfolio folder. Check the folder together on the big screen."},
+   {"mins": 10, "title": "Term celebration", "detail": "Look back at Week 1. Name three things they can do now that they could not in August. Log out."}
+  ],
+  "activities": ["Small-group show and tell", "Star-sticker peer praise", "Portfolio folder save"],
+  "successCriteria": ["I presented my book using two full sentences.", "I gave a friend a kind, specific compliment.", "All my work is in my portfolio folder."],
+  "resources": [{"label": "Class projector"}, {"label": "Star stickers"}, {"label": "Portfolio folder"}]
+ }
+}

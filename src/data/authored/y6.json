@@ -1,0 +1,194 @@
+{
+ "1": {
+  "objectives": ["Set a personal WPM goal for the term.", "Recall what I built with the micro:bit in Year 5.", "Describe this term's multi-feature project."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "Baseline WPM run, posture check."},
+   {"mins": 15, "title": "Year 5 recall", "detail": "Quickfire: what does a loop do? What does an if-block do? What is an input? Pupils write answers on whiteboards - this shows what needs reteaching in Week 2."},
+   {"mins": 15, "title": "Project preview", "detail": "Theme: 'micro:bit Python Projects'. Show last year's exemplar builds. This term the project must have at least three features and use variables."},
+   {"mins": 15, "title": "Goal setting", "detail": "Record baseline WPM, set a term goal on the tracker. Aim for +8 WPM by December at 95% accuracy."},
+   {"mins": 10, "title": "Term map", "detail": "Walk through the term plan and the deadline weeks. Log out."}
+  ],
+  "activities": ["Whiteboard recall quiz", "Exemplar project showcase", "WPM baseline and goal"],
+  "successCriteria": ["I recorded my baseline WPM and set a goal.", "I can explain what a loop and an if-block do.", "I know what the term project requires."],
+  "resources": [{"label": "TypingClub WPM tracker", "url": "https://www.typingclub.com"}, {"label": "Project preview slides"}, {"label": "Term overview poster"}]
+ },
+ "2": {
+  "objectives": ["Rebuild the Year 5 basics: icons, buttons, loops, conditions.", "Switch MakeCode to Python view and read the code aloud.", "Match each block to its Python line."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Speed rebuild", "detail": "Four mini-challenges in 15 minutes: show an icon, respond to a button, animate with a loop, react to shake. Everyone should manage at least three."},
+   {"mins": 20, "title": "Python view", "detail": "Toggle to Python. Read the code aloud together, line by line. Point out: indentation matters, the colon at the end of a line, the def keyword."},
+   {"mins": 15, "title": "Match-up", "detail": "Cut-up cards: match Blocks images to Python lines. Then predict what an unseen Python line will do before running it."},
+   {"mins": 10, "title": "Plenary", "detail": "What is the same in both views? What is easier about each? Log out."}
+  ],
+  "activities": ["Four-challenge speed rebuild", "Read Python aloud", "Blocks-to-Python matching cards"],
+  "successCriteria": ["I rebuilt at least three Year 5 programs.", "I can read a Python line and say what it does.", "I can match a block to its Python line."],
+  "resources": [{"label": "MakeCode (Blocks + Python)", "url": "https://makecode.microbit.org"}, {"label": "micro:bit devices"}, {"label": "Year 5 recap sheet"}]
+ },
+ "3": {
+  "objectives": ["Create a variable and give it a starting value.", "Change a variable while the program runs.", "Display a variable on the LED display."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "What is a variable?", "detail": "A labelled box that holds a value you can change. Physical demo: a box labelled 'score' with cards swapped in and out."},
+   {"mins": 20, "title": "Make a counter", "detail": "set score to 0; on button A pressed, change score by 1; show number score. Test - this is the single most useful pattern of the term."},
+   {"mins": 20, "title": "Reset and limits", "detail": "Add button B to reset the score to 0. Challenge: use an if-block so the score cannot go above 10."},
+   {"mins": 10, "title": "Python check", "detail": "Toggle to Python: spot score = 0 and score += 1. Log out."}
+  ],
+  "activities": ["Labelled-box demo", "Build a button counter", "Reset and limit challenge"],
+  "successCriteria": ["My program has a variable with a starting value.", "The variable changes when I press a button.", "The current value is shown on the display."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "micro:bit devices"}, {"label": "Variables reference (Blocks and Python)"}]
+ },
+ "4": {
+  "objectives": ["Combine a loop with if / else if conditions.", "Use a sensor reading to choose between three outcomes.", "Test each branch of my program."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Three-way decisions", "detail": "Walk through the worked example: cold below 25, warm 25-30, hot above 30. Draw the decision as a flowchart on the board."},
+   {"mins": 25, "title": "Build the thermometer", "detail": "forever loop, read temperature, if/else if/else showing three different faces. Order matters - discuss why checking 'hot' first changes the behaviour."},
+   {"mins": 15, "title": "Test every branch", "detail": "Cold: hold near the window or press a cold object to the chip. Hot: cup it in both hands. Every branch must be seen to work."},
+   {"mins": 10, "title": "Plenary", "detail": "Why does the order of the conditions matter? Log out."}
+  ],
+  "activities": ["Flowchart the decision", "Build a three-branch thermometer", "Test all branches physically"],
+  "successCriteria": ["My program uses a loop and at least three branches.", "I saw every branch work on the device.", "I can explain why condition order matters."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "Worked-example cards"}, {"label": "Craig 'n Dave - micro:bit temperature project", "url": "https://www.youtube.com/@craigndave"}]
+ },
+ "5": {
+  "objectives": ["Send and receive numbers between two micro:bits.", "Build a two-device ping-pong game.", "Explain why both devices need the same radio group."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Radio recap", "detail": "Same group = same channel. Assign group numbers per pair. Both devices get the SAME program."},
+   {"mins": 30, "title": "Ping-pong build", "detail": "On button A send 1; on received 1, show arrow and send 2 back; on received 2, show a different arrow. Watch the message bounce between devices."},
+   {"mins": 10, "title": "Add a counter", "detail": "Add a variable that counts how many times the message has bounced. Links Week 3 to today."},
+   {"mins": 10, "title": "Debug together", "detail": "Common faults: only one device flashed, group mismatch, infinite loop of messages. Log out."}
+  ],
+  "activities": ["Radio group recap", "Ping-pong message game", "Bounce counter with a variable"],
+  "successCriteria": ["Messages travel both ways between the devices.", "My program uses a variable to count bounces.", "I can fix a radio group mismatch."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "2 micro:bits per pair"}, {"label": "Radio blocks reference"}]
+ },
+ "6": {
+  "objectives": ["Choose a project and list its features.", "Identify the inputs and outputs for each feature.", "Produce a plan a partner could build from."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "The project menu", "detail": "Fitness tracker, distance messenger, attendance signaller, mini-quiz device. For each, discuss what would be hard and what would be satisfying."},
+   {"mins": 15, "title": "Feature thinking", "detail": "A feature is one thing the device does for the user. Break each project idea into three features - this is the planning skill being assessed."},
+   {"mins": 20, "title": "Write the plan", "detail": "Planning sheet: project name, who it is for, three features, inputs, outputs, variables needed."},
+   {"mins": 10, "title": "Swap and test the plan", "detail": "Give your plan to another pair. Could they build from it? Clarify anything they questioned. Log out."}
+  ],
+  "activities": ["Project menu analysis", "Break the project into three features", "Plan swap and clarity test"],
+  "successCriteria": ["My plan names three specific features.", "I have listed the inputs, outputs and variables.", "Another pair understood my plan."],
+  "resources": [{"label": "Project menu card (4 options)"}, {"label": "Planning sheet"}, {"label": "MakeCode", "url": "https://makecode.microbit.org"}]
+ },
+ "7": {
+  "objectives": ["Implement the first feature of my project.", "Test it before adding anything else.", "Save the code as project_v1."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "One feature at a time", "detail": "Rule for the build: get feature 1 working and saved before touching feature 2. Explain why - if everything breaks at once you cannot find the cause."},
+   {"mins": 35, "title": "Build feature 1", "detail": "Independent build from the plan. Circulate and ask 'show me it working'. Keep a shared board of solutions to problems that come up more than once."},
+   {"mins": 10, "title": "Test and save", "detail": "Partner tests feature 1 against the plan. Save as project_v1. Log out."}
+  ],
+  "activities": ["Build the first feature", "Partner test against the plan", "Version 1 save"],
+  "successCriteria": ["Feature 1 works on the physical device.", "A partner tested it against my plan.", "My code is saved as project_v1."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "micro:bit devices"}, {"label": "Class shared drive"}]
+ },
+ "8": {
+  "objectives": ["Add a second feature without breaking the first.", "Re-test both features together.", "Save as project_v2 and keep v1."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Why keep old versions?", "detail": "If v2 breaks badly you can go back to v1. Show the version-control notes card. Professional habit, taught early."},
+   {"mins": 35, "title": "Build feature 2", "detail": "Add the second feature. Re-test feature 1 afterwards - it often breaks, and noticing that is the learning."},
+   {"mins": 10, "title": "Test both and save", "detail": "Test both features in one run. Save as project_v2. Log out."}
+  ],
+  "activities": ["Version control discussion", "Build the second feature", "Regression test of feature 1"],
+  "successCriteria": ["Both features work in the same program.", "I checked feature 1 still works.", "I have v1 and v2 saved separately."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "micro:bit devices"}, {"label": "Version-control notes card"}]
+ },
+ "9": {
+  "objectives": ["Explain my whole program to a partner.", "Say what each variable holds and where it changes.", "Identify every loop and condition in my code."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Model the explanation", "detail": "Teacher explains a sample project well, then badly. Class scores both against the rubric so the standard is clear."},
+   {"mins": 25, "title": "Explain in pairs", "detail": "Two rounds with feedback in between. The rubric rewards naming variables, loops and conditions specifically."},
+   {"mins": 15, "title": "Teacher questioning", "detail": "One-to-one exam-style questions: 'What happens if the user presses B twice?', 'Where does the score get reset?'"},
+   {"mins": 10, "title": "Target setting", "detail": "Each pupil writes one thing to explain better next time. Log out."}
+  ],
+  "activities": ["Modelled good vs weak explanation", "Two rounds of paired explanation", "Teacher exam-style questioning"],
+  "successCriteria": ["I explained my program without reading the screen.", "I named my variables and said what they hold.", "I pointed out every loop and condition."],
+  "resources": [{"label": "Sentence-stem cards"}, {"label": "Peer-explanation rubric"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "10": {
+  "objectives": ["Find the bug in a broken program.", "Propose a fix before changing anything.", "Apply the fix and re-test."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Debugging method", "detail": "Read the code, predict what it should do, run it, compare, then change ONE thing. Predict-run-compare beats random clicking."},
+   {"mins": 40, "title": "Debug marathon", "detail": "Four broken programs, 10 minutes each: a loop with no pause, a variable never reset, an if/else if in the wrong order, a radio group mismatch. Write the diagnosis before fixing."},
+   {"mins": 10, "title": "Solutions reveal", "detail": "Compare with the exemplar solutions. Which bug was hardest to see and why? Log out."}
+  ],
+  "activities": ["Predict-run-compare method", "Four-program debug marathon", "Diagnosis-before-fix discipline"],
+  "successCriteria": ["I wrote a diagnosis before changing any code.", "I fixed at least three of the four programs.", "I can name a bug type I now recognise on sight."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "Printed buggy-code sheets"}, {"label": "Exemplar solutions"}]
+ },
+ "11": {
+  "objectives": ["Demonstrate my multi-feature project working.", "Explain the code clearly to the teacher.", "Show where variables, loops and conditions are used."],
+  "plan": [
+   {"mins": 5, "title": "Brief", "detail": "Assessment criteria on the board: features working, correct use of variables, loops, conditions, and quality of explanation."},
+   {"mins": 25, "title": "Final build time", "detail": "Last chance to get features working. Silent conditions, technical help only."},
+   {"mins": 25, "title": "Demo and oral", "detail": "One at a time: demo the device, then answer three questions about the code. Rest of the class continues polishing."},
+   {"mins": 10, "title": "Save the evidence", "detail": "Final .hex saved with the correct name, plus a screenshot of the code."},
+   {"mins": 5, "title": "Close down", "detail": "Devices counted in. Log out."}
+  ],
+  "activities": ["Individual demo of the project", "Oral code explanation", "Save code and screenshot as evidence"],
+  "successCriteria": ["My project has at least two working features.", "I used variables, a loop and a condition.", "I explained the code without reading it out.", "My evidence is saved correctly."],
+  "resources": [{"label": "Marking rubric"}, {"label": "micro:bit devices"}, {"label": "MakeCode", "url": "https://makecode.microbit.org"}]
+ },
+ "12": {
+  "objectives": ["Add a third feature that improves the user experience.", "Keep the earlier features working.", "Save the project as v3."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Polish that matters", "detail": "From the feature-ideas menu: welcome screen, sound feedback, reset routine, low-battery warning. Choose based on what a real user would need."},
+   {"mins": 30, "title": "Build feature 3", "detail": "Implement, then regression-test features 1 and 2."},
+   {"mins": 10, "title": "User test", "detail": "Hand the device to someone who has never used it. Watch without helping. Note every hesitation."},
+   {"mins": 10, "title": "Save v3", "detail": "Save and log the change in the dev diary. Log out."}
+  ],
+  "activities": ["Choose a user-focused feature", "Build feature 3", "Silent user observation test"],
+  "successCriteria": ["My project has three working features.", "The earlier features still work.", "I watched a new user try it and noted what confused them."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "Feature-ideas menu"}, {"label": "micro:bit devices"}]
+ },
+ "13": {
+  "objectives": ["Design a one-page poster explaining my project.", "Say who the project is for and how it works.", "Include a photo of the device."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "What makes a good poster", "detail": "Look at the template: title, what it does, who it is for, how it works, photo. Rule: a reader should understand it in 30 seconds."},
+   {"mins": 15, "title": "Photograph the device", "detail": "Apply Year 3 photography rules: good light, in focus, off-centre framing. Take three, choose the best."},
+   {"mins": 25, "title": "Build the poster", "detail": "In Slides or Docs: insert the photo, write short sections, keep text large. No walls of text."},
+   {"mins": 10, "title": "30-second test", "detail": "Partner reads your poster for 30 seconds then explains your project back. If they cannot, the poster needs work. Log out."}
+  ],
+  "activities": ["Poster exemplar analysis", "Photograph the device", "Build and 30-second-test the poster"],
+  "successCriteria": ["My poster explains what the project does and who it is for.", "It includes a clear photo of my device.", "A partner understood it in 30 seconds."],
+  "resources": [{"label": "Google Slides / PowerPoint"}, {"label": "Class camera or tablet"}, {"label": "Poster template"}]
+ },
+ "14": {
+  "objectives": ["Rehearse a 3-minute presentation.", "Explain the code section clearly.", "Act on peer feedback before the showcase."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Presentation structure", "detail": "One minute: what it is and who it is for. One minute: live demo. One minute: how the code works. Rehearse the transitions."},
+   {"mins": 25, "title": "Rehearse in threes", "detail": "Each presents once, gets feedback from two peers using the feedback sheet. Focus question: was the code explanation clear?"},
+   {"mins": 15, "title": "Act on the feedback", "detail": "Adjust the poster or the script. Practise the weakest minute again."},
+   {"mins": 10, "title": "Timing check", "detail": "Final run against the timer. Over-runners cut one sentence. Log out."}
+  ],
+  "activities": ["Three-part presentation structure", "Rehearsal in threes with feedback", "Timed final run"],
+  "successCriteria": ["My presentation fits in three minutes.", "My code explanation was rated clear by two peers.", "I changed something based on the feedback."],
+  "resources": [{"label": "Presentation timer"}, {"label": "Peer-feedback sheet"}, {"label": "Class projector"}]
+ },
+ "15": {
+  "objectives": ["Present my project to a younger audience.", "Answer questions from visitors.", "Save all my project evidence to the portfolio."],
+  "plan": [
+   {"mins": 10, "title": "Set up", "detail": "Stations with device, poster and laptop showing the code. Invite Year 5 in."},
+   {"mins": 35, "title": "Project fair", "detail": "Visitors rotate in small groups. Presenters give the 3-minute version, then answer questions. Half present, half host, then swap."},
+   {"mins": 10, "title": "Feedback read", "detail": "Read the visitor feedback slips. Note the most common question - it shows what your explanation missed."},
+   {"mins": 10, "title": "Portfolio save", "detail": "Save .hex, poster and device photo to the portfolio folder with correct names."},
+   {"mins": 10, "title": "Ready for secondary", "detail": "Reflect: which skills carry into Year 7? Devices counted in. Log out."}
+  ],
+  "activities": ["Project fair for Year 5", "Question and answer with visitors", "Portfolio save and reflection"],
+  "successCriteria": ["I presented to visitors within the time.", "I answered at least two questions about my project.", "My .hex, poster and photo are in the portfolio folder."],
+  "resources": [{"label": "Class projector"}, {"label": "Visitor feedback slips"}, {"label": "Portfolio folder"}]
+ }
+}

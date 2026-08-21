@@ -1,0 +1,197 @@
+{
+ "1": {
+  "objectives": ["Explain how KS3 ICT leads into the Cambridge Computing pathway.", "Set a personal WPM and accuracy goal.", "Describe the term project and its deadlines."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "Baseline run: record WPM and accuracy for every pupil on the wall chart."},
+   {"mins": 15, "title": "Where this leads", "detail": "KS3 overview slides: what Year 7-9 covers, and how it feeds Cambridge Computing 0059/0860 and IGCSE ICT 0417. Be concrete about why office skills matter at IGCSE."},
+   {"mins": 15, "title": "The term project", "detail": "Theme: 'Office Mastery'. Reveal the linked mini-project - one topic, three files: a report, a spreadsheet and a deck, across Microsoft AND Google."},
+   {"mins": 20, "title": "Diagnostic task", "detail": "20-minute task: open Docs, type a structured paragraph with a heading, save to Drive with the correct name. Identifies who needs support with cloud files."},
+   {"mins": 15, "title": "Goals and deadlines", "detail": "Write WPM goals on the goal sheet. Copy the four key deadline weeks into planners. Log out."}
+  ],
+  "activities": ["KS3 pathway overview", "Diagnostic document task", "WPM baseline and goal setting"],
+  "successCriteria": ["I recorded my baseline WPM and accuracy.", "I completed the diagnostic and saved it correctly.", "I can describe the three files in the term project."],
+  "resources": [{"label": "KS3 overview slides"}, {"label": "Cambridge Computing 0059/0860 syllabus overview", "url": "https://www.cambridgeinternational.org"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "2": {
+  "objectives": ["Reach 25+ WPM at 95%+ accuracy.", "Type without looking at the keyboard.", "Track my progress against the class average."],
+  "plan": [
+   {"mins": 15, "title": "Extended warm-up", "detail": "Longer typing block today: 15 minutes of continuous practice with a posture check at the halfway point."},
+   {"mins": 15, "title": "Speed vs accuracy", "detail": "Two timed runs: one all-out, one controlled. Calculate effective speed after corrections. The controlled run almost always wins."},
+   {"mins": 20, "title": "Targeted drills", "detail": "Each pupil works on the letters their error report flags. TypingClub reports this per key - use it rather than generic practice."},
+   {"mins": 10, "title": "Class average", "detail": "Update the wall chart. Calculate the class average WPM together - a live spreadsheet moment that previews Week 5."},
+   {"mins": 15, "title": "Touch-typing test", "detail": "One exercise with a keyboard cover. Record the result separately - it is the honest number. Log out."}
+  ],
+  "activities": ["All-out vs controlled timed runs", "Per-key error drills", "Covered-keyboard test"],
+  "successCriteria": ["I completed a run at 95%+ accuracy.", "I practised the specific keys I get wrong.", "I typed a full exercise without looking down."],
+  "resources": [{"label": "TypingClub", "url": "https://www.typingclub.com"}, {"label": "WPM wall chart"}, {"label": "Keyboard covers"}]
+ },
+ "3": {
+  "objectives": ["Apply heading styles and section breaks.", "Generate and update an automatic Table of Contents.", "Compare how Word and Docs handle styles."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Styles properly", "detail": "Modify a style rather than formatting text directly - change Heading 2 once and every heading updates. This is the professional workflow."},
+   {"mins": 20, "title": "Structure a long document", "detail": "Open the practice text. Apply H1/H2/H3, add section breaks before major sections, then insert the Table of Contents."},
+   {"mins": 20, "title": "Same job, two tools", "detail": "Repeat the essentials in Google Docs. Note the differences: no section breaks in the same way, TOC updates via a refresh button."},
+   {"mins": 10, "title": "Comparison table", "detail": "Fill in a two-column comparison: Word vs Docs for styles and contents. Save both files. Log out."}
+  ],
+  "activities": ["Modify-a-style demo", "Structure and TOC in Word", "Repeat in Docs and compare"],
+  "successCriteria": ["My document uses modified styles, not manual formatting.", "My contents list generates and updates automatically.", "I can state two differences between Word and Docs."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Kevin Stratvert - Word Styles", "url": "https://www.youtube.com/@KevinStratvert"}, {"label": "Comparison table handout"}]
+ },
+ "4": {
+  "objectives": ["Insert and format a table to a brief.", "Add captioned images with automatic numbering.", "Format a short reference list consistently."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Tables to a brief", "detail": "Given a specification (5 columns, header row, banded rows, no wrapped text), build it exactly. Following a brief precisely is the IGCSE skill being seeded."},
+   {"mins": 20, "title": "Captions and figures", "detail": "Insert two images with automatic captions. Discuss caption style: what the figure shows, not 'a picture'."},
+   {"mins": 20, "title": "References", "detail": "Model a simple reference format: Author (Year) Title, URL, date accessed. Add three references for sources used, formatted identically."},
+   {"mins": 10, "title": "Brief check", "detail": "Swap and mark a partner's work against the written brief - tick or cross only, no opinions. Log out."}
+  ],
+  "activities": ["Build a table to specification", "Insert captioned figures", "Format a reference list"],
+  "successCriteria": ["My table matches every point in the brief.", "My images are captioned and numbered automatically.", "My three references use exactly the same format."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Reference-formatting exemplar"}, {"label": "Written table brief"}]
+ },
+ "5": {
+  "objectives": ["Enter data with clear headings.", "Use SUM, AVERAGE, MAX and MIN.", "Format a range as a table with banded rows."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Anatomy of a spreadsheet", "detail": "Cells, rows, columns, ranges. Rule: one heading row, one record per row, no blank rows in the middle."},
+   {"mins": 25, "title": "Four formulas", "detail": "Enter the sample class marks data. Then =SUM(B2:B16), =AVERAGE, =MAX, =MIN. Show the colon meaning 'through' and dragging to select a range."},
+   {"mins": 15, "title": "Fill down", "detail": "Use the fill handle to copy a formula down a column. Watch the cell references change - introduce the idea of relative references."},
+   {"mins": 15, "title": "Format as a table", "detail": "Apply table formatting with banded rows and a bold header. Repeat the whole task in Google Sheets. Log out."}
+  ],
+  "activities": ["Spreadsheet anatomy", "SUM / AVERAGE / MAX / MIN on real data", "Fill-down and table formatting"],
+  "successCriteria": ["My data has one clear heading row.", "I used all four formulas correctly.", "My range is formatted as a readable table."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Formula reference card"}, {"label": "Sample class marks data"}]
+ },
+ "6": {
+  "objectives": ["Create a bar chart and a pie chart from the same data.", "Choose the right chart type for the question.", "Apply conditional formatting with a rule."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Which chart, and why", "detail": "Bar for comparing amounts, pie for parts of a whole, line for change over time. Show a bad pie chart with 12 slices - the class will spot the problem."},
+   {"mins": 20, "title": "Build both charts", "detail": "Select the range, insert a bar chart, then a pie chart. Add a title and axis labels - an unlabelled chart scores nothing."},
+   {"mins": 20, "title": "Conditional formatting", "detail": "Rule: highlight scores above 80 in green, below 40 in red. Then change a value and watch the colour update live."},
+   {"mins": 10, "title": "Justify", "detail": "Write one sentence: which chart answers the question better and why. Save both files. Log out."}
+  ],
+  "activities": ["Chart-choice discussion", "Build bar and pie charts", "Conditional formatting rules"],
+  "successCriteria": ["My charts have titles and labelled axes.", "I can justify my chart choice in one sentence.", "My conditional formatting updates when data changes."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Chart-choice poster"}, {"label": "Conditional formatting how-to"}]
+ },
+ "7": {
+  "objectives": ["Apply slide design principles: one idea per slide, minimal text.", "Use a consistent theme.", "Build a 5-slide deck."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Death by PowerPoint", "detail": "Show a slide crammed with bullet points, then the same content across three clean slides. Rules: one idea per slide, 6 words per line where possible, 24pt minimum."},
+   {"mins": 25, "title": "Build the deck", "detail": "Five slides: title, context, main point, evidence, conclusion. Apply a single theme throughout."},
+   {"mins": 15, "title": "Contrast and images", "detail": "Check text contrast against backgrounds; use one full-bleed image rather than three small ones."},
+   {"mins": 10, "title": "Three-second test", "detail": "Flash each slide for three seconds. Can a partner say what it is about? Save in both PowerPoint and Slides. Log out."}
+  ],
+  "activities": ["Bad-slide critique", "Build a 5-slide deck", "Three-second comprehension test"],
+  "successCriteria": ["Each slide covers one idea.", "My deck uses a single consistent theme.", "A partner understood each slide in three seconds."],
+  "resources": [{"label": "Microsoft PowerPoint / Google Slides"}, {"label": "Design principles handout"}, {"label": "Duarte Slidedocs", "url": "https://www.duarte.com/slidedocs/"}]
+ },
+ "8": {
+  "objectives": ["Save files to both Drive and OneDrive.", "Share a file with Comment rather than Edit rights.", "Collaborate live on one document."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Permissions matter", "detail": "View, Comment, Edit - what each allows. Discuss a real scenario: sharing homework with a friend. Which permission, and why? Touches digital citizenship directly."},
+   {"mins": 20, "title": "Share and check", "detail": "Share a document with a partner as Comment-only. The partner tries to edit and cannot - proof the permission works."},
+   {"mins": 20, "title": "Live collaboration", "detail": "Change to Edit and both type in the same document simultaneously. Observe cursors, name labels and version history."},
+   {"mins": 10, "title": "Version history", "detail": "Open version history and restore an earlier version. Powerful safety net - show it explicitly. Log out."}
+  ],
+  "activities": ["Permission-level discussion", "Comment-only share test", "Live co-editing and version history"],
+  "successCriteria": ["My file is saved in both Drive and OneDrive.", "I shared a file with the correct permission level.", "I co-edited a document and found version history."],
+  "resources": [{"label": "Google Drive / Microsoft OneDrive"}, {"label": "Sharing-permissions cheat sheet"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "9": {
+  "objectives": ["Choose one topic that works across all three files.", "Plan the report, spreadsheet and deck together.", "Identify what data I need to collect."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "One topic, three files", "detail": "Read the project brief. The three files must connect: the spreadsheet data appears as a chart in the report and in the deck. Show the teacher exemplar set."},
+   {"mins": 15, "title": "Topic selection", "detail": "Topic must have numbers - screen time, canteen prices, sports results, travel to school. Reject topics with no data to chart."},
+   {"mins": 25, "title": "Plan all three", "detail": "Planning sheet with three columns: report sections, spreadsheet columns and rows, slide titles. Plan them together so they line up."},
+   {"mins": 10, "title": "Data collection plan", "detail": "Decide how to get 15+ rows of data before Week 13 - survey, measurement or published source. Log out."}
+  ],
+  "activities": ["Study the exemplar three-file set", "Choose a data-rich topic", "Plan all three files together"],
+  "successCriteria": ["My topic has numerical data I can chart.", "My plan covers the report, spreadsheet and deck.", "I know how I will collect at least 15 rows of data."],
+  "resources": [{"label": "Project brief handout"}, {"label": "Planning sheet"}, {"label": "Teacher exemplar file set"}]
+ },
+ "10": {
+  "objectives": ["Practise each exam skill under time pressure.", "Peer-check work against the rubric.", "Identify my weakest skill and practise it."],
+  "plan": [
+   {"mins": 5, "title": "Station briefing", "detail": "Four stations, 15 minutes each, rubric at every station."},
+   {"mins": 15, "title": "Station 1 - TOC in Docs", "detail": "Structure an unformatted text with styles and generate a contents list, against the clock."},
+   {"mins": 15, "title": "Station 2 - Chart in Sheets", "detail": "From a given dataset: build a labelled chart and apply conditional formatting."},
+   {"mins": 15, "title": "Station 3 - Deck in Slides", "detail": "Build three well-designed slides from supplied content."},
+   {"mins": 15, "title": "Station 4 - Cloud share", "detail": "Save to both clouds with correct names and share with the right permission."},
+   {"mins": 10, "title": "Peer check and target", "detail": "Peer-mark one station against the rubric. Write your weakest skill as a target. Log out."}
+  ],
+  "activities": ["Four-station timed rotation", "Peer marking against the rubric", "Weakest-skill target setting"],
+  "successCriteria": ["I completed all four stations in the time.", "I marked a peer's work accurately against the rubric.", "I have named the skill I need to practise."],
+  "resources": [{"label": "Rotation station cards"}, {"label": "Marking rubric (pupil version)"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "11": {
+  "objectives": ["Produce a short report, a spreadsheet and a 3-slide deck on one topic.", "Work across Microsoft and Google tools.", "Save everything to the cloud with correct names."],
+  "plan": [
+   {"mins": 5, "title": "Brief", "detail": "Read the task twice. 90 minutes, three files, one topic. Rubric visible. Silent conditions."},
+   {"mins": 30, "title": "Spreadsheet first", "detail": "Data, formulas, chart. Doing this first means the chart is ready to embed - remind them of this strategy."},
+   {"mins": 30, "title": "Report", "detail": "Structured with styles, a contents list, the embedded chart and a captioned image."},
+   {"mins": 20, "title": "Deck", "detail": "Three slides: title, findings with the chart, conclusion."},
+   {"mins": 5, "title": "Save and submit", "detail": "All three files saved to the cloud with the correct names, in the assessment folder."}
+  ],
+  "activities": ["90-minute linked practical assessment", "Spreadsheet, report and deck production", "Cloud save with correct naming"],
+  "successCriteria": ["All three files are on the same topic.", "My spreadsheet has formulas and a labelled chart.", "My report is structured with a contents list.", "Everything is saved to the cloud correctly named."],
+  "resources": [{"label": "Assessment brief"}, {"label": "Marking rubric"}, {"label": "Microsoft 365 / Google Workspace"}]
+ },
+ "12": {
+  "objectives": ["Build the report section of the linked project.", "Embed a chart from my spreadsheet.", "Apply styles, a contents list and a captioned image."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Linked, not copied", "detail": "Demo paste-linked vs paste-picture. A linked chart updates when the spreadsheet changes - show it happening live."},
+   {"mins": 35, "title": "Build the report", "detail": "Introduction, three sections, conclusion. Apply styles, generate the TOC, embed the chart and add a captioned image."},
+   {"mins": 10, "title": "Structure review", "detail": "Navigation pane check plus word count. Save to both clouds. Log out."}
+  ],
+  "activities": ["Linked vs pasted chart demo", "Build the project report", "Structure and word-count review"],
+  "successCriteria": ["My report uses styles and an automatic contents list.", "It contains a chart from my own spreadsheet.", "It has at least one captioned image."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Project brief"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "13": {
+  "objectives": ["Build a spreadsheet with 15+ rows of real data.", "Use SUM and AVERAGE correctly.", "Add a chart and conditional formatting."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Clean data first", "detail": "Headers in row 1, one record per row, consistent formats, no blank rows. Show what a messy sheet does to a chart."},
+   {"mins": 30, "title": "Build the spreadsheet", "detail": "Enter the collected data, add formula rows for SUM and AVERAGE, format as a table."},
+   {"mins": 15, "title": "Chart and formatting", "detail": "Insert a labelled chart. Add a conditional formatting rule that highlights something meaningful in your data."},
+   {"mins": 10, "title": "Rubric check", "detail": "Self-check against the rubric, save to both clouds. Log out."}
+  ],
+  "activities": ["Clean-data rules", "Build the project spreadsheet", "Chart and conditional formatting"],
+  "successCriteria": ["My spreadsheet has at least 15 rows of data.", "SUM and AVERAGE calculate correctly.", "My chart is labelled and my conditional formatting rule is meaningful."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Collected dataset"}, {"label": "Marking rubric"}]
+ },
+ "14": {
+  "objectives": ["Build a 5-slide deck from my report findings.", "Include a chart pasted from my spreadsheet.", "Rehearse a timed talk."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Slides are not the report", "detail": "The deck presents findings, it does not repeat the report. Cut ruthlessly - one message per slide."},
+   {"mins": 25, "title": "Build the deck", "detail": "Title, context, findings with the chart, what it means, conclusion. Consistent theme, large text."},
+   {"mins": 15, "title": "Rehearse", "detail": "Practise the talk twice with a partner and a timer. Speaker notes for the numbers, not the whole script."},
+   {"mins": 15, "title": "Peer feedback", "detail": "Partner scores design and clarity, gives one fix. Apply it. Save and log out."}
+  ],
+  "activities": ["Report-to-slides distillation", "Build the 5-slide deck", "Timed rehearsal with peer feedback"],
+  "successCriteria": ["My deck has five slides with one idea each.", "My chart came from my own spreadsheet.", "I rehearsed within the time limit."],
+  "resources": [{"label": "Microsoft PowerPoint / Google Slides"}, {"label": "Deck template"}, {"label": "Presentation timer"}]
+ },
+ "15": {
+  "objectives": ["Present all three linked files in five minutes.", "Show how the files connect.", "Save the complete set to the term portfolio."],
+  "plan": [
+   {"mins": 10, "title": "Final checks", "detail": "Update the TOC, check the chart appears in all three places, check file names."},
+   {"mins": 35, "title": "Demo day", "detail": "Five minutes each in groups: show the report, then where the data came from, then the deck. Audience asks one question each."},
+   {"mins": 10, "title": "Peer feedback", "detail": "Feedback slips: one strength, one improvement, focused on how well the three files connected."},
+   {"mins": 10, "title": "Portfolio save", "detail": "All three files plus the PDF export into the term portfolio folder."},
+   {"mins": 10, "title": "Term reflection", "detail": "Which tool do you now prefer, Microsoft or Google, and why? Log out."}
+  ],
+  "activities": ["Five-minute three-file demo", "Peer feedback on file linkage", "Portfolio save and reflection"],
+  "successCriteria": ["I presented all three files within five minutes.", "I explained how the files connect.", "The complete set is in my portfolio folder."],
+  "resources": [{"label": "Class projector"}, {"label": "Portfolio folder"}, {"label": "Peer-feedback slips"}]
+ }
+}

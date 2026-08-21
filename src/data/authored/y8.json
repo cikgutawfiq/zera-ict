@@ -1,0 +1,196 @@
+{
+ "1": {
+  "objectives": ["Recall Python basics: input, print and variables.", "Run and step through a program in Thonny.", "Describe this term's focus: decisions and loops."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "Baseline WPM run, posture check."},
+   {"mins": 15, "title": "Python recap", "detail": "Work the recap worksheet: print(), input(), variables, int() conversion. The int(input()) pattern is the one they always forget - drill it now."},
+   {"mins": 20, "title": "Thonny tour", "detail": "Editor, shell, variables pane. Run a short program, then run it again with the Debug button stepping line by line while watching the variables pane."},
+   {"mins": 20, "title": "Predict and check", "detail": "Given three short programs, predict the output before running. Step through to see exactly where predictions were wrong."},
+   {"mins": 10, "title": "Term map", "detail": "Theme: 'Python - Decisions & Loops'. Preview the mini-app project and the deadline weeks. Log out."}
+  ],
+  "activities": ["Python recap worksheet", "Thonny debugger tour", "Predict-the-output challenge"],
+  "successCriteria": ["I can write a program that takes input and prints a result.", "I stepped through a program watching variables change.", "I know what the term project will be."],
+  "resources": [{"label": "Thonny (free)", "url": "https://thonny.org"}, {"label": "Python recap worksheet"}, {"label": "Isaac Computer Science", "url": "https://isaaccomputerscience.org"}]
+ },
+ "2": {
+  "objectives": ["Use if, elif and else to handle several cases.", "Order conditions correctly.", "Build a grade-band feedback program."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Why elif", "detail": "Show four separate ifs versus if/elif/else. With separate ifs, several branches can run. Demo the bug before teaching the fix."},
+   {"mins": 25, "title": "Grade bands", "detail": "Build: input a score, then fail under 40, pass 40-59, merit 60-79, distinction 80+. Watch for the classic bug: checking >40 before >80."},
+   {"mins": 15, "title": "Boundary testing", "detail": "Test 39, 40, 59, 60, 79, 80. Boundaries are where the bugs live - make this a habit now, it pays off in Week 5."},
+   {"mins": 10, "title": "Peer swap", "detail": "Run a partner's program with the boundary values and report any that behave wrongly. Log out."}
+  ],
+  "activities": ["Multiple ifs vs elif demo", "Grade-band program", "Boundary value testing"],
+  "successCriteria": ["My program uses if, elif and else.", "Only one branch runs for any input.", "My program gives the right answer at every boundary."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "if-elif-else reference"}, {"label": "Teacher exemplar program"}]
+ },
+ "3": {
+  "objectives": ["Use a for loop with range().", "Use a while loop with a condition.", "Explain when each type of loop is the right choice."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Counted vs conditional", "detail": "for = I know how many times. while = I keep going until something changes. Real examples: 10 press-ups vs run until the bell."},
+   {"mins": 20, "title": "range() in detail", "detail": "range(5), range(1,6), range(10,0,-1). Print each to see exactly what it produces - the off-by-one confusion is best resolved by looking."},
+   {"mins": 20, "title": "Countdown to blast-off", "detail": "Write the countdown with a for loop, then rewrite it with a while loop. Same output, two approaches. Add a sleep for effect."},
+   {"mins": 10, "title": "Infinite loop", "detail": "Deliberately write one, watch it run, stop it with the red button. Discuss what was missing. Log out."}
+  ],
+  "activities": ["for vs while sorting task", "range() exploration", "Countdown written both ways"],
+  "successCriteria": ["I wrote a working for loop with range().", "I wrote a while loop that ends correctly.", "I can say which loop suits a given problem."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Loops reference sheet"}, {"label": "Craig 'n Dave - Python Loops", "url": "https://www.youtube.com/@craigndave"}]
+ },
+ "4": {
+  "objectives": ["Combine conditions with and, or and not.", "Complete a truth table.", "Build a program with a two-part entry rule."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Truth tables", "detail": "Complete the handout for and, or, not. Key point: 'and' needs both true, 'or' needs at least one."},
+   {"mins": 25, "title": "Rollercoaster rules", "detail": "Build: age >= 12 and height >= 140 to ride. Then a second version with or, and compare who gets in. The difference makes the operators concrete."},
+   {"mins": 15, "title": "not and negation", "detail": "Rewrite a condition using not. Discuss which version reads more clearly - clarity is a real programming judgement."},
+   {"mins": 10, "title": "Test the rules", "detail": "Test values that pass both, fail both and pass only one. Log out."}
+  ],
+  "activities": ["Truth table completion", "Rollercoaster entry program", "and vs or comparison"],
+  "successCriteria": ["My program combines two conditions correctly.", "I tested a case that passes one condition but not the other.", "I can complete a truth table for and, or and not."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Truth-table handout"}, {"label": "Isaac Computer Science", "url": "https://isaaccomputerscience.org"}]
+ },
+ "5": {
+  "objectives": ["Write a test plan before writing code.", "Choose normal, boundary and invalid test data.", "Record expected versus actual results."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Three kinds of test data", "detail": "Normal (typical use), boundary (edges), invalid (should be rejected). Model with an age-entry program: 25, 12, -3, 'banana'."},
+   {"mins": 20, "title": "Write the plan first", "detail": "Using the 3-column template, write six test cases for a program that has NOT been built yet. Planning before coding is the point of the lesson."},
+   {"mins": 20, "title": "Build and test", "detail": "Build the program, then run every test case and fill in the Actual column. Any mismatch gets investigated."},
+   {"mins": 10, "title": "What did the plan catch?", "detail": "Share bugs found only because the test plan existed. Log out."}
+  ],
+  "activities": ["Classify test data types", "Write a test plan before coding", "Run tests and record actual results"],
+  "successCriteria": ["My test plan has normal, boundary and invalid cases.", "I wrote the plan before the code.", "I recorded actual results and investigated mismatches."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Test-plan template (Test Case / Expected / Actual)"}, {"label": "Worked example program"}]
+ },
+ "6": {
+  "objectives": ["Build a number guessing game with a while loop.", "Give higher/lower feedback using if and elif.", "Use a random number correctly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Break down the problem", "detail": "Decompose on the board: pick a secret number, ask, compare, respond, repeat until correct. Write the steps before any code."},
+   {"mins": 30, "title": "Build it", "detail": "import random, randint(1,100), while guess != secret, if/elif for higher/lower. Support: a starter file with the loop skeleton for those who need it."},
+   {"mins": 15, "title": "Test with strategy", "detail": "Play using binary search - always guess the middle. How many guesses should it take at most? A nice link to computational thinking."},
+   {"mins": 10, "title": "Extension", "detail": "Count and display the number of guesses used. Save the file with a clear name. Log out."}
+  ],
+  "activities": ["Problem decomposition", "Build the guessing game", "Binary-search play testing"],
+  "successCriteria": ["My game picks a random secret number.", "It gives correct higher/lower feedback.", "The loop ends when the guess is correct."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Project brief"}, {"label": "Isaac Computer Science worked examples", "url": "https://isaaccomputerscience.org"}]
+ },
+ "7": {
+  "objectives": ["Port a program from a computer to a physical device.", "Adapt a design to hardware limits.", "Compare MakeCode Python with desktop Python."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "What has to change", "detail": "The micro:bit has no keyboard and a 5x5 display. Discuss: how do you input a guess? How do you show higher/lower? Design constraints drive the redesign."},
+   {"mins": 30, "title": "Build the 1-10 version", "detail": "Buttons increment the guess, A+B submits, arrow icons show higher/lower. Toggle to Python view and read the generated code."},
+   {"mins": 10, "title": "Compare the two", "detail": "Side by side: desktop Python versus MakeCode Python. Same logic, different input and output."},
+   {"mins": 10, "title": "Demo", "detail": "Swap devices and play a partner's version. Devices counted in. Log out."}
+  ],
+  "activities": ["Hardware constraint analysis", "Port the game to micro:bit", "Compare desktop and MakeCode Python"],
+  "successCriteria": ["My micro:bit version works with button input.", "It shows higher/lower feedback on the display.", "I can name two things the port forced me to change."],
+  "resources": [{"label": "MakeCode (Blocks + Python)", "url": "https://makecode.microbit.org"}, {"label": "micro:bit devices"}, {"label": "Python on micro:bit guide"}]
+ },
+ "8": {
+  "objectives": ["Read a Python error message and locate the fault.", "Use Thonny's debugger to step through code.", "Fix three broken programs systematically."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Reading errors", "detail": "Anatomy of a traceback: the line number, the error type, the message. Cover NameError, TypeError, IndentationError and SyntaxError with an example of each."},
+   {"mins": 30, "title": "Debug three programs", "detail": "Ten minutes each. Method: read the error, go to the line, step through with the debugger, form a hypothesis, change ONE thing, re-run."},
+   {"mins": 10, "title": "Bug taxonomy", "detail": "Classify each bug: syntax, logic or runtime. Logic errors are the ones with no error message - the hardest kind."},
+   {"mins": 10, "title": "Share the trickiest", "detail": "Which bug hid best, and what gave it away? Log out."}
+  ],
+  "activities": ["Traceback reading practice", "Three-program debug workshop", "Bug classification"],
+  "successCriteria": ["I can name the line and error type from a traceback.", "I used the debugger to watch variables change.", "I fixed at least two of the three programs."],
+  "resources": [{"label": "Thonny (Debug button)", "url": "https://thonny.org"}, {"label": "How to read a Python error - guide"}, {"label": "Buggy code files"}]
+ },
+ "9": {
+  "objectives": ["Add input validation to my program.", "Add a play-again loop.", "Track a score across rounds."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Never trust the user", "detail": "What happens when someone types 'banana' into a number input? Crash. Introduce validation with a while loop and .isdigit() or try/except."},
+   {"mins": 25, "title": "Validate and loop", "detail": "Add: reject anything not a number 1-100, and a play-again prompt that restarts the game while the answer is yes."},
+   {"mins": 15, "title": "Score counter", "detail": "Add a variable counting games played and best number of guesses. Display it at the end."},
+   {"mins": 10, "title": "Break it", "detail": "Swap with a partner and try to crash their program. Report anything that breaks. Log out."}
+  ],
+  "activities": ["Input validation with a while loop", "Play-again loop", "Try-to-break-it peer testing"],
+  "successCriteria": ["My program does not crash on invalid input.", "The user can play again without restarting.", "A score or best result is tracked and displayed."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Refinement checklist"}, {"label": "Validation code examples"}]
+ },
+ "10": {
+  "objectives": ["Write a test plan for someone else's program.", "Find and fix bugs under time pressure.", "Refactor code to make it clearer."],
+  "plan": [
+   {"mins": 5, "title": "Station briefing", "detail": "Three stations, 20 minutes each, exam-style tasks at every station."},
+   {"mins": 20, "title": "Station 1 - Write a test plan", "detail": "For a partner's program: six test cases covering normal, boundary and invalid input."},
+   {"mins": 20, "title": "Station 2 - Find and fix", "detail": "Two broken exam-style programs. Diagnose in writing, then fix."},
+   {"mins": 20, "title": "Station 3 - Refactor", "detail": "Take working but messy code and improve it: better variable names, comments, remove repetition. Behaviour must not change."},
+   {"mins": 10, "title": "Exam readiness", "detail": "Self-rate confidence on each skill; note the weakest for revision. Log out."}
+  ],
+  "activities": ["Write a test plan for a peer's code", "Timed bug fixing", "Refactor for clarity"],
+  "successCriteria": ["My test plan covers all three data types.", "I diagnosed bugs in writing before fixing.", "My refactored code behaves identically but reads better."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Past exam-style tasks"}, {"label": "Test-plan templates"}]
+ },
+ "11": {
+  "objectives": ["Build a Python mini-app that meets a written brief.", "Pass my own written test plan.", "Show one bug found and fixed."],
+  "plan": [
+   {"mins": 5, "title": "Brief", "detail": "Read the brief twice. Requirements on the board: meets the brief, has a test plan, evidence of one bug found and fixed."},
+   {"mins": 15, "title": "Test plan first", "detail": "Write the test plan before coding. This is assessed - remind them it carries marks even if the code is incomplete."},
+   {"mins": 35, "title": "Build", "detail": "Silent conditions, technical help only. Circulate and note who is testing as they go."},
+   {"mins": 15, "title": "Test and evidence", "detail": "Run every test case, fill in Actual, and screenshot the bug and its fix."},
+   {"mins": 5, "title": "Save and submit", "detail": "The .py file plus the test plan into the assessment folder, correctly named."}
+  ],
+  "activities": ["Individual practical assessment", "Test plan and evidence of debugging", "Correct-name submission"],
+  "successCriteria": ["My program does what the brief asks.", "My test plan is complete with actual results.", "I evidenced one bug found and fixed.", "Both files are submitted correctly."],
+  "resources": [{"label": "Assessment brief"}, {"label": "Marking rubric"}, {"label": "Thonny", "url": "https://thonny.org"}]
+ },
+ "12": {
+  "objectives": ["Choose a project and write a clear plan.", "State the inputs and outputs.", "Write three test cases before coding."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "The project menu", "detail": "Quiz app, times-tables trainer, tip calculator, password strength checker. Discuss what makes each one hard - steer confident coders to the password checker."},
+   {"mins": 20, "title": "Plan it", "detail": "Planning template: purpose, user, inputs, outputs, variables, the loop, the decisions."},
+   {"mins": 15, "title": "Three test cases", "detail": "Write them now, before any code exists. Normal, boundary, invalid."},
+   {"mins": 10, "title": "Plan review", "detail": "Teacher signs off each plan before coding starts next week. Log out."}
+  ],
+  "activities": ["Project selection", "Complete the planning template", "Write three test cases up front"],
+  "successCriteria": ["My plan states the purpose, inputs and outputs.", "I have identified the variables and the loop I need.", "My three test cases are written before any code."],
+  "resources": [{"label": "Project menu card"}, {"label": "Planning template"}, {"label": "Thonny", "url": "https://thonny.org"}]
+ },
+ "13": {
+  "objectives": ["Build my mini-app from the plan.", "Use variables, a loop and a condition.", "Run my own test plan against it."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Build order", "detail": "Get input working, then the core logic, then the loop, then the polish. Run the program after every small addition."},
+   {"mins": 35, "title": "Build", "detail": "Independent build. Circulate with targeted questions rather than solutions: 'what did you expect that line to do?'"},
+   {"mins": 15, "title": "Self-test", "detail": "Run the three test cases and record the actual results. Fix anything that fails. Save and log out."}
+  ],
+  "activities": ["Incremental build", "Run own test cases", "Fix failing tests"],
+  "successCriteria": ["My program uses variables, a loop and a condition.", "It does the main job in the plan.", "I ran all three test cases and recorded the results."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Test-plan template"}, {"label": "Signed-off plan from Week 12"}]
+ },
+ "14": {
+  "objectives": ["Test a partner's program using their test plan.", "Add one new test case they missed.", "Fix bugs and log them in a bug diary."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Peer testing", "detail": "Swap machines. Run their test plan exactly as written, record actual results, then add one test case they missed."},
+   {"mins": 25, "title": "Fix the bugs", "detail": "Back to your own code. Fix what the peer test exposed. Log each bug: what happened, why, what you changed."},
+   {"mins": 10, "title": "Re-test", "detail": "Re-run the full test plan including the new case. All should pass."},
+   {"mins": 10, "title": "Bug of the week", "detail": "Share the most interesting bug and its cause. Log out."}
+  ],
+  "activities": ["Peer testing against a written plan", "Add a missing test case", "Bug diary and fixes"],
+  "successCriteria": ["I tested a partner's program properly and recorded results.", "I added one test case they had missed.", "My bug diary records what happened, why, and the fix."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Peer-test sheet"}, {"label": "Bug-diary template"}]
+ },
+ "15": {
+  "objectives": ["Demo my mini-app in three minutes.", "Run my test cases live.", "Explain the key parts of my code."],
+  "plan": [
+   {"mins": 10, "title": "Rehearse", "detail": "Structure: what it does, live demo, run the test cases, explain the tricky part of the code."},
+   {"mins": 35, "title": "Demo day", "detail": "Three minutes each. Running the test cases live is the distinctive part - it shows the app handles bad input as well as good."},
+   {"mins": 10, "title": "Audience questions", "detail": "One question per presenter: 'What would you add next?', 'What was your hardest bug?'"},
+   {"mins": 10, "title": "Portfolio save", "detail": "Final .py file plus the test plan and bug diary into the portfolio folder."},
+   {"mins": 10, "title": "Term reflection", "detail": "Name the debugging habit you will keep. Log out."}
+  ],
+  "activities": ["Three-minute live demo", "Run test cases in front of the class", "Portfolio save and reflection"],
+  "successCriteria": ["I demoed within three minutes.", "I ran my test cases live, including an invalid input.", "My .py file and test plan are in the portfolio folder."],
+  "resources": [{"label": "Class projector"}, {"label": "Portfolio folder"}, {"label": "Presentation rubric"}]
+ }
+}

@@ -1,0 +1,17 @@
+rules_version = '2';
+
+// Zera ICT dashboard — single-owner database.
+// Every document is readable and writable only by the owner's verified Google account.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isOwner() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email.lower() == 'tawfiqrahmat@gmail.com';
+    }
+
+    match /{document=**} {
+      allow read, write: if isOwner();
+    }
+  }
+}

@@ -1,0 +1,162 @@
+"use client";
+
+import Link from "next/link";
+import { useParams, useRouter } from "next/navigation";
+import { useState } from "react";
+import { useData } from "@/lib/store";
+import { CLASS_BY_ID, slotsForClass } from "@/data/timetable";
+import { formatRange, prettyTime } from "@/lib/dates";
+import { PageHeader, StatusChip, ClassDot } from "@/components/ui";
+import { ListSection, PlanSection, ResourceSection, TextSection } from "@/components/Editable";
+import type { Lesson, Status } from "@/lib/types";
+
+const DAY_SHORT = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+export default function LessonPage() {
+  const { id } = useParams<{ id: string }>();
+  const router = useRouter();
+  const { lessonById, saveLesson, deleteLesson, loading } = useData();
+  const [busy, setBusy] = useState(false);
+  const lesson = lessonById(id);
+
+  if (loading) return <p className="p-6 text-sm text-[color:var(--muted)]">Loading…</p>;
+
+  if (!lesson) {
+    return (
+      <main className="p-6">
+        <p className="text-sm">Lesson not found.</p>
+        <Link href="/" className="btn mt-4">
+          Back to Today
+        </Link>
+      </main>
+    );
+  }
+
+  const info = CLASS_BY_ID[lesson.classId];
+  const slots = slotsForClass(lesson.classId);
+  const patch = (p: Partial<Lesson>) => saveLesson(lesson.id, p);
+
+  const setStatus = async (status: Status) => {
+    setBusy(true);
+    try {
+      await patch({ status });
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const remove = async () => {
+    if (!confirm(`Delete ${info?.label} ${lesson.weekLabel}? This cannot be undone.`)) return;
+    setBusy(true);
+    try {
+      await deleteLesson(lesson.id);
+      router.push(`/class/${lesson.classId}`);
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  return (
+    <>
+      <PageHeader
+        title={`${info?.label ?? lesson.classId} · ${lesson.weekLabel}`}
+        subtitle={`${formatRange(lesson.dateStart, lesson.dateEnd)} · ${lesson.topic || "No topic"}`}
+        right={
+          <Link href={`/lesson/${lesson.id}/present`} className="btn btn-sm btn-primary">
+            Present
+          </Link>
+        }
+      />
+
+      <main className="mx-auto max-w-3xl space-y-3 p-4">
+        <div className="card p-4">
+          <div className="flex flex-wrap items-center gap-1.5">
+            <span className="chip">
+              <ClassDot classId={lesson.classId} /> {info?.subject ?? lesson.subject}
+            </span>
+            {slots.map((s, i) => (
+              <span key={i} className="chip">
+                {DAY_SHORT[s.day]} {prettyTime(s.start)}–{prettyTime(s.end)} · {s.periods}
+              </span>
+            ))}
+            <StatusChip status={lesson.status} />
+          </div>
+
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button
+              className={`btn btn-sm ${lesson.status === "done" ? "btn-primary" : ""}`}
+              disabled={busy}
+              onClick={() => setStatus(lesson.status === "done" ? "planned" : "done")}
+            >
+              ✓ Done
+            </button>
+            <button
+              className={`btn btn-sm ${lesson.status === "carried-over" ? "btn-primary" : ""}`}
+              disabled={busy}
+              onClick={() => setStatus(lesson.status === "carried-over" ? "planned" : "carried-over")}
+            >
+              → Carried over
+            </button>
+            <Link href={`/class/${lesson.classId}`} className="btn btn-sm">
+              All {info?.label} weeks
+            </Link>
+          </div>
+
+          {lesson.remark && (
+            <p className="mt-3 whitespace-pre-line rounded-lg bg-[color:var(--surface-2)] p-3 text-xs text-[color:var(--warn)]">
+              {lesson.remark}
+            </p>
+          )}
+        </div>
+
+        <TextSection title="Topic" value={lesson.topic} multiline={false} onSave={(topic) => patch({ topic })} />
+        <TextSection
+          title="Subtopic"
+          value={lesson.subtopic}
+          multiline={false}
+          onSave={(subtopic) => patch({ subtopic })}
+        />
+        <ListSection
+          title="Learning objectives"
+          items={lesson.objectives}
+          onSave={(objectives) => patch({ objectives })}
+        />
+        <PlanSection steps={lesson.plan} onSave={(plan) => patch({ plan })} />
+        <ListSection
+          title="Recommended activities"
+          items={lesson.activities}
+          onSave={(activities) => patch({ activities })}
+        />
+        <ListSection
+          title="Success criteria"
+          items={lesson.successCriteria}
+          onSave={(successCriteria) => patch({ successCriteria })}
+        />
+        <ResourceSection items={lesson.resources} onSave={(resources) => patch({ resources })} />
+
+        <TextSection
+          title="Scheme of work — outline"
+          value={lesson.outline}
+          onSave={(outline) => patch({ outline })}
+        />
+        <TextSection
+          title="Scheme of work — suggested resources"
+          value={lesson.sowResources}
+          onSave={(sowResources) => patch({ sowResources })}
+        />
+        <TextSection
+          title="After the lesson"
+          value={lesson.note}
+          placeholder="Where did you stop? What to pick up next week?"
+          onSave={(note) => patch({ note })}
+        />
+
+        <div className="no-print pt-2 pb-4">
+          <button className="btn btn-sm w-full" style={{ color: "var(--warn)" }} disabled={busy} onClick={remove}>
+            Delete this lesson
+          </button>
+        </div>
+      </main>
+    </>
+  );
+}

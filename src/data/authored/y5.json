@@ -1,0 +1,195 @@
+{
+ "1": {
+  "objectives": ["Set a personal words-per-minute goal in TypingClub.", "Describe what a micro:bit is and what it can do.", "Explain what the term project will be."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "Sign in, baseline WPM run, posture check."},
+   {"mins": 15, "title": "Unboxing the micro:bit", "detail": "Pass round a micro:bit. Do not plug anything in yet - handling rules first: hold by the edges, never by the pins, no bending."},
+   {"mins": 15, "title": "What could we build?", "detail": "Show short clips of finished projects: step counter, reaction game, light meter. Class brainstorms what the device must sense to do each one."},
+   {"mins": 20, "title": "Baseline and goal", "detail": "Record baseline WPM. Set a personal goal on the goal sheet - realistic, about +5 WPM by half term."},
+   {"mins": 10, "title": "Term map", "detail": "Walk through the term: blocks first, then loops, then conditions, then build a gadget. Log out."}
+  ],
+  "activities": ["micro:bit handling and unboxing", "Project clips brainstorm", "TypingClub baseline and goal"],
+  "successCriteria": ["I can handle a micro:bit safely.", "I recorded my baseline WPM and set a goal.", "I can name two things a micro:bit can sense."],
+  "resources": [{"label": "micro:bit V2 devices"}, {"label": "micro:bit Educational Foundation videos", "url": "https://www.youtube.com/@microbit_edu"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "2": {
+  "objectives": ["Identify the main parts of the micro:bit: LEDs, buttons, sensors, pins.", "Sort features into inputs and outputs.", "Explain the difference between an input and an output."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Input or output?", "detail": "Definition first: input goes in to the computer, output comes out. Sort classroom examples (keyboard, screen, speaker, microphone) before touching the micro:bit."},
+   {"mins": 20, "title": "Label the board", "detail": "In pairs with the labelling sheet: 25 LEDs, buttons A and B, light sensor, temperature sensor, accelerometer, compass, radio, pins, USB, battery socket."},
+   {"mins": 15, "title": "Sort them", "detail": "Colour-code the labelling sheet: inputs in one colour, outputs in another. Discuss the tricky ones - the pins can be both."},
+   {"mins": 10, "title": "Quickfire", "detail": "Teacher names a part, class shouts input or output. Devices counted back in. Log out."}
+  ],
+  "activities": ["Input/output sorting starter", "Label the micro:bit in pairs", "Colour-code inputs vs outputs"],
+  "successCriteria": ["I can point to the buttons, LEDs and sensors.", "I sorted the features into inputs and outputs.", "I can explain the difference in my own words."],
+  "resources": [{"label": "micro:bit V2 devices (one per pair)"}, {"label": "Printed labelling sheet"}, {"label": "micro:bit intro video", "url": "https://www.youtube.com/@microbit_edu"}]
+ },
+ "3": {
+  "objectives": ["Sign in to MakeCode and start a new project.", "Drag blocks to show an icon on the LED display.", "Download my program onto the micro:bit."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Tour MakeCode", "detail": "Sign in to makecode.microbit.org. Show the three areas: simulator on the left, block palette in the middle, workspace on the right."},
+   {"mins": 20, "title": "First program", "detail": "'on start' + 'show icon' (heart). Test in the simulator first, then Download and copy to the MICROBIT drive. Do the transfer step slowly together - it is the fiddly part."},
+   {"mins": 20, "title": "Show a name", "detail": "Add 'show string' with their own name. Notice the letters scroll. Try changing the scroll speed."},
+   {"mins": 10, "title": "Peek at Python", "detail": "Toggle the Blocks/Python switch. Same program, written as text. Do not teach the syntax yet - just plant the idea that blocks are code. Log out."}
+  ],
+  "activities": ["MakeCode tour", "Show icon and download to device", "Blocks-to-Python toggle"],
+  "successCriteria": ["I made a program that shows an icon.", "I downloaded it onto the physical micro:bit.", "I have seen my program written as Python text."],
+  "resources": [{"label": "MakeCode Editor", "url": "https://makecode.microbit.org"}, {"label": "micro:bit + USB cable"}, {"label": "Printed blocks cheat sheet"}]
+ },
+ "4": {
+  "objectives": ["Use 'on button A pressed' and 'on button B pressed' as event blocks.", "Explain what an event is.", "Compare the same program in Blocks and in Python."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "What is an event?", "detail": "An event is something that happens which the program waits for. Real-world examples: doorbell, alarm, hand raised."},
+   {"mins": 25, "title": "Two buttons, two icons", "detail": "Build: on button A show heart, on button B show ghost. Test in the simulator, then on the device."},
+   {"mins": 15, "title": "Add A+B", "detail": "Extend with 'on button A+B pressed' showing a third icon. Challenge: make it show a message instead."},
+   {"mins": 15, "title": "Side-by-side", "detail": "Toggle to Python. Match each block to its line using the printed reference. Which parts look the same? Log out."}
+  ],
+  "activities": ["Event examples discussion", "Two-button icon program", "Blocks vs Python line matching"],
+  "successCriteria": ["My program responds to both buttons.", "I can explain what an event is.", "I can point to the Python line that matches a block."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "micro:bit devices"}, {"label": "onButtonPressed Python vs Blocks reference"}]
+ },
+ "5": {
+  "objectives": ["Use a 'forever' loop and a 'repeat X times' loop.", "Explain in my own words what a loop does.", "Build an LED animation using a loop."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Loops all around us", "detail": "Non-computer examples: brushing teeth (repeat), a fan (forever). Difference: repeat has a count, forever does not stop."},
+   {"mins": 20, "title": "Animate", "detail": "Show heart, pause 500ms, show small heart, pause 500ms - inside a forever loop. The pause is essential; without it the animation is invisible."},
+   {"mins": 20, "title": "Loop challenge cards", "detail": "Five challenge cards from easy to tricky: count to 5, flash three times, chase an LED across the row, blink faster each time."},
+   {"mins": 10, "title": "Explain it", "detail": "Partner explanation using the stem: 'This loop repeats ___ because ___.' Log out."}
+  ],
+  "activities": ["Real-world loop examples", "Beating-heart animation", "Five loop challenge cards"],
+  "successCriteria": ["My animation uses a loop with pauses.", "I completed at least three challenge cards.", "I can explain the difference between forever and repeat."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "micro:bit devices"}, {"label": "Loop challenge cards"}]
+ },
+ "6": {
+  "objectives": ["Use an if block to react to a sensor.", "Set a sensible threshold value.", "Test my program in two different conditions."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "If, then", "detail": "Everyday conditions: if it rains, take an umbrella. Introduce the if block shape and the comparison operator."},
+   {"mins": 20, "title": "Shake to react", "detail": "Build: on shake, show a surprised face. Test by shaking. Then extend: if light level < 50, show a moon."},
+   {"mins": 20, "title": "Find your threshold", "detail": "Read the live light level in the classroom and inside a cupboard or under a book. Choose a threshold between the two readings. This is real testing."},
+   {"mins": 10, "title": "Demo", "detail": "Two pairs demo their light-sensing gadget with the torch. Log out."}
+  ],
+  "activities": ["Everyday if-statements", "Shake and light-sensor programs", "Threshold testing with a torch"],
+  "successCriteria": ["My program uses an if block with a sensor.", "My threshold value is based on real readings.", "My gadget behaves differently in light and dark."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "micro:bit devices + torch"}, {"label": "If-block reference sheet"}]
+ },
+ "7": {
+  "objectives": ["Choose one gadget project and justify my choice.", "Plan the inputs, outputs and steps on paper.", "Predict which blocks I will need."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "The four briefs", "detail": "Read the project cards: step counter, mood badge, light meter, reaction-time game. For each, ask: what is the input, what is the output?"},
+   {"mins": 15, "title": "Choose and justify", "detail": "Pairs choose one and write two sentences on why. Steer strong pairs to the reaction game, developing pairs to the mood badge."},
+   {"mins": 25, "title": "Plan on paper", "detail": "Planning sheet: inputs, outputs, what happens first, what repeats, what condition decides. No coding today - the plan is the deliverable."},
+   {"mins": 5, "title": "Plan check", "detail": "Teacher initials each plan before pairs may start coding next week. Log out."}
+  ],
+  "activities": ["Read and analyse four project briefs", "Choose and justify a project", "Paper plan with inputs and outputs"],
+  "successCriteria": ["My pair has chosen a project and can say why.", "My plan names the inputs and outputs.", "My plan says which blocks will repeat and which will decide."],
+  "resources": [{"label": "Project brief cards (4 options)"}, {"label": "Planning sheet"}, {"label": "MakeCode", "url": "https://makecode.microbit.org"}]
+ },
+ "8": {
+  "objectives": ["Build a working first version of my gadget.", "Test it with a partner and note what does not work.", "Save my code with a clear file name."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Version 1 rules", "detail": "V1 does the main job only. No sounds, no animations, no extras. Getting one thing working beats five half-things."},
+   {"mins": 35, "title": "Build", "detail": "Pairs build from their plan. Circulate: ask 'show me it working' rather than looking at the code. Struggling pairs get a starter file."},
+   {"mins": 10, "title": "Partner test and save", "detail": "Swap devices with another pair and try to use the gadget without instructions. Note what confused them. Save as project_v1. Log out."}
+  ],
+  "activities": ["Build gadget v1", "Cross-pair user testing", "Save with version naming"],
+  "successCriteria": ["My gadget does its main job.", "Another pair tested it and I wrote down their feedback.", "My code is saved as project_v1."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "micro:bit devices"}, {"label": "Class shared drive for .hex files"}]
+ },
+ "9": {
+  "objectives": ["Add one improvement to my gadget.", "Record the change in a dev diary.", "Explain why I chose that improvement."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Read the feedback", "detail": "Re-read last week's tester feedback. Choose ONE improvement that fixes a real problem, not just a decoration."},
+   {"mins": 30, "title": "Implement one change", "detail": "Add the improvement: a sound effect, a reset button, a start-up animation, or clearer output. Keep v1 saved - save this as v2."},
+   {"mins": 10, "title": "Dev diary", "detail": "Complete the diary entry: what I changed, why, and whether it worked."},
+   {"mins": 10, "title": "Show the difference", "detail": "Demo v1 then v2 to the pair who tested it. Log out."}
+  ],
+  "activities": ["Feedback review", "Implement one improvement", "Dev diary entry"],
+  "successCriteria": ["My gadget has one clear improvement.", "My dev diary explains what and why.", "Both v1 and v2 are saved."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "Dev-diary template"}, {"label": "Week 8 tester feedback"}]
+ },
+ "10": {
+  "objectives": ["Explain my code to a partner using the sentence stems.", "Point out where the loop and the condition are.", "Answer a question about my code without reading from the screen."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Model a good explanation", "detail": "Teacher explains a sample program using the stems: 'This block means...', 'This loop repeats...', 'This if-block checks...'. Then a deliberately vague version - class spots the difference."},
+   {"mins": 25, "title": "Explain in pairs", "detail": "Two rounds: explain your code to a partner, get scored on the peer checklist, then swap. Second round should be noticeably better."},
+   {"mins": 15, "title": "Teacher questions", "detail": "Circulate asking one exam-style question each: 'What happens if I remove this block?', 'Where does the program start?'"},
+   {"mins": 10, "title": "Weak spots", "detail": "Each pupil notes the question they found hardest. Log out."}
+  ],
+  "activities": ["Modelled explanation", "Paired explanation with checklist", "Teacher exam-style questioning"],
+  "successCriteria": ["I explained my whole program using the sentence stems.", "I can point to the loop and the condition.", "I answered a question about my code without reading it out."],
+  "resources": [{"label": "Sentence-stem cards"}, {"label": "Peer-explanation checklist"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "11": {
+  "objectives": ["Build a micro:bit program using at least one loop and one condition.", "Demonstrate it working on the physical device.", "Explain my code to the teacher."],
+  "plan": [
+   {"mins": 5, "title": "Brief", "detail": "Read the task. Requirements on the board: at least one loop, at least one condition, must run on the device."},
+   {"mins": 30, "title": "Build", "detail": "Individual build (paired devices, individual code). Silent conditions. Technical help only - no design help."},
+   {"mins": 20, "title": "Demonstrate", "detail": "Called one at a time to demo the working device while others continue or extend."},
+   {"mins": 10, "title": "Explain", "detail": "One-to-one: point to your loop, point to your condition, say what each does. Recorded on the rubric."},
+   {"mins": 5, "title": "Save and close", "detail": "Save the .hex with the correct name. Devices counted in. Log out."}
+  ],
+  "activities": ["Individual practical build", "Live demonstration on device", "Oral code explanation"],
+  "successCriteria": ["My program uses at least one loop.", "My program uses at least one condition.", "It runs on the physical micro:bit.", "I explained my code clearly."],
+  "resources": [{"label": "Assessment task card"}, {"label": "Marking rubric"}, {"label": "micro:bit devices"}]
+ },
+ "12": {
+  "objectives": ["Use radio send and radio receive blocks.", "Set the same radio group on both devices.", "Send a message from one micro:bit to another."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "How radio works", "detail": "Both micro:bits must be on the same radio group - like tuning two walkie-talkies to the same channel. Assign each pair a group number to avoid chaos."},
+   {"mins": 25, "title": "Send and receive", "detail": "Program: on start set radio group; on button A, radio send number 1; on radio received, show heart. Flash BOTH devices with the same program."},
+   {"mins": 15, "title": "Troubleshoot", "detail": "Common faults: different group numbers, only one device flashed, battery not connected. Work through the fault-finding list together."},
+   {"mins": 10, "title": "Pair up across the room", "detail": "Test how far apart the devices still work. Log out."}
+  ],
+  "activities": ["Radio group explanation", "Send/receive heart program", "Range test across the room"],
+  "successCriteria": ["Both my micro:bits are on the same radio group.", "Pressing a button on one shows something on the other.", "I can name one reason radio might not work."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "2 micro:bits per pair"}, {"label": "Radio blocks reference"}]
+ },
+ "13": {
+  "objectives": ["Send different messages for buttons A, B and A+B.", "Display the received message clearly.", "Test my chat gadget with another pair."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Message plan", "detail": "Decide what each button means: A = yes, B = no, A+B = hello. Write the code table on paper first."},
+   {"mins": 30, "title": "Build the chat gadget", "detail": "Three send events, and a receive handler that shows the right icon or string for each value. This needs an if/else if chain - link back to Week 6."},
+   {"mins": 10, "title": "Cross-pair test", "detail": "Swap one device with another pair on the same group and hold a conversation. Log out."}
+  ],
+  "activities": ["Message code table", "Three-message radio chat", "Cross-pair conversation test"],
+  "successCriteria": ["My gadget sends three different messages.", "The receiving device shows the right thing for each.", "Another pair could understand my messages."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "2 micro:bits per pair"}, {"label": "Project brief"}]
+ },
+ "14": {
+  "objectives": ["Find and fix at least one bug in my project.", "Log the bug and the fix.", "Add one polish feature."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Test properly", "detail": "Test with another pair using a test list: press each button, press two at once, press very fast, move out of range. Log what breaks."},
+   {"mins": 25, "title": "Fix the bugs", "detail": "Work through the bug log. Fix one at a time and re-test after each fix - not all at once."},
+   {"mins": 10, "title": "One polish feature", "detail": "Add an icon animation, a sound, or a startup message. Save as v3."},
+   {"mins": 10, "title": "Bug of the week", "detail": "Share the most interesting bug found and how it was fixed. Log out."}
+  ],
+  "activities": ["Structured test list", "Bug log and fix cycle", "Add a polish feature"],
+  "successCriteria": ["I tested my gadget against a test list.", "I fixed at least one bug and logged it.", "My gadget has one polish feature."],
+  "resources": [{"label": "MakeCode", "url": "https://makecode.microbit.org"}, {"label": "Bug log template"}, {"label": "2 micro:bits per pair"}]
+ },
+ "15": {
+  "objectives": ["Demonstrate my gadget to visitors for two minutes.", "Answer questions about how it works.", "Save my final code to the portfolio folder."],
+  "plan": [
+   {"mins": 10, "title": "Set up the fair", "detail": "Tables become demo stations. Each pair sets out their device, a plan sheet and their dev diary."},
+   {"mins": 10, "title": "Rehearse the pitch", "detail": "Structure: what it does, how to use it, how it works inside, what we would add next."},
+   {"mins": 30, "title": "Gadget fair", "detail": "Half the class demos while half visits, then swap. Visitors leave a feedback slip at each station."},
+   {"mins": 10, "title": "Portfolio save", "detail": "Save the final .hex plus a photo of the device to the portfolio folder."},
+   {"mins": 10, "title": "Reflection", "detail": "One thing that went wrong and how you solved it. Devices counted in. Log out."}
+  ],
+  "activities": ["Gadget fair demo stations", "Two-minute pitch to visitors", "Portfolio save with photo"],
+  "successCriteria": ["I demoed my gadget within two minutes.", "I answered a question about how it works.", "My final .hex is in the portfolio folder."],
+  "resources": [{"label": "Demo station setup"}, {"label": "Visitor feedback slips"}, {"label": "Portfolio folder"}]
+ }
+}
