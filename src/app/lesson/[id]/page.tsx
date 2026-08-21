@@ -79,13 +79,15 @@ export default function LessonPage() {
 
       <main className="mx-auto flex max-w-6xl flex-col gap-4 p-4 lg:grid lg:grid-cols-[1fr_20rem] lg:items-start lg:p-6">
         <div className="order-2 space-y-3 lg:order-1">
-          <TextSection title="Topic" value={lesson.topic} multiline={false} onSave={(topic) => patch({ topic })} />
-          <TextSection
-            title="Subtopic"
-            value={lesson.subtopic}
-            multiline={false}
-            onSave={(subtopic) => patch({ subtopic })}
-          />
+          <div className="grid grid-cols-2 gap-3">
+            <TextSection title="Topic" value={lesson.topic} multiline={false} onSave={(topic) => patch({ topic })} />
+            <TextSection
+              title="Subtopic"
+              value={lesson.subtopic}
+              multiline={false}
+              onSave={(subtopic) => patch({ subtopic })}
+            />
+          </div>
           <ListSection
             title="Learning objectives"
             items={lesson.objectives}
@@ -105,19 +107,9 @@ export default function LessonPage() {
           <ResourceSection items={lesson.resources} onSave={(resources) => patch({ resources })} />
 
           <TextSection
-            title="Scheme of work — outline"
-            value={lesson.outline}
-            onSave={(outline) => patch({ outline })}
-          />
-          <TextSection
-            title="Scheme of work — suggested resources"
-            value={lesson.sowResources}
-            onSave={(sowResources) => patch({ sowResources })}
-          />
-          <TextSection
-            title="After the lesson"
+            title="Reflection"
             value={lesson.note}
-            placeholder="Where did you stop? What to pick up next week?"
+            placeholder="How did it go? Where did you stop? What to pick up next week?"
             onSave={(note) => patch({ note })}
           />
 
@@ -182,6 +174,7 @@ export default function LessonPage() {
             title={lesson.iceBreakerTitle}
             description={lesson.iceBreakerDescription}
             minutes={lesson.iceBreakerMinutes}
+            keyStage={info?.keyStage ?? "KS2"}
             onSave={(next) => patch(next)}
           />
         </div>

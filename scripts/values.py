@@ -123,8 +123,6 @@ def assign_moral_content(class_id: str, index_in_class_year: int) -> dict:
         "quoteAuthor": author,
         "foodForThought": frame.replace("{value}", value.lower()),
     }
-# Auto-derived from src/data/values.ts -- keep the two in sync.
-
 ICE_BREAKERS_KS1 = [
     ("Copy My Clap", "Clap a short rhythm, class copies it back. Speed it up each round.", 5),
     ("Freeze Dance", "Play music, everyone dances; when it stops, freeze like a statue.", 5),
@@ -141,6 +139,25 @@ ICE_BREAKERS_KS1 = [
     ("Thumbs Up Weather Check", "Everyone shows how they're feeling with a thumbs up, sideways or down, and one word why.", 5),
     ("Silent Line-Up", "Line up in height order (or birthday month) without talking, using only gestures.", 7),
     ("Balloon Keep-Up", "Keep a balloon off the floor as a group, counting taps out loud together.", 6),
+    ("Musical Statues", "Dance while the music plays; freeze the instant it stops. Last one moving is out for a round.", 6),
+    ("The Sun Shines On", "Sit in a circle; the caller says 'the sun shines on everyone who...' and matching pupils swap seats.", 7),
+    ("Draw My Face", "Partners take turns describing their own face while the other draws it from the description alone.", 8),
+    ("Shape Freeze", "Call out a shape; pupils freeze their bodies (alone or in pairs) into that shape as fast as possible.", 5),
+    ("Pass the Clap", "Sit in a circle; pass a single clap around as fast as possible without breaking the rhythm.", 5),
+    ("What's Missing?", "Show five objects on a tray for 10 seconds, hide one, pupils guess which is missing.", 6),
+    ("Follow the Leader", "One pupil leads simple movements around the room; the rest copy exactly, no talking.", 6),
+    ("Guess My Animal", "Act out an animal silently; classmates guess what it is before the timer runs out.", 6),
+    ("Bubble Pop Countdown", "Blow bubbles; pupils pop as many as they can before they touch the floor, then count together.", 5),
+    ("Row Your Boat Circle", "Sit in a circle holding hands, rock gently side to side singing a simple counting rhyme together.", 5),
+    ("Copy the Beat", "Tap a simple beat on the table; pupils copy it back, then try to beat the teacher's speed.", 5),
+    ("Shrink and Grow", "Pupils make themselves as small as possible, then as tall as possible, on the count of three.", 5),
+    ("Silly Walks Parade", "Line up and take turns inventing a silly walk across the room for everyone to copy.", 7),
+    ("Which Hand?", "Hide a small object in one fist behind your back; partner guesses left or right hand.", 5),
+    ("Team Echo", "Teacher claps a short pattern; the whole class echoes it back together in one voice.", 5),
+    ("Feelings Faces", "Hold up a mirror and pull a happy, sad, surprised and silly face in turn; partner names each one.", 6),
+    ("Number Freeze", "Call a number; pupils must form groups of exactly that size as fast as possible.", 6),
+    ("Copy the Robot", "One pupil moves like a slow robot; the group copies the stiff, jerky movements exactly.", 6),
+    ("Traffic Light Game", "Call red, amber or green; pupils stop, walk slowly, or walk normally around the room.", 6),
 ]
 
 ICE_BREAKERS_KS2 = [
@@ -159,6 +176,24 @@ ICE_BREAKERS_KS2 = [
     ("Mystery Object Bag", "Feel a hidden object in a bag and describe it with clues; class guesses what it is.", 7),
     ("Silent Sort", "Without talking, physically line up by a criterion (age, house number) using only gestures.", 7),
     ("This or That Rapid Round", "Quickfire this-or-that questions; pupils answer with a show of hands, fastest round wins.", 5),
+    ("Chain Memory Game", "First pupil names an object; each next pupil repeats the list and adds one more, in order.", 7),
+    ("Desert Island Pick", "Pupils choose one app or gadget they'd take to a desert island and explain why in one sentence.", 6),
+    ("Charades: Tech Edition", "Act out a tech word or app silently; classmates guess within a 60-second timer.", 8),
+    ("Odd One Out", "Show four items or words; pupils spot and justify which one doesn't belong.", 6),
+    ("Back-to-Back Drawing", "Sitting back to back, one describes a simple shape while the other draws it blind, then compare.", 8),
+    ("Would You Rather Debate", "Pose a would-you-rather question; pupils group by answer and each group gives one reason.", 7),
+    ("Guess the Leader", "One pupil leaves the room; the group secretly picks a leader whose movements everyone copies subtly.", 8),
+    ("Category Countdown", "Name a category; pupils shout an example each in turn until someone repeats or hesitates.", 6),
+    ("Two-Minute Interview", "In pairs, interview a partner with three fun questions, then introduce them to the group.", 8),
+    ("Silent Line-Up Challenge", "Line up by a hidden number written on a card, without speaking, using only gestures to compare.", 7),
+    ("Guess the Google Search", "Show the first few words of a common search query; pupils guess how it finishes.", 6),
+    ("Blind Trust Walk", "In pairs, one closes their eyes and is guided safely across the room by verbal instructions only.", 8),
+    ("Rapid Riddles", "Read three short riddles; first correct answer each round gets a point.", 6),
+    ("Alphabet Names", "Go around the room saying a word starting with each letter of the alphabet related to computing.", 7),
+    ("Draw What I Describe", "Describe a made-up creature in detail; partner draws exactly what they hear, then reveal and compare.", 8),
+    ("Would You Rather: School Edition", "Pose two lighthearted school dilemmas; pupils vote and justify their choice to a neighbour.", 6),
+    ("Guess the Sound Effect", "Play three short sound effects; pupils guess the object or action that made each one.", 6),
+    ("Spot the Difference", "Show two near-identical pictures for 15 seconds each; pupils list as many differences as they spot.", 7),
 ]
 
 ICE_BREAKERS_KS3 = [
@@ -177,6 +212,23 @@ ICE_BREAKERS_KS3 = [
     ("Two-Truths Tech Trivia", "Teacher states two true and one false tech fact; class discusses in pairs before voting.", 7),
     ("Elevator Pitch Swap", "Explain what was learned last lesson in 30 seconds, as if to someone who missed it.", 6),
     ("Would You Rather: AI Edition", "Pose a light AI-ethics dilemma; pupils vote with their feet and defend their side briefly.", 8),
+    ("Pitch It in 30", "Pitch a made-up app idea to a partner in 30 seconds flat; partner rates it out of 10.", 7),
+    ("Two Sides of the Room", "Read a statement; pupils move to 'agree' or 'disagree' sides and one from each side explains why.", 8),
+    ("Guess the Job", "Describe a tech job's daily tasks without naming it; classmates guess the job title.", 7),
+    ("Rapid-Fire Debate Swap", "Pairs argue a light topic for 30 seconds, then instantly swap to argue the opposite side.", 8),
+    ("Would You Rather: Future Tech", "Pose a future-tech dilemma (e.g. a robot friend or a time machine); pupils vote and justify.", 7),
+    ("Silent Card Sort", "In silence, sort a set of tech-term cards into two categories the group agrees on non-verbally.", 8),
+    ("One Truth, Two Lies", "State three tech 'facts', two false; class questions to narrow down which is true.", 8),
+    ("Beat the Clock Quiz", "Answer five rapid recall questions as a team before a 90-second timer runs out.", 6),
+    ("Guess the Company Logo", "Describe a well-known tech company's logo without naming it; class guesses the company.", 6),
+    ("The Persuasion Game", "Convince a partner that an everyday object is actually cutting-edge tech, in one minute.", 7),
+    ("Rank It", "Rank five given apps/tools from most to least useful in pairs, then compare rankings as a class.", 8),
+    ("Would You Rather: Ethics Edition", "Pose a light tech-ethics dilemma; pupils vote and give one sentence justifying their side.", 8),
+    ("Guess the Decade", "Show a description of an old piece of tech; pupils guess which decade it's from.", 6),
+    ("60-Second Explainer", "Explain a tech term to a partner who 'knows nothing', in 60 seconds, no jargon allowed.", 7),
+    ("Spot the Fake Headline", "Read two tech headlines, one real and one invented; class votes which is genuine.", 7),
+    ("Chain Reaction Story", "Build a short cause-and-effect story about a tech mishap, one sentence per pupil around the room.", 8),
+    ("Guess the Emoji Movie", "Show a tech-themed idea in emoji only; classmates race to decode the meaning.", 6),
 ]
 
 

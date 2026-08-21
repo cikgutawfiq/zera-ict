@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { randomIceBreaker } from "@/data/values";
 import type { PlanStep, ResourceLink } from "@/lib/types";
 
 function Section({
@@ -161,22 +162,7 @@ export function ListSection({
   );
 }
 
-const planToText = (steps: PlanStep[]) =>
-  steps.map((s) => `${s.mins} | ${s.title} | ${s.detail}`).join("\n");
-
-const textToPlan = (text: string): PlanStep[] =>
-  text
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .map((line) => {
-      const [mins, title, ...rest] = line.split("|");
-      return {
-        mins: Number.parseInt(mins?.trim() ?? "", 10) || 0,
-        title: (title ?? "").trim(),
-        detail: rest.join("|").trim(),
-      };
-    });
+const emptyStep = (): PlanStep => ({ mins: 10, title: "", detail: "", studentActivity: "", assessment: "" });
 
 export function PlanSection({
   steps,
@@ -186,45 +172,113 @@ export function PlanSection({
   onSave: (next: PlanStep[]) => Promise<void>;
 }) {
   const [editing, setEditing] = useState(false);
-  const [draft, setDraft] = useState(planToText(steps));
+  const [draft, setDraft] = useState<PlanStep[]>(steps);
   const [saving, setSaving] = useState(false);
   const total = steps.reduce((sum, s) => sum + s.mins, 0);
 
   const save = async () => {
     setSaving(true);
     try {
-      await onSave(textToPlan(draft));
+      await onSave(draft.filter((s) => s.title.trim() || s.detail.trim()));
       setEditing(false);
     } finally {
       setSaving(false);
     }
   };
 
+  const updateStep = (i: number, patch: Partial<PlanStep>) =>
+    setDraft((d) => d.map((s, idx) => (idx === i ? { ...s, ...patch } : s)));
+  const removeStep = (i: number) => setDraft((d) => d.filter((_, idx) => idx !== i));
+  const addStep = () => setDraft((d) => [...d, emptyStep()]);
+
   return (
     <Section
       title={`Lesson plan${total ? ` · ${total} min` : ""}`}
-      hint="One step per line, as: minutes | title | what happens"
       editing={editing}
       saving={saving}
       onEdit={() => {
-        setDraft(planToText(steps));
+        setDraft(steps.length ? steps : [emptyStep()]);
         setEditing(true);
       }}
       onCancel={() => setEditing(false)}
       onSave={save}
     >
       {editing ? (
-        <textarea className="field min-h-48" value={draft} onChange={(e) => setDraft(e.target.value)} />
+        <div className="space-y-4">
+          {draft.map((step, i) => (
+            <div key={i} className="rounded-lg border border-[color:var(--border)] p-3">
+              <div className="flex items-center gap-2">
+                <input
+                  className="field w-20 shrink-0"
+                  inputMode="numeric"
+                  value={step.mins}
+                  onChange={(e) => updateStep(i, { mins: Number.parseInt(e.target.value, 10) || 0 })}
+                  aria-label="Minutes"
+                />
+                <input
+                  className="field flex-1"
+                  placeholder="Step title"
+                  value={step.title}
+                  onChange={(e) => updateStep(i, { title: e.target.value })}
+                />
+                <button className="btn btn-sm btn-icon" onClick={() => removeStep(i)} aria-label="Remove step">
+                  ✕
+                </button>
+              </div>
+              <label className="mt-2 block text-xs font-semibold text-[color:var(--muted)]">
+                Instructions — what you say / set up
+                <textarea
+                  className="field mt-1 min-h-16"
+                  value={step.detail}
+                  onChange={(e) => updateStep(i, { detail: e.target.value })}
+                />
+              </label>
+              <label className="mt-2 block text-xs font-semibold text-[color:var(--muted)]">
+                What students do
+                <textarea
+                  className="field mt-1 min-h-16"
+                  value={step.studentActivity ?? ""}
+                  onChange={(e) => updateStep(i, { studentActivity: e.target.value })}
+                />
+              </label>
+              <label className="mt-2 block text-xs font-semibold text-[color:var(--muted)]">
+                How to assess
+                <textarea
+                  className="field mt-1 min-h-16"
+                  value={step.assessment ?? ""}
+                  onChange={(e) => updateStep(i, { assessment: e.target.value })}
+                />
+              </label>
+            </div>
+          ))}
+          <button className="btn btn-sm w-full" onClick={addStep}>
+            + Add step
+          </button>
+        </div>
       ) : steps.length ? (
-        <ol className="space-y-3">
+        <ol className="space-y-4">
           {steps.map((step, i) => (
             <li key={i} className="flex gap-3">
               <span className="mt-0.5 w-14 shrink-0 rounded-md bg-[color:var(--accent-soft)] px-2 py-1 text-center text-xs font-bold text-[color:var(--accent)]">
                 {step.mins} min
               </span>
-              <div className="min-w-0">
+              <div className="min-w-0 flex-1 space-y-1.5">
                 <p className="text-base font-semibold">{step.title}</p>
-                <p className="text-[17px] leading-relaxed text-[color:var(--muted)]">{step.detail}</p>
+                {step.detail && (
+                  <p className="text-[17px] leading-relaxed text-[color:var(--muted)]">{step.detail}</p>
+                )}
+                {step.studentActivity && (
+                  <p className="text-[15px] leading-relaxed">
+                    <span className="font-semibold text-[color:var(--accent)]">Students: </span>
+                    {step.studentActivity}
+                  </p>
+                )}
+                {step.assessment && (
+                  <p className="text-[15px] leading-relaxed">
+                    <span className="font-semibold text-[color:var(--good)]">Assess: </span>
+                    {step.assessment}
+                  </p>
+                )}
               </div>
             </li>
           ))}
@@ -375,16 +429,19 @@ export function IceBreakerSection({
   title,
   description,
   minutes,
+  keyStage,
   onSave,
 }: {
   title: string;
   description: string;
   minutes: number;
+  keyStage: string;
   onSave: (next: { iceBreakerTitle: string; iceBreakerDescription: string; iceBreakerMinutes: number }) => Promise<void>;
 }) {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState({ title, description, minutes: String(minutes) });
   const [saving, setSaving] = useState(false);
+  const [rolling, setRolling] = useState(false);
 
   const save = async () => {
     setSaving(true);
@@ -397,6 +454,17 @@ export function IceBreakerSection({
       setEditing(false);
     } finally {
       setSaving(false);
+    }
+  };
+
+  const randomize = async () => {
+    setRolling(true);
+    try {
+      const next = randomIceBreaker(keyStage, title);
+      await onSave(next);
+      setDraft({ title: next.iceBreakerTitle, description: next.iceBreakerDescription, minutes: String(next.iceBreakerMinutes) });
+    } finally {
+      setRolling(false);
     }
   };
 
@@ -416,15 +484,20 @@ export function IceBreakerSection({
             </button>
           </>
         ) : (
-          <button
-            className="btn btn-sm no-print"
-            onClick={() => {
-              setDraft({ title, description, minutes: String(minutes) });
-              setEditing(true);
-            }}
-          >
-            Edit
-          </button>
+          <>
+            <button className="btn btn-sm no-print" onClick={randomize} disabled={rolling}>
+              {rolling ? "…" : "🎲 Randomize"}
+            </button>
+            <button
+              className="btn btn-sm no-print"
+              onClick={() => {
+                setDraft({ title, description, minutes: String(minutes) });
+                setEditing(true);
+              }}
+            >
+              Edit
+            </button>
+          </>
         )}
       </div>
 

@@ -35,7 +35,13 @@ export type Lesson = {
   updatedAt?: number;
 };
 
-export type PlanStep = { mins: number; title: string; detail: string };
+export type PlanStep = {
+  mins: number;
+  title: string;
+  detail: string; // instructions — what the teacher says/sets up
+  studentActivity?: string; // what students actually do during this step
+  assessment?: string; // how to check understanding during/after this step
+};
 
 export type TermWeek = {
   no: number | null;

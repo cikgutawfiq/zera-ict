@@ -12,11 +12,11 @@ Google account; embedded as an iframe on `cikgutawfiq.com/zera-ict`.
 | Screen | What it does |
 | --- | --- |
 | `/` **Today** | The classes you teach today, in period order with times. Deep link a date with `/?date=2026-09-22`. |
-| `/lesson/[id]` | Value of the Day (moral value, quote, food-for-thought), a 5–10 min Ice Breaker, objectives, timed lesson plan, activities, success criteria, resources, plus the original SOW text. Every field is editable in place. Mark **Done** / **Carried over** and leave an after-the-lesson note. |
+| `/lesson/[id]` | Value of the Day (moral value, quote, food-for-thought), a 5–10 min Ice Breaker (with a 🎲 Randomize button), side-by-side topic/subtopic, objectives, a per-step lesson plan (instructions / what students do / how to assess), activities, success criteria, resources and a Reflection box. Every field is editable in place. Mark **Done** / **Carried over**. |
 | `/lesson/[id]/present` | Full-screen presentation mode: big type, arrow keys or buttons, screen wake-lock on. Opens on the Value of the Day, then the Ice Breaker, then the lesson plan. |
 | `/calendar` **This week** | The five weekdays, each with its own column on desktop (a real week board) and stacked on mobile. |
 | `/classes`, `/class/[id]` | Every class; each term is its own collapsible section (the current term opens by default), with **+ Week** to add more. |
-| `/admin` | Upload the two SOW workbooks to re-sync Term 1 from your phone, seed / re-sync from the bundled SOW, add or remove terms and weeks, sign out. |
+| `/admin` | Upload the two SOW workbooks to re-sync Term 1 from your phone, seed / re-sync from the bundled SOW, add or remove terms and weeks (each term is an accordion — collapsed by default, only one open at a time), sign out. |
 
 ## Look and feel
 
@@ -42,7 +42,13 @@ Below 1024px everything collapses back to the single-column, bottom-tab mobile l
   per class from a 41-entry pool so nothing repeats across a class's full year (see
   `src/data/values.ts`).
 - **Ice breaker**: every lesson gets one 5–10 minute opener, age-banded by key stage (KS1/KS2/KS3
-  pools, 15 entries each).
+  pools, ~33 entries each, 99 games total). Hit **🎲 Randomize** on the lesson page to reroll from
+  the same-key-stage pool.
+- **Lesson plan steps**: each timed step optionally carries three parts — instructions (what you
+  say/set up), what students do, and how to assess. New/edited steps can fill in all three; older
+  steps keep just their instructions until you flesh them out. Not every one of the 369 lessons
+  has been backfilled with the fuller three-part detail yet — the structure and editor are ready,
+  filling them in is an ongoing pass.
 - **Re-uploading Term 1**: `/admin` has file pickers for both workbooks — parsing happens in the
   browser (`read-excel-file`, no server, no Python needed) and feeds the same seed/re-sync flow.
 

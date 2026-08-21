@@ -148,6 +148,25 @@ export const ICE_BREAKERS_KS1: IceBreakerEntry[] = [
   { title: "Thumbs Up Weather Check", description: "Everyone shows how they're feeling with a thumbs up, sideways or down, and one word why.", minutes: 5 },
   { title: "Silent Line-Up", description: "Line up in height order (or birthday month) without talking, using only gestures.", minutes: 7 },
   { title: "Balloon Keep-Up", description: "Keep a balloon off the floor as a group, counting taps out loud together.", minutes: 6 },
+  { title: "Musical Statues", description: "Dance while the music plays; freeze the instant it stops. Last one moving is out for a round.", minutes: 6 },
+  { title: "The Sun Shines On", description: "Sit in a circle; the caller says 'the sun shines on everyone who...' and matching pupils swap seats.", minutes: 7 },
+  { title: "Draw My Face", description: "Partners take turns describing their own face while the other draws it from the description alone.", minutes: 8 },
+  { title: "Shape Freeze", description: "Call out a shape; pupils freeze their bodies (alone or in pairs) into that shape as fast as possible.", minutes: 5 },
+  { title: "Pass the Clap", description: "Sit in a circle; pass a single clap around as fast as possible without breaking the rhythm.", minutes: 5 },
+  { title: "What's Missing?", description: "Show five objects on a tray for 10 seconds, hide one, pupils guess which is missing.", minutes: 6 },
+  { title: "Follow the Leader", description: "One pupil leads simple movements around the room; the rest copy exactly, no talking.", minutes: 6 },
+  { title: "Guess My Animal", description: "Act out an animal silently; classmates guess what it is before the timer runs out.", minutes: 6 },
+  { title: "Bubble Pop Countdown", description: "Blow bubbles; pupils pop as many as they can before they touch the floor, then count together.", minutes: 5 },
+  { title: "Row Your Boat Circle", description: "Sit in a circle holding hands, rock gently side to side singing a simple counting rhyme together.", minutes: 5 },
+  { title: "Copy the Beat", description: "Tap a simple beat on the table; pupils copy it back, then try to beat the teacher's speed.", minutes: 5 },
+  { title: "Shrink and Grow", description: "Pupils make themselves as small as possible, then as tall as possible, on the count of three.", minutes: 5 },
+  { title: "Silly Walks Parade", description: "Line up and take turns inventing a silly walk across the room for everyone to copy.", minutes: 7 },
+  { title: "Which Hand?", description: "Hide a small object in one fist behind your back; partner guesses left or right hand.", minutes: 5 },
+  { title: "Team Echo", description: "Teacher claps a short pattern; the whole class echoes it back together in one voice.", minutes: 5 },
+  { title: "Feelings Faces", description: "Hold up a mirror and pull a happy, sad, surprised and silly face in turn; partner names each one.", minutes: 6 },
+  { title: "Number Freeze", description: "Call a number; pupils must form groups of exactly that size as fast as possible.", minutes: 6 },
+  { title: "Copy the Robot", description: "One pupil moves like a slow robot; the group copies the stiff, jerky movements exactly.", minutes: 6 },
+  { title: "Traffic Light Game", description: "Call red, amber or green; pupils stop, walk slowly, or walk normally around the room.", minutes: 6 },
 ];
 
 export const ICE_BREAKERS_KS2: IceBreakerEntry[] = [
@@ -166,6 +185,24 @@ export const ICE_BREAKERS_KS2: IceBreakerEntry[] = [
   { title: "Mystery Object Bag", description: "Feel a hidden object in a bag and describe it with clues; class guesses what it is.", minutes: 7 },
   { title: "Silent Sort", description: "Without talking, physically line up by a criterion (age, house number) using only gestures.", minutes: 7 },
   { title: "This or That Rapid Round", description: "Quickfire this-or-that questions; pupils answer with a show of hands, fastest round wins.", minutes: 5 },
+  { title: "Chain Memory Game", description: "First pupil names an object; each next pupil repeats the list and adds one more, in order.", minutes: 7 },
+  { title: "Desert Island Pick", description: "Pupils choose one app or gadget they'd take to a desert island and explain why in one sentence.", minutes: 6 },
+  { title: "Charades: Tech Edition", description: "Act out a tech word or app silently; classmates guess within a 60-second timer.", minutes: 8 },
+  { title: "Odd One Out", description: "Show four items or words; pupils spot and justify which one doesn't belong.", minutes: 6 },
+  { title: "Back-to-Back Drawing", description: "Sitting back to back, one describes a simple shape while the other draws it blind, then compare.", minutes: 8 },
+  { title: "Would You Rather Debate", description: "Pose a would-you-rather question; pupils group by answer and each group gives one reason.", minutes: 7 },
+  { title: "Guess the Leader", description: "One pupil leaves the room; the group secretly picks a leader whose movements everyone copies subtly.", minutes: 8 },
+  { title: "Category Countdown", description: "Name a category; pupils shout an example each in turn until someone repeats or hesitates.", minutes: 6 },
+  { title: "Two-Minute Interview", description: "In pairs, interview a partner with three fun questions, then introduce them to the group.", minutes: 8 },
+  { title: "Silent Line-Up Challenge", description: "Line up by a hidden number written on a card, without speaking, using only gestures to compare.", minutes: 7 },
+  { title: "Guess the Google Search", description: "Show the first few words of a common search query; pupils guess how it finishes.", minutes: 6 },
+  { title: "Blind Trust Walk", description: "In pairs, one closes their eyes and is guided safely across the room by verbal instructions only.", minutes: 8 },
+  { title: "Rapid Riddles", description: "Read three short riddles; first correct answer each round gets a point.", minutes: 6 },
+  { title: "Alphabet Names", description: "Go around the room saying a word starting with each letter of the alphabet related to computing.", minutes: 7 },
+  { title: "Draw What I Describe", description: "Describe a made-up creature in detail; partner draws exactly what they hear, then reveal and compare.", minutes: 8 },
+  { title: "Would You Rather: School Edition", description: "Pose two lighthearted school dilemmas; pupils vote and justify their choice to a neighbour.", minutes: 6 },
+  { title: "Guess the Sound Effect", description: "Play three short sound effects; pupils guess the object or action that made each one.", minutes: 6 },
+  { title: "Spot the Difference", description: "Show two near-identical pictures for 15 seconds each; pupils list as many differences as they spot.", minutes: 7 },
 ];
 
 export const ICE_BREAKERS_KS3: IceBreakerEntry[] = [
@@ -184,6 +221,23 @@ export const ICE_BREAKERS_KS3: IceBreakerEntry[] = [
   { title: "Two-Truths Tech Trivia", description: "Teacher states two true and one false tech fact; class discusses in pairs before voting.", minutes: 7 },
   { title: "Elevator Pitch Swap", description: "Explain what was learned last lesson in 30 seconds, as if to someone who missed it.", minutes: 6 },
   { title: "Would You Rather: AI Edition", description: "Pose a light AI-ethics dilemma; pupils vote with their feet and defend their side briefly.", minutes: 8 },
+  { title: "Pitch It in 30", description: "Pitch a made-up app idea to a partner in 30 seconds flat; partner rates it out of 10.", minutes: 7 },
+  { title: "Two Sides of the Room", description: "Read a statement; pupils move to 'agree' or 'disagree' sides and one from each side explains why.", minutes: 8 },
+  { title: "Guess the Job", description: "Describe a tech job's daily tasks without naming it; classmates guess the job title.", minutes: 7 },
+  { title: "Rapid-Fire Debate Swap", description: "Pairs argue a light topic for 30 seconds, then instantly swap to argue the opposite side.", minutes: 8 },
+  { title: "Would You Rather: Future Tech", description: "Pose a future-tech dilemma (e.g. a robot friend or a time machine); pupils vote and justify.", minutes: 7 },
+  { title: "Silent Card Sort", description: "In silence, sort a set of tech-term cards into two categories the group agrees on non-verbally.", minutes: 8 },
+  { title: "One Truth, Two Lies", description: "State three tech 'facts', two false; class questions to narrow down which is true.", minutes: 8 },
+  { title: "Beat the Clock Quiz", description: "Answer five rapid recall questions as a team before a 90-second timer runs out.", minutes: 6 },
+  { title: "Guess the Company Logo", description: "Describe a well-known tech company's logo without naming it; class guesses the company.", minutes: 6 },
+  { title: "The Persuasion Game", description: "Convince a partner that an everyday object is actually cutting-edge tech, in one minute.", minutes: 7 },
+  { title: "Rank It", description: "Rank five given apps/tools from most to least useful in pairs, then compare rankings as a class.", minutes: 8 },
+  { title: "Would You Rather: Ethics Edition", description: "Pose a light tech-ethics dilemma; pupils vote and give one sentence justifying their side.", minutes: 8 },
+  { title: "Guess the Decade", description: "Show a description of an old piece of tech; pupils guess which decade it's from.", minutes: 6 },
+  { title: "60-Second Explainer", description: "Explain a tech term to a partner who 'knows nothing', in 60 seconds, no jargon allowed.", minutes: 7 },
+  { title: "Spot the Fake Headline", description: "Read two tech headlines, one real and one invented; class votes which is genuine.", minutes: 7 },
+  { title: "Chain Reaction Story", description: "Build a short cause-and-effect story about a tech mishap, one sentence per pupil around the room.", minutes: 8 },
+  { title: "Guess the Emoji Movie", description: "Show a tech-themed idea in emoji only; classmates race to decode the meaning.", minutes: 6 },
 ];
 
 const ICE_BREAKER_POOLS: Record<string, IceBreakerEntry[]> = {
@@ -206,6 +260,18 @@ export function assignIceBreaker(
   const pool = ICE_BREAKER_POOLS[keyStage] ?? ICE_BREAKERS_KS2;
   const offset = hashOffset(classId + "::icebreaker", pool.length);
   const entry = pool[(offset + indexInClassYear) % pool.length];
+  return {
+    iceBreakerTitle: entry.title,
+    iceBreakerDescription: entry.description,
+    iceBreakerMinutes: entry.minutes,
+  };
+}
+
+/** Picks a genuinely random ice breaker from the key stage's pool, for the "🎲 Randomize" button. */
+export function randomIceBreaker(keyStage: string, excludeTitle?: string): IceBreakerAssignment {
+  const pool = ICE_BREAKER_POOLS[keyStage] ?? ICE_BREAKERS_KS2;
+  const choices = pool.length > 1 ? pool.filter((e) => e.title !== excludeTitle) : pool;
+  const entry = choices[Math.floor(Math.random() * choices.length)];
   return {
     iceBreakerTitle: entry.title,
     iceBreakerDescription: entry.description,

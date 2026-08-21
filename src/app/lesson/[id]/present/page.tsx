@@ -109,7 +109,21 @@ export default function PresentPage() {
                 <p className="text-xl font-bold leading-snug">
                   <span className="text-[color:var(--accent)]">{step.mins} min</span> · {step.title}
                 </p>
-                <p className="mt-1 text-lg leading-relaxed text-[color:var(--muted)]">{step.detail}</p>
+                {step.detail && (
+                  <p className="mt-1 text-lg leading-relaxed text-[color:var(--muted)]">{step.detail}</p>
+                )}
+                {step.studentActivity && (
+                  <p className="mt-1 text-base leading-relaxed">
+                    <span className="font-semibold text-[color:var(--accent)]">Students: </span>
+                    {step.studentActivity}
+                  </p>
+                )}
+                {step.assessment && (
+                  <p className="mt-1 text-base leading-relaxed">
+                    <span className="font-semibold text-[color:var(--good)]">Assess: </span>
+                    {step.assessment}
+                  </p>
+                )}
               </li>
             ))}
           </ol>

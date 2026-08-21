@@ -20,6 +20,7 @@ export default function AdminPage() {
   const [ks1ks2File, setKs1ks2File] = useState<File | null>(null);
   const [ks3File, setKs3File] = useState<File | null>(null);
   const [uploadMessage, setUploadMessage] = useState<string | null>(null);
+  const [openTermId, setOpenTermId] = useState<string | null>(null);
 
   const edited = lessons.filter((l) => l.updatedAt).length;
 
@@ -193,48 +194,69 @@ export default function AdminPage() {
           {terms.length === 0 && (
             <p className="mt-2 text-xs text-[color:var(--muted)]">No terms yet — seed the database first.</p>
           )}
-          <div className="mt-3 space-y-4">
-            {terms.map((term) => (
-              <div key={term.id}>
-                <div className="flex items-center gap-2">
-                  <p className="flex-1 text-sm font-semibold">
-                    {term.name}
-                    <span className="ml-2 text-xs font-normal text-[color:var(--muted)]">
-                      {term.weeks.length} weeks
-                    </span>
-                  </p>
-                  <button className="btn btn-sm" onClick={() => addWeek(term)} disabled={busy}>
-                    + Week
-                  </button>
+          <div className="mt-3 space-y-2">
+            {terms.map((term) => {
+              const open = openTermId === term.id;
+              return (
+                <div key={term.id} className="overflow-hidden rounded-lg border border-[color:var(--border)]">
                   <button
-                    className="btn btn-sm"
-                    style={{ color: "var(--warn)" }}
-                    onClick={() => removeTerm(term)}
-                    disabled={busy}
+                    className="flex w-full items-center gap-2 px-3 py-2.5 text-left"
+                    onClick={() => setOpenTermId(open ? null : term.id)}
+                    aria-expanded={open}
                   >
-                    Delete
+                    <span
+                      aria-hidden
+                      className="text-sm text-[color:var(--muted)] transition-transform"
+                      style={{
+                        transform: open ? "rotate(90deg)" : "rotate(0deg)",
+                        transitionDuration: "var(--dur-fast)",
+                        transitionTimingFunction: "var(--ease)",
+                      }}
+                    >
+                      ▸
+                    </span>
+                    <span className="flex-1 text-sm font-semibold">{term.name}</span>
+                    <span className="chip">{term.weeks.length} weeks</span>
                   </button>
+                  {open && (
+                    <div className="border-t border-[color:var(--border)] p-3">
+                      <div className="flex items-center gap-2">
+                        <span className="flex-1" />
+                        <button className="btn btn-sm" onClick={() => addWeek(term)} disabled={busy}>
+                          + Week
+                        </button>
+                        <button
+                          className="btn btn-sm"
+                          style={{ color: "var(--warn)" }}
+                          onClick={() => removeTerm(term)}
+                          disabled={busy}
+                        >
+                          Delete term
+                        </button>
+                      </div>
+                      <ul className="mt-2 space-y-1">
+                        {term.weeks.map((w, i) => (
+                          <li key={`${w.start}-${i}`} className="flex items-center gap-2 text-xs">
+                            <span className="w-20 shrink-0 font-semibold">{w.label}</span>
+                            <span className="flex-1 text-[color:var(--muted)]">{formatRange(w.start, w.end)}</span>
+                            {w.isBreak && <span className="chip">break</span>}
+                            {w.isExam && <span className="chip">exam</span>}
+                            <button
+                              className="btn btn-sm"
+                              onClick={() => removeWeek(term, i)}
+                              disabled={busy}
+                              aria-label={`Remove ${w.label}`}
+                            >
+                              ✕
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
-                <ul className="mt-2 space-y-1">
-                  {term.weeks.map((w, i) => (
-                    <li key={`${w.start}-${i}`} className="flex items-center gap-2 text-xs">
-                      <span className="w-20 shrink-0 font-semibold">{w.label}</span>
-                      <span className="flex-1 text-[color:var(--muted)]">{formatRange(w.start, w.end)}</span>
-                      {w.isBreak && <span className="chip">break</span>}
-                      {w.isExam && <span className="chip">exam</span>}
-                      <button
-                        className="btn btn-sm"
-                        onClick={() => removeWeek(term, i)}
-                        disabled={busy}
-                        aria-label={`Remove ${w.label}`}
-                      >
-                        ✕
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
