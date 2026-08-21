@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useData } from "@/lib/store";
 import { CLASS_BY_ID, slotsForClass } from "@/data/timetable";
 import { addDays, formatRange, mondayOf, todayISO } from "@/lib/dates";
 import { PageHeader, StatusChip } from "@/components/ui";
-import { assignMoralContent } from "@/data/values";
+import { assignIceBreaker, assignMoralContent } from "@/data/values";
 import type { Lesson } from "@/lib/types";
 
 const DAY_SHORT = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -28,6 +28,21 @@ export default function ClassPage() {
   const [start, setStart] = useState(mondayOf(todayISO()));
   const [topic, setTopic] = useState("");
 
+  // The term containing today opens by default; the rest start collapsed.
+  const currentTermId = useMemo(() => {
+    const today = todayISO();
+    const hit = terms.find((t) => t.weeks.some((w) => today >= w.start && today <= w.end));
+    return hit?.id ?? terms[0]?.id;
+  }, [terms]);
+  const [openTerms, setOpenTerms] = useState<Set<string>>(() => new Set(currentTermId ? [currentTermId] : []));
+  const toggleTerm = (id: string) =>
+    setOpenTerms((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+
   const add = async () => {
     const no = Number.parseInt(weekNo, 10);
     if (!no || !start) return;
@@ -37,6 +52,7 @@ export default function ClassPage() {
       return;
     }
     const moral = assignMoralContent(classId, lessons.length);
+    const iceBreaker = assignIceBreaker(classId, info?.keyStage ?? "KS2", lessons.length);
     const lesson: Lesson = {
       id,
       classId,
@@ -57,6 +73,7 @@ export default function ClassPage() {
       successCriteria: [],
       resources: [],
       ...moral,
+      ...iceBreaker,
       status: "planned",
       note: "",
       order: no,
@@ -67,6 +84,7 @@ export default function ClassPage() {
       setAdding(false);
       setTopic("");
       setWeekNo(String(no + 1));
+      setOpenTerms((prev) => new Set(prev).add(termId));
     } finally {
       setBusy(false);
     }
@@ -80,6 +98,8 @@ export default function ClassPage() {
   return (
     <>
       <PageHeader
+        back
+        backHref="/classes"
         title={info?.label ?? classId}
         subtitle={
           info
@@ -98,8 +118,8 @@ export default function ClassPage() {
       <main className="mx-auto max-w-3xl space-y-3 p-4">
         {adding && (
           <div className="card space-y-3 p-4">
-            <h2 className="text-sm font-bold">Add a week</h2>
-            <label className="block text-xs font-semibold text-[color:var(--muted)]">
+            <h2 className="text-base font-bold">Add a week</h2>
+            <label className="block text-sm font-semibold text-[color:var(--muted)]">
               Term
               <select className="field mt-1" value={termId} onChange={(e) => setTermId(e.target.value)}>
                 {terms.map((t) => (
@@ -111,7 +131,7 @@ export default function ClassPage() {
               </select>
             </label>
             <div className="flex gap-3">
-              <label className="flex-1 text-xs font-semibold text-[color:var(--muted)]">
+              <label className="flex-1 text-sm font-semibold text-[color:var(--muted)]">
                 Week number
                 <input
                   className="field mt-1"
@@ -120,7 +140,7 @@ export default function ClassPage() {
                   onChange={(e) => setWeekNo(e.target.value)}
                 />
               </label>
-              <label className="flex-1 text-xs font-semibold text-[color:var(--muted)]">
+              <label className="flex-1 text-sm font-semibold text-[color:var(--muted)]">
                 Week starting (Mon)
                 <input
                   className="field mt-1"
@@ -130,7 +150,7 @@ export default function ClassPage() {
                 />
               </label>
             </div>
-            <label className="block text-xs font-semibold text-[color:var(--muted)]">
+            <label className="block text-sm font-semibold text-[color:var(--muted)]">
               Topic (optional)
               <input className="field mt-1" value={topic} onChange={(e) => setTopic(e.target.value)} />
             </label>
@@ -142,42 +162,73 @@ export default function ClassPage() {
 
         {loading && <p className="text-sm text-[color:var(--muted)]">Loading…</p>}
 
-        {byTerm.map((group) => (
-          <section key={group.id} className="space-y-2">
-            {terms.length > 0 && <h2 className="px-1 pt-2 text-sm font-bold">{group.term}</h2>}
-            {group.items.length === 0 && (
-              <p className="px-1 text-xs text-[color:var(--muted)]">No lessons in this term yet.</p>
-            )}
-            {group.items.map((lesson) => (
-              <Link key={lesson.id} href={`/lesson/${lesson.id}`} className="card block px-4 py-3">
-                <div className="flex items-start gap-3">
-                  <div className="w-16 shrink-0">
-                    <p className="text-xs font-bold">{lesson.weekLabel}</p>
-                    <p className="text-[11px] text-[color:var(--muted)]">
-                      {formatRange(lesson.dateStart, lesson.dateEnd)}
-                    </p>
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-semibold">{lesson.topic || "Not planned yet"}</p>
-                    {lesson.subtopic && (
-                      <p className="truncate text-xs text-[color:var(--muted)]">{lesson.subtopic}</p>
-                    )}
-                    <div className="mt-1.5 flex flex-wrap gap-1.5">
-                      <StatusChip status={lesson.status} />
-                      {lesson.objectives.length > 0 && (
-                        <span className="chip">{lesson.objectives.length} objectives</span>
-                      )}
-                      {lesson.note && <span className="chip">note</span>}
-                    </div>
-                  </div>
+        {byTerm.map((group) => {
+          const open = terms.length === 0 || openTerms.has(group.id);
+          const done = group.items.filter((l) => l.status === "done").length;
+          return (
+            <section key={group.id} className="card overflow-hidden p-0">
+              {terms.length > 0 && (
+                <button
+                  className="flex w-full items-center gap-2 px-4 py-3.5 text-left"
+                  onClick={() => toggleTerm(group.id)}
+                  aria-expanded={open}
+                >
+                  <span
+                    aria-hidden
+                    className="text-sm text-[color:var(--muted)] transition-transform"
+                    style={{
+                      transform: open ? "rotate(90deg)" : "rotate(0deg)",
+                      transitionDuration: "var(--dur-fast)",
+                      transitionTimingFunction: "var(--ease)",
+                    }}
+                  >
+                    ▸
+                  </span>
+                  <span className="flex-1 text-base font-bold">{group.term}</span>
+                  <span className="chip">
+                    {group.items.length} week{group.items.length === 1 ? "" : "s"}
+                  </span>
+                  {done > 0 && <span className="chip">{done} done</span>}
+                </button>
+              )}
+              {open && (
+                <div className="space-y-2 border-t border-[color:var(--border)] p-3">
+                  {group.items.length === 0 && (
+                    <p className="px-1 py-2 text-sm text-[color:var(--muted)]">No lessons in this term yet.</p>
+                  )}
+                  {group.items.map((lesson) => (
+                    <Link key={lesson.id} href={`/lesson/${lesson.id}`} className="card block px-4 py-3">
+                      <div className="flex items-start gap-3">
+                        <div className="w-16 shrink-0">
+                          <p className="text-sm font-bold">{lesson.weekLabel}</p>
+                          <p className="text-xs text-[color:var(--muted)]">
+                            {formatRange(lesson.dateStart, lesson.dateEnd)}
+                          </p>
+                        </div>
+                        <div className="min-w-0 flex-1">
+                          <p className="truncate text-base font-semibold">{lesson.topic || "Not planned yet"}</p>
+                          {lesson.subtopic && (
+                            <p className="truncate text-sm text-[color:var(--muted)]">{lesson.subtopic}</p>
+                          )}
+                          <div className="mt-1.5 flex flex-wrap gap-1.5">
+                            <StatusChip status={lesson.status} />
+                            {lesson.objectives.length > 0 && (
+                              <span className="chip">{lesson.objectives.length} objectives</span>
+                            )}
+                            {lesson.note && <span className="chip">note</span>}
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
-              </Link>
-            ))}
-          </section>
-        ))}
+              )}
+            </section>
+          );
+        })}
 
         {terms.length > 0 && orphans.length > 0 && (
-          <p className="px-1 text-xs text-[color:var(--muted)]">
+          <p className="px-1 text-sm text-[color:var(--muted)]">
             {orphans.length} lesson(s) belong to a term that no longer exists.
           </p>
         )}

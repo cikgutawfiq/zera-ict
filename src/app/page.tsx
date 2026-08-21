@@ -52,16 +52,16 @@ export default function TodayPage() {
       <main className="mx-auto max-w-3xl space-y-3 p-4">
         {week && (
           <div className="card px-4 py-3">
-            <p className="text-sm font-semibold">
+            <p className="text-base font-semibold">
               {week.term.name} · {week.week.label}
               {week.week.isExam && " · Examination Week"}
             </p>
-            <p className="text-xs text-[color:var(--muted)]">
+            <p className="text-sm text-[color:var(--muted)]">
               Week of {formatLong(mondayOf(date))}
               {week.week.isBreak && " · Mid-term break"}
             </p>
             {week.week.remark && (
-              <p className="mt-2 whitespace-pre-line text-xs text-[color:var(--warn)]">{week.week.remark}</p>
+              <p className="mt-2 whitespace-pre-line text-sm text-[color:var(--warn)]">{week.week.remark}</p>
             )}
           </div>
         )}
@@ -70,8 +70,8 @@ export default function TodayPage() {
 
         {!loading && slots.length === 0 && (
           <div className="card p-6 text-center">
-            <p className="text-sm font-semibold">No classes on {DAY_NAMES[day]}.</p>
-            <p className="mt-1 text-xs text-[color:var(--muted)]">Enjoy the day off.</p>
+            <p className="text-base font-semibold">No classes on {DAY_NAMES[day]}.</p>
+            <p className="mt-1 text-sm text-[color:var(--muted)]">Enjoy the day off.</p>
           </div>
         )}
 

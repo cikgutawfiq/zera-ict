@@ -13,7 +13,7 @@ Output shape:
 import json
 import os
 
-from values import assign_moral_content
+from values import assign_ice_breaker, assign_moral_content
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "src", "data")
@@ -147,7 +147,7 @@ def build_blank_rows(term_id: str, weeks: list) -> list:
 
 
 def attach_moral_content(lessons: list) -> None:
-    """Assign moralValue/quote/foodForThought in-place, chronologically per class."""
+    """Assign moralValue/quote/foodForThought/iceBreaker* in-place, chronologically per class."""
     by_class: dict = {}
     for lesson in lessons:
         by_class.setdefault(lesson["classId"], []).append(lesson)
@@ -155,6 +155,7 @@ def attach_moral_content(lessons: list) -> None:
         group.sort(key=lambda l: (l["termId"], l["weekNo"] if l["weekNo"] is not None else 0))
         for i, lesson in enumerate(group):
             lesson.update(assign_moral_content(class_id, i))
+            lesson.update(assign_ice_breaker(class_id, i))
 
 
 def main():

@@ -7,7 +7,14 @@ import { useData } from "@/lib/store";
 import { CLASS_BY_ID, slotsForClass } from "@/data/timetable";
 import { formatRange, prettyTime } from "@/lib/dates";
 import { PageHeader, StatusChip, ClassDot } from "@/components/ui";
-import { ListSection, MoralSection, PlanSection, ResourceSection, TextSection } from "@/components/Editable";
+import {
+  IceBreakerSection,
+  ListSection,
+  MoralSection,
+  PlanSection,
+  ResourceSection,
+  TextSection,
+} from "@/components/Editable";
 import type { Lesson, Status } from "@/lib/types";
 
 const DAY_SHORT = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -59,6 +66,8 @@ export default function LessonPage() {
   return (
     <>
       <PageHeader
+        back
+        backHref={`/class/${lesson.classId}`}
         title={`${info?.label ?? lesson.classId} · ${lesson.weekLabel}`}
         subtitle={`${formatRange(lesson.dateStart, lesson.dateEnd)} · ${lesson.topic || "No topic"}`}
         right={
@@ -103,7 +112,7 @@ export default function LessonPage() {
           </div>
 
           {lesson.remark && (
-            <p className="mt-3 whitespace-pre-line rounded-lg bg-[color:var(--surface-2)] p-3 text-xs text-[color:var(--warn)]">
+            <p className="mt-3 whitespace-pre-line rounded-lg bg-[color:var(--surface-2)] p-3 text-sm text-[color:var(--warn)]">
               {lesson.remark}
             </p>
           )}
@@ -115,6 +124,13 @@ export default function LessonPage() {
           quote={lesson.quote}
           quoteAuthor={lesson.quoteAuthor}
           foodForThought={lesson.foodForThought}
+          onSave={(next) => patch(next)}
+        />
+
+        <IceBreakerSection
+          title={lesson.iceBreakerTitle}
+          description={lesson.iceBreakerDescription}
+          minutes={lesson.iceBreakerMinutes}
           onSave={(next) => patch(next)}
         />
 

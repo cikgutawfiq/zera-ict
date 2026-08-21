@@ -28,6 +28,28 @@ export function todayISO(): string {
   return toISO(new Date());
 }
 
+/** First of the month containing `iso`. */
+export function startOfMonth(iso: string): string {
+  const d = fromISO(iso);
+  return toISO(new Date(d.getFullYear(), d.getMonth(), 1));
+}
+
+export function addMonths(iso: string, n: number): string {
+  const d = fromISO(iso);
+  return toISO(new Date(d.getFullYear(), d.getMonth() + n, 1));
+}
+
+export function daysInMonth(iso: string): number {
+  const d = fromISO(iso);
+  return new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate();
+}
+
+const MONTH_YEAR = new Intl.DateTimeFormat("en-GB", { month: "long", year: "numeric" });
+
+export function formatMonthYear(iso: string): string {
+  return MONTH_YEAR.format(fromISO(iso));
+}
+
 const LONG = new Intl.DateTimeFormat("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
 const SHORT = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short" });
 

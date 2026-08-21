@@ -6,11 +6,13 @@ import { useData } from "@/lib/store";
 import { CLASS_BY_ID } from "@/data/timetable";
 import type { Lesson } from "@/lib/types";
 
-type Card = { heading: string; bullets: string[]; steps?: Lesson["plan"]; moral?: Lesson };
+type Card = { heading: string; bullets: string[]; steps?: Lesson["plan"]; moral?: Lesson; iceBreaker?: Lesson };
 
 function buildCards(lesson: Lesson): Card[] {
   const cards: Card[] = [];
   if (lesson.moralValue) cards.push({ heading: "Value of the day", bullets: [], moral: lesson });
+  if (lesson.iceBreakerTitle)
+    cards.push({ heading: `Ice breaker · ${lesson.iceBreakerMinutes} min`, bullets: [], iceBreaker: lesson });
   if (lesson.objectives.length) cards.push({ heading: "Learning objectives", bullets: lesson.objectives });
   if (lesson.plan.length) cards.push({ heading: "Lesson plan", bullets: [], steps: lesson.plan });
   if (lesson.activities.length) cards.push({ heading: "Activities", bullets: lesson.activities });
@@ -91,6 +93,13 @@ export default function PresentPage() {
             <p className="text-lg font-medium">
               <span className="text-[color:var(--accent)]">Food for thought: </span>
               {card.moral.foodForThought}
+            </p>
+          </div>
+        ) : card.iceBreaker ? (
+          <div className="mt-6 space-y-4">
+            <p className="text-3xl font-extrabold">🧊 {card.iceBreaker.iceBreakerTitle}</p>
+            <p className="text-xl leading-relaxed text-[color:var(--muted)]">
+              {card.iceBreaker.iceBreakerDescription}
             </p>
           </div>
         ) : card.steps ? (

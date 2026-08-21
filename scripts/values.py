@@ -123,3 +123,91 @@ def assign_moral_content(class_id: str, index_in_class_year: int) -> dict:
         "quoteAuthor": author,
         "foodForThought": frame.replace("{value}", value.lower()),
     }
+# Auto-derived from src/data/values.ts -- keep the two in sync.
+
+ICE_BREAKERS_KS1 = [
+    ("Copy My Clap", "Clap a short rhythm, class copies it back. Speed it up each round.", 5),
+    ("Freeze Dance", "Play music, everyone dances; when it stops, freeze like a statue.", 5),
+    ("Simon Says", "Classic Simon Says with computer-themed actions: 'click', 'type', 'save'.", 5),
+    ("Two Truths and a Wish", "Each pupil says two true things and one thing they wish were true; partner guesses which.", 8),
+    ("Animal Walk Around", "Walk around the room like different animals when the teacher calls one out.", 5),
+    ("Would You Rather", "Ask a silly 'would you rather' question; pupils move to one side of the room to vote.", 6),
+    ("Name That Sound", "Play three short sound clips; pupils guess what each one is.", 6),
+    ("High Five Train", "Everyone stands and gives a high five to five different classmates before sitting.", 5),
+    ("Colour Hunt", "Call out a colour; pupils touch something that colour in the room as fast as they can.", 5),
+    ("Story Starter", "Teacher starts a silly one-sentence story; each pupil adds one sentence around the circle.", 8),
+    ("Mirror Me", "In pairs, one leads slow movements, the other mirrors them exactly.", 6),
+    ("Guess the Emotion", "Pull an emotion card and act it out silently; class guesses the feeling.", 6),
+    ("Thumbs Up Weather Check", "Everyone shows how they're feeling with a thumbs up, sideways or down, and one word why.", 5),
+    ("Silent Line-Up", "Line up in height order (or birthday month) without talking, using only gestures.", 7),
+    ("Balloon Keep-Up", "Keep a balloon off the floor as a group, counting taps out loud together.", 6),
+]
+
+ICE_BREAKERS_KS2 = [
+    ("20 Questions: Tech Edition", "Think of a device or app; class asks yes/no questions to guess it in 20 tries.", 8),
+    ("Human Bingo", "Find classmates who match a fact on a bingo card ('has a pet', 'likes maths') and get their initials.", 8),
+    ("Two Truths and a Lie", "Each pupil states two true facts and one false one; partner guesses the lie.", 8),
+    ("Speed Sketch", "Draw a given word in 30 seconds; partner guesses what it is.", 6),
+    ("Word Association Chain", "Say a word linked to the last one said, going around the room, no repeats.", 6),
+    ("Would You Rather: Tech Edition", "Pose two tech dilemmas (e.g. lose your keyboard or your mouse); pupils vote and justify.", 7),
+    ("One-Word Story", "Build a story one word at a time around the circle, then read it back for laughs.", 7),
+    ("Emoji Translate", "Show a short sentence in emoji; pupils race to translate it back to words.", 6),
+    ("The Great Paperclip Challenge", "In pairs, build the tallest free-standing tower from 10 paperclips in 3 minutes.", 8),
+    ("Guess the Rule", "Teacher sorts objects/words by a secret rule; pupils guess the rule by suggesting the next item.", 8),
+    ("Would You Rather Corners", "Post two options on opposite walls; pupils physically move to their choice and defend it.", 7),
+    ("Rapid Fire Categories", "Call a category (fruits, coding words); pupils take turns naming one until someone's stuck.", 6),
+    ("Mystery Object Bag", "Feel a hidden object in a bag and describe it with clues; class guesses what it is.", 7),
+    ("Silent Sort", "Without talking, physically line up by a criterion (age, house number) using only gestures.", 7),
+    ("This or That Rapid Round", "Quickfire this-or-that questions; pupils answer with a show of hands, fastest round wins.", 5),
+]
+
+ICE_BREAKERS_KS3 = [
+    ("Two Truths and a Lie: Tech Edition", "Share two true facts and one false one about tech habits; class votes on the lie.", 8),
+    ("60-Second Debate", "Pose a light debate topic (e.g. 'phones in class: yes or no'); pairs argue opposite sides for 60 seconds each.", 8),
+    ("Rapid Recall Quiz", "Five rapid-fire recall questions from last lesson, answered on mini whiteboards.", 6),
+    ("Would You Rather: Career Edition", "Pose two tech-career dilemmas; pupils vote and give one reason for their choice.", 7),
+    ("One Word Check-In", "Each pupil shares one word describing their mood or week so far, no explanation needed.", 5),
+    ("Guess the Acronym", "Show a tech acronym (RAM, URL, IDE); first to correctly expand it wins the round.", 6),
+    ("Human Knot", "Small groups link hands in a tangle, then work together silently to untangle without letting go.", 8),
+    ("Two-Minute Pitch", "Pair up and pitch a random object as if selling it, then swap partners.", 8),
+    ("Fact or Fake", "Read out a surprising tech fact; class votes real or made up before the reveal.", 6),
+    ("Speed Networking", "60 seconds each to introduce themselves to a new partner using three set questions, then rotate.", 8),
+    ("This or That: Coding Edition", "Quickfire binary choices (tabs or spaces, light mode or dark mode) with hands-up voting.", 5),
+    ("Silent Debate", "Write an opinion on paper and pass it around, adding written responses in silence for two minutes.", 8),
+    ("Two-Truths Tech Trivia", "Teacher states two true and one false tech fact; class discusses in pairs before voting.", 7),
+    ("Elevator Pitch Swap", "Explain what was learned last lesson in 30 seconds, as if to someone who missed it.", 6),
+    ("Would You Rather: AI Edition", "Pose a light AI-ethics dilemma; pupils vote with their feet and defend their side briefly.", 8),
+]
+
+
+ICE_BREAKER_POOLS = {
+    "KS1": ICE_BREAKERS_KS1,
+    "KS2": ICE_BREAKERS_KS2,
+    "KS3": ICE_BREAKERS_KS3,
+}
+
+CLASS_KEY_STAGE = {
+    "ict-y1": "KS1",
+    "ict-y2": "KS1",
+    "ict-y3": "KS2",
+    "ict-y4": "KS2",
+    "ict-y5": "KS2",
+    "ict-y6": "KS2",
+    "ict-y7": "KS3",
+    "ict-y8": "KS3",
+    "ict-y9": "KS3",
+    "maths-y1": "KS1",
+    "me-y8": "KS3",
+}
+
+
+def assign_ice_breaker(class_id: str, index_in_class_year: int) -> dict:
+    key_stage = CLASS_KEY_STAGE.get(class_id, "KS2")
+    pool = ICE_BREAKER_POOLS[key_stage]
+    offset = hash_offset(class_id + "::icebreaker", len(pool))
+    title, description, minutes = pool[(offset + index_in_class_year) % len(pool)]
+    return {
+        "iceBreakerTitle": title,
+        "iceBreakerDescription": description,
+        "iceBreakerMinutes": minutes,
+    }

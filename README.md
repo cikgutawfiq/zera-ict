@@ -12,33 +12,49 @@ Google account; embedded as an iframe on `cikgutawfiq.com/zera-ict`.
 | Screen | What it does |
 | --- | --- |
 | `/` **Today** | The classes you teach today, in period order with times. Deep link a date with `/?date=2026-09-22`. |
-| `/lesson/[id]` | Objectives, timed lesson plan, activities, success criteria, resources, plus the original SOW text. Every field is editable in place. Mark **Done** / **Carried over** and leave an after-the-lesson note. |
-| `/lesson/[id]/present` | Full-screen presentation mode: big type, arrow keys or buttons, screen wake-lock on. |
-| `/week` | All 27 periods, Monday to Friday, with week navigation. |
-| `/classes`, `/class/[id]` | Every class, its weeks, and **+ Week** to add more. |
-| `/admin` | Seed / re-sync from the SOW, add or remove terms and weeks, sign out. |
+| `/lesson/[id]` | Value of the Day (moral value, quote, food-for-thought), a 5–10 min Ice Breaker, objectives, timed lesson plan, activities, success criteria, resources, plus the original SOW text. Every field is editable in place. Mark **Done** / **Carried over** and leave an after-the-lesson note. |
+| `/lesson/[id]/present` | Full-screen presentation mode: big type, arrow keys or buttons, screen wake-lock on. Opens on the Value of the Day, then the Ice Breaker, then the lesson plan. |
+| `/calendar` | Day / Week / Month views with a segmented switcher. Month view shows a dot per class scheduled that day; tap a day to jump into Day view. |
+| `/classes`, `/class/[id]` | Every class; each term is its own collapsible section (the current term opens by default), with **+ Week** to add more. |
+| `/admin` | Upload the two SOW workbooks to re-sync Term 1 from your phone, seed / re-sync from the bundled SOW, add or remove terms and weeks, sign out. |
 
 ## Data
 
 - **Source**: `SOW_ICT_KS1_KS2_Y1-6_2026-2027.xlsx` and `SOW_ICT_KS3_Y7-9_2026-2027.xlsx`
   (Term 1: Weeks 1–15, 26 Aug – 11 Dec 2026, plus a mid-term break and Examination Week).
-- **Seeded**: 135 ICT lessons (Y1–Y9) with authored objectives / plan / activities /
-  success criteria, plus 30 blank week rows for **Maths Y1** and **Malay Enrichment Y8**,
-  which have no scheme of work yet.
-- **Terms 2 and 3**: add them yourself in `/admin` → **+ Term**, then **+ Week**; add the
-  lessons from each class page.
+- **Seeded**: 369 ICT lessons (Y1–Y9, all three terms) with authored objectives / plan /
+  activities / success criteria, plus 82 blank week rows for **Maths Y1** and
+  **Malay Enrichment Y8**, which have no scheme of work yet.
+  - **Term 1** comes straight from the two workbooks.
+  - **Term 2** (11 weeks, 6 Jan – 19 Mar 2027) and **Term 3** (15 weeks, 24 Mar – ~9 Jul
+    2027, estimated) are generated from the Zera ICT curriculum hub's 8-week topic
+    outlines, expanded into full lesson plans. Term 2 is compressed to fit before Term 3's
+    confirmed start date — correct both once the official calendar is published.
+- **Moral value / quote / food-for-thought**: every lesson gets one, assigned deterministically
+  per class from a 41-entry pool so nothing repeats across a class's full year (see
+  `src/data/values.ts`).
+- **Ice breaker**: every lesson gets one 5–10 minute opener, age-banded by key stage (KS1/KS2/KS3
+  pools, 15 entries each).
+- **Re-uploading Term 1**: `/admin` has file pickers for both workbooks — parsing happens in the
+  browser (`read-excel-file`, no server, no Python needed) and feeds the same seed/re-sync flow.
 
 Regenerate the seed after editing the workbooks or the authored content:
 
 ```bash
-python scripts/extract_sow.py && python scripts/build_seed.py
+python scripts/extract_sow.py && python scripts/build_terms23.py && python scripts/build_seed.py
 ```
 
 `scripts/extract_sow.py` reads the two workbooks from `~/Downloads` (override with `SOW_DIR`)
-and writes `src/data/sow.raw.json`. `scripts/build_seed.py` merges that with
-`src/data/authored/y1.json … y9.json` into `src/data/seed.json`, which `/admin` writes to
-Firestore in batches. Existing lessons you have edited are skipped unless you tick
-**Overwrite**.
+and writes `src/data/sow.raw.json`. `scripts/build_terms23.py` generates the Term 2/3 week
+calendars into `src/data/terms23.json`. `scripts/build_seed.py` merges all of that with
+`src/data/authored/{y1..y9}.json`, `src/data/authored/term2/{y1..y9}.json` and
+`src/data/authored/term3/{y1..y9}.json`, assigns moral values/quotes/ice breakers, and writes
+`src/data/seed.json`, which `/admin` writes to Firestore in batches. Existing lessons you have
+edited are skipped unless you tick **Overwrite**.
+
+The moral value / quote / ice breaker bank lives in `src/data/values.ts` (TypeScript, used by
+the app and the browser upload path) with a Python mirror in `scripts/values.py` (used by
+`build_seed.py`) — edit both together.
 
 ## Firestore
 

@@ -26,6 +26,9 @@ export type Lesson = {
   quote: string;
   quoteAuthor: string;
   foodForThought: string;
+  iceBreakerTitle: string;
+  iceBreakerDescription: string;
+  iceBreakerMinutes: number;
   status: Status;
   note: string;
   order: number;

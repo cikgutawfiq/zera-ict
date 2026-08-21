@@ -25,7 +25,7 @@ function Section({
   return (
     <section className="card p-4">
       <div className="mb-2 flex items-center gap-2">
-        <h2 className="flex-1 text-sm font-bold uppercase tracking-wide text-[color:var(--muted)]">{title}</h2>
+        <h2 className="flex-1 text-[15px] font-bold uppercase tracking-wide text-[color:var(--muted)]">{title}</h2>
         {editing ? (
           <>
             <button className="btn btn-sm" onClick={onCancel} disabled={saving}>
@@ -41,7 +41,7 @@ function Section({
           </button>
         )}
       </div>
-      {editing && hint && <p className="mb-2 text-xs text-[color:var(--muted)]">{hint}</p>}
+      {editing && hint && <p className="mb-2 text-sm text-[color:var(--muted)]">{hint}</p>}
       {children}
     </section>
   );
@@ -93,9 +93,9 @@ export function TextSection({
           <input className="field" value={draft} onChange={(e) => setDraft(e.target.value)} />
         )
       ) : value ? (
-        <p className="whitespace-pre-line text-[15px] leading-relaxed">{value}</p>
+        <p className="whitespace-pre-line text-[17px] leading-relaxed">{value}</p>
       ) : (
-        <p className="text-sm text-[color:var(--muted)]">{placeholder}</p>
+        <p className="text-[15px] text-[color:var(--muted)]">{placeholder}</p>
       )}
     </Section>
   );
@@ -149,13 +149,13 @@ export function ListSection({
       {editing ? (
         <textarea className="field min-h-32" value={draft} onChange={(e) => setDraft(e.target.value)} />
       ) : items.length ? (
-        <List className={`space-y-1.5 pl-5 text-[15px] leading-relaxed ${ordered ? "list-decimal" : "list-disc"}`}>
+        <List className={`space-y-1.5 pl-5 text-[17px] leading-relaxed ${ordered ? "list-decimal" : "list-disc"}`}>
           {items.map((item, i) => (
             <li key={i}>{item}</li>
           ))}
         </List>
       ) : (
-        <p className="text-sm text-[color:var(--muted)]">Nothing here yet — tap Edit to add.</p>
+        <p className="text-[15px] text-[color:var(--muted)]">Nothing here yet — tap Edit to add.</p>
       )}
     </Section>
   );
@@ -223,14 +223,14 @@ export function PlanSection({
                 {step.mins} min
               </span>
               <div className="min-w-0">
-                <p className="text-[15px] font-semibold">{step.title}</p>
-                <p className="text-[15px] leading-relaxed text-[color:var(--muted)]">{step.detail}</p>
+                <p className="text-base font-semibold">{step.title}</p>
+                <p className="text-[17px] leading-relaxed text-[color:var(--muted)]">{step.detail}</p>
               </div>
             </li>
           ))}
         </ol>
       ) : (
-        <p className="text-sm text-[color:var(--muted)]">No plan yet — tap Edit to add steps.</p>
+        <p className="text-[15px] text-[color:var(--muted)]">No plan yet — tap Edit to add steps.</p>
       )}
     </Section>
   );
@@ -352,19 +352,110 @@ export function MoralSection({
       ) : (
         <div className="space-y-3">
           <div>
-            <p className="text-lg font-bold">{moralValue}</p>
-            <p className="text-sm text-[color:var(--muted)]">{moralDescription}</p>
+            <p className="text-2xl font-bold">{moralValue}</p>
+            <p className="text-base text-[color:var(--muted)]">{moralDescription}</p>
           </div>
-          <blockquote className="text-[15px] italic">
+          <blockquote className="text-base italic">
             <span className="text-xl not-italic text-[color:var(--accent)] align-top">&ldquo;</span>
             {quote}
             <span className="text-xl not-italic text-[color:var(--accent)] align-bottom">&rdquo;</span>
             <footer className="mt-1 text-xs not-italic text-[color:var(--muted)]">— {quoteAuthor}</footer>
           </blockquote>
-          <p className="text-sm font-medium">
+          <p className="text-base font-medium">
             <span className="text-[color:var(--accent)]">Food for thought: </span>
             {foodForThought}
           </p>
+        </div>
+      )}
+    </section>
+  );
+}
+
+export function IceBreakerSection({
+  title,
+  description,
+  minutes,
+  onSave,
+}: {
+  title: string;
+  description: string;
+  minutes: number;
+  onSave: (next: { iceBreakerTitle: string; iceBreakerDescription: string; iceBreakerMinutes: number }) => Promise<void>;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState({ title, description, minutes: String(minutes) });
+  const [saving, setSaving] = useState(false);
+
+  const save = async () => {
+    setSaving(true);
+    try {
+      await onSave({
+        iceBreakerTitle: draft.title,
+        iceBreakerDescription: draft.description,
+        iceBreakerMinutes: Number.parseInt(draft.minutes, 10) || 5,
+      });
+      setEditing(false);
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  return (
+    <section className="card p-4">
+      <div className="mb-2 flex items-center gap-2">
+        <h2 className="flex-1 text-[15px] font-bold uppercase tracking-wide text-[color:var(--muted)]">
+          Ice Breaker · {minutes} min
+        </h2>
+        {editing ? (
+          <>
+            <button className="btn btn-sm" onClick={() => setEditing(false)} disabled={saving}>
+              Cancel
+            </button>
+            <button className="btn btn-sm btn-primary" onClick={save} disabled={saving}>
+              {saving ? "Saving…" : "Save"}
+            </button>
+          </>
+        ) : (
+          <button
+            className="btn btn-sm no-print"
+            onClick={() => {
+              setDraft({ title, description, minutes: String(minutes) });
+              setEditing(true);
+            }}
+          >
+            Edit
+          </button>
+        )}
+      </div>
+
+      {editing ? (
+        <div className="space-y-2">
+          <input
+            className="field"
+            placeholder="Ice breaker name"
+            value={draft.title}
+            onChange={(e) => setDraft((d) => ({ ...d, title: e.target.value }))}
+          />
+          <textarea
+            className="field min-h-20"
+            placeholder="How to play"
+            value={draft.description}
+            onChange={(e) => setDraft((d) => ({ ...d, description: e.target.value }))}
+          />
+          <label className="flex items-center gap-2 text-sm text-[color:var(--muted)]">
+            Minutes
+            <input
+              className="field w-20"
+              inputMode="numeric"
+              value={draft.minutes}
+              onChange={(e) => setDraft((d) => ({ ...d, minutes: e.target.value }))}
+            />
+          </label>
+        </div>
+      ) : (
+        <div>
+          <p className="text-xl font-bold">🧊 {title}</p>
+          <p className="mt-1 text-[17px] leading-relaxed text-[color:var(--muted)]">{description}</p>
         </div>
       )}
     </section>
@@ -416,18 +507,18 @@ export function ResourceSection({
                   href={r.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[15px] font-medium text-[color:var(--accent)] underline underline-offset-2"
+                  className="text-[17px] font-medium text-[color:var(--accent)] underline underline-offset-2"
                 >
                   {r.label}
                 </a>
               ) : (
-                <span className="text-[15px]">{r.label}</span>
+                <span className="text-[17px]">{r.label}</span>
               )}
             </li>
           ))}
         </ul>
       ) : (
-        <p className="text-sm text-[color:var(--muted)]">No resources yet — tap Edit to add.</p>
+        <p className="text-[15px] text-[color:var(--muted)]">No resources yet — tap Edit to add.</p>
       )}
     </Section>
   );

@@ -20,12 +20,12 @@ export default function ClassesPage() {
           const done = lessons.filter((l) => l.status === "done").length;
           const planned = lessons.filter((l) => l.topic).length;
           return (
-            <Link key={c.id} href={`/class/${c.id}`} className="card block px-4 py-3">
-              <p className="flex items-center gap-2 text-sm font-bold">
+            <Link key={c.id} href={`/class/${c.id}`} className="card block px-4 py-3.5">
+              <p className="flex items-center gap-2 text-base font-bold">
                 <ClassDot classId={c.id} />
                 {c.label}
               </p>
-              <p className="mt-1 text-xs text-[color:var(--muted)]">
+              <p className="mt-1 text-sm text-[color:var(--muted)]">
                 {c.subject} · {c.keyStage} · {c.periodsPerWeek} periods/week
               </p>
               <div className="mt-2 flex flex-wrap gap-1.5">

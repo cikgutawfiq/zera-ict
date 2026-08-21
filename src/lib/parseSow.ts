@@ -1,6 +1,6 @@
 import readXlsxFile from "read-excel-file/browser";
 import seedData from "@/data/seed.json";
-import { assignMoralContent } from "@/data/values";
+import { assignIceBreaker, assignMoralContent } from "@/data/values";
 import type { Lesson, Term, TermWeek } from "./types";
 
 /**
@@ -25,6 +25,20 @@ const YEAR_TO_FILE: Record<number, "ks1ks2" | "ks3"> = {
   7: "ks3",
   8: "ks3",
   9: "ks3",
+};
+
+const CLASS_KEY_STAGE: Record<string, string> = {
+  "ict-y1": "KS1",
+  "ict-y2": "KS1",
+  "ict-y3": "KS2",
+  "ict-y4": "KS2",
+  "ict-y5": "KS2",
+  "ict-y6": "KS2",
+  "ict-y7": "KS3",
+  "ict-y8": "KS3",
+  "ict-y9": "KS3",
+  "maths-y1": "KS1",
+  "me-y8": "KS3",
 };
 
 const DATE_RANGE = /(\d{1,2})\.(\d{1,2})\.(\d{4})\s*[-–]\s*(\d{1,2})\.(\d{1,2})\.(\d{4})/;
@@ -175,6 +189,7 @@ export async function parseSowWorkbooks(
         successCriteria: authored?.successCriteria ?? [],
         resources: authored?.resources ?? [],
         ...assignMoralContent(classId, order),
+        ...assignIceBreaker(classId, CLASS_KEY_STAGE[classId] ?? "KS2", order),
         status: "planned",
         note: "",
         order,
@@ -206,6 +221,7 @@ export async function parseSowWorkbooks(
         successCriteria: [],
         resources: [],
         ...assignMoralContent(spec.classId, order),
+        ...assignIceBreaker(spec.classId, CLASS_KEY_STAGE[spec.classId] ?? "KS2", order),
         status: "planned",
         note: "",
         order,

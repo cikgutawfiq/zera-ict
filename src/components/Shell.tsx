@@ -8,7 +8,7 @@ import { DEV_PREVIEW } from "@/lib/devPreview";
 
 const TABS = [
   { href: "/", label: "Today", icon: "●" },
-  { href: "/week", label: "Week", icon: "▦" },
+  { href: "/calendar", label: "Calendar", icon: "▦" },
   { href: "/classes", label: "Classes", icon: "▤" },
   { href: "/admin", label: "Admin", icon: "⚙" },
 ];

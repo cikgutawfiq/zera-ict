@@ -124,6 +124,95 @@ const FOOD_FRAMES = [
   "Is {value} always easy, or does it sometimes take effort?",
 ];
 
+/**
+ * Ice breaker bank — a 5-10 minute activity to open every lesson, before the
+ * main plan. Pools are age-banded (KS1/KS2/KS3) so a Y1 icebreaker never
+ * lands on a Y9 class. Assignment reuses the same per-class rotation as the
+ * moral value bank, scoped to the class's key stage pool.
+ */
+export type IceBreakerEntry = { title: string; description: string; minutes: number };
+
+export const ICE_BREAKERS_KS1: IceBreakerEntry[] = [
+  { title: "Copy My Clap", description: "Clap a short rhythm, class copies it back. Speed it up each round.", minutes: 5 },
+  { title: "Freeze Dance", description: "Play music, everyone dances; when it stops, freeze like a statue.", minutes: 5 },
+  { title: "Simon Says", description: "Classic Simon Says with computer-themed actions: 'click', 'type', 'save'.", minutes: 5 },
+  { title: "Two Truths and a Wish", description: "Each pupil says two true things and one thing they wish were true; partner guesses which.", minutes: 8 },
+  { title: "Animal Walk Around", description: "Walk around the room like different animals when the teacher calls one out.", minutes: 5 },
+  { title: "Would You Rather", description: "Ask a silly 'would you rather' question; pupils move to one side of the room to vote.", minutes: 6 },
+  { title: "Name That Sound", description: "Play three short sound clips; pupils guess what each one is.", minutes: 6 },
+  { title: "High Five Train", description: "Everyone stands and gives a high five to five different classmates before sitting.", minutes: 5 },
+  { title: "Colour Hunt", description: "Call out a colour; pupils touch something that colour in the room as fast as they can.", minutes: 5 },
+  { title: "Story Starter", description: "Teacher starts a silly one-sentence story; each pupil adds one sentence around the circle.", minutes: 8 },
+  { title: "Mirror Me", description: "In pairs, one leads slow movements, the other mirrors them exactly.", minutes: 6 },
+  { title: "Guess the Emotion", description: "Pull an emotion card and act it out silently; class guesses the feeling.", minutes: 6 },
+  { title: "Thumbs Up Weather Check", description: "Everyone shows how they're feeling with a thumbs up, sideways or down, and one word why.", minutes: 5 },
+  { title: "Silent Line-Up", description: "Line up in height order (or birthday month) without talking, using only gestures.", minutes: 7 },
+  { title: "Balloon Keep-Up", description: "Keep a balloon off the floor as a group, counting taps out loud together.", minutes: 6 },
+];
+
+export const ICE_BREAKERS_KS2: IceBreakerEntry[] = [
+  { title: "20 Questions: Tech Edition", description: "Think of a device or app; class asks yes/no questions to guess it in 20 tries.", minutes: 8 },
+  { title: "Human Bingo", description: "Find classmates who match a fact on a bingo card ('has a pet', 'likes maths') and get their initials.", minutes: 8 },
+  { title: "Two Truths and a Lie", description: "Each pupil states two true facts and one false one; partner guesses the lie.", minutes: 8 },
+  { title: "Speed Sketch", description: "Draw a given word in 30 seconds; partner guesses what it is.", minutes: 6 },
+  { title: "Word Association Chain", description: "Say a word linked to the last one said, going around the room, no repeats.", minutes: 6 },
+  { title: "Would You Rather: Tech Edition", description: "Pose two tech dilemmas (e.g. lose your keyboard or your mouse); pupils vote and justify.", minutes: 7 },
+  { title: "One-Word Story", description: "Build a story one word at a time around the circle, then read it back for laughs.", minutes: 7 },
+  { title: "Emoji Translate", description: "Show a short sentence in emoji; pupils race to translate it back to words.", minutes: 6 },
+  { title: "The Great Paperclip Challenge", description: "In pairs, build the tallest free-standing tower from 10 paperclips in 3 minutes.", minutes: 8 },
+  { title: "Guess the Rule", description: "Teacher sorts objects/words by a secret rule; pupils guess the rule by suggesting the next item.", minutes: 8 },
+  { title: "Would You Rather Corners", description: "Post two options on opposite walls; pupils physically move to their choice and defend it.", minutes: 7 },
+  { title: "Rapid Fire Categories", description: "Call a category (fruits, coding words); pupils take turns naming one until someone's stuck.", minutes: 6 },
+  { title: "Mystery Object Bag", description: "Feel a hidden object in a bag and describe it with clues; class guesses what it is.", minutes: 7 },
+  { title: "Silent Sort", description: "Without talking, physically line up by a criterion (age, house number) using only gestures.", minutes: 7 },
+  { title: "This or That Rapid Round", description: "Quickfire this-or-that questions; pupils answer with a show of hands, fastest round wins.", minutes: 5 },
+];
+
+export const ICE_BREAKERS_KS3: IceBreakerEntry[] = [
+  { title: "Two Truths and a Lie: Tech Edition", description: "Share two true facts and one false one about tech habits; class votes on the lie.", minutes: 8 },
+  { title: "60-Second Debate", description: "Pose a light debate topic (e.g. 'phones in class: yes or no'); pairs argue opposite sides for 60 seconds each.", minutes: 8 },
+  { title: "Rapid Recall Quiz", description: "Five rapid-fire recall questions from last lesson, answered on mini whiteboards.", minutes: 6 },
+  { title: "Would You Rather: Career Edition", description: "Pose two tech-career dilemmas; pupils vote and give one reason for their choice.", minutes: 7 },
+  { title: "One Word Check-In", description: "Each pupil shares one word describing their mood or week so far, no explanation needed.", minutes: 5 },
+  { title: "Guess the Acronym", description: "Show a tech acronym (RAM, URL, IDE); first to correctly expand it wins the round.", minutes: 6 },
+  { title: "Human Knot", description: "Small groups link hands in a tangle, then work together silently to untangle without letting go.", minutes: 8 },
+  { title: "Two-Minute Pitch", description: "Pair up and pitch a random object as if selling it, then swap partners.", minutes: 8 },
+  { title: "Fact or Fake", description: "Read out a surprising tech fact; class votes real or made up before the reveal.", minutes: 6 },
+  { title: "Speed Networking", description: "60 seconds each to introduce themselves to a new partner using three set questions, then rotate.", minutes: 8 },
+  { title: "This or That: Coding Edition", description: "Quickfire binary choices (tabs or spaces, light mode or dark mode) with hands-up voting.", minutes: 5 },
+  { title: "Silent Debate", description: "Write an opinion on paper and pass it around, adding written responses in silence for two minutes.", minutes: 8 },
+  { title: "Two-Truths Tech Trivia", description: "Teacher states two true and one false tech fact; class discusses in pairs before voting.", minutes: 7 },
+  { title: "Elevator Pitch Swap", description: "Explain what was learned last lesson in 30 seconds, as if to someone who missed it.", minutes: 6 },
+  { title: "Would You Rather: AI Edition", description: "Pose a light AI-ethics dilemma; pupils vote with their feet and defend their side briefly.", minutes: 8 },
+];
+
+const ICE_BREAKER_POOLS: Record<string, IceBreakerEntry[]> = {
+  KS1: ICE_BREAKERS_KS1,
+  KS2: ICE_BREAKERS_KS2,
+  KS3: ICE_BREAKERS_KS3,
+};
+
+export type IceBreakerAssignment = {
+  iceBreakerTitle: string;
+  iceBreakerDescription: string;
+  iceBreakerMinutes: number;
+};
+
+export function assignIceBreaker(
+  classId: string,
+  keyStage: string,
+  indexInClassYear: number,
+): IceBreakerAssignment {
+  const pool = ICE_BREAKER_POOLS[keyStage] ?? ICE_BREAKERS_KS2;
+  const offset = hashOffset(classId + "::icebreaker", pool.length);
+  const entry = pool[(offset + indexInClassYear) % pool.length];
+  return {
+    iceBreakerTitle: entry.title,
+    iceBreakerDescription: entry.description,
+    iceBreakerMinutes: entry.minutes,
+  };
+}
+
 /** Simple string hash so each classId gets a stable, spread-out starting offset. */
 function hashOffset(classId: string, modulo: number): number {
   let h = 0;
