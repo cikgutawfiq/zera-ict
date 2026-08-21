@@ -32,7 +32,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
     return (
       <main className="min-h-[70vh] grid place-items-center p-6">
         <div className="card w-full max-w-sm p-6 text-center">
-          <h1 className="text-lg font-bold">Zera ICT Dashboard</h1>
+          <h1 className="text-lg font-bold">ZERA ICT GUY :)</h1>
           <p className="mt-2 text-sm text-[color:var(--muted)]">
             {user
               ? `Signed in as ${user.email}. This dashboard is private to ${OWNER_EMAIL}.`
@@ -57,17 +57,25 @@ export default function Shell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen pb-20">
+      <div className="blur-bar no-print flex items-center justify-center gap-1.5 border-b border-[color:var(--border)] py-1.5 text-[11px] font-semibold tracking-wide text-[color:var(--muted)]">
+        <span aria-hidden>✦</span> ZERA ICT GUY :)
+      </div>
       {children}
-      <nav className="no-print fixed bottom-0 inset-x-0 border-t border-[color:var(--border)] bg-[color:var(--surface)] backdrop-blur">
-        <ul className="mx-auto flex max-w-3xl">
+      <nav className="blur-bar no-print fixed bottom-0 inset-x-0 border-t border-[color:var(--border)] pb-[env(safe-area-inset-bottom)]">
+        <ul className="mx-auto flex max-w-3xl px-2 py-1.5">
           {TABS.map((tab) => {
             const active = tab.href === "/" ? pathname === "/" : pathname?.startsWith(tab.href);
             return (
               <li key={tab.href} className="flex-1">
                 <Link
                   href={tab.href}
-                  className="flex flex-col items-center gap-0.5 py-2.5 text-[11px] font-semibold"
-                  style={{ color: active ? "var(--accent)" : "var(--muted)" }}
+                  className="flex flex-col items-center gap-0.5 rounded-xl py-2 text-[11px] font-semibold transition-colors"
+                  style={{
+                    color: active ? "var(--accent)" : "var(--muted)",
+                    background: active ? "var(--accent-soft)" : "transparent",
+                    transitionDuration: "var(--dur-fast)",
+                    transitionTimingFunction: "var(--ease)",
+                  }}
                 >
                   <span aria-hidden className="text-base leading-none">
                     {tab.icon}

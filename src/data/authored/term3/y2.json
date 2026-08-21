@@ -1,0 +1,240 @@
+{
+ "1": {
+  "topic": "TypingClub Check-in",
+  "subtopic": "Quick Accuracy Check",
+  "outline": "Term theme: 'Data & Coding Fun'. Run a quick TypingClub accuracy check and set a final-term goal.",
+  "sowResources": "TypingClub, accuracy tracker.",
+  "objectives": ["Complete a timed typing check.", "Compare today's accuracy with earlier in the year.", "Set a final typing goal for the year."],
+  "plan": [
+   {"mins": 15, "title": "Accuracy check", "detail": "Run one timed TypingClub exercise and record the accuracy score."},
+   {"mins": 15, "title": "Compare progress", "detail": "Compare today's score with the Term 1 and Term 2 scores on the tracker."},
+   {"mins": 20, "title": "Set a final goal", "detail": "Write one typing goal for the rest of the year."},
+   {"mins": 10, "title": "Log out", "detail": "Log out."}
+  ],
+  "activities": ["Timed accuracy check", "Progress comparison", "Final goal setting"],
+  "successCriteria": ["I completed a timed typing check.", "I compared my progress across the year.", "I set a typing goal for the rest of the year."],
+  "resources": [{"label": "TypingClub", "url": "https://www.typingclub.com"}, {"label": "Accuracy tracker"}]
+ },
+ "2": {
+  "topic": "Tally & Sort",
+  "subtopic": "Run a Class Survey on Paper",
+  "outline": "Run a simple class survey (favourite colour, fruit or sport) and record results using tally marks on paper.",
+  "sowResources": "Paper tally sheets, survey question cards.",
+  "objectives": ["Ask a survey question to classmates.", "Record answers using tally marks.", "Total each tally group correctly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Tally marks demo", "detail": "Show how to make groups of five with tally marks."},
+   {"mins": 25, "title": "Run the survey", "detail": "Ask classmates the survey question and record answers with tally marks."},
+   {"mins": 10, "title": "Total it", "detail": "Total each tally group. Log out."}
+  ],
+  "activities": ["Tally marks demo", "Class survey", "Totalling tallies"],
+  "successCriteria": ["I asked the survey question to several classmates.", "I recorded answers using tally marks.", "I totalled each group correctly."],
+  "resources": [{"label": "Paper tally sheets"}, {"label": "Survey question cards"}]
+ },
+ "3": {
+  "topic": "Pictogram",
+  "subtopic": "Build a Pictogram in Sheets/Excel",
+  "outline": "Enter the tallied survey data into Sheets or Excel and build a simple pictogram to show the results visually.",
+  "sowResources": "Google Sheets, Microsoft Excel, pictogram exemplar.",
+  "objectives": ["Enter tallied data into a spreadsheet.", "Build a pictogram from the data.", "Check the pictogram matches the tally totals."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Enter the data", "detail": "Type the tally totals into a spreadsheet with clear headings."},
+   {"mins": 25, "title": "Build the pictogram", "detail": "Use the data to build a simple pictogram chart."},
+   {"mins": 10, "title": "Match check", "detail": "Check the pictogram matches the paper tally totals. Save and log out."}
+  ],
+  "activities": ["Enter tallied data", "Build a pictogram", "Match check against tally"],
+  "successCriteria": ["My data is entered with clear headings.", "My pictogram is built from the data.", "My pictogram matches the tally totals."],
+  "resources": [{"label": "Google Sheets / Microsoft Excel"}, {"label": "Pictogram exemplar"}]
+ },
+ "4": {
+  "topic": "Read the Data",
+  "subtopic": "Who Has the Most? The Least?",
+  "outline": "Read the pictogram to answer questions: which answer got the most votes, which got the least, and by how much.",
+  "sowResources": "Google Sheets, Microsoft Excel.",
+  "objectives": ["Identify the highest and lowest values in the pictogram.", "Calculate the difference between them.", "Write one sentence describing the data."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Reading the pictogram", "detail": "Ask questions: which is highest, which is lowest, what's the difference?"},
+   {"mins": 20, "title": "Write it up", "detail": "Write one sentence describing what the pictogram shows."},
+   {"mins": 15, "title": "Partner check", "detail": "Partner checks the sentence matches the pictogram. Save and log out."}
+  ],
+  "activities": ["Reading-the-data questions", "Write a data sentence", "Partner accuracy check"],
+  "successCriteria": ["I identified the highest and lowest values.", "I calculated the difference between them.", "I wrote a sentence describing the data correctly."],
+  "resources": [{"label": "Google Sheets / Microsoft Excel"}]
+ },
+ "5": {
+  "topic": "Scratch Loops",
+  "subtopic": "A Repeating Dance with Loops",
+  "outline": "Open Scratch and use a repeat block to make a character perform a repeating dance move.",
+  "sowResources": "Scratch (scratch.mit.edu), class laptops.",
+  "objectives": ["Open Scratch and choose a sprite.", "Use a repeat block to loop a movement.", "Test and adjust the loop count."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Scratch tour", "detail": "Show the Scratch interface: sprite, stage, block palette, green flag."},
+   {"mins": 25, "title": "Build a dance loop", "detail": "Use a repeat block to make the sprite move and turn in a repeating pattern."},
+   {"mins": 10, "title": "Adjust it", "detail": "Change the repeat count and see the effect. Save and log out."}
+  ],
+  "activities": ["Scratch interface tour", "Build a repeating dance", "Adjust the loop count"],
+  "successCriteria": ["I opened Scratch and chose a sprite.", "My sprite dances in a repeating loop.", "I changed the loop count and saw the effect."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}, {"label": "Class laptops"}]
+ },
+ "6": {
+  "topic": "Scratch Events",
+  "subtopic": "'When Clicked' Makes Things Happen",
+  "outline": "Learn the 'when this sprite clicked' event block so tapping a character makes something happen.",
+  "sowResources": "Scratch (scratch.mit.edu).",
+  "objectives": ["Use a 'when sprite clicked' event block.", "Make something happen when the sprite is clicked.", "Explain what an event is."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "What is an event?", "detail": "An event is something that triggers the program — like a doorbell."},
+   {"mins": 25, "title": "Build a click event", "detail": "Add 'when this sprite clicked' and a sound or costume change block underneath."},
+   {"mins": 10, "title": "Test it", "detail": "Click the sprite and check it responds. Save and log out."}
+  ],
+  "activities": ["Event explanation", "Build a click-response program", "Test the click event"],
+  "successCriteria": ["I used a 'when sprite clicked' block.", "My sprite responds when clicked.", "I can explain what an event is."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "7": {
+  "topic": "Debug",
+  "subtopic": "Fix a Partner's Broken Script",
+  "outline": "Swap Scratch projects with a partner and find and fix the bug in their broken script.",
+  "sowResources": "Scratch (scratch.mit.edu).",
+  "objectives": ["Read a partner's Scratch script to find the bug.", "Fix the bug without breaking anything else.", "Explain the fix to the partner."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Prepare a bug", "detail": "Deliberately introduce one small bug into your own project for a partner to find."},
+   {"mins": 25, "title": "Swap and fix", "detail": "Swap projects, find the bug, and fix it."},
+   {"mins": 10, "title": "Explain the fix", "detail": "Explain to the original owner what was wrong and how it was fixed. Save and log out."}
+  ],
+  "activities": ["Introduce a deliberate bug", "Swap and debug", "Explain the fix"],
+  "successCriteria": ["I found the bug in a partner's project.", "I fixed the bug without breaking anything else.", "I explained the fix clearly."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "8": {
+  "topic": "Showcase",
+  "subtopic": "Save and Share the Best Projects",
+  "outline": "Save the finished Scratch projects and share the best ones with the class.",
+  "sowResources": "Class projector, Scratch (scratch.mit.edu).",
+  "objectives": ["Save a finished Scratch project.", "Share the project with the class.", "Give one kind comment about a classmate's project."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Showcase", "detail": "Groups share their favourite finished project on the projector."},
+   {"mins": 15, "title": "Kind comments", "detail": "Each pupil gives one kind, specific comment."},
+   {"mins": 10, "title": "Save", "detail": "Save the finished project to the portfolio folder. Log out."}
+  ],
+  "activities": ["Class showcase", "Kind-comment practice", "Portfolio save"],
+  "successCriteria": ["I saved my finished Scratch project.", "I shared it with the class.", "I gave a kind, specific comment to a classmate."],
+  "resources": [{"label": "Class projector"}, {"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Skills Recap",
+  "outline": "Recap this term's skills: tallying, pictograms, loops and events, through a quick station rotation.",
+  "sowResources": "Station cards.",
+  "objectives": ["Recap tallying, pictograms, loops and events.", "Complete each station task.", "Identify which skill needs more practice."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Station 1 — Data", "detail": "Read a pictogram and answer a question about it."},
+   {"mins": 15, "title": "Station 2 — Loop", "detail": "Build a short repeating loop in Scratch."},
+   {"mins": 15, "title": "Station 3 — Event", "detail": "Add a click event to a starter project."},
+   {"mins": 5, "title": "Reflect", "detail": "Name the trickiest skill. Log out."}
+  ],
+  "activities": ["Data station", "Loop station", "Event station"],
+  "successCriteria": ["I completed all three stations.", "I can recap this term's data and coding skills.", "I know which skill needs more practice."],
+  "resources": [{"label": "Station cards"}, {"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Skills Practice for the Exam",
+  "outline": "Rehearse the practical task in pairs: build a pictogram from data, and a Scratch loop, checking for bugs.",
+  "sowResources": "Practice task cards.",
+  "objectives": ["Rehearse building a pictogram and a loop with a partner.", "Check both for accuracy and bugs.", "Explain both pieces of work."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Paired rehearsal", "detail": "Build a small pictogram and a Scratch loop with a partner reading the task card."},
+   {"mins": 15, "title": "Explain both", "detail": "Explain the pictogram and the loop to the partner. Log out."}
+  ],
+  "activities": ["Paired pictogram and loop rehearsal", "Bug and accuracy check", "Explanation practice"],
+  "successCriteria": ["I rehearsed building a pictogram and a loop with a partner.", "I checked both for accuracy and bugs.", "I explained both pieces of work."],
+  "resources": [{"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 3 Practical Assessment",
+  "outline": "Individual task: build a pictogram that matches the data, plus a Scratch project using a working loop.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Build a pictogram that matches given data.", "Build a Scratch project using a working loop.", "Explain both pieces of work briefly."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task."},
+   {"mins": 25, "title": "Pictogram task", "detail": "Individual practical: build a pictogram from given data."},
+   {"mins": 20, "title": "Scratch task", "detail": "Build a Scratch project using a working loop."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the year's progress. Log out."}
+  ],
+  "activities": ["Individual pictogram task", "Individual Scratch loop task", "End-of-year celebration"],
+  "successCriteria": ["My pictogram matches the given data.", "My Scratch project uses a working loop.", "I explained both pieces of work."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "12": {
+  "topic": "End of Term Project",
+  "subtopic": "Class Survey Show — Plan",
+  "outline": "Plan a bigger final project: a Scratch 'data story' that presents the term's survey results with an animated character.",
+  "sowResources": "Printed planning sheet.",
+  "objectives": ["Plan a Scratch project that presents survey results.", "Decide what the animated character will say about the data.", "Sketch the plan on paper."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Plan the show", "detail": "Sketch how the character will present the survey results, using loops and events from this term."},
+   {"mins": 15, "title": "Pitch it", "detail": "Tell a partner the plan. Collect plans. Log out."}
+  ],
+  "activities": ["Data-story planning", "Paper sketch", "Partner pitch"],
+  "successCriteria": ["My plan shows how the character presents the data.", "My plan uses ideas from this term (loops, events).", "I can tell a partner my plan."],
+  "resources": [{"label": "Printed planning sheet"}]
+ },
+ "13": {
+  "topic": "End of Term Project",
+  "subtopic": "Class Survey Show — Build",
+  "outline": "Build the Scratch data story following the plan, combining loops, events and the survey pictogram data.",
+  "sowResources": "Scratch (scratch.mit.edu).",
+  "objectives": ["Build the character's data presentation.", "Use a loop and an event block.", "Test the finished sequence."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 35, "title": "Build the show", "detail": "Follow the plan to build the character's presentation using loops and events."},
+   {"mins": 10, "title": "Test it", "detail": "Test the whole sequence and fix anything that doesn't work. Save and log out."}
+  ],
+  "activities": ["Build from the plan", "Combine loops and events", "Test and fix"],
+  "successCriteria": ["My show presents the survey data.", "My show uses a loop and an event block.", "I tested my show and fixed any bugs."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "14": {
+  "topic": "End of Term Project",
+  "subtopic": "Class Survey Show — Polish",
+  "outline": "Add one polish touch — a second character, extra sound, or background — and rehearse presenting the finished data story.",
+  "sowResources": "Scratch (scratch.mit.edu).",
+  "objectives": ["Add one polish feature to the show.", "Rehearse presenting it.", "Save the finished project."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Add polish", "detail": "Add a background, extra sound or second character."},
+   {"mins": 15, "title": "Rehearse", "detail": "Practise presenting the show to a partner."},
+   {"mins": 10, "title": "Save", "detail": "Save the finished project. Log out."}
+  ],
+  "activities": ["Add a polish feature", "Presentation rehearsal", "Save"],
+  "successCriteria": ["My show has one polish feature.", "I rehearsed presenting it to a partner.", "My finished project is saved."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "15": {
+  "topic": "Portfolio Showcase",
+  "subtopic": "Data Story Fair",
+  "outline": "Present the finished Class Survey Show to the class, sharing what the survey found, and save the year's portfolio.",
+  "sowResources": "Class projector, portfolio folder.",
+  "objectives": ["Present the finished data story confidently.", "Share the survey's findings with an audience.", "Save the whole year's portfolio."],
+  "plan": [
+   {"mins": 10, "title": "Final rehearsal", "detail": "One last run-through with a partner before presenting."},
+   {"mins": 25, "title": "Data Story Fair", "detail": "Present the Scratch shows to the class in small groups."},
+   {"mins": 15, "title": "Portfolio save", "detail": "Save the finished project and review the whole year's portfolio folder."},
+   {"mins": 10, "title": "Year celebration", "detail": "Name three things learned this year. Log out."}
+  ],
+  "activities": ["Final rehearsal", "Data Story Fair presentations", "Year-end portfolio review"],
+  "successCriteria": ["I presented my data story confidently.", "I shared the survey's findings with an audience.", "My whole year's work is saved in the portfolio."],
+  "resources": [{"label": "Class projector"}, {"label": "Portfolio folder"}]
+ }
+}

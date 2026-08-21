@@ -1,0 +1,239 @@
+{
+ "1": {
+  "topic": "Data Table",
+  "subtopic": "Enter Data with Clear Headings",
+  "outline": "Term theme: 'Data & AI Art'. Enter a small dataset into Sheets or Excel with clear column headings.",
+  "sowResources": "Google Sheets, Microsoft Excel, sample dataset.",
+  "objectives": ["Enter data into a spreadsheet with headings.", "Keep one record per row.", "Check for typing mistakes in the data."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Clear headings", "detail": "Discuss why clear column headings matter — show a table without them and one with."},
+   {"mins": 25, "title": "Enter the data", "detail": "Enter a class-collected dataset with clear headings, one record per row."},
+   {"mins": 10, "title": "Proofread", "detail": "Check for typing mistakes with a partner. Save and log out."}
+  ],
+  "activities": ["Clear-headings discussion", "Enter the dataset", "Partner proofread"],
+  "successCriteria": ["My data has clear column headings.", "I entered one record per row.", "I checked my data for mistakes."],
+  "resources": [{"label": "Google Sheets / Microsoft Excel"}, {"label": "Sample dataset"}]
+ },
+ "2": {
+  "topic": "Bar Chart",
+  "subtopic": "Build a Chart from the Table",
+  "outline": "Select the data range and build a bar chart, adding a title and axis labels.",
+  "sowResources": "Google Sheets, Microsoft Excel.",
+  "objectives": ["Select data and insert a bar chart.", "Add a chart title.", "Label the chart axes."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Build the chart", "detail": "Select the data range and insert a bar chart, adding a title."},
+   {"mins": 15, "title": "Label it", "detail": "Add axis labels so a reader knows what the numbers mean."},
+   {"mins": 10, "title": "Check", "detail": "Partner checks the chart makes sense. Save and log out."}
+  ],
+  "activities": ["Insert and title a bar chart", "Label the axes", "Peer check"],
+  "successCriteria": ["I inserted a bar chart from my data.", "My chart has a title.", "My chart's axes are labelled."],
+  "resources": [{"label": "Google Sheets / Microsoft Excel"}]
+ },
+ "3": {
+  "topic": "Read a Chart",
+  "subtopic": "Describe What a Chart Tells Us",
+  "outline": "Practise reading a bar chart to answer questions and describe what it shows in a written sentence.",
+  "sowResources": "Google Sheets, Microsoft Excel.",
+  "objectives": ["Answer questions by reading a chart.", "Write one sentence describing what a chart shows.", "Check the sentence matches the chart."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Reading questions", "detail": "Answer teacher questions by reading the chart (highest, lowest, difference)."},
+   {"mins": 20, "title": "Write it up", "detail": "Write one sentence describing what the chart shows."},
+   {"mins": 10, "title": "Peer check", "detail": "Partner checks the sentence matches the chart. Save and log out."}
+  ],
+  "activities": ["Chart-reading questions", "Write a data sentence", "Peer accuracy check"],
+  "successCriteria": ["I answered questions correctly by reading the chart.", "I wrote a sentence describing the chart.", "My sentence matches the chart's data."],
+  "resources": [{"label": "Google Sheets / Microsoft Excel"}]
+ },
+ "4": {
+  "topic": "Branching Sort",
+  "subtopic": "A Yes/No Guessing Game (Unplugged)",
+  "outline": "Play an unplugged yes/no guessing game, learning that a series of branching decisions can identify something — the basis of a decision tree.",
+  "sowResources": "Printed animal cards, decision-tree diagram.",
+  "objectives": ["Play a yes/no guessing game.", "Explain how a series of questions narrows down an answer.", "Draw a simple branching decision diagram."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Play the game", "detail": "In pairs, guess an animal using only yes/no questions."},
+   {"mins": 20, "title": "Draw the branches", "detail": "Draw a simple yes/no branching diagram for the game just played."},
+   {"mins": 10, "title": "Discuss", "detail": "Discuss how each answer narrows down the possibilities. Log out."}
+  ],
+  "activities": ["Yes/no guessing game", "Draw a branching diagram", "Discussion of narrowing decisions"],
+  "successCriteria": ["I played the guessing game using yes/no questions.", "I can explain how questions narrow down an answer.", "I drew a simple branching diagram."],
+  "resources": [{"label": "Printed animal cards"}, {"label": "Decision-tree diagram"}]
+ },
+ "5": {
+  "topic": "AI Art — Describe It",
+  "subtopic": "Write a Description for an AI Image (Guided)",
+  "outline": "Under teacher guidance, write a short description of a scene, then use a guided AI image tool to create a picture from it.",
+  "sowResources": "Teacher-guided AI image tool, description writing frame.",
+  "objectives": ["Write a clear scene description.", "Use a guided AI tool to generate an image from it.", "Compare the image to the description."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Describing a scene", "detail": "Practise writing clear, specific descriptions (colours, objects, setting)."},
+   {"mins": 25, "title": "Generate the image", "detail": "Under teacher supervision, enter the description into the guided AI tool and generate an image."},
+   {"mins": 10, "title": "Compare", "detail": "Compare the image with the original description — did it match? Log out."}
+  ],
+  "activities": ["Scene-description practice", "Guided AI image generation", "Compare image to description"],
+  "successCriteria": ["I wrote a clear, specific scene description.", "I used the guided AI tool to generate an image.", "I compared the image with my description."],
+  "resources": [{"label": "Teacher-guided AI image tool"}, {"label": "Description writing frame"}]
+ },
+ "6": {
+  "topic": "Use My AI Image",
+  "subtopic": "Put the Image into a Doc or Slide",
+  "outline": "Save the AI-generated image and insert it into a document or slide, with a caption crediting how it was made.",
+  "sowResources": "Microsoft Word / Google Docs, Slides.",
+  "objectives": ["Save the AI-generated image.", "Insert it into a document or slide.", "Add a caption that says it was made with AI."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Save and insert", "detail": "Save the AI image and insert it into a document or slide."},
+   {"mins": 20, "title": "Caption it", "detail": "Add a caption that credits the image as 'made with an AI tool'."},
+   {"mins": 10, "title": "Check", "detail": "Partner checks the caption is clear. Save and log out."}
+  ],
+  "activities": ["Save the AI image", "Insert into a doc/slide", "Add an honest caption"],
+  "successCriteria": ["I saved and inserted my AI image.", "My image has a caption crediting it as AI-made.", "A partner confirmed the caption is clear."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Google Slides / PowerPoint"}]
+ },
+ "7": {
+  "topic": "Talk About AI",
+  "subtopic": "What's Real? Being Fair and Honest",
+  "outline": "Discuss what makes AI use fair and honest — telling people when something was AI-made, and not pretending it's a real photo.",
+  "sowResources": "Discussion prompt cards.",
+  "objectives": ["Explain why it matters to say when something is AI-made.", "Discuss the difference between a real photo and an AI image.", "State one rule for using AI fairly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Real or AI?", "detail": "Show examples and discuss: how can you tell, and does it matter?"},
+   {"mins": 20, "title": "Fairness discussion", "detail": "Discuss: why is it important to say when something was made with AI?"},
+   {"mins": 10, "title": "One rule", "detail": "Each pupil writes one rule for using AI fairly. Log out."}
+  ],
+  "activities": ["Real-vs-AI discussion", "Fairness discussion", "Write a personal AI-fairness rule"],
+  "successCriteria": ["I can explain why saying 'AI-made' matters.", "I discussed the difference between real and AI images.", "I wrote one rule for using AI fairly."],
+  "resources": [{"label": "Discussion prompt cards"}]
+ },
+ "8": {
+  "topic": "Showcase",
+  "subtopic": "Share the Project",
+  "outline": "Share the finished document or slide with the AI image and caption, with the class.",
+  "sowResources": "Class projector.",
+  "objectives": ["Share the finished project with the class.", "Explain how the image was made.", "Give one kind comment to a classmate."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Showcase", "detail": "Share the finished piece on the projector, explaining the AI image and caption."},
+   {"mins": 15, "title": "Kind comments", "detail": "Each pupil gives one kind, specific comment."},
+   {"mins": 10, "title": "Save", "detail": "Save the finished piece to the portfolio folder. Log out."}
+  ],
+  "activities": ["Class showcase", "Explain the AI process", "Kind-comment practice"],
+  "successCriteria": ["I shared my finished project with the class.", "I explained how my AI image was made and captioned.", "I gave a kind, specific comment to a classmate."],
+  "resources": [{"label": "Class projector"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Skills Recap",
+  "outline": "Recap this term's skills: data entry, charts, branching decisions and honest AI use, through a station rotation.",
+  "sowResources": "Station cards.",
+  "objectives": ["Recap data entry, charts, branching and AI honesty.", "Complete each station task.", "Identify which skill needs more practice."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Station 1 — Chart", "detail": "Read a chart and answer a question."},
+   {"mins": 15, "title": "Station 2 — Branching", "detail": "Draw a small yes/no decision branch."},
+   {"mins": 15, "title": "Station 3 — AI honesty", "detail": "Spot the caption that correctly credits an AI image."},
+   {"mins": 5, "title": "Reflect", "detail": "Name the trickiest skill. Log out."}
+  ],
+  "activities": ["Chart station", "Branching station", "AI-honesty station"],
+  "successCriteria": ["I completed all three stations.", "I can recap this term's data and AI skills.", "I know which skill needs more practice."],
+  "resources": [{"label": "Station cards"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Skills Practice for the Exam",
+  "outline": "Rehearse the practical task in pairs: build a chart from data, and write a sentence describing it.",
+  "sowResources": "Practice task cards.",
+  "objectives": ["Rehearse building a chart and describing it with a partner.", "Check both for accuracy.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Paired rehearsal", "detail": "Build a small chart and write a description with a partner reading the task card."},
+   {"mins": 15, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Paired chart-building rehearsal", "Written description practice", "Tricky-step self-check"],
+  "successCriteria": ["I rehearsed building and describing a chart with a partner.", "I checked both for accuracy.", "I know which step needs more practice."],
+  "resources": [{"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 3 Practical Assessment",
+  "outline": "Individual task: build a chart plus a project using a teacher-guided AI-made image, with a sentence on using AI fairly.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Build a chart from given data.", "Include a teacher-guided AI-made image with a correct caption.", "Write one sentence on using AI fairly."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task."},
+   {"mins": 25, "title": "Chart task", "detail": "Individual practical: build a chart from given data."},
+   {"mins": 20, "title": "AI caption task", "detail": "Insert a supplied AI image with a correctly worded caption and fairness sentence."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the year's progress. Log out."}
+  ],
+  "activities": ["Individual chart task", "AI-caption and fairness-sentence task", "End-of-year celebration"],
+  "successCriteria": ["My chart is built correctly from the data.", "My AI image is captioned honestly.", "I wrote one sentence on using AI fairly."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Google Sheets / Microsoft Excel"}]
+ },
+ "12": {
+  "topic": "End of Term Project",
+  "subtopic": "AI Fact Page — Plan",
+  "outline": "Plan a final fact page on a chosen topic that combines a data chart and a teacher-guided AI-made illustration.",
+  "sowResources": "Printed planning sheet.",
+  "objectives": ["Choose a topic with data and a visual idea.", "Plan the chart and the AI image together.", "Sketch the plan on paper."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Plan the page", "detail": "Choose a topic, sketch the chart and the AI image idea, and plan the layout."},
+   {"mins": 15, "title": "Pitch it", "detail": "Tell a partner the plan. Collect plans. Log out."}
+  ],
+  "activities": ["Topic and data selection", "Paper sketch", "Partner pitch"],
+  "successCriteria": ["My plan includes a chart idea and an AI image idea.", "My plan shows a sensible page layout.", "I can tell a partner my plan."],
+  "resources": [{"label": "Printed planning sheet"}]
+ },
+ "13": {
+  "topic": "End of Term Project",
+  "subtopic": "AI Fact Page — Build the Chart",
+  "outline": "Build the data chart for the fact page from the planned dataset.",
+  "sowResources": "Google Sheets, Microsoft Excel.",
+  "objectives": ["Enter the data for the fact page.", "Build a suitable, labelled chart.", "Check it matches the plan."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 35, "title": "Build the chart", "detail": "Enter data and build a suitable, labelled chart following the plan."},
+   {"mins": 10, "title": "Check", "detail": "Check it matches the original plan. Save and log out."}
+  ],
+  "activities": ["Enter fact-page data", "Build the chart", "Match check against the plan"],
+  "successCriteria": ["My data is entered correctly.", "My chart is suitable and labelled.", "My chart matches my original plan."],
+  "resources": [{"label": "Google Sheets / Microsoft Excel"}]
+ },
+ "14": {
+  "topic": "End of Term Project",
+  "subtopic": "AI Fact Page — Add the Image and Text",
+  "outline": "Add the teacher-guided AI image, a caption, and the fact text to complete the page.",
+  "sowResources": "Teacher-guided AI image tool, Microsoft Word / Google Docs.",
+  "objectives": ["Add the AI image with a correct caption.", "Write the fact text for the page.", "Check the whole page is complete."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Add image and text", "detail": "Insert the AI image with its caption, and write the fact text around the chart."},
+   {"mins": 15, "title": "Completeness check", "detail": "Check chart, image, caption and text are all present. Save and log out."}
+  ],
+  "activities": ["Add the AI image and caption", "Write the fact text", "Completeness check"],
+  "successCriteria": ["My AI image has a correct caption.", "My fact text is written.", "My page has all four parts: chart, image, caption, text."],
+  "resources": [{"label": "Teacher-guided AI image tool"}, {"label": "Microsoft Word / Google Docs"}]
+ },
+ "15": {
+  "topic": "Portfolio Showcase",
+  "subtopic": "Fact Page Fair",
+  "outline": "Present the finished AI fact page to the class, then save the whole year's portfolio.",
+  "sowResources": "Class projector, portfolio folder.",
+  "objectives": ["Present the finished fact page confidently.", "Explain the data and the AI image honestly.", "Save the whole year's portfolio."],
+  "plan": [
+   {"mins": 10, "title": "Final rehearsal", "detail": "One last run-through with a partner before presenting."},
+   {"mins": 25, "title": "Fact Page Fair", "detail": "Present fact pages to the class in small groups."},
+   {"mins": 15, "title": "Portfolio save", "detail": "Save the finished page and review the whole year's portfolio folder."},
+   {"mins": 10, "title": "Year celebration", "detail": "Name three things learned this year. Log out."}
+  ],
+  "activities": ["Final rehearsal", "Fact Page Fair presentations", "Year-end portfolio review"],
+  "successCriteria": ["I presented my fact page confidently.", "I explained my data and my AI image honestly.", "My whole year's work is saved in the portfolio."],
+  "resources": [{"label": "Class projector"}, {"label": "Portfolio folder"}]
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "1": {
+  "topic": "Formulas Refresher",
+  "subtopic": "SUM, AVERAGE and Friends",
+  "outline": "Term theme: 'Data Modelling'. Recap SUM, AVERAGE, MAX and MIN from earlier years, ready to build toward IF and lookups.",
+  "sowResources": "Microsoft Excel, Google Sheets, formula reference card.",
+  "objectives": ["Recall SUM, AVERAGE, MAX and MIN formulas.", "Apply all four to a sample dataset.", "Explain what each formula calculates."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Formula recap", "detail": "Apply SUM, AVERAGE, MAX and MIN to a sample dataset, checking each result makes sense."},
+   {"mins": 20, "title": "Speed quiz", "detail": "Quickfire: which formula would you use for this question? Pairs answer on whiteboards."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Apply four formulas to sample data", "Which-formula speed quiz", "Save"],
+  "successCriteria": ["I correctly applied SUM, AVERAGE, MAX and MIN.", "I chose the right formula for a given question.", "I can explain what each formula calculates."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Formula reference card"}]
+ },
+ "2": {
+  "topic": "IF Basics",
+  "subtopic": "Make Decisions in a Cell",
+  "outline": "Learn the =IF() function to make a cell display different results depending on a condition.",
+  "sowResources": "Microsoft Excel, Google Sheets, IF-function reference.",
+  "objectives": ["Write a basic =IF formula.", "Explain the three parts of an IF formula: condition, true, false.", "Test the formula with values on both sides of the condition."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "IF in real life", "detail": "Everyday IF examples: IF it rains, take an umbrella, ELSE leave it home."},
+   {"mins": 25, "title": "Build an IF formula", "detail": "Write =IF(B2>=50,\"Pass\",\"Fail\") on sample scores. Test with scores above and below 50."},
+   {"mins": 10, "title": "Explain it", "detail": "Explain the three parts of the formula to a partner. Save and log out."}
+  ],
+  "activities": ["Everyday IF examples", "Build and test an IF formula", "Partner explanation"],
+  "successCriteria": ["I wrote a working IF formula.", "I can name the three parts of an IF formula.", "I tested it with values on both sides of the condition."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "IF-function reference"}]
+ },
+ "3": {
+  "topic": "Absolute vs Relative",
+  "subtopic": "When to Lock a Reference",
+  "outline": "Learn the difference between a relative reference (changes when copied) and an absolute reference with $ signs (stays fixed).",
+  "sowResources": "Microsoft Excel, Google Sheets, references handout.",
+  "objectives": ["Explain the difference between relative and absolute references.", "Use $ signs to lock a reference.", "Fix a formula that broke because of the wrong reference type."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "The problem", "detail": "Copy a formula down that references a fixed 'tax rate' cell — watch it break because the reference moved too."},
+   {"mins": 25, "title": "Lock it with $", "detail": "Add $ signs to lock the tax-rate reference, then copy down again — now it works."},
+   {"mins": 10, "title": "Fix a broken one", "detail": "Given a broken formula, fix it by adding the right $ signs. Save and log out."}
+  ],
+  "activities": ["Watch a formula break when copied", "Lock a reference with $", "Fix a broken formula"],
+  "successCriteria": ["I can explain relative vs absolute references.", "I used $ signs to lock a reference correctly.", "I fixed a broken formula caused by the wrong reference type."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "References handout"}]
+ },
+ "4": {
+  "topic": "Build a Model",
+  "subtopic": "Trip Budget or Event Planner",
+  "outline": "Start building a small spreadsheet model — a trip budget or event planner — with inputs the user can change.",
+  "sowResources": "Microsoft Excel, Google Sheets, model exemplar.",
+  "objectives": ["Plan a simple spreadsheet model.", "Set up clearly labelled input cells.", "Add formulas that calculate from those inputs."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Choose a model", "detail": "Choose trip budget or event planner; sketch the inputs and outputs needed."},
+   {"mins": 30, "title": "Build the model", "detail": "Set up labelled input cells and formulas that calculate totals from them."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Choose and sketch a model", "Build inputs and formulas", "Save"],
+  "successCriteria": ["My model has clearly labelled input cells.", "My model calculates a total from those inputs.", "My formulas use the correct reference type."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Model exemplar"}]
+ },
+ "5": {
+  "topic": "What-If",
+  "subtopic": "Change Inputs, Watch Outputs",
+  "outline": "Change an input value in the model and observe how the outputs update automatically — the core idea of 'what-if' analysis.",
+  "sowResources": "Microsoft Excel, Google Sheets.",
+  "objectives": ["Change an input value and observe the effect.", "Explain what 'what-if' means in a spreadsheet.", "Record two different what-if scenarios."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "What-if demo", "detail": "Change one input in the model on the big screen and watch the output change instantly."},
+   {"mins": 20, "title": "Try two scenarios", "detail": "Try two different what-if scenarios in your own model and record the results."},
+   {"mins": 10, "title": "Discuss", "detail": "Which scenario gave a better outcome, and why? Save and log out."}
+  ],
+  "activities": ["What-if demo", "Try two scenarios", "Discuss outcomes"],
+  "successCriteria": ["I changed an input and saw the output update.", "I can explain what 'what-if' means.", "I recorded two scenario results."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}]
+ },
+ "6": {
+  "topic": "Charts",
+  "subtopic": "Present the Results",
+  "outline": "Add a chart to the model that presents the results clearly to someone who has not seen the raw numbers.",
+  "sowResources": "Microsoft Excel, Google Sheets, chart-choice poster.",
+  "objectives": ["Choose a suitable chart type for the model's results.", "Add a titled, labelled chart.", "Check the chart makes sense on its own."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Add a chart", "detail": "Choose and insert a suitable chart type for the model's results, with a title and labels."},
+   {"mins": 20, "title": "Stand-alone test", "detail": "Cover the numbers — does the chart alone still make sense? Adjust labels if not."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Choose and add a chart", "Stand-alone clarity test", "Save"],
+  "successCriteria": ["My chart type suits the data.", "My chart has a title and labels.", "My chart makes sense without seeing the raw numbers."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Chart-choice poster"}]
+ },
+ "7": {
+  "topic": "Interpret",
+  "subtopic": "Write Up What It Shows",
+  "outline": "Write a short paragraph interpreting the model — what does it show, and what would you recommend based on it?",
+  "sowResources": "Microsoft Word / Google Docs, writing frame.",
+  "objectives": ["Interpret what the model's results mean.", "Write a short paragraph explaining the findings.", "Make one recommendation based on the data."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "What does it show?", "detail": "Discuss as a class: what story does the model's chart tell?"},
+   {"mins": 25, "title": "Write it up", "detail": "Write a short paragraph explaining the model's findings and one recommendation."},
+   {"mins": 10, "title": "Peer check", "detail": "Partner checks the write-up matches the actual chart. Save and log out."}
+  ],
+  "activities": ["Discuss the model's story", "Write an interpretation paragraph", "Peer accuracy check"],
+  "successCriteria": ["My paragraph explains what the model shows.", "My paragraph includes one recommendation.", "My write-up matches my actual chart."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Writing frame"}]
+ },
+ "8": {
+  "topic": "Portfolio",
+  "subtopic": "A Working Model",
+  "outline": "Finish and polish the portfolio piece: a spreadsheet model using IF, with a short explanation of one what-if result.",
+  "sowResources": "Microsoft Excel, Google Sheets, portfolio folder.",
+  "objectives": ["Finish the model with a working IF formula.", "Ensure the chart and write-up are complete.", "Save the finished piece to the portfolio folder."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Finish the model", "detail": "Complete the model: IF formula, chart, and written interpretation all present."},
+   {"mins": 15, "title": "Rubric self-check", "detail": "Check against the assessment rubric before saving."},
+   {"mins": 5, "title": "Save", "detail": "Save to the portfolio folder. Log out."}
+  ],
+  "activities": ["Finish the model", "Rubric self-check", "Portfolio save"],
+  "successCriteria": ["My model includes a working IF formula.", "My model has a chart and a written interpretation.", "My finished model is saved to the portfolio folder."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Portfolio folder"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add a Second Scenario",
+  "outline": "Extend the model's write-up by adding and interpreting a second what-if scenario.",
+  "sowResources": "Microsoft Excel, Google Sheets, Microsoft Word / Google Docs.",
+  "objectives": ["Run a second what-if scenario.", "Compare it with the first scenario.", "Add the comparison to the write-up."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Second scenario", "detail": "Change the inputs again to run a second what-if scenario, recording the result."},
+   {"mins": 20, "title": "Compare and write", "detail": "Add a sentence comparing the two scenarios to the write-up."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Run a second scenario", "Compare with the first", "Update the write-up"],
+  "successCriteria": ["I ran a second what-if scenario.", "I compared it with the first scenario.", "My write-up now covers both scenarios."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Microsoft Word / Google Docs"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Practise the Exam Skills",
+  "outline": "Rehearse the term's modelling skills in pairs: build a formula, test a what-if, add a chart.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's modelling process in order.", "Rehearse building an IF formula and a chart with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Process recap", "detail": "Recap: inputs, formula, IF, chart, interpret — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Build a small IF-based model with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Process recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's modelling steps in order.", "I rehearsed building a model with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 2 Practical Assessment",
+  "outline": "Individual task: build a spreadsheet model using IF, then write a short explanation of one what-if result.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Build a spreadsheet model that calculates automatically.", "Use an IF function correctly.", "Present findings with a chart and a short explanation."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task and rubric."},
+   {"mins": 30, "title": "Build the model", "detail": "Individual practical: given inputs, build a model with an IF formula and a chart."},
+   {"mins": 15, "title": "Write the explanation", "detail": "Write a short explanation of one what-if result."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the term's progress. Log out."}
+  ],
+  "activities": ["Individual practical model build", "Written what-if explanation", "End-of-term celebration"],
+  "successCriteria": ["My model calculates automatically from inputs.", "I used an IF function correctly.", "I explained one what-if result clearly."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Microsoft Excel / Google Sheets"}]
+ }
+}

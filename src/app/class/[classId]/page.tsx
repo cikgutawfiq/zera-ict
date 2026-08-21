@@ -7,6 +7,7 @@ import { useData } from "@/lib/store";
 import { CLASS_BY_ID, slotsForClass } from "@/data/timetable";
 import { addDays, formatRange, mondayOf, todayISO } from "@/lib/dates";
 import { PageHeader, StatusChip } from "@/components/ui";
+import { assignMoralContent } from "@/data/values";
 import type { Lesson } from "@/lib/types";
 
 const DAY_SHORT = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -35,6 +36,7 @@ export default function ClassPage() {
       alert(`Week ${no} already exists for this class in that term.`);
       return;
     }
+    const moral = assignMoralContent(classId, lessons.length);
     const lesson: Lesson = {
       id,
       classId,
@@ -54,6 +56,7 @@ export default function ClassPage() {
       activities: [],
       successCriteria: [],
       resources: [],
+      ...moral,
       status: "planned",
       note: "",
       order: no,

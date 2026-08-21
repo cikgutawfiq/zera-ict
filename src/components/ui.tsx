@@ -36,7 +36,7 @@ export function PageHeader({
   right?: React.ReactNode;
 }) {
   return (
-    <header className="sticky top-0 z-10 border-b border-[color:var(--border)] bg-[color:var(--surface)] px-4 py-3">
+    <header className="blur-bar sticky top-0 z-10 border-b border-[color:var(--border)] px-4 py-3">
       <div className="mx-auto flex max-w-3xl items-center gap-3">
         <div className="min-w-0 flex-1">
           <h1 className="truncate text-base font-bold">{title}</h1>

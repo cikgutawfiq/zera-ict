@@ -5,7 +5,7 @@ import { DataProvider } from "@/lib/store";
 import Shell from "@/components/Shell";
 
 export const metadata: Metadata = {
-  title: "Zera ICT — Lesson Dashboard",
+  title: "ZERA ICT GUY :)",
   description: "Scheme of work, timetable and lesson plans for Mr Tawfiq bin Rahmat.",
 };
 

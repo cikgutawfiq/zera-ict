@@ -1,0 +1,177 @@
+{
+ "1": {
+  "topic": "Plan the Story",
+  "subtopic": "Storyboard a Slide Story",
+  "outline": "Term theme: 'Slides & Digital Citizens'. Plan a narrated slide story on paper before building it on screen: what happens on each slide.",
+  "sowResources": "Printed storyboard sheet, exemplar slide story.",
+  "objectives": ["Plan a story across several slides.", "Sketch what happens on each slide.", "Explain my story plan to a partner."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Watch an exemplar", "detail": "Watch a short slide-story exemplar and notice how it's split into scenes."},
+   {"mins": 25, "title": "Storyboard", "detail": "Plan 4-5 slides on paper: what happens, what picture, one line of narration each."},
+   {"mins": 10, "title": "Pitch it", "detail": "Tell a partner your story plan in 30 seconds. Log out."}
+  ],
+  "activities": ["Exemplar slide story review", "Paper storyboard", "Partner pitch"],
+  "successCriteria": ["My storyboard has 4-5 planned slides.", "Each slide has a picture idea and a line of narration.", "I can pitch my story plan to a partner."],
+  "resources": [{"label": "Printed storyboard sheet"}, {"label": "Exemplar slide story"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "2": {
+  "topic": "Build Scenes",
+  "subtopic": "Create Scenes with Images",
+  "outline": "Turn the storyboard into real slides, adding one image per scene from the class picture folder or own drawings.",
+  "sowResources": "Google Slides, PowerPoint, class picture folder.",
+  "objectives": ["Create a slide for each planned scene.", "Insert an image on each slide.", "Follow the storyboard plan."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build the scenes", "detail": "Create a slide for each storyboard scene and insert a matching image."},
+   {"mins": 15, "title": "Order check", "detail": "Check the slides are in the right story order. Save and log out."}
+  ],
+  "activities": ["Build slides from the storyboard", "Insert matching images", "Order check"],
+  "successCriteria": ["I created a slide for each planned scene.", "Each slide has a matching image.", "My slides follow the storyboard order."],
+  "resources": [{"label": "Google Slides / PowerPoint"}, {"label": "Class picture folder"}]
+ },
+ "3": {
+  "topic": "Transitions & Timing",
+  "subtopic": "Make It Flow",
+  "outline": "Add transitions between scenes and think about pacing — does the story flow smoothly from one slide to the next?",
+  "sowResources": "PowerPoint, Google Slides, transitions menu.",
+  "objectives": ["Add consistent transitions between slides.", "Judge whether the story flows smoothly.", "Adjust slide order or content if it doesn't flow."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Add transitions", "detail": "Apply one consistent transition style across all slides."},
+   {"mins": 20, "title": "Flow check", "detail": "Play the deck through — does it make sense as a story? Adjust anything that jumps oddly."},
+   {"mins": 10, "title": "Peer flow test", "detail": "A partner watches the deck play and says if the story made sense. Save and log out."}
+  ],
+  "activities": ["Apply consistent transitions", "Self flow check", "Peer flow test"],
+  "successCriteria": ["My slides use one consistent transition.", "My story flows in a sensible order.", "A partner understood my story when it played through."],
+  "resources": [{"label": "PowerPoint / Google Slides"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "4": {
+  "topic": "Narration/Notes",
+  "subtopic": "Add What I'll Say",
+  "outline": "Write speaker notes for each scene so the story can be narrated aloud when presented.",
+  "sowResources": "PowerPoint, Google Slides.",
+  "objectives": ["Write narration notes for each slide.", "Keep notes short and speakable, not a full script.", "Practise reading the notes aloud with the slide."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Write narration", "detail": "Write one or two narration sentences per slide in the notes area."},
+   {"mins": 20, "title": "Practise aloud", "detail": "Read through the whole story aloud using the notes as prompts, not a script to read word for word."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Write narration notes", "Practise reading aloud", "Save"],
+  "successCriteria": ["Every slide has narration notes.", "My notes are short prompts, not a full script.", "I practised narrating the whole story aloud."],
+  "resources": [{"label": "PowerPoint / Google Slides"}]
+ },
+ "5": {
+  "topic": "Interland: Tower of Treasure",
+  "subtopic": "Build Strong Passwords",
+  "outline": "Play Google's Interland 'Tower of Treasure' to learn what makes a strong password, then write down one password rule.",
+  "sowResources": "Google Interland (Tower of Treasure), password-rule cards.",
+  "objectives": ["Play Tower of Treasure and identify strong vs weak passwords.", "Explain one rule for a strong password.", "Explain why a strong password matters."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Tower of Treasure", "detail": "Play the Interland game, discussing password choices as they come up."},
+   {"mins": 15, "title": "Password rules", "detail": "As a class, list what makes a password strong: length, mixing letters/numbers, not using your name."},
+   {"mins": 10, "title": "Plenary", "detail": "Each pupil writes one password rule on a card. Log out."}
+  ],
+  "activities": ["Google Interland — Tower of Treasure", "Class password-rule list", "Write a personal password rule"],
+  "successCriteria": ["I played Tower of Treasure and made sensible choices.", "I can explain one rule for a strong password.", "I can explain why strong passwords matter."],
+  "resources": [{"label": "Google Interland", "url": "https://beinternetawesome.withgoogle.com/en_us/interland"}, {"label": "Password-rule cards"}]
+ },
+ "6": {
+  "topic": "Cyber-Kindness",
+  "subtopic": "Kind Kingdom Revisited",
+  "outline": "Revisit Google Interland's 'Kind Kingdom' ideas about being kind online, and discuss what cyber-kindness looks like in everyday life.",
+  "sowResources": "Google Interland (Kind Kingdom), discussion cards.",
+  "objectives": ["Recall the Kind Kingdom rules about online kindness.", "Give an example of cyber-kindness.", "Explain what to do if someone is unkind online."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Kind Kingdom recap", "detail": "Play or recall the Kind Kingdom scenarios and discuss the choices."},
+   {"mins": 20, "title": "Cyber-kindness examples", "detail": "In pairs, come up with one example of being kind online and one example of unkindness."},
+   {"mins": 10, "title": "What to do", "detail": "Discuss: if someone is unkind online, tell a trusted adult. Log out."}
+  ],
+  "activities": ["Kind Kingdom recap", "Cyber-kindness example pairs", "What-to-do discussion"],
+  "successCriteria": ["I can recall a Kind Kingdom rule.", "I gave an example of cyber-kindness.", "I know to tell a trusted adult about online unkindness."],
+  "resources": [{"label": "Google Interland", "url": "https://beinternetawesome.withgoogle.com/en_us/interland"}, {"label": "Discussion cards"}]
+ },
+ "7": {
+  "topic": "Finish the Story",
+  "subtopic": "Polish the Digital Story",
+  "outline": "Finish and polish the whole slide story: check images, transitions, narration and overall flow one more time.",
+  "sowResources": "PowerPoint, Google Slides.",
+  "objectives": ["Complete every slide of the story.", "Polish images, transitions and narration.", "Check the whole story makes sense start to finish."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Polish pass", "detail": "Go through every slide fixing anything unfinished: missing images, missing notes, inconsistent transitions."},
+   {"mins": 15, "title": "Full play-through", "detail": "Play the whole story from start to finish and check it makes sense."},
+   {"mins": 5, "title": "Save", "detail": "Save the finished story. Log out."}
+  ],
+  "activities": ["Polish every slide", "Full play-through check", "Save"],
+  "successCriteria": ["Every slide is complete with an image and notes.", "My transitions are consistent throughout.", "My story makes sense from start to finish."],
+  "resources": [{"label": "PowerPoint / Google Slides"}]
+ },
+ "8": {
+  "topic": "Present & Feedback",
+  "subtopic": "Present; Two-Stars-and-a-Wish",
+  "outline": "Present the finished slide story to a small group and give two-stars-and-a-wish feedback to a classmate.",
+  "sowResources": "Class projector, feedback slips.",
+  "objectives": ["Present a slide story using narration notes.", "Give two stars and a wish for a classmate's story.", "Explain a strong-password rule when asked."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Small-group presentations", "detail": "Present the story to a small group using narration notes, not reading the slide word for word."},
+   {"mins": 15, "title": "Two stars and a wish", "detail": "Each listener gives two things they liked and one kind improvement suggestion."},
+   {"mins": 10, "title": "Portfolio save", "detail": "Save the finished story to the portfolio folder. Log out."}
+  ],
+  "activities": ["Small-group presentations", "Two-stars-and-a-wish feedback", "Portfolio save"],
+  "successCriteria": ["I presented my story using my narration notes.", "I gave a classmate two stars and a wish.", "I explained one strong-password rule."],
+  "resources": [{"label": "Class projector"}, {"label": "Feedback slips"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add an Extra Scene",
+  "outline": "Extend the finished story with one extra scene, applying feedback received from the presentation.",
+  "sowResources": "PowerPoint, Google Slides.",
+  "objectives": ["Add one new scene to the story.", "Apply at least one piece of feedback received.", "Keep the new scene consistent with the rest of the story."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Extend the story", "detail": "Add a new scene, applying at least one wish from the feedback received last lesson."},
+   {"mins": 15, "title": "Consistency check", "detail": "Check the new scene matches the style of the rest. Save."},
+   {"mins": 5, "title": "Log out", "detail": "Save and log out."}
+  ],
+  "activities": ["Add a new scene", "Apply feedback", "Consistency check"],
+  "successCriteria": ["My story now has an extra scene.", "I applied at least one piece of feedback.", "The new scene matches the rest of the story."],
+  "resources": [{"label": "PowerPoint / Google Slides"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Practise the Exam Skills",
+  "outline": "Rehearse the term's slide-story skills in pairs: plan, build, add narration, present.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's slide-story process in order.", "Rehearse building and narrating a short slide.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Process recap", "detail": "Recap: plan, build, transitions, narration, present — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Build and narrate one short slide with a partner, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Process recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's slide-story steps in order.", "I rehearsed building and narrating with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 2 Practical Assessment",
+  "outline": "Individual task: plan and build a short narrated slide story with images, a consistent transition and speaker notes, and explain one strong-password rule.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Plan and build a short slide story independently.", "Add narration/notes and images.", "Explain one strong-password rule."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task and rubric."},
+   {"mins": 30, "title": "Build the story", "detail": "Individual practical: plan and build 3-4 slides with images and narration notes."},
+   {"mins": 10, "title": "Password question", "detail": "One-to-one: 'tell me one rule for a strong password.'"},
+   {"mins": 15, "title": "Save and celebrate", "detail": "Save the story and celebrate the term's progress. Log out."}
+  ],
+  "activities": ["Individual practical slide-story build", "Spoken password-rule question", "End-of-term celebration"],
+  "successCriteria": ["I planned and built a short slide story on my own.", "My story has images and narration notes.", "I explained one strong-password rule."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "PowerPoint / Google Slides"}]
+ }
+}

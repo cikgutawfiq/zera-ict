@@ -250,6 +250,127 @@ const textToRes = (text: string): ResourceLink[] =>
       return trimmed ? { label: label.trim(), url: trimmed } : { label: label.trim() };
     });
 
+export function MoralSection({
+  moralValue,
+  moralDescription,
+  quote,
+  quoteAuthor,
+  foodForThought,
+  onSave,
+}: {
+  moralValue: string;
+  moralDescription: string;
+  quote: string;
+  quoteAuthor: string;
+  foodForThought: string;
+  onSave: (next: {
+    moralValue: string;
+    moralDescription: string;
+    quote: string;
+    quoteAuthor: string;
+    foodForThought: string;
+  }) => Promise<void>;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState({ moralValue, moralDescription, quote, quoteAuthor, foodForThought });
+  const [saving, setSaving] = useState(false);
+
+  const save = async () => {
+    setSaving(true);
+    try {
+      await onSave(draft);
+      setEditing(false);
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  return (
+    <section
+      className="rounded-2xl border p-4"
+      style={{ background: "var(--accent-soft)", borderColor: "var(--accent)" }}
+    >
+      <div className="mb-2 flex items-center gap-2">
+        <h2 className="flex-1 text-sm font-bold uppercase tracking-wide" style={{ color: "var(--accent)" }}>
+          Value of the Day
+        </h2>
+        {editing ? (
+          <>
+            <button className="btn btn-sm" onClick={() => setEditing(false)} disabled={saving}>
+              Cancel
+            </button>
+            <button className="btn btn-sm btn-primary" onClick={save} disabled={saving}>
+              {saving ? "Saving…" : "Save"}
+            </button>
+          </>
+        ) : (
+          <button
+            className="btn btn-sm no-print"
+            onClick={() => {
+              setDraft({ moralValue, moralDescription, quote, quoteAuthor, foodForThought });
+              setEditing(true);
+            }}
+          >
+            Edit
+          </button>
+        )}
+      </div>
+
+      {editing ? (
+        <div className="space-y-2">
+          <input
+            className="field"
+            placeholder="Moral value"
+            value={draft.moralValue}
+            onChange={(e) => setDraft((d) => ({ ...d, moralValue: e.target.value }))}
+          />
+          <input
+            className="field"
+            placeholder="One-line description"
+            value={draft.moralDescription}
+            onChange={(e) => setDraft((d) => ({ ...d, moralDescription: e.target.value }))}
+          />
+          <textarea
+            className="field min-h-16"
+            placeholder="Quote"
+            value={draft.quote}
+            onChange={(e) => setDraft((d) => ({ ...d, quote: e.target.value }))}
+          />
+          <input
+            className="field"
+            placeholder="Quote author"
+            value={draft.quoteAuthor}
+            onChange={(e) => setDraft((d) => ({ ...d, quoteAuthor: e.target.value }))}
+          />
+          <textarea
+            className="field min-h-16"
+            placeholder="Food for thought"
+            value={draft.foodForThought}
+            onChange={(e) => setDraft((d) => ({ ...d, foodForThought: e.target.value }))}
+          />
+        </div>
+      ) : (
+        <div className="space-y-3">
+          <div>
+            <p className="text-lg font-bold">{moralValue}</p>
+            <p className="text-sm text-[color:var(--muted)]">{moralDescription}</p>
+          </div>
+          <blockquote className="text-[15px] italic">
+            <span className="text-xl not-italic text-[color:var(--accent)] align-top">&ldquo;</span>
+            {quote}
+            <span className="text-xl not-italic text-[color:var(--accent)] align-bottom">&rdquo;</span>
+            <footer className="mt-1 text-xs not-italic text-[color:var(--muted)]">— {quoteAuthor}</footer>
+          </blockquote>
+          <p className="text-sm font-medium">
+            <span className="text-[color:var(--accent)]">Food for thought: </span>
+            {foodForThought}
+          </p>
+        </div>
+      )}
+    </section>
+  );
+}
+
 export function ResourceSection({
   items,
   onSave,

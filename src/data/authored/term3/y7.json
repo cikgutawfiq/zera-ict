@@ -1,0 +1,237 @@
+{
+ "1": {
+  "topic": "Brief & Storyboard",
+  "subtopic": "Plan a Campaign",
+  "outline": "Term theme: 'Multimedia & Web'. Plan a small awareness campaign (e.g. recycling, online safety) combining a video and a website.",
+  "sowResources": "Printed storyboard sheet, campaign brief handout.",
+  "objectives": ["Choose a campaign topic and message.", "Storyboard a short video for the campaign.", "Plan how the video and website will connect."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "What makes a campaign work", "detail": "Look at real campaign examples — one clear message, consistent look."},
+   {"mins": 25, "title": "Storyboard", "detail": "Choose a topic and storyboard a 60-90 second campaign video."},
+   {"mins": 10, "title": "Pitch it", "detail": "Pitch the campaign idea to a partner. Log out."}
+  ],
+  "activities": ["Campaign example analysis", "Video storyboard", "Partner pitch"],
+  "successCriteria": ["I chose a clear campaign topic and message.", "My storyboard plans a short video.", "I can pitch my campaign idea to a partner."],
+  "resources": [{"label": "Printed storyboard sheet"}, {"label": "Campaign brief handout"}]
+ },
+ "2": {
+  "topic": "Film & Gather",
+  "subtopic": "Shoot Footage and Assets",
+  "outline": "Film the campaign video's shots and gather any images or graphics needed for the site.",
+  "sowResources": "Class tablets / phones (school-approved), storyboard.",
+  "objectives": ["Film shots following the storyboard.", "Apply good filming practice: steady, lit, clear sound.", "Gather additional images for the website."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Film the shots", "detail": "Film the storyboard's shots, applying steady/lit/clear-sound rules."},
+   {"mins": 15, "title": "Gather assets", "detail": "Collect any extra photos or graphics needed for the campaign website."},
+   {"mins": 5, "title": "Devices in", "detail": "Devices counted in. Log out."}
+  ],
+  "activities": ["Film storyboard shots", "Gather website assets", "Device return"],
+  "successCriteria": ["I filmed shots following the storyboard.", "My filming followed the steady/lit/clear-sound rules.", "I gathered images needed for the website."],
+  "resources": [{"label": "Class tablets / phones (school-approved)"}, {"label": "Storyboard"}]
+ },
+ "3": {
+  "topic": "Edit Video",
+  "subtopic": "Cut It Together",
+  "outline": "Edit the campaign video: trim, order, add a title and captions, and background music at a sensible volume.",
+  "sowResources": "Clipchamp / CapCut.",
+  "objectives": ["Trim and order the clips.", "Add a title and captions.", "Add background music at a sensible volume."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Edit the video", "detail": "Trim clips, order them, add a title, captions and background music."},
+   {"mins": 15, "title": "Full playback", "detail": "Play through and check it delivers the campaign message clearly. Save and log out."}
+  ],
+  "activities": ["Trim and order clips", "Add title, captions, music", "Full playback check"],
+  "successCriteria": ["My clips are trimmed and in a sensible order.", "My video has a title and captions.", "My video's message is clear on a full playback."],
+  "resources": [{"label": "Clipchamp / CapCut"}]
+ },
+ "4": {
+  "topic": "Build the Site",
+  "subtopic": "A Campaign Website",
+  "outline": "Build a campaign website with a home page introducing the message and a page for the video and supporting information.",
+  "sowResources": "Google Sites.",
+  "objectives": ["Build a campaign website structure.", "Write a clear home page introducing the campaign.", "Plan where the video will go."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build the site", "detail": "Build the home page and a second page, planning where the video will be embedded."},
+   {"mins": 15, "title": "Message check", "detail": "Check the site's message is clear and consistent with the video. Save and log out."}
+  ],
+  "activities": ["Build campaign site structure", "Write the home page", "Message consistency check"],
+  "successCriteria": ["My site has a home page and a second page.", "My home page clearly introduces the campaign.", "My site's message is consistent with my video."],
+  "resources": [{"label": "Google Sites"}]
+ },
+ "5": {
+  "topic": "Embed Media",
+  "subtopic": "Add the Video and Images",
+  "outline": "Embed the finished campaign video and gathered images into the site.",
+  "sowResources": "Google Sites.",
+  "objectives": ["Embed the campaign video into the site.", "Add gathered images to relevant pages.", "Check the media displays correctly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Embed and add media", "detail": "Embed the video and add images to the site's pages."},
+   {"mins": 15, "title": "Check display", "detail": "Check the video plays and images display correctly. Save and log out."}
+  ],
+  "activities": ["Embed the video", "Add images", "Display check"],
+  "successCriteria": ["My video is embedded and plays correctly.", "My images are added to the relevant pages.", "All media displays correctly."],
+  "resources": [{"label": "Google Sites"}]
+ },
+ "6": {
+  "topic": "AI Assets",
+  "subtopic": "Generate Copy/Images Responsibly",
+  "outline": "Under teacher guidance, generate campaign copy or images with an AI tool, editing and crediting them responsibly.",
+  "sowResources": "Teacher-guided AI tool.",
+  "objectives": ["Use a guided AI tool to generate campaign copy or images.", "Edit AI output to fit the campaign's message.", "Credit AI-made content correctly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Generate assets", "detail": "Under supervision, generate copy or images for the campaign using the guided AI tool."},
+   {"mins": 20, "title": "Edit and credit", "detail": "Edit the AI output and add a credit line where used."},
+   {"mins": 10, "title": "Add to the site", "detail": "Add the credited content to the site. Save and log out."}
+  ],
+  "activities": ["Guided AI asset generation", "Edit and credit output", "Add to the site"],
+  "successCriteria": ["I generated content with the guided AI tool.", "I edited it to fit the campaign message.", "My AI-made content is correctly credited."],
+  "resources": [{"label": "Teacher-guided AI tool"}]
+ },
+ "7": {
+  "topic": "Publish & Check",
+  "subtopic": "Publish; Citizenship Check",
+  "outline": "Publish the campaign site and check it against digital citizenship standards: privacy, honesty and fair use.",
+  "sowResources": "Google Sites, citizenship checklist.",
+  "objectives": ["Publish the campaign site.", "Check the site against a citizenship checklist.", "Fix any issues found."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Citizenship check", "detail": "Check the site against the checklist: privacy, honesty, AI credits, appropriate content."},
+   {"mins": 20, "title": "Publish", "detail": "Fix any issues and publish the site."},
+   {"mins": 10, "title": "Peer visit", "detail": "A partner visits the published site to confirm it works. Log out."}
+  ],
+  "activities": ["Citizenship checklist review", "Publish the site", "Peer visit check"],
+  "successCriteria": ["I checked my site against the citizenship checklist.", "My site is published correctly.", "A partner confirmed my published site works."],
+  "resources": [{"label": "Google Sites"}, {"label": "Citizenship checklist"}]
+ },
+ "8": {
+  "topic": "Present",
+  "subtopic": "Present the Campaign",
+  "outline": "Present the finished campaign — video and website — to the class, explaining the message and how it was built.",
+  "sowResources": "Class projector.",
+  "objectives": ["Present the finished campaign to the class.", "Explain the campaign's message clearly.", "Save the campaign to the portfolio."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Present the campaign", "detail": "Present the video and site to the class, explaining the message."},
+   {"mins": 15, "title": "Questions", "detail": "Answer one audience question about the campaign."},
+   {"mins": 10, "title": "Save", "detail": "Save the campaign to the portfolio folder. Log out."}
+  ],
+  "activities": ["Class campaign presentation", "Audience questions", "Portfolio save"],
+  "successCriteria": ["I presented my finished campaign to the class.", "I explained the campaign's message clearly.", "My campaign is saved to the portfolio folder."],
+  "resources": [{"label": "Class projector"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Apply Feedback",
+  "outline": "Apply one piece of feedback received during the presentation to improve the campaign video or site.",
+  "sowResources": "Google Sites, Clipchamp / CapCut.",
+  "objectives": ["Choose one useful piece of feedback.", "Apply it to the video or site.", "Re-check the campaign still works."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Apply feedback", "detail": "Choose one piece of feedback and apply it to the video or site."},
+   {"mins": 15, "title": "Re-check", "detail": "Check the campaign still works after the change."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Choose and apply feedback", "Re-check the campaign", "Save"],
+  "successCriteria": ["I chose one useful piece of feedback.", "I applied it to my campaign.", "My campaign still works correctly."],
+  "resources": [{"label": "Google Sites"}, {"label": "Clipchamp / CapCut"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Skills Practice for the Exam",
+  "outline": "Rehearse the term's multimedia and web skills in pairs: storyboard, film, edit, build, publish.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's process in order.", "Rehearse a short filming-to-website task with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Process recap", "detail": "Recap: storyboard, film, edit, site, embed, AI, publish — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Practise a short filming-to-website task with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Process recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's process in order.", "I rehearsed the practical task with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 3 Practical Assessment",
+  "outline": "Individual task: produce a published campaign site with an original edited video and clearly credited AI-assisted assets.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Produce an edited video to a brief.", "Build and publish a campaign site.", "Use AI assets responsibly with clear credits."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task."},
+   {"mins": 30, "title": "Build the campaign", "detail": "Individual practical: assemble the video and site using pre-gathered assets."},
+   {"mins": 15, "title": "Publish and check", "detail": "Publish the site and check AI credits are correct."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the year's progress. Log out."}
+  ],
+  "activities": ["Individual practical campaign build", "Publish and AI-credit check", "End-of-year celebration"],
+  "successCriteria": ["My video is edited and meets the brief.", "My site is built and published.", "My AI-assisted assets are clearly credited."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Google Sites"}]
+ },
+ "12": {
+  "topic": "End of Term Project",
+  "subtopic": "Big Campaign — Plan",
+  "outline": "Plan a bigger final campaign with a second video, an extra page, and a call to action.",
+  "sowResources": "Printed planning sheet.",
+  "objectives": ["Plan a second campaign video or extended site.", "Plan a clear call to action.", "Sketch the additional content."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Plan the extension", "detail": "Plan a second video or extra page, and a clear call to action for visitors."},
+   {"mins": 15, "title": "Pitch it", "detail": "Tell a partner the plan. Collect plans. Log out."}
+  ],
+  "activities": ["Plan the campaign extension", "Plan a call to action", "Partner pitch"],
+  "successCriteria": ["My plan extends the campaign meaningfully.", "My plan includes a clear call to action.", "I can tell a partner my plan."],
+  "resources": [{"label": "Printed planning sheet"}]
+ },
+ "13": {
+  "topic": "End of Term Project",
+  "subtopic": "Big Campaign — Build",
+  "outline": "Build the extended campaign content, following the plan.",
+  "sowResources": "Google Sites, Clipchamp / CapCut.",
+  "objectives": ["Build the extended video or page.", "Add the call to action.", "Test the extension works with the existing site."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 35, "title": "Build the extension", "detail": "Build the second video or extra page with the call to action."},
+   {"mins": 10, "title": "Test it", "detail": "Test it fits with the existing campaign. Save and log out."}
+  ],
+  "activities": ["Build the extension", "Add the call to action", "Integration test"],
+  "successCriteria": ["My extension is built and complete.", "My call to action is clear.", "My extension fits with the existing campaign."],
+  "resources": [{"label": "Google Sites"}, {"label": "Clipchamp / CapCut"}]
+ },
+ "14": {
+  "topic": "End of Term Project",
+  "subtopic": "Big Campaign — Publish",
+  "outline": "Final citizenship check, re-publish the full campaign, and rehearse presenting the extended version.",
+  "sowResources": "Google Sites, citizenship checklist.",
+  "objectives": ["Do a final citizenship check.", "Re-publish the extended campaign.", "Rehearse presenting it."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Final check", "detail": "Check the whole campaign against the citizenship checklist."},
+   {"mins": 15, "title": "Re-publish", "detail": "Re-publish the extended campaign."},
+   {"mins": 15, "title": "Rehearse", "detail": "Practise presenting the full campaign to a partner. Log out."}
+  ],
+  "activities": ["Final citizenship check", "Re-publish the campaign", "Presentation rehearsal"],
+  "successCriteria": ["My campaign passed a final citizenship check.", "My extended campaign is re-published.", "I rehearsed presenting it to a partner."],
+  "resources": [{"label": "Google Sites"}, {"label": "Citizenship checklist"}]
+ },
+ "15": {
+  "topic": "Portfolio Showcase",
+  "subtopic": "Campaign Launch Day",
+  "outline": "Launch the finished campaign to the class as a 'launch day' event, and save the whole year's portfolio.",
+  "sowResources": "Class projector, portfolio folder.",
+  "objectives": ["Present the finished campaign confidently.", "Explain the campaign's impact and message.", "Save the whole year's portfolio."],
+  "plan": [
+   {"mins": 10, "title": "Final rehearsal", "detail": "One last run-through with a partner before presenting."},
+   {"mins": 25, "title": "Campaign Launch Day", "detail": "Present campaigns to the class in small groups."},
+   {"mins": 15, "title": "Portfolio save", "detail": "Save the finished campaign and review the whole year's portfolio folder."},
+   {"mins": 10, "title": "Year celebration", "detail": "Name three things learned this year. Log out."}
+  ],
+  "activities": ["Final rehearsal", "Campaign Launch Day presentations", "Year-end portfolio review"],
+  "successCriteria": ["I presented my finished campaign confidently.", "I explained its message and impact.", "My whole year's work is saved in the portfolio."],
+  "resources": [{"label": "Class projector"}, {"label": "Portfolio folder"}]
+ }
+}

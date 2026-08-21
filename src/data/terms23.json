@@ -1,0 +1,259 @@
+{
+ "term2": {
+  "id": "term-2",
+  "name": "Term 2",
+  "order": 2,
+  "weeks": [
+   {
+    "no": 1,
+    "label": "Week 1",
+    "start": "2027-01-06",
+    "end": "2027-01-08",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 2,
+    "label": "Week 2",
+    "start": "2027-01-11",
+    "end": "2027-01-15",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 3,
+    "label": "Week 3",
+    "start": "2027-01-18",
+    "end": "2027-01-22",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 4,
+    "label": "Week 4",
+    "start": "2027-01-25",
+    "end": "2027-01-29",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 5,
+    "label": "Week 5",
+    "start": "2027-02-01",
+    "end": "2027-02-05",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 6,
+    "label": "Week 6",
+    "start": "2027-02-08",
+    "end": "2027-02-12",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 7,
+    "label": "Week 7",
+    "start": "2027-02-15",
+    "end": "2027-02-19",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 8,
+    "label": "Week 8",
+    "start": "2027-02-22",
+    "end": "2027-02-26",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 9,
+    "label": "Week 9",
+    "start": "2027-03-01",
+    "end": "2027-03-05",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 10,
+    "label": "Week 10",
+    "start": "2027-03-08",
+    "end": "2027-03-12",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 11,
+    "label": "Week 11",
+    "start": "2027-03-15",
+    "end": "2027-03-19",
+    "isBreak": false,
+    "isExam": true,
+    "remark": "Term 2 Examination Week"
+   }
+  ]
+ },
+ "term3": {
+  "id": "term-3",
+  "name": "Term 3",
+  "order": 3,
+  "weeks": [
+   {
+    "no": 1,
+    "label": "Week 1",
+    "start": "2027-03-24",
+    "end": "2027-03-26",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 2,
+    "label": "Week 2",
+    "start": "2027-03-29",
+    "end": "2027-04-02",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 3,
+    "label": "Week 3",
+    "start": "2027-04-05",
+    "end": "2027-04-09",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 4,
+    "label": "Week 4",
+    "start": "2027-04-12",
+    "end": "2027-04-16",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 5,
+    "label": "Week 5",
+    "start": "2027-04-19",
+    "end": "2027-04-23",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 6,
+    "label": "Week 6",
+    "start": "2027-04-26",
+    "end": "2027-04-30",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 7,
+    "label": "Week 7",
+    "start": "2027-05-03",
+    "end": "2027-05-07",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 8,
+    "label": "Week 8",
+    "start": "2027-05-10",
+    "end": "2027-05-14",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 9,
+    "label": "Week 9",
+    "start": "2027-05-17",
+    "end": "2027-05-21",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 10,
+    "label": "Week 10",
+    "start": "2027-05-24",
+    "end": "2027-05-28",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 11,
+    "label": "Week 11",
+    "start": "2027-05-31",
+    "end": "2027-06-04",
+    "isBreak": false,
+    "isExam": true,
+    "remark": "Term 3 Examination Week"
+   },
+   {
+    "no": null,
+    "label": "Break",
+    "start": "2027-06-07",
+    "end": "2027-06-11",
+    "isBreak": true,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 12,
+    "label": "Week 12",
+    "start": "2027-06-14",
+    "end": "2027-06-18",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 13,
+    "label": "Week 13",
+    "start": "2027-06-21",
+    "end": "2027-06-25",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 14,
+    "label": "Week 14",
+    "start": "2027-06-28",
+    "end": "2027-07-02",
+    "isBreak": false,
+    "isExam": false,
+    "remark": ""
+   },
+   {
+    "no": 15,
+    "label": "Week 15",
+    "start": "2027-07-05",
+    "end": "2027-07-09",
+    "isBreak": false,
+    "isExam": false,
+    "remark": "Estimated end of Term 3 — no official calendar published yet; confirm and adjust in Admin."
+   }
+  ]
+ }
+}

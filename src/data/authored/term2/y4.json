@@ -1,0 +1,178 @@
+{
+ "1": {
+  "topic": "Cells & Data",
+  "subtopic": "Rows, Columns and Cells",
+  "outline": "Term theme: 'Spreadsheet Skills'. Learn the vocabulary of a spreadsheet: cells, rows, columns, and how a cell reference like B3 works.",
+  "sowResources": "Microsoft Excel, Google Sheets, cell-reference handout.",
+  "objectives": ["Name the parts of a spreadsheet: cell, row, column.", "Read and write a cell reference such as B3.", "Enter data into the correct cells."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Spreadsheet vocabulary", "detail": "Label rows, columns and cells on a projected sheet. Introduce the coordinate idea: column letter, then row number."},
+   {"mins": 20, "title": "Cell reference practice", "detail": "Call out a reference (e.g. C4); pupils click the matching cell and type a word."},
+   {"mins": 15, "title": "Enter simple data", "detail": "Enter a small class list into a sheet, one name per row. Save and log out."}
+  ],
+  "activities": ["Label a spreadsheet", "Cell-reference call-and-click", "Enter a class list"],
+  "successCriteria": ["I can name a cell, row and column.", "I can find a cell from its reference.", "I entered data into the correct cells."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Cell-reference handout"}]
+ },
+ "2": {
+  "topic": "Format Data",
+  "subtopic": "Make the Table Readable",
+  "outline": "Format a data table so it is easy to read: bold headers, adjusted column widths, and borders.",
+  "sowResources": "Microsoft Excel, Google Sheets.",
+  "objectives": ["Bold a header row.", "Adjust column width so text isn't cut off.", "Add borders to make a table clear."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Format the table", "detail": "Bold the header row, widen columns, add borders around the data."},
+   {"mins": 20, "title": "Before/after", "detail": "Compare unformatted and formatted versions — which is easier to read?"},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Bold and widen headers", "Add borders", "Before/after comparison"],
+  "successCriteria": ["My header row is bold.", "No text is cut off in any column.", "My table has clear borders."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}]
+ },
+ "3": {
+  "topic": "SUM & AVERAGE",
+  "subtopic": "First Formulas",
+  "outline": "Learn the =SUM() and =AVERAGE() formulas using a set of sample scores.",
+  "sowResources": "Microsoft Excel, Google Sheets, formula reference card.",
+  "objectives": ["Write a =SUM formula for a range of cells.", "Write an =AVERAGE formula for a range.", "Explain what each formula calculates."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "What is a formula?", "detail": "A formula starts with =. Show a formula calculate instead of just displaying text."},
+   {"mins": 25, "title": "SUM and AVERAGE", "detail": "Type =SUM(B2:B10) and =AVERAGE(B2:B10) on sample scores data. Check the results make sense."},
+   {"mins": 15, "title": "Explain it", "detail": "Explain to a partner what each formula does. Save and log out."}
+  ],
+  "activities": ["What-is-a-formula demo", "Enter SUM and AVERAGE formulas", "Partner explanation"],
+  "successCriteria": ["I wrote a working =SUM formula.", "I wrote a working =AVERAGE formula.", "I can explain what each formula calculates."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Formula reference card"}]
+ },
+ "4": {
+  "topic": "Fill Down",
+  "subtopic": "Copy Formulas Across Rows",
+  "outline": "Use the fill handle to copy a formula down a column, saving time entering the same calculation for every row.",
+  "sowResources": "Microsoft Excel, Google Sheets.",
+  "objectives": ["Use the fill handle to copy a formula.", "Check the copied formula adjusted correctly for each row.", "Explain why fill-down is faster than retyping."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Fill handle demo", "detail": "Type one formula, then drag the fill handle down to copy it to every row."},
+   {"mins": 20, "title": "Check the results", "detail": "Click on a few filled cells and check the cell references changed sensibly."},
+   {"mins": 10, "title": "Speed comparison", "detail": "Discuss: how much faster was fill-down than typing 10 formulas? Save and log out."}
+  ],
+  "activities": ["Fill-handle demo", "Check copied formulas", "Speed comparison discussion"],
+  "successCriteria": ["I used the fill handle to copy a formula.", "My copied formulas give correct results.", "I can explain why fill-down saves time."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}]
+ },
+ "5": {
+  "topic": "Make a Chart",
+  "subtopic": "Turn Data into a Chart",
+  "outline": "Select a data range and insert a chart, adding a title and axis labels so it is easy to understand.",
+  "sowResources": "Microsoft Excel, Google Sheets, chart-choice poster.",
+  "objectives": ["Select data and insert a chart.", "Add a chart title.", "Label the chart axes."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Insert a chart", "detail": "Select the data range, insert a bar chart, and add a chart title."},
+   {"mins": 15, "title": "Label the axes", "detail": "Add axis labels so a reader knows what the numbers mean."},
+   {"mins": 10, "title": "Peer check", "detail": "Partner checks the chart makes sense without extra explanation. Save and log out."}
+  ],
+  "activities": ["Insert and title a chart", "Label the axes", "Peer clarity check"],
+  "successCriteria": ["I inserted a chart from my data.", "My chart has a title.", "My chart's axes are labelled."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Chart-choice poster"}]
+ },
+ "6": {
+  "topic": "Right Chart",
+  "subtopic": "Pick the Chart That Fits the Data",
+  "outline": "Compare bar, pie and line charts on the same data and decide which one best answers the question being asked.",
+  "sowResources": "Microsoft Excel, Google Sheets, chart-choice poster.",
+  "objectives": ["Build the same data as a bar, pie and line chart.", "Judge which chart best answers a given question.", "Justify the chart choice in one sentence."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Three chart types", "detail": "Build the same data set as a bar chart, a pie chart and a line chart."},
+   {"mins": 15, "title": "Which fits?", "detail": "Given a question (e.g. 'what share of the total is X?'), decide which chart answers it best."},
+   {"mins": 10, "title": "Justify it", "detail": "Write one sentence justifying the best chart choice. Save and log out."}
+  ],
+  "activities": ["Build bar, pie and line charts", "Match chart to question", "Written justification"],
+  "successCriteria": ["I built the same data as three chart types.", "I chose the chart that best answers a given question.", "I justified my choice in one sentence."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Chart-choice poster"}]
+ },
+ "7": {
+  "topic": "A Tracker",
+  "subtopic": "Pocket Money / Scores Tracker",
+  "outline": "Build a small personal tracker — pocket money savings or game scores — using formulas and a chart to show progress.",
+  "sowResources": "Microsoft Excel, Google Sheets, tracker exemplar.",
+  "objectives": ["Design a simple personal tracker.", "Use a formula to total or average the entries.", "Add a chart showing progress."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build the tracker", "detail": "Set up columns for dates/entries and amounts, add a running total formula."},
+   {"mins": 15, "title": "Add a chart", "detail": "Chart the tracker so progress is visible at a glance."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Design a personal tracker", "Add a total formula", "Add a progress chart"],
+  "successCriteria": ["My tracker has clear columns for entries.", "My tracker uses a working total or average formula.", "My tracker has a chart showing progress."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Tracker exemplar"}]
+ },
+ "8": {
+  "topic": "Portfolio",
+  "subtopic": "A Working Spreadsheet + Chart",
+  "outline": "Finish and tidy the term's portfolio piece: a working spreadsheet using SUM and AVERAGE with a suitable, correctly labelled chart.",
+  "sowResources": "Microsoft Excel, Google Sheets, portfolio folder.",
+  "objectives": ["Finish a spreadsheet using SUM and AVERAGE.", "Check the chart is suitable and correctly labelled.", "Save the finished piece to the portfolio folder."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Finish the portfolio piece", "detail": "Complete the tracker or a new dataset with SUM, AVERAGE and a labelled chart."},
+   {"mins": 15, "title": "Rubric self-check", "detail": "Check against the assessment rubric: formulas correct, chart suitable and labelled."},
+   {"mins": 5, "title": "Save", "detail": "Save to the portfolio folder. Log out."}
+  ],
+  "activities": ["Finish the spreadsheet", "Rubric self-check", "Portfolio save"],
+  "successCriteria": ["My spreadsheet uses SUM and AVERAGE correctly.", "My chart is suitable for the data and labelled.", "My finished piece is saved to the portfolio folder."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Portfolio folder"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add a MAX/MIN Insight",
+  "outline": "Extend the portfolio spreadsheet with =MAX and =MIN formulas to find the highest and lowest values, adding a short written insight.",
+  "sowResources": "Microsoft Excel, Google Sheets.",
+  "objectives": ["Write =MAX and =MIN formulas.", "Identify the highest and lowest values in the data.", "Write one sentence explaining what the data shows."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "MAX and MIN", "detail": "Add =MAX and =MIN formulas to the portfolio spreadsheet."},
+   {"mins": 20, "title": "Write an insight", "detail": "Write one sentence explaining what the highest/lowest values tell you."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Add MAX and MIN formulas", "Identify highest/lowest values", "Write a data insight"],
+  "successCriteria": ["My spreadsheet has working MAX and MIN formulas.", "I identified the highest and lowest values.", "I wrote one sentence explaining the insight."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Practise the Exam Skills",
+  "outline": "Rehearse the term's spreadsheet skills in pairs: enter data, format it, add formulas, build a chart.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's spreadsheet skills in order.", "Rehearse entering data, formulas and a chart with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Skill recap", "detail": "Recap: enter data, format, SUM/AVERAGE, chart — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Build a small dataset with formulas and a chart with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Skill-order recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's spreadsheet steps in order.", "I rehearsed the practical task with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 2 Practical Assessment",
+  "outline": "Individual task: enter data correctly, use =SUM and =AVERAGE, and create a suitable, correctly labelled chart.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Enter data correctly into a spreadsheet.", "Use SUM and AVERAGE formulas correctly.", "Create a suitable chart with a title and labels."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task and rubric."},
+   {"mins": 30, "title": "Build the spreadsheet", "detail": "Individual practical: enter given data, apply SUM/AVERAGE, insert a labelled chart."},
+   {"mins": 10, "title": "Save and check", "detail": "Save with the correct file name and double-check the formulas calculate correctly."},
+   {"mins": 15, "title": "Celebrate", "detail": "Celebrate the term's progress. Log out."}
+  ],
+  "activities": ["Individual practical spreadsheet task", "Save and formula check", "End-of-term celebration"],
+  "successCriteria": ["I entered the data correctly.", "My SUM and AVERAGE formulas give correct results.", "My chart is suitable, titled and labelled."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Microsoft Excel / Google Sheets"}]
+ }
+}

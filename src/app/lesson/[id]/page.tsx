@@ -7,7 +7,7 @@ import { useData } from "@/lib/store";
 import { CLASS_BY_ID, slotsForClass } from "@/data/timetable";
 import { formatRange, prettyTime } from "@/lib/dates";
 import { PageHeader, StatusChip, ClassDot } from "@/components/ui";
-import { ListSection, PlanSection, ResourceSection, TextSection } from "@/components/Editable";
+import { ListSection, MoralSection, PlanSection, ResourceSection, TextSection } from "@/components/Editable";
 import type { Lesson, Status } from "@/lib/types";
 
 const DAY_SHORT = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -108,6 +108,15 @@ export default function LessonPage() {
             </p>
           )}
         </div>
+
+        <MoralSection
+          moralValue={lesson.moralValue}
+          moralDescription={lesson.moralDescription}
+          quote={lesson.quote}
+          quoteAuthor={lesson.quoteAuthor}
+          foodForThought={lesson.foodForThought}
+          onSave={(next) => patch(next)}
+        />
 
         <TextSection title="Topic" value={lesson.topic} multiline={false} onSave={(topic) => patch({ topic })} />
         <TextSection

@@ -1,0 +1,239 @@
+{
+ "1": {
+  "topic": "Plan to a Brief",
+  "subtopic": "Design the Capstone Site",
+  "outline": "Term theme: 'Capstone — Website, Portfolio & AI'. Write a precise brief for a capstone site, then plan its structure exactly to that brief.",
+  "sowResources": "Printed brief template, example capstone site.",
+  "objectives": ["Write a precise, examiner-style brief for a website.", "Plan a site structure that exactly matches the brief.", "Justify each planned page against the brief."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Precise briefs", "detail": "Recap the IGCSE habit: a brief should be specific and checkable."},
+   {"mins": 25, "title": "Write and plan", "detail": "Write a brief for the capstone site, then plan pages that meet it exactly."},
+   {"mins": 10, "title": "Justify", "detail": "Justify each planned page against a line in the brief. Log out."}
+  ],
+  "activities": ["Precise-brief writing", "Structure planning to the brief", "Page-by-page justification"],
+  "successCriteria": ["My brief is specific and checkable.", "My site plan matches every instruction in the brief.", "I justified each page against the brief."],
+  "resources": [{"label": "Printed brief template"}, {"label": "Example capstone site"}]
+ },
+ "2": {
+  "topic": "Structure",
+  "subtopic": "Build Navigation",
+  "outline": "Build the site's page structure and navigation menu exactly to the brief, checking every page is reachable.",
+  "sowResources": "Google Sites / HTML editor.",
+  "objectives": ["Build the planned pages.", "Set up a working navigation menu.", "Check every page is reachable from the menu."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build structure", "detail": "Build the planned pages and set up the navigation menu."},
+   {"mins": 15, "title": "Reachability check", "detail": "Check every page is reachable from the menu. Save and log out."}
+  ],
+  "activities": ["Build the page structure", "Set up navigation", "Reachability check"],
+  "successCriteria": ["My site has the planned pages built.", "My navigation menu works.", "Every page is reachable from the menu."],
+  "resources": [{"label": "Google Sites / HTML editor"}]
+ },
+ "3": {
+  "topic": "Media & Data",
+  "subtopic": "Add Media and Data",
+  "outline": "Add media (images, embedded video or slides) and a data element (a table or chart) to the site.",
+  "sowResources": "Google Sites / HTML editor.",
+  "objectives": ["Add media to the site.", "Add a data table or chart.", "Check both display correctly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Add media", "detail": "Add images and an embedded video or slide deck to relevant pages."},
+   {"mins": 20, "title": "Add data", "detail": "Add a table or chart of relevant data to a page."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Add media to the site", "Add a data table or chart", "Save"],
+  "successCriteria": ["My site includes added media.", "My site includes a data table or chart.", "Both display correctly."],
+  "resources": [{"label": "Google Sites / HTML editor"}]
+ },
+ "4": {
+  "topic": "AI Project",
+  "subtopic": "Build a Useful Tool/Game",
+  "outline": "Under teacher guidance, build a genuinely useful tool or game with an AI tool, related to the site's purpose.",
+  "sowResources": "Teacher-guided AI tool.",
+  "objectives": ["Use a guided AI tool to build a useful tool or game.", "Ensure it relates to the site's purpose.", "Test that it works."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Build with AI", "detail": "Under supervision, build a tool or game that supports the site's purpose."},
+   {"mins": 20, "title": "Test it", "detail": "Test the tool works as intended."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Guided AI tool/game build", "Purpose-alignment check", "Test the tool"],
+  "successCriteria": ["I built a tool or game with the guided AI tool.", "It relates clearly to my site's purpose.", "I tested that it works."],
+  "resources": [{"label": "Teacher-guided AI tool"}]
+ },
+ "5": {
+  "topic": "Safety & Security",
+  "subtopic": "Systems, Safety, Security Note",
+  "outline": "IGCSE-style theory: the systems life cycle, and safety/security considerations for a real website.",
+  "sowResources": "IGCSE ICT 0417 theory notes, discussion cards.",
+  "objectives": ["Outline the stages of the systems life cycle.", "Name one safety and one security consideration for a website.", "Apply one consideration to the capstone site."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Systems life cycle", "detail": "Outline the stages: analysis, design, development, testing, implementation, evaluation."},
+   {"mins": 20, "title": "Safety and security", "detail": "Discuss one safety issue (e.g. inappropriate content) and one security issue (e.g. weak passwords) relevant to websites."},
+   {"mins": 10, "title": "Apply it", "detail": "Apply one consideration to the capstone site. Log out."}
+  ],
+  "activities": ["Systems life cycle outline", "Safety and security discussion", "Apply to own site"],
+  "successCriteria": ["I can outline the systems life cycle stages.", "I named a safety and a security consideration.", "I applied one consideration to my own site."],
+  "resources": [{"label": "IGCSE ICT 0417 theory notes"}, {"label": "Discussion cards"}]
+ },
+ "6": {
+  "topic": "Effects of ICT",
+  "subtopic": "Society, Ethics Reflection",
+  "outline": "Discuss the effects of ICT on society — jobs, communication, health, environment — and write a short reflection.",
+  "sowResources": "IGCSE ICT 0417 theory notes, discussion cards.",
+  "objectives": ["Discuss positive and negative effects of ICT on society.", "Consider effects relevant to the capstone site's topic.", "Write a short reflection."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Effects discussion", "detail": "Discuss ICT's effects: jobs, communication, health, environment — positives and negatives."},
+   {"mins": 20, "title": "Relate to the site", "detail": "Discuss which effects are relevant to the capstone site's topic."},
+   {"mins": 10, "title": "Write it up", "detail": "Write a short reflection paragraph. Log out."}
+  ],
+  "activities": ["Effects-of-ICT discussion", "Relate effects to own topic", "Written reflection"],
+  "successCriteria": ["I discussed positive and negative effects of ICT.", "I related at least one effect to my site's topic.", "I wrote a short reflection paragraph."],
+  "resources": [{"label": "IGCSE ICT 0417 theory notes"}, {"label": "Discussion cards"}]
+ },
+ "7": {
+  "topic": "Publish & Portfolio",
+  "subtopic": "Finalise Site and Portfolio",
+  "outline": "Finalise the capstone site, publish it, and curate it alongside the year's best work into a complete portfolio.",
+  "sowResources": "Google Sites / HTML editor, portfolio folder.",
+  "objectives": ["Finalise and publish the capstone site.", "Curate the year's best work into the portfolio.", "Check everything is correctly named and organised."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Finalise and publish", "detail": "Do a final check and publish the capstone site."},
+   {"mins": 20, "title": "Curate the portfolio", "detail": "Gather the year's best work into the portfolio folder, correctly named."},
+   {"mins": 5, "title": "Log out", "detail": "Log out."}
+  ],
+  "activities": ["Finalise and publish the site", "Curate the year's portfolio", "Check naming and organisation"],
+  "successCriteria": ["My capstone site is finalised and published.", "My portfolio includes the year's best work.", "Everything is correctly named and organised."],
+  "resources": [{"label": "Google Sites / HTML editor"}, {"label": "Portfolio folder"}]
+ },
+ "8": {
+  "topic": "Present",
+  "subtopic": "Present; Ready for IGCSE",
+  "outline": "Present the finished capstone site and portfolio to the class, reflecting on readiness for IGCSE ICT.",
+  "sowResources": "Class projector.",
+  "objectives": ["Present the finished capstone site and portfolio.", "Reflect on readiness for IGCSE ICT.", "Save the presentation to the portfolio."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Present", "detail": "Present the capstone site and portfolio to the class."},
+   {"mins": 15, "title": "IGCSE readiness reflection", "detail": "Discuss: which skills am I taking into IGCSE ICT?"},
+   {"mins": 10, "title": "Save", "detail": "Save the presentation notes to the portfolio folder. Log out."}
+  ],
+  "activities": ["Class capstone presentation", "IGCSE readiness reflection", "Portfolio save"],
+  "successCriteria": ["I presented my finished capstone site and portfolio.", "I reflected on my readiness for IGCSE ICT.", "My presentation notes are saved to the portfolio folder."],
+  "resources": [{"label": "Class projector"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add a Reflection Page",
+  "outline": "Add a reflection page to the site summarising the systems life cycle and effects-of-ICT theory learned this term.",
+  "sowResources": "Google Sites / HTML editor.",
+  "objectives": ["Summarise the systems life cycle in a page.", "Summarise one effect of ICT discussed this term.", "Re-publish the site."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build the reflection page", "detail": "Summarise the systems life cycle and one effect of ICT on a new page."},
+   {"mins": 15, "title": "Re-publish", "detail": "Add the page and re-publish the site."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Summarise theory learned", "Build a reflection page", "Re-publish"],
+  "successCriteria": ["My reflection page summarises the systems life cycle.", "My reflection page summarises one effect of ICT.", "My re-published site works correctly."],
+  "resources": [{"label": "Google Sites / HTML editor"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Practical Practice",
+  "outline": "Rehearse the term's skills in pairs: build to a brief, add an AI element, and recall one theory point.",
+  "sowResources": "Rotation stations, IGCSE-style rubric.",
+  "objectives": ["Recall the term's practical and theory skills.", "Rehearse building to a brief with a partner.", "Recall one theory point clearly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Skill and theory recap", "detail": "Recap: brief, structure, AI, safety/security, effects of ICT — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Build a short page to a mini-brief with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Theory recall check", "detail": "Recall one theory point out loud. Log out."}
+  ],
+  "activities": ["Skill and theory recap chant", "Paired practical rehearsal", "Theory recall check"],
+  "successCriteria": ["I can list the term's practical and theory skills.", "I rehearsed building to a brief with a partner.", "I recalled one theory point clearly."],
+  "resources": [{"label": "Rotation stations"}, {"label": "IGCSE-style rubric"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 3 Practical Assessment",
+  "outline": "Individual task: build to an IGCSE-style brief, publish the capstone site with an AI element, and answer a short theory question.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Author a website to a given brief.", "Include a working AI tool/game.", "Answer a short theory question correctly."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task."},
+   {"mins": 30, "title": "Build to the brief", "detail": "Individual practical: build and publish site content to the given brief."},
+   {"mins": 15, "title": "Theory question", "detail": "Answer a short written theory question on systems or effects of ICT."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the year's progress. Log out."}
+  ],
+  "activities": ["Individual practical brief-based build", "Short theory question", "End-of-year celebration"],
+  "successCriteria": ["My build follows the given brief closely.", "My AI tool/game works correctly.", "I answered the theory question correctly."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Google Sites / HTML editor"}]
+ },
+ "12": {
+  "topic": "End of Term Project",
+  "subtopic": "IGCSE Ready — Plan",
+  "outline": "Plan a final, polished capstone piece that could stand as an IGCSE coursework sample: precise, complete, well-documented.",
+  "sowResources": "Printed planning sheet, IGCSE-style rubric.",
+  "objectives": ["Plan a final polish pass against IGCSE-style standards.", "Identify gaps against the rubric.", "Plan how to close each gap."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Rubric gap analysis", "detail": "Compare the current site against the IGCSE-style rubric and list every gap."},
+   {"mins": 15, "title": "Plan the fixes", "detail": "Plan how to close each gap. Collect plans. Log out."}
+  ],
+  "activities": ["IGCSE-style rubric gap analysis", "Plan the fixes", "Collect plans"],
+  "successCriteria": ["My plan lists every gap against the rubric.", "My plan shows how to close each gap.", "My plan is realistic for three lessons."],
+  "resources": [{"label": "Printed planning sheet"}, {"label": "IGCSE-style rubric"}]
+ },
+ "13": {
+  "topic": "End of Term Project",
+  "subtopic": "IGCSE Ready — Build",
+  "outline": "Close the gaps identified against the rubric, polishing the site and the AI element.",
+  "sowResources": "Google Sites / HTML editor.",
+  "objectives": ["Close the identified rubric gaps.", "Polish the site's structure and content.", "Re-test the AI element."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 35, "title": "Close the gaps", "detail": "Work through the gap list, fixing each one."},
+   {"mins": 10, "title": "Re-test", "detail": "Re-test the AI element still works. Save and log out."}
+  ],
+  "activities": ["Close rubric gaps", "Polish site content", "Re-test the AI element"],
+  "successCriteria": ["I closed the gaps identified against the rubric.", "My site content is polished.", "My AI element still works correctly."],
+  "resources": [{"label": "Google Sites / HTML editor"}]
+ },
+ "14": {
+  "topic": "End of Term Project",
+  "subtopic": "IGCSE Ready — Publish",
+  "outline": "Final rubric self-check, re-publish the polished capstone site, and rehearse a client-style presentation.",
+  "sowResources": "Google Sites / HTML editor, IGCSE-style rubric.",
+  "objectives": ["Do a final rubric self-check.", "Re-publish the polished site.", "Rehearse a client-style presentation."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Final rubric check", "detail": "Self-mark the site against the rubric one more time."},
+   {"mins": 15, "title": "Re-publish", "detail": "Re-publish the polished site."},
+   {"mins": 15, "title": "Rehearse", "detail": "Practise a client-style presentation with a partner. Log out."}
+  ],
+  "activities": ["Final rubric self-check", "Re-publish the site", "Client-style presentation rehearsal"],
+  "successCriteria": ["My site passed a final rubric self-check.", "My polished site is re-published.", "I rehearsed a client-style presentation."],
+  "resources": [{"label": "Google Sites / HTML editor"}, {"label": "IGCSE-style rubric"}]
+ },
+ "15": {
+  "topic": "Portfolio Showcase",
+  "subtopic": "Client Demo Day",
+  "outline": "Present the finished capstone site to the class as if to a real client, and save the whole year's portfolio, ready for IGCSE.",
+  "sowResources": "Class projector, client-brief sheet, portfolio folder.",
+  "objectives": ["Present the finished capstone site confidently, client-style.", "Explain the site, the AI tool and the theory behind it.", "Save the whole year's portfolio, ready for IGCSE."],
+  "plan": [
+   {"mins": 10, "title": "Final rehearsal", "detail": "One last run-through with a partner before presenting."},
+   {"mins": 25, "title": "Client Demo Day", "detail": "Present capstone sites to the class as if to a real client, in small groups."},
+   {"mins": 15, "title": "Portfolio save", "detail": "Save the finished site and review the whole year's portfolio folder."},
+   {"mins": 10, "title": "IGCSE-ready reflection", "detail": "Reflect on readiness for IGCSE ICT 0417. Log out."}
+  ],
+  "activities": ["Final rehearsal", "Client Demo Day presentations", "IGCSE-readiness reflection"],
+  "successCriteria": ["I presented my capstone site confidently, client-style.", "I explained my site, AI tool and the theory behind it.", "My whole year's work is saved, ready for IGCSE."],
+  "resources": [{"label": "Class projector"}, {"label": "Client-brief sheet"}, {"label": "Portfolio folder"}]
+ }
+}

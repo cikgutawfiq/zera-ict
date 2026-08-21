@@ -1,0 +1,178 @@
+{
+ "1": {
+  "topic": "A Good Slide",
+  "subtopic": "What Makes a Slide Clear, Not Crowded",
+  "outline": "Term theme: 'Slides & Stories'. Look at cluttered vs clean slide examples and agree the class rule: one idea per slide, big text, not too many words.",
+  "sowResources": "PowerPoint, Google Slides, example slide gallery.",
+  "objectives": ["Compare a cluttered slide with a clean one.", "State the class rule for a good slide.", "Identify one idea per slide in an example deck."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Cluttered vs clean", "detail": "Project two slides on the same topic — one crammed, one clean. Vote which is easier to read."},
+   {"mins": 20, "title": "Spot the idea", "detail": "Look through an example deck and say the one idea on each slide."},
+   {"mins": 15, "title": "Class rule poster", "detail": "Write the class rule together: one idea, big text, not too many words. Log out."}
+  ],
+  "activities": ["Cluttered vs clean comparison", "Spot-the-idea deck review", "Class rule poster"],
+  "successCriteria": ["I can say which slide is easier to read and why.", "I can name the one idea on an example slide.", "I know the class rule for a good slide."],
+  "resources": [{"label": "PowerPoint / Google Slides"}, {"label": "Example slide gallery"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "2": {
+  "topic": "Title Slide",
+  "subtopic": "Create the Opening Slide",
+  "outline": "Open PowerPoint or Slides, choose a title layout, and create the opening slide for a personal presentation.",
+  "sowResources": "PowerPoint, Google Slides, title-slide exemplar.",
+  "objectives": ["Open a new presentation and choose a title layout.", "Type a title and a subtitle.", "Save the file with a sensible name."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Title layout tour", "detail": "Show the different slide layouts and pick the title layout together."},
+   {"mins": 20, "title": "Build the title slide", "detail": "Type a title (my presentation name) and a subtitle (my own name)."},
+   {"mins": 15, "title": "Save it", "detail": "Save with a sensible file name. Log out."}
+  ],
+  "activities": ["Layout tour", "Build a title slide", "Save with a sensible name"],
+  "successCriteria": ["I chose a title layout.", "My title slide has a title and a subtitle.", "My file is saved with a sensible name."],
+  "resources": [{"label": "PowerPoint / Google Slides"}, {"label": "Title-slide exemplar"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "3": {
+  "topic": "Add Slides & Pictures",
+  "subtopic": "Build Three Slides with Images",
+  "outline": "Add two more slides after the title slide, each with one idea and one picture from the class picture folder.",
+  "sowResources": "PowerPoint, Google Slides, class picture folder.",
+  "objectives": ["Add new slides to a presentation.", "Insert a picture on each slide.", "Keep to one idea per slide."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Add a slide", "detail": "Demo the 'New Slide' button and choosing a layout with a picture placeholder."},
+   {"mins": 25, "title": "Build two slides", "detail": "Add two slides, each with one idea and one picture from the class folder."},
+   {"mins": 10, "title": "Check the rule", "detail": "Partner checks: does each slide keep to one idea? Save and log out."}
+  ],
+  "activities": ["Add-a-slide demo", "Build two picture slides", "Partner one-idea check"],
+  "successCriteria": ["I added two new slides.", "Each slide has one picture.", "Each slide keeps to one idea."],
+  "resources": [{"label": "PowerPoint / Google Slides"}, {"label": "Class picture folder"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "4": {
+  "topic": "Transitions",
+  "subtopic": "Add One Simple Transition",
+  "outline": "Learn what a transition is and add one simple, non-distracting transition between slides.",
+  "sowResources": "PowerPoint, Google Slides, transitions menu.",
+  "objectives": ["Explain what a slide transition is.", "Add one transition to the presentation.", "Explain why too many transitions can be distracting."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "What is a transition?", "detail": "Show a plain slide change, then a transition. Discuss: does it help the audience?"},
+   {"mins": 25, "title": "Add one transition", "detail": "Apply a simple transition (fade or wipe) to all slides — not a different flashy one per slide."},
+   {"mins": 15, "title": "Play it through", "detail": "Play the deck from the start; check the transition doesn't distract. Save and log out."}
+  ],
+  "activities": ["Transition demo", "Apply one consistent transition", "Play-through check"],
+  "successCriteria": ["I can explain what a transition is.", "My deck uses one simple transition.", "I can say why too many transitions is distracting."],
+  "resources": [{"label": "PowerPoint / Google Slides"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "5": {
+  "topic": "Speaker Notes",
+  "subtopic": "Write What I'll Say for Each Slide",
+  "outline": "Use the speaker notes area under each slide to write a short reminder of what to say when presenting.",
+  "sowResources": "PowerPoint, Google Slides, notes-area demo.",
+  "objectives": ["Find the speaker notes area for a slide.", "Write a short note for each slide.", "Explain why notes should not be the whole script."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Find the notes area", "detail": "Show where speaker notes live under each slide."},
+   {"mins": 25, "title": "Write notes", "detail": "Write one or two short reminder sentences per slide — not the whole thing to read out."},
+   {"mins": 15, "title": "Practise once", "detail": "Practise saying the slide using only the notes as a reminder. Save and log out."}
+  ],
+  "activities": ["Find-the-notes-area demo", "Write short speaker notes", "Practise with notes only"],
+  "successCriteria": ["I found the speaker notes area.", "I wrote a short note for each slide.", "I can explain why notes should be short reminders, not a script."],
+  "resources": [{"label": "PowerPoint / Google Slides"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "6": {
+  "topic": "Interland: Reality River",
+  "subtopic": "Spot What's True and What's a Trick",
+  "outline": "Play Google's Interland 'Reality River' to practise spotting online tricks, then discuss one way to check if something is true.",
+  "sowResources": "Google Interland (Reality River), discussion prompt cards.",
+  "objectives": ["Play Reality River and identify tricky content.", "Name one way to check if online information is true.", "Explain why it matters to check before believing or sharing."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Reality River", "detail": "Play the Interland game individually or in pairs, discussing each decision as it comes up."},
+   {"mins": 15, "title": "One way to check", "detail": "As a class, list ways to check if something is true: ask an adult, check another source, look for a trusted website."},
+   {"mins": 10, "title": "Plenary", "detail": "Each pupil says one check they will use. Log out."}
+  ],
+  "activities": ["Google Interland — Reality River", "Class list of fact-checking methods", "Personal check-method share"],
+  "successCriteria": ["I played Reality River and made sensible choices.", "I can name one way to check if something is true.", "I can explain why checking matters."],
+  "resources": [{"label": "Google Interland", "url": "https://beinternetawesome.withgoogle.com/en_us/interland"}, {"label": "Discussion prompt cards"}]
+ },
+ "7": {
+  "topic": "Build 'All About Me'",
+  "subtopic": "Finish a 3-Slide Deck",
+  "outline": "Bring the term together: finish a 3-slide 'All About Me' deck with a title slide, two content slides with pictures, a transition and speaker notes.",
+  "sowResources": "PowerPoint, Google Slides, class picture folder.",
+  "objectives": ["Finish a 3-slide deck about myself.", "Include a title slide, pictures and speaker notes.", "Check the deck against the class rule."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Finish the deck", "detail": "Complete all three slides: title, and two content slides with pictures and short notes."},
+   {"mins": 15, "title": "Self-check", "detail": "Check against the class rule: one idea per slide, not too crowded."},
+   {"mins": 5, "title": "Save", "detail": "Save the finished deck. Log out."}
+  ],
+  "activities": ["Finish the 3-slide deck", "Self-check against the class rule", "Save the finished deck"],
+  "successCriteria": ["My deck has a title slide and two content slides.", "Each slide has a picture and speaker notes.", "My deck follows the one-idea-per-slide rule."],
+  "resources": [{"label": "PowerPoint / Google Slides"}, {"label": "Class picture folder"}]
+ },
+ "8": {
+  "topic": "Present",
+  "subtopic": "Present to a Partner",
+  "outline": "Practise presenting the finished 'All About Me' deck to a partner using the speaker notes, and give kind feedback.",
+  "sowResources": "Class projector, feedback sentence stems.",
+  "objectives": ["Present a 3-slide deck to a partner.", "Use speaker notes rather than reading the slide.", "Give one kind piece of feedback."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "How to present", "detail": "Model presenting a slide: look up, use notes as a reminder, don't just read the slide."},
+   {"mins": 25, "title": "Partner presentations", "detail": "Present to a partner, then swap. Partner gives one kind, specific piece of feedback."},
+   {"mins": 10, "title": "Portfolio save", "detail": "Save the finished deck to the portfolio folder. Log out."}
+  ],
+  "activities": ["Modelled presenting", "Paired presentations", "Portfolio save"],
+  "successCriteria": ["I presented my deck without just reading the slides.", "I gave my partner one kind, specific piece of feedback.", "My deck is saved to the portfolio folder."],
+  "resources": [{"label": "Class projector"}, {"label": "Feedback sentence stems"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add a Fourth Slide",
+  "outline": "Extend the 'All About Me' deck with a fourth slide — favourite things — practising everything learned this term one more time.",
+  "sowResources": "PowerPoint, Google Slides.",
+  "objectives": ["Add a fourth slide to the deck.", "Apply a picture, transition and speaker notes to it.", "Keep the deck consistent with earlier slides."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build the fourth slide", "detail": "Add a 'favourite things' slide with a picture, the same transition style, and short notes."},
+   {"mins": 15, "title": "Consistency check", "detail": "Check the new slide matches the style of the others. Save."},
+   {"mins": 5, "title": "Log out", "detail": "Save and log out."}
+  ],
+  "activities": ["Build a fourth slide", "Consistency self-check", "Save"],
+  "successCriteria": ["My deck now has four slides.", "The new slide has a picture and notes.", "The new slide matches the others in style."],
+  "resources": [{"label": "PowerPoint / Google Slides"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Practise the Exam Skills",
+  "outline": "Rehearse the whole term's skills in pairs: build a slide, add a picture, apply a transition, write notes, present.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's presentation skills in order.", "Rehearse building and presenting a slide with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Skill recap", "detail": "Recap: new slide, picture, transition, notes, present — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Build and present one slide with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Skill-order recap", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's slide-building steps in order.", "I rehearsed building and presenting with a partner.", "I know which step I need more practice on."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 2 Practical Assessment",
+  "outline": "Individual task: build a simple multi-slide deck with a title slide, at least one picture, a transition and speaker notes.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Build a multi-slide deck independently.", "Add images and a transition.", "Judge whether given online information is reliable."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task and rubric."},
+   {"mins": 25, "title": "Build the deck", "detail": "Individual practical: title slide plus two content slides with pictures and a transition."},
+   {"mins": 15, "title": "Reliability question", "detail": "One-to-one: show a piece of information and ask 'is this reliable, and how do you know?'"},
+   {"mins": 15, "title": "Save and celebrate", "detail": "Save the deck and celebrate the term's progress. Log out."}
+  ],
+  "activities": ["Individual practical deck build", "Spoken reliability question", "End-of-term celebration"],
+  "successCriteria": ["I built a multi-slide deck on my own.", "My deck has images and a transition.", "I explained one way to check if online information is reliable."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "PowerPoint / Google Slides"}]
+ }
+}

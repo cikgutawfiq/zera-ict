@@ -6,6 +6,7 @@ import { useData } from "@/lib/store";
 import { PageHeader } from "@/components/ui";
 import { addDays, formatRange, mondayOf, todayISO } from "@/lib/dates";
 import seed from "@/data/seed.json";
+import { parseSowWorkbooks } from "@/lib/parseSow";
 import type { Lesson, Term, TermWeek } from "@/lib/types";
 
 const SEED = seed as unknown as { terms: Term[]; lessons: Lesson[] };
@@ -16,8 +17,30 @@ export default function AdminPage() {
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const [overwrite, setOverwrite] = useState(false);
+  const [ks1ks2File, setKs1ks2File] = useState<File | null>(null);
+  const [ks3File, setKs3File] = useState<File | null>(null);
+  const [uploadMessage, setUploadMessage] = useState<string | null>(null);
 
   const edited = lessons.filter((l) => l.updatedAt).length;
+
+  const doUpload = async () => {
+    if (!ks1ks2File || !ks3File) return;
+    const warning = overwrite
+      ? "Re-parse both workbooks and overwrite ALL Term 1 lessons, including any you've edited?"
+      : "Re-parse both workbooks and update Term 1, skipping any lessons you've already edited?";
+    if (!confirm(warning)) return;
+    setBusy(true);
+    setUploadMessage(null);
+    try {
+      const parsed = await parseSowWorkbooks({ ks1ks2: ks1ks2File, ks3: ks3File });
+      const written = await runSeed(parsed, overwrite);
+      setUploadMessage(`Upload complete — ${written} Term 1 lesson(s) written from the workbooks.`);
+    } catch (e) {
+      setUploadMessage(`Upload failed: ${(e as Error).message}`);
+    } finally {
+      setBusy(false);
+    }
+  };
 
   const doSeed = async () => {
     const warning = overwrite
@@ -99,6 +122,42 @@ export default function AdminPage() {
       <PageHeader title="Admin" subtitle={user?.email ?? undefined} />
 
       <main className="mx-auto max-w-3xl space-y-3 p-4">
+        <section className="card p-4">
+          <h2 className="text-sm font-bold">Update Term 1 from Excel</h2>
+          <p className="mt-1 text-xs text-[color:var(--muted)]">
+            Upload a revised SOW workbook to update Term 1's dates, topics and remarks — right from your
+            phone, no computer needed. Your lesson plans stay put; only the scheme-of-work fields refresh.
+          </p>
+          <div className="mt-3 space-y-2">
+            <label className="block text-xs font-semibold text-[color:var(--muted)]">
+              KS1–KS2 workbook (Y1–Y6)
+              <input
+                type="file"
+                accept=".xlsx"
+                className="field mt-1"
+                onChange={(e) => setKs1ks2File(e.target.files?.[0] ?? null)}
+              />
+            </label>
+            <label className="block text-xs font-semibold text-[color:var(--muted)]">
+              KS3 workbook (Y7–Y9)
+              <input
+                type="file"
+                accept=".xlsx"
+                className="field mt-1"
+                onChange={(e) => setKs3File(e.target.files?.[0] ?? null)}
+              />
+            </label>
+          </div>
+          <button
+            className="btn btn-primary mt-3 w-full"
+            onClick={doUpload}
+            disabled={busy || !ks1ks2File || !ks3File}
+          >
+            {busy ? "Working…" : "Re-parse and update Term 1"}
+          </button>
+          {uploadMessage && <p className="mt-3 text-xs text-[color:var(--accent)]">{uploadMessage}</p>}
+        </section>
+
         <section className="card p-4">
           <h2 className="text-sm font-bold">Database</h2>
           <p className="mt-1 text-xs text-[color:var(--muted)]">

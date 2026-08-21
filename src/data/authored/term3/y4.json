@@ -1,0 +1,239 @@
+{
+ "1": {
+  "topic": "Advanced Slides",
+  "subtopic": "Layout and Design Principles",
+  "outline": "Term theme: 'Slides + AI Game Makers'. Recap and extend slide design principles: layout, alignment, contrast and consistency.",
+  "sowResources": "Google Slides, PowerPoint, design principles handout.",
+  "objectives": ["Recap and extend slide design principles.", "Identify alignment and contrast problems in an example slide.", "Apply the principles to a new slide."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Design critique", "detail": "Critique a poorly designed example slide: alignment, contrast, clutter."},
+   {"mins": 25, "title": "Apply the fix", "detail": "Redesign the example slide applying good layout and contrast."},
+   {"mins": 10, "title": "Compare", "detail": "Compare before and after with a partner. Save and log out."}
+  ],
+  "activities": ["Design critique", "Redesign a poor slide", "Before/after comparison"],
+  "successCriteria": ["I identified design problems in an example slide.", "I redesigned it applying good layout and contrast.", "I can explain the improvement to a partner."],
+  "resources": [{"label": "Google Slides / PowerPoint"}, {"label": "Design principles handout"}]
+ },
+ "2": {
+  "topic": "Interactive Slides",
+  "subtopic": "Hyperlinks and Buttons",
+  "outline": "Learn to add hyperlinks between slides, turning a linear deck into a choose-your-own-path presentation.",
+  "sowResources": "Google Slides, PowerPoint, hyperlink reference.",
+  "objectives": ["Add a hyperlink from one slide to another.", "Build a simple 'choose your path' structure.", "Test all the links work correctly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "How hyperlinks work in slides", "detail": "Demo linking a shape or text to jump to a different slide."},
+   {"mins": 25, "title": "Build a branching deck", "detail": "Build a small 'choose your path' deck with at least two branching links."},
+   {"mins": 10, "title": "Test the links", "detail": "Click through every link to check it goes where expected. Save and log out."}
+  ],
+  "activities": ["Hyperlink demo", "Build a branching deck", "Test every link"],
+  "successCriteria": ["I added a working hyperlink between slides.", "My deck has at least two branching paths.", "I tested every link works correctly."],
+  "resources": [{"label": "Google Slides / PowerPoint"}, {"label": "Hyperlink reference"}]
+ },
+ "3": {
+  "topic": "Scratch — Variables",
+  "subtopic": "A Score Variable",
+  "outline": "Create a score variable in Scratch, and add and display it so a click or key press increases the score.",
+  "sowResources": "Scratch (scratch.mit.edu).",
+  "objectives": ["Create a variable in Scratch.", "Change the variable when an event happens.", "Display the variable on the stage."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "What is a variable?", "detail": "Recap variables as labelled boxes that hold a changing value."},
+   {"mins": 25, "title": "Build a score counter", "detail": "Create a 'score' variable, increase it on a click event, and show it on the stage."},
+   {"mins": 10, "title": "Test it", "detail": "Test clicking multiple times and check the score updates. Save and log out."}
+  ],
+  "activities": ["Variables recap", "Build a score counter", "Test the counter"],
+  "successCriteria": ["I created a score variable.", "My score increases when the event happens.", "The score is visible on the stage."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "4": {
+  "topic": "Scratch — if/else",
+  "subtopic": "A Quiz That Checks Answers",
+  "outline": "Use an if/else block to check a typed answer and respond correctly or incorrectly.",
+  "sowResources": "Scratch (scratch.mit.edu).",
+  "objectives": ["Use an if/else block to check an answer.", "Give correct feedback for right and wrong answers.", "Combine if/else with the score variable."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "If/else demo", "detail": "Demo asking a question and checking the answer with if/else."},
+   {"mins": 25, "title": "Build a quiz question", "detail": "Build one quiz question that checks the answer and updates the score on if correct."},
+   {"mins": 10, "title": "Test both paths", "detail": "Test with a correct and an incorrect answer. Save and log out."}
+  ],
+  "activities": ["If/else demo", "Build a checked quiz question", "Test both answer paths"],
+  "successCriteria": ["I used an if/else block to check an answer.", "My quiz gives different feedback for right and wrong.", "The score updates correctly when the answer is right."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "5": {
+  "topic": "AI Question Helper",
+  "subtopic": "Generate Quiz Questions/Ideas with AI",
+  "outline": "Under teacher guidance, use an AI tool to generate quiz question ideas for the game, then choose and refine the best ones.",
+  "sowResources": "Teacher-guided AI tool, quiz-topic list.",
+  "objectives": ["Use a guided AI tool to generate quiz question ideas.", "Choose the best generated ideas.", "Refine a question so it fits the game."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Generate ideas", "detail": "Under supervision, ask the guided AI tool for quiz question ideas on a chosen topic."},
+   {"mins": 20, "title": "Choose and refine", "detail": "Pick the best 3-4 ideas and edit them to fit the quiz game."},
+   {"mins": 10, "title": "Discuss", "detail": "Discuss: did the AI ideas need editing? Why? Log out."}
+  ],
+  "activities": ["Guided AI question generation", "Choose and refine questions", "Discussion on AI editing"],
+  "successCriteria": ["I used the guided AI tool to generate question ideas.", "I chose the best ideas for my game.", "I edited at least one question to fit better."],
+  "resources": [{"label": "Teacher-guided AI tool"}, {"label": "Quiz-topic list"}]
+ },
+ "6": {
+  "topic": "Build the Game",
+  "subtopic": "An AI-Assisted Quiz Game",
+  "outline": "Build the full quiz game in Scratch, using the AI-generated questions, variables and if/else blocks together.",
+  "sowResources": "Scratch (scratch.mit.edu).",
+  "objectives": ["Combine variables and if/else into a multi-question quiz.", "Use the AI-generated questions from last lesson.", "Test the whole quiz runs correctly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build the quiz", "detail": "Build 3-4 quiz questions using the score variable and if/else checking, using the refined AI questions."},
+   {"mins": 15, "title": "Full test", "detail": "Play through the whole quiz and check the score is correct at the end. Save and log out."}
+  ],
+  "activities": ["Build a multi-question quiz", "Full playthrough test", "Save"],
+  "successCriteria": ["My quiz has multiple questions using if/else.", "My quiz uses the AI-generated questions.", "My score is correct at the end of a full playthrough."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "7": {
+  "topic": "User-Test",
+  "subtopic": "Improve It After a Friend Plays",
+  "outline": "Have a friend play the quiz game, note what confused them, and make one improvement.",
+  "sowResources": "Scratch (scratch.mit.edu), feedback notes sheet.",
+  "objectives": ["Watch a friend play the quiz without helping.", "Note what confused them.", "Make one improvement based on the feedback."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Silent user test", "detail": "Swap with a partner and play their quiz without help, noting any confusion."},
+   {"mins": 25, "title": "Improve it", "detail": "Return to your own quiz and fix one thing the tester found confusing."},
+   {"mins": 10, "title": "Re-test", "detail": "Re-test the fix works. Save and log out."}
+  ],
+  "activities": ["Silent user testing", "Apply one improvement", "Re-test the fix"],
+  "successCriteria": ["I tested a partner's quiz and gave honest feedback.", "I made one improvement to my own quiz.", "I re-tested that the improvement worked."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}, {"label": "Feedback notes sheet"}]
+ },
+ "8": {
+  "topic": "Showcase",
+  "subtopic": "Present the Game",
+  "outline": "Present the finished AI-assisted quiz game to the class, explaining how the score and if/else logic work.",
+  "sowResources": "Class projector.",
+  "objectives": ["Present the finished quiz game.", "Explain how the score and if/else logic work.", "Save the finished game to the portfolio."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Showcase", "detail": "Present the game to the class or a small group, letting others play a question."},
+   {"mins": 15, "title": "Explain the logic", "detail": "Explain how the score variable and if/else blocks work together."},
+   {"mins": 10, "title": "Save", "detail": "Save the finished game to the portfolio folder. Log out."}
+  ],
+  "activities": ["Class showcase", "Explain the game logic", "Portfolio save"],
+  "successCriteria": ["I presented my finished quiz game.", "I explained how the score and if/else work together.", "My game is saved to the portfolio folder."],
+  "resources": [{"label": "Class projector"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add a Second Round",
+  "outline": "Extend the quiz game with a second round of questions, reusing the score variable across both rounds.",
+  "sowResources": "Scratch (scratch.mit.edu).",
+  "objectives": ["Add a second round of questions.", "Keep the score variable working across both rounds.", "Test the full extended quiz."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Add round two", "detail": "Add 2-3 more questions in a second round, adding to the same score variable."},
+   {"mins": 15, "title": "Full test", "detail": "Play through both rounds and check the final score is correct."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Add a second round of questions", "Full extended test", "Save"],
+  "successCriteria": ["My quiz now has two rounds.", "The score carries correctly across both rounds.", "I tested the full extended quiz."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Skills Practice for the Exam",
+  "outline": "Rehearse the term's skills in pairs: a variable, an if/else check, and a hyperlinked or interactive element.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's skills in order.", "Rehearse building a small variable-and-if/else task with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Skill recap", "detail": "Recap: variable, if/else, AI ideas, user-test — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Build a small variable-and-if/else task with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Skill-order recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's skills in order.", "I rehearsed the practical task with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 3 Practical Assessment",
+  "outline": "Individual task: build a working quiz game (Scratch or interactive slides) using a score variable and if/else, tested by a peer.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Build a working quiz game with a score variable.", "Use if/else to check answers correctly.", "Have the game tested by a peer."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task."},
+   {"mins": 30, "title": "Build the game", "detail": "Individual practical: build a small quiz with a score variable and if/else checking."},
+   {"mins": 15, "title": "Peer test", "detail": "Swap with a partner for a quick test and note of any issues."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the year's progress. Log out."}
+  ],
+  "activities": ["Individual practical quiz build", "Peer testing", "End-of-year celebration"],
+  "successCriteria": ["My quiz uses a score variable correctly.", "My quiz uses if/else to check answers.", "A peer tested my quiz and it worked."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "12": {
+  "topic": "End of Term Project",
+  "subtopic": "Ultimate Quiz — Plan",
+  "outline": "Plan a bigger final quiz game with three rounds, a timer or lives system, and a proper ending screen.",
+  "sowResources": "Printed planning sheet.",
+  "objectives": ["Plan a three-round quiz with an extra feature (timer or lives).", "Sketch the variables needed.", "Plan the ending screen."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Plan the quiz", "detail": "Sketch three rounds, the extra feature, and the variables each will need."},
+   {"mins": 15, "title": "Pitch it", "detail": "Tell a partner the plan. Collect plans. Log out."}
+  ],
+  "activities": ["Plan a three-round quiz", "Sketch variables needed", "Partner pitch"],
+  "successCriteria": ["My plan covers three rounds and one extra feature.", "My plan lists the variables I'll need.", "I can tell a partner my plan."],
+  "resources": [{"label": "Printed planning sheet"}]
+ },
+ "13": {
+  "topic": "End of Term Project",
+  "subtopic": "Ultimate Quiz — Build",
+  "outline": "Build the bigger quiz game, following the plan: three rounds, the extra feature, and the score variable throughout.",
+  "sowResources": "Scratch (scratch.mit.edu).",
+  "objectives": ["Build the three quiz rounds.", "Add the planned extra feature.", "Test the game runs from start to finish."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 35, "title": "Build the quiz", "detail": "Follow the plan to build three rounds and the extra feature."},
+   {"mins": 10, "title": "Test it", "detail": "Play through start to finish and fix anything broken. Save and log out."}
+  ],
+  "activities": ["Build three quiz rounds", "Add the extra feature", "Full playthrough test"],
+  "successCriteria": ["My quiz has three working rounds.", "My extra feature works as planned.", "I tested the whole game start to finish."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "14": {
+  "topic": "End of Term Project",
+  "subtopic": "Ultimate Quiz — Polish",
+  "outline": "Add an ending screen showing the final score, and rehearse presenting the finished game.",
+  "sowResources": "Scratch (scratch.mit.edu).",
+  "objectives": ["Add an ending screen showing the final score.", "Rehearse presenting the game.", "Save the finished project."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Add the ending", "detail": "Add a screen at the end that shows the final score."},
+   {"mins": 15, "title": "Rehearse", "detail": "Practise presenting the game to a partner."},
+   {"mins": 10, "title": "Save", "detail": "Save the finished project. Log out."}
+  ],
+  "activities": ["Add an ending screen", "Presentation rehearsal", "Save"],
+  "successCriteria": ["My game has an ending screen showing the score.", "I rehearsed presenting it to a partner.", "My finished project is saved."],
+  "resources": [{"label": "Scratch", "url": "https://scratch.mit.edu"}]
+ },
+ "15": {
+  "topic": "Portfolio Showcase",
+  "subtopic": "Ultimate Quiz Arcade",
+  "outline": "Present the finished Ultimate Quiz to the class as an arcade-style showcase, and save the year's portfolio.",
+  "sowResources": "Class projector, portfolio folder.",
+  "objectives": ["Present the finished quiz confidently.", "Let classmates play and see their score.", "Save the whole year's portfolio."],
+  "plan": [
+   {"mins": 10, "title": "Final rehearsal", "detail": "One last run-through with a partner before presenting."},
+   {"mins": 25, "title": "Quiz Arcade", "detail": "Present games in small groups, letting classmates play."},
+   {"mins": 15, "title": "Portfolio save", "detail": "Save the finished game and review the whole year's portfolio folder."},
+   {"mins": 10, "title": "Year celebration", "detail": "Name three things learned this year. Log out."}
+  ],
+  "activities": ["Final rehearsal", "Quiz Arcade presentations", "Year-end portfolio review"],
+  "successCriteria": ["I presented my quiz confidently.", "Classmates played my quiz and saw their score.", "My whole year's work is saved in the portfolio."],
+  "resources": [{"label": "Class projector"}, {"label": "Portfolio folder"}]
+ }
+}

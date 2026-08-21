@@ -1,0 +1,240 @@
+{
+ "1": {
+  "topic": "Sequences Unplugged",
+  "subtopic": "Direct a Friend Around a Maze",
+  "outline": "Term theme: 'Play, Code & Be Awesome'. Give step-by-step instructions to direct a partner around a taped-floor maze, learning that a computer program is just a sequence of steps.",
+  "sowResources": "Floor tape maze, instruction cards.",
+  "objectives": ["Give clear step-by-step instructions.", "Follow a partner's instructions exactly.", "Explain that a program is a sequence of steps."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "What is a sequence?", "detail": "Explain: a sequence is steps done in order. Everyday example: getting dressed."},
+   {"mins": 25, "title": "Maze game", "detail": "In pairs, one gives instructions (forward, turn left/right) to direct the other around a taped maze."},
+   {"mins": 10, "title": "Reflect", "detail": "What happened when an instruction was unclear? Log out."}
+  ],
+  "activities": ["Sequence explanation", "Paired maze instruction game", "Reflection on unclear instructions"],
+  "successCriteria": ["I gave clear instructions to a partner.", "I followed instructions exactly.", "I can say that a program is a sequence of steps."],
+  "resources": [{"label": "Floor tape maze"}, {"label": "Instruction cards"}]
+ },
+ "2": {
+  "topic": "ScratchJr Moves",
+  "subtopic": "Make a Character Move Across the Screen",
+  "outline": "Open ScratchJr and use motion blocks to make a character move from one side of the screen to the other.",
+  "sowResources": "ScratchJr app, class tablets.",
+  "objectives": ["Open ScratchJr and choose a character.", "Use motion blocks to move the character.", "Test the program by tapping the green flag."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "ScratchJr tour", "detail": "Show the character, the block palette and the green flag start button."},
+   {"mins": 25, "title": "Make it move", "detail": "Drag motion blocks to make the character move across the screen; test with the flag."},
+   {"mins": 10, "title": "Show a partner", "detail": "Show a partner the character moving. Log out."}
+  ],
+  "activities": ["ScratchJr interface tour", "Build a moving-character program", "Show and tell"],
+  "successCriteria": ["I opened ScratchJr and chose a character.", "My character moves when I tap the flag.", "I can show a partner my working program."],
+  "resources": [{"label": "ScratchJr app"}, {"label": "Class tablets"}]
+ },
+ "3": {
+  "topic": "Add Sound & Steps",
+  "subtopic": "Add a Sound and a Second Movement",
+  "outline": "Extend the moving character with a sound block and a second movement, building a slightly longer sequence.",
+  "sowResources": "ScratchJr app.",
+  "objectives": ["Add a sound block to the program.", "Add a second movement block.", "Explain the order the blocks run in."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Add a sound", "detail": "Add a sound block after the movement and test it."},
+   {"mins": 20, "title": "Add a second move", "detail": "Add a second movement block after the sound, so the sequence gets longer."},
+   {"mins": 10, "title": "Explain the order", "detail": "Explain to a partner what happens first, second, third. Log out."}
+  ],
+  "activities": ["Add a sound block", "Add a second movement", "Explain block order"],
+  "successCriteria": ["My program has a sound block.", "My program has two movement blocks.", "I can explain the order my blocks run in."],
+  "resources": [{"label": "ScratchJr app"}]
+ },
+ "4": {
+  "topic": "Fix It!",
+  "subtopic": "Find and Fix the Wrong Step",
+  "outline": "Given a ScratchJr program that doesn't do what it should, find the wrong block and fix it — first experience of debugging.",
+  "sowResources": "ScratchJr app, pre-made broken projects.",
+  "objectives": ["Watch a broken program and spot what's wrong.", "Fix the broken block or order.", "Explain what 'debugging' means."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "What is a bug?", "detail": "A bug is something that makes the program not work as expected. Show a simple example."},
+   {"mins": 25, "title": "Fix three programs", "detail": "Open three pre-made broken ScratchJr projects and fix each one."},
+   {"mins": 10, "title": "Share a fix", "detail": "Share which bug was trickiest to spot. Log out."}
+  ],
+  "activities": ["What-is-a-bug demo", "Fix three broken programs", "Share a tricky fix"],
+  "successCriteria": ["I can explain what a bug is.", "I fixed at least two broken programs.", "I can say what 'debugging' means."],
+  "resources": [{"label": "ScratchJr app"}, {"label": "Pre-made broken projects"}]
+ },
+ "5": {
+  "topic": "Interland: Kind Kingdom",
+  "subtopic": "Be Kind and Respectful Online",
+  "outline": "Play Google Interland's 'Kind Kingdom' to practise being kind and respectful, even in a game or online space.",
+  "sowResources": "Google Interland (Kind Kingdom).",
+  "objectives": ["Play Kind Kingdom and make kind choices.", "Explain what being kind online looks like.", "Explain what to do if someone is unkind."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Kind Kingdom", "detail": "Play the Interland game, discussing the choices as they come up."},
+   {"mins": 15, "title": "Kindness examples", "detail": "As a class, list examples of being kind online."},
+   {"mins": 10, "title": "What to do", "detail": "Discuss: if someone is unkind, tell a trusted adult. Log out."}
+  ],
+  "activities": ["Google Interland — Kind Kingdom", "Class kindness examples list", "What-to-do discussion"],
+  "successCriteria": ["I played Kind Kingdom and made kind choices.", "I can give one example of being kind online.", "I know to tell a trusted adult about unkindness."],
+  "resources": [{"label": "Google Interland", "url": "https://beinternetawesome.withgoogle.com/en_us/interland"}]
+ },
+ "6": {
+  "topic": "Interland: Mindful Mountain",
+  "subtopic": "Share with Care; What's Private",
+  "outline": "Play Google Interland's 'Mindful Mountain' to practise thinking before sharing, and revisit what stays private.",
+  "sowResources": "Google Interland (Mindful Mountain).",
+  "objectives": ["Play Mindful Mountain and practise thinking before sharing.", "Name one thing that should stay private.", "Explain why thinking before sharing matters."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Mindful Mountain", "detail": "Play the Interland game, discussing the sharing decisions as they come up."},
+   {"mins": 15, "title": "Private things recap", "detail": "Recap private things from earlier terms: name, address, photos."},
+   {"mins": 10, "title": "Plenary", "detail": "Each pupil names one private thing. Log out."}
+  ],
+  "activities": ["Google Interland — Mindful Mountain", "Private-things recap", "Personal share"],
+  "successCriteria": ["I played Mindful Mountain and thought before sharing.", "I can name one thing that should stay private.", "I can explain why thinking before sharing matters."],
+  "resources": [{"label": "Google Interland", "url": "https://beinternetawesome.withgoogle.com/en_us/interland"}]
+ },
+ "7": {
+  "topic": "My Hello Animation",
+  "subtopic": "A Character That Waves and Says Hello",
+  "outline": "Build a short animation of a character that waves and 'says' hello, using motion and sound blocks together.",
+  "sowResources": "ScratchJr app.",
+  "objectives": ["Plan a simple wave-and-hello animation.", "Build it using motion and sound blocks.", "Test and improve it."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Plan it", "detail": "Sketch what the character will do: wave, then a hello sound."},
+   {"mins": 30, "title": "Build and test", "detail": "Build the animation, test it, and improve the timing if needed."},
+   {"mins": 10, "title": "Show a partner", "detail": "Show a partner the finished animation. Log out."}
+  ],
+  "activities": ["Plan the animation", "Build and test", "Show and tell"],
+  "successCriteria": ["I planned my wave-and-hello animation.", "My animation uses motion and sound blocks.", "I tested and improved my animation."],
+  "resources": [{"label": "ScratchJr app"}]
+ },
+ "8": {
+  "topic": "Showcase",
+  "subtopic": "Share Animations; One Kind Comment Each",
+  "outline": "Share the finished hello animations with the class and give one kind, specific comment to a classmate.",
+  "sowResources": "Class projector.",
+  "objectives": ["Share a finished animation with the class.", "Give one kind, specific comment.", "Save the finished animation."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Showcase", "detail": "Small groups take turns sharing their animation on a shared screen."},
+   {"mins": 15, "title": "Kind comments", "detail": "Each pupil gives one kind, specific comment to a classmate."},
+   {"mins": 10, "title": "Save", "detail": "Save the animation to the portfolio folder. Log out."}
+  ],
+  "activities": ["Small-group showcase", "Kind-comment practice", "Portfolio save"],
+  "successCriteria": ["I shared my animation with the class.", "I gave one kind, specific comment.", "My animation is saved to the portfolio folder."],
+  "resources": [{"label": "Class projector"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Skills Recap",
+  "outline": "Recap this term's skills: sequences, movement, sound and simple debugging, through a quick station rotation.",
+  "sowResources": "Station cards, ScratchJr app.",
+  "objectives": ["Recap sequences, movement, sound and debugging.", "Complete each station task.", "Identify which skill needs more practice."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Station 1 — Sequence", "detail": "Give and follow a short instruction sequence."},
+   {"mins": 15, "title": "Station 2 — Build", "detail": "Add a movement and sound block to a starter project."},
+   {"mins": 15, "title": "Station 3 — Debug", "detail": "Fix one small bug in a project."},
+   {"mins": 5, "title": "Reflect", "detail": "Name the skill you found trickiest. Log out."}
+  ],
+  "activities": ["Sequence station", "Build station", "Debug station"],
+  "successCriteria": ["I completed all three stations.", "I can recap sequences, movement, sound and debugging.", "I know which skill needs more practice."],
+  "resources": [{"label": "Station cards"}, {"label": "ScratchJr app"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Ready for the Practical",
+  "outline": "Rehearse the practical task in pairs: build a short animation with movement, sound and no bugs left in it.",
+  "sowResources": "Practice task cards, ScratchJr app.",
+  "objectives": ["Rehearse building a short animation with a partner.", "Check it for bugs before finishing.", "Explain what the animation does."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Paired rehearsal", "detail": "Build a short animation with a partner, checking each other's work for bugs."},
+   {"mins": 15, "title": "Explain it", "detail": "Explain the finished animation to the partner. Log out."}
+  ],
+  "activities": ["Paired animation rehearsal", "Bug check", "Explanation practice"],
+  "successCriteria": ["I rehearsed building a short animation with a partner.", "I checked for and fixed any bugs.", "I explained what my animation does."],
+  "resources": [{"label": "Practice task cards"}, {"label": "ScratchJr app"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 3 Practical Assessment",
+  "outline": "Individual task: build a short ScratchJr animation using at least a movement and a sound block, then explain what it does.",
+  "sowResources": "Observation checklist, assessment rubric.",
+  "objectives": ["Build a short animation independently.", "Use a movement block and a sound block.", "Explain what my animation does."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — this is a 'show me what you can do' task."},
+   {"mins": 25, "title": "Group A practical", "detail": "First group builds the animation while others do independent TypingClub."},
+   {"mins": 20, "title": "Group B practical", "detail": "Second group, same task."},
+   {"mins": 10, "title": "Explain and celebrate", "detail": "One-to-one: explain the animation. Celebrate the year's progress. Log out."}
+  ],
+  "activities": ["Individual observed animation build", "Spoken explanation", "End-of-year celebration"],
+  "successCriteria": ["I built an animation using a movement block.", "My animation includes a sound block.", "I explained what my animation does."],
+  "resources": [{"label": "Observation checklist"}, {"label": "Assessment rubric"}]
+ },
+ "12": {
+  "topic": "End of Term Project",
+  "subtopic": "Kind Robot — Plan",
+  "outline": "Plan a final project: a friendly robot character that moves, makes a sound, and shares one kind message.",
+  "sowResources": "Printed planning sheet, coloured pencils.",
+  "objectives": ["Plan a robot character and its actions.", "Decide on the kind message it will share.", "Sketch the plan on paper."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Plan the robot", "detail": "Sketch the robot, its movement, its sound, and its kind message on the planning sheet."},
+   {"mins": 15, "title": "Pitch it", "detail": "Tell a partner the plan. Collect plans. Log out."}
+  ],
+  "activities": ["Character planning", "Paper sketch", "Partner pitch"],
+  "successCriteria": ["My plan shows the robot's movement.", "My plan includes a kind message.", "I can tell a partner my plan."],
+  "resources": [{"label": "Printed planning sheet"}, {"label": "Coloured pencils"}]
+ },
+ "13": {
+  "topic": "End of Term Project",
+  "subtopic": "Kind Robot — Build",
+  "outline": "Build the Kind Robot animation in ScratchJr, following the plan: movement, sound, and the kind message.",
+  "sowResources": "ScratchJr app.",
+  "objectives": ["Build the robot's movement.", "Add the sound and kind message.", "Test the finished animation."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 35, "title": "Build the robot", "detail": "Follow the plan to build movement, sound and the kind message blocks."},
+   {"mins": 10, "title": "Test it", "detail": "Test the whole sequence and fix anything that doesn't work. Save and log out."}
+  ],
+  "activities": ["Build from the plan", "Add sound and message", "Test and fix"],
+  "successCriteria": ["My robot moves as planned.", "My robot shares its kind message.", "I tested my animation and fixed any bugs."],
+  "resources": [{"label": "ScratchJr app"}]
+ },
+ "14": {
+  "topic": "End of Term Project",
+  "subtopic": "Kind Robot — Polish",
+  "outline": "Add one polish touch to the Kind Robot — an extra sound, a second character, or a background — and rehearse presenting it.",
+  "sowResources": "ScratchJr app.",
+  "objectives": ["Add one polish feature to the animation.", "Rehearse presenting the animation.", "Save the finished project."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Add polish", "detail": "Add a background, extra sound or second character."},
+   {"mins": 15, "title": "Rehearse", "detail": "Practise presenting the animation to a partner."},
+   {"mins": 10, "title": "Save", "detail": "Save the finished project. Log out."}
+  ],
+  "activities": ["Add a polish feature", "Presentation rehearsal", "Save"],
+  "successCriteria": ["My animation has one polish feature.", "I rehearsed presenting it to a partner.", "My finished project is saved."],
+  "resources": [{"label": "ScratchJr app"}]
+ },
+ "15": {
+  "topic": "Portfolio Showcase",
+  "subtopic": "Kind Robot Fair",
+  "outline": "Present the finished Kind Robot to the class or a younger class, sharing the kind message, and save the year's portfolio.",
+  "sowResources": "Class projector, portfolio folder.",
+  "objectives": ["Present the finished animation confidently.", "Share the robot's kind message with an audience.", "Save the whole year's portfolio."],
+  "plan": [
+   {"mins": 10, "title": "Final rehearsal", "detail": "One last run-through with a partner before presenting."},
+   {"mins": 25, "title": "Kind Robot Fair", "detail": "Present animations to the class or visitors in small groups."},
+   {"mins": 15, "title": "Portfolio save", "detail": "Save the finished project and look back at the whole year's portfolio folder."},
+   {"mins": 10, "title": "Year celebration", "detail": "Name three things learned this year. Log out."}
+  ],
+  "activities": ["Final rehearsal", "Kind Robot Fair presentations", "Year-end portfolio review"],
+  "successCriteria": ["I presented my Kind Robot confidently.", "I shared its kind message with an audience.", "My whole year's work is saved in the portfolio."],
+  "resources": [{"label": "Class projector"}, {"label": "Portfolio folder"}]
+ }
+}

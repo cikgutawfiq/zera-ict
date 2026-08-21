@@ -1,0 +1,239 @@
+{
+ "1": {
+  "topic": "Plan the Site",
+  "subtopic": "Pages, Purpose and Audience",
+  "outline": "Term theme: 'Build a Website + AI Tools'. Plan a multi-page Google Site: what pages it needs, who it's for, and what each page will contain.",
+  "sowResources": "Printed planning sheet, example Google Site.",
+  "objectives": ["Choose a purpose and audience for a website.", "Plan the pages needed.", "Sketch a simple sitemap."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Look at a real site", "detail": "Explore an example Google Site and identify its pages and purpose."},
+   {"mins": 25, "title": "Plan my site", "detail": "Choose a topic, purpose and audience; sketch a sitemap with 3 pages."},
+   {"mins": 10, "title": "Pitch it", "detail": "Pitch the plan to a partner. Log out."}
+  ],
+  "activities": ["Example site exploration", "Sitemap planning", "Partner pitch"],
+  "successCriteria": ["I chose a clear purpose and audience.", "My sitemap has three planned pages.", "I can pitch my site plan to a partner."],
+  "resources": [{"label": "Printed planning sheet"}, {"label": "Example Google Site"}]
+ },
+ "2": {
+  "topic": "Pages & Text",
+  "subtopic": "Build Pages with Text",
+  "outline": "Create the pages in Google Sites and add heading and body text to each, following the sitemap.",
+  "sowResources": "Google Sites.",
+  "objectives": ["Create pages in Google Sites.", "Add headings and body text to each page.", "Follow the planned sitemap."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build the pages", "detail": "Create three pages and add headings and body text to each, following the plan."},
+   {"mins": 15, "title": "Read-through", "detail": "Read each page aloud — does it make sense? Save and log out."}
+  ],
+  "activities": ["Create pages in Google Sites", "Add headings and text", "Read-through check"],
+  "successCriteria": ["My site has three pages created.", "Each page has a heading and body text.", "My pages follow my original plan."],
+  "resources": [{"label": "Google Sites"}]
+ },
+ "3": {
+  "topic": "Images & Links",
+  "subtopic": "Add Images and Navigation",
+  "outline": "Add images to each page and check the navigation menu connects all the pages correctly.",
+  "sowResources": "Google Sites, class picture folder.",
+  "objectives": ["Insert an image on each page.", "Check the navigation menu links to every page.", "Resize images so they fit the layout."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Add images", "detail": "Insert a relevant image on each page and resize to fit."},
+   {"mins": 15, "title": "Check navigation", "detail": "Click through the navigation menu to confirm every page is reachable."},
+   {"mins": 10, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Insert and resize images", "Navigation check", "Save"],
+  "successCriteria": ["Every page has a relevant image.", "My navigation menu reaches every page.", "My images are resized to fit the layout."],
+  "resources": [{"label": "Google Sites"}, {"label": "Class picture folder"}]
+ },
+ "4": {
+  "topic": "Embed Media",
+  "subtopic": "Embed a Video or Slide",
+  "outline": "Embed a video or a slide deck into one page of the site, so external content plays directly on the page.",
+  "sowResources": "Google Sites, embed reference.",
+  "objectives": ["Embed a video or slide deck into a page.", "Check the embed plays or displays correctly.", "Explain why embedding is useful."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Embed content", "detail": "Insert a video or slide embed into a chosen page."},
+   {"mins": 15, "title": "Test it", "detail": "Check the embed plays or displays correctly for a visitor."},
+   {"mins": 10, "title": "Discuss", "detail": "Discuss why embedding is more useful than a plain link. Log out."}
+  ],
+  "activities": ["Embed a video or slide", "Test the embed", "Discussion on embedding"],
+  "successCriteria": ["I embedded a video or slide deck.", "My embed displays or plays correctly.", "I can explain why embedding is useful."],
+  "resources": [{"label": "Google Sites"}, {"label": "Embed reference"}]
+ },
+ "5": {
+  "topic": "AI Content",
+  "subtopic": "Generate Content/Images for the Site",
+  "outline": "Under teacher guidance, use an AI tool to generate an image or short text for the site, then edit and credit it correctly.",
+  "sowResources": "Teacher-guided AI tool.",
+  "objectives": ["Use a guided AI tool to generate content or an image.", "Edit the AI output to fit the site.", "Credit the AI-made content correctly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Generate content", "detail": "Under supervision, generate an image or short text using the guided AI tool."},
+   {"mins": 20, "title": "Edit and credit", "detail": "Edit the AI output to fit the site and add a credit line."},
+   {"mins": 10, "title": "Insert it", "detail": "Insert the credited content into the site. Save and log out."}
+  ],
+  "activities": ["Guided AI content generation", "Edit and credit the output", "Insert into the site"],
+  "successCriteria": ["I generated content or an image using the guided AI tool.", "I edited the output to fit my site.", "My AI content is correctly credited."],
+  "resources": [{"label": "Teacher-guided AI tool"}]
+ },
+ "6": {
+  "topic": "AI Widget/Game",
+  "subtopic": "Make a Fun Tool to Embed",
+  "outline": "Under teacher guidance, build a small fun tool or mini-game using an AI tool, then embed it in the site.",
+  "sowResources": "Teacher-guided AI tool, Google Sites.",
+  "objectives": ["Use a guided AI tool to build a small tool or game.", "Test that it works.", "Embed it in the website."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Build the widget", "detail": "Under supervision, use the guided AI tool to build a small fun tool or mini-game."},
+   {"mins": 20, "title": "Embed it", "detail": "Embed the finished tool into a chosen page of the site."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Guided AI tool/game build", "Test the widget", "Embed into the site"],
+  "successCriteria": ["I built a small tool or game with the guided AI tool.", "I tested that it works.", "It is embedded into my website."],
+  "resources": [{"label": "Teacher-guided AI tool"}, {"label": "Google Sites"}]
+ },
+ "7": {
+  "topic": "Publish & Privacy",
+  "subtopic": "Publish; Review Safety/Privacy",
+  "outline": "Publish the site and review safety and privacy: no personal information, and appropriate sharing settings.",
+  "sowResources": "Google Sites, privacy checklist.",
+  "objectives": ["Publish the finished site.", "Check for personal information that shouldn't be public.", "Set appropriate sharing/visibility settings."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Privacy sweep", "detail": "Check every page for personal information (full names, addresses, personal photos) that shouldn't be public."},
+   {"mins": 20, "title": "Publish", "detail": "Publish the site with the correct sharing settings."},
+   {"mins": 15, "title": "Peer check", "detail": "A partner visits the published site and checks it looks right. Log out."}
+  ],
+  "activities": ["Privacy checklist sweep", "Publish the site", "Peer visit check"],
+  "successCriteria": ["I checked my site for inappropriate personal information.", "My site is published with correct settings.", "A partner confirmed my published site works."],
+  "resources": [{"label": "Google Sites"}, {"label": "Privacy checklist"}]
+ },
+ "8": {
+  "topic": "Showcase",
+  "subtopic": "Present the Site",
+  "outline": "Present the finished website to the class, showing the pages, the AI content and the embedded widget.",
+  "sowResources": "Class projector.",
+  "objectives": ["Present the finished website.", "Show the AI content and the embedded widget.", "Save the site link to the portfolio."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Showcase", "detail": "Present the site to the class, navigating through its pages."},
+   {"mins": 15, "title": "Highlight AI elements", "detail": "Point out the AI content and the embedded widget and how they were made."},
+   {"mins": 10, "title": "Save", "detail": "Save the site link to the portfolio folder. Log out."}
+  ],
+  "activities": ["Class site showcase", "Highlight AI elements", "Portfolio save"],
+  "successCriteria": ["I presented my finished website.", "I showed and explained the AI content and widget.", "My site link is saved to the portfolio folder."],
+  "resources": [{"label": "Class projector"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add a Fourth Page",
+  "outline": "Extend the site with a fourth page, applying feedback received during the showcase.",
+  "sowResources": "Google Sites.",
+  "objectives": ["Add a fourth page to the site.", "Apply at least one piece of feedback received.", "Re-publish the site."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Add a page", "detail": "Add a fourth page and apply at least one piece of showcase feedback."},
+   {"mins": 15, "title": "Re-publish", "detail": "Re-publish and check the new page appears correctly."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Add a fourth page", "Apply feedback", "Re-publish"],
+  "successCriteria": ["My site now has a fourth page.", "I applied at least one piece of feedback.", "My re-published site works correctly."],
+  "resources": [{"label": "Google Sites"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Skills Practice for the Exam",
+  "outline": "Rehearse the term's site-building skills in pairs: create a page, add media, publish with correct privacy settings.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's site-building process in order.", "Rehearse building and publishing a page with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Process recap", "detail": "Recap: plan, pages, images, embed, AI, publish — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Build and publish a short page with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Process recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's site-building steps in order.", "I rehearsed building and publishing with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 3 Practical Assessment",
+  "outline": "Individual task: build and publish a 3-page Google Site including one element created with an AI tool, checked for privacy.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Build a 3-page site.", "Include one teacher-guided AI-made element.", "Publish with correct privacy settings."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task."},
+   {"mins": 30, "title": "Build the site", "detail": "Individual practical: build 3 pages with text, images and one AI element."},
+   {"mins": 15, "title": "Privacy check and publish", "detail": "Check for personal information, then publish."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the year's progress. Log out."}
+  ],
+  "activities": ["Individual practical site build", "Privacy check and publish", "End-of-year celebration"],
+  "successCriteria": ["My site has 3 complete pages.", "My site includes one AI-made, correctly credited element.", "My site is published with correct privacy settings."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Google Sites"}]
+ },
+ "12": {
+  "topic": "End of Term Project",
+  "subtopic": "Portfolio Site — Plan",
+  "outline": "Plan a bigger final site that showcases the whole year's ICT work: a portfolio site with pages for each term.",
+  "sowResources": "Printed planning sheet.",
+  "objectives": ["Plan a portfolio site covering the whole year.", "Decide what work to showcase from each term.", "Sketch the sitemap."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Plan the portfolio", "detail": "Sketch a sitemap with a page per term, choosing the best work to showcase from each."},
+   {"mins": 15, "title": "Pitch it", "detail": "Tell a partner the plan. Collect plans. Log out."}
+  ],
+  "activities": ["Portfolio sitemap planning", "Choose best work per term", "Partner pitch"],
+  "successCriteria": ["My plan has a page for each term's work.", "I chose specific pieces of work to showcase.", "I can tell a partner my plan."],
+  "resources": [{"label": "Printed planning sheet"}]
+ },
+ "13": {
+  "topic": "End of Term Project",
+  "subtopic": "Portfolio Site — Build",
+  "outline": "Build the portfolio site, adding pages and linking or embedding the best work from across the year.",
+  "sowResources": "Google Sites.",
+  "objectives": ["Build the portfolio site pages.", "Link or embed the year's best work.", "Check navigation works between all pages."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 35, "title": "Build the portfolio", "detail": "Build the pages and link or embed the chosen work from the year."},
+   {"mins": 10, "title": "Navigation check", "detail": "Check every page is reachable and every link works. Save and log out."}
+  ],
+  "activities": ["Build portfolio pages", "Link/embed year's work", "Navigation check"],
+  "successCriteria": ["My portfolio site has pages for each term.", "My best work is linked or embedded.", "Navigation works across all pages."],
+  "resources": [{"label": "Google Sites"}]
+ },
+ "14": {
+  "topic": "End of Term Project",
+  "subtopic": "Portfolio Site — Publish",
+  "outline": "Do a final privacy check, publish the portfolio site, and rehearse presenting it.",
+  "sowResources": "Google Sites, privacy checklist.",
+  "objectives": ["Do a final privacy check.", "Publish the finished portfolio site.", "Rehearse presenting it."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Final privacy check", "detail": "Check every page one more time for personal information."},
+   {"mins": 15, "title": "Publish", "detail": "Publish the site with correct sharing settings."},
+   {"mins": 15, "title": "Rehearse", "detail": "Practise presenting the portfolio to a partner. Log out."}
+  ],
+  "activities": ["Final privacy check", "Publish the portfolio site", "Presentation rehearsal"],
+  "successCriteria": ["My portfolio passed a final privacy check.", "My portfolio site is published.", "I rehearsed presenting it to a partner."],
+  "resources": [{"label": "Google Sites"}, {"label": "Privacy checklist"}]
+ },
+ "15": {
+  "topic": "Portfolio Showcase",
+  "subtopic": "Year Portfolio Fair",
+  "outline": "Present the finished portfolio site to the class as a celebration of the whole year's ICT work.",
+  "sowResources": "Class projector, portfolio folder.",
+  "objectives": ["Present the finished portfolio site confidently.", "Highlight the best work from across the year.", "Reflect on progress made this year."],
+  "plan": [
+   {"mins": 10, "title": "Final rehearsal", "detail": "One last run-through with a partner before presenting."},
+   {"mins": 25, "title": "Year Portfolio Fair", "detail": "Present portfolio sites to the class in small groups."},
+   {"mins": 15, "title": "Save the link", "detail": "Save the site link into the portfolio folder."},
+   {"mins": 10, "title": "Year celebration", "detail": "Name three things learned this year, ready for Year 6. Log out."}
+  ],
+  "activities": ["Final rehearsal", "Year Portfolio Fair presentations", "Year-end reflection"],
+  "successCriteria": ["I presented my portfolio site confidently.", "I highlighted my best work from the year.", "I reflected on my progress this year."],
+  "resources": [{"label": "Class projector"}, {"label": "Portfolio folder"}]
+ }
+}

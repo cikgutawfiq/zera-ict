@@ -1,0 +1,239 @@
+{
+ "1": {
+  "topic": "Web Structure",
+  "subtopic": "Pages, Links, Media",
+  "outline": "Term theme: 'Web + AI Builders'. Learn the structure of a website — pages, navigation links and media — using Google Sites or basic HTML.",
+  "sowResources": "Google Sites or a text editor, web-structure reference.",
+  "objectives": ["Explain the parts of a website: pages, links, media.", "Plan a simple site structure.", "Choose between Sites and HTML/CSS for the build."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Anatomy of a site", "detail": "Explore an example site, labelling pages, navigation and media."},
+   {"mins": 25, "title": "Plan the structure", "detail": "Sketch a simple sitemap for a chosen topic."},
+   {"mins": 10, "title": "Choose the tool", "detail": "Decide: Google Sites for speed, or HTML/CSS for more control. Log out."}
+  ],
+  "activities": ["Example site anatomy", "Sitemap planning", "Tool choice discussion"],
+  "successCriteria": ["I can explain the parts of a website.", "I planned a simple sitemap.", "I chose a tool and can justify why."],
+  "resources": [{"label": "Google Sites / HTML & CSS"}, {"label": "Web-structure reference"}]
+ },
+ "2": {
+  "topic": "HTML/CSS Basics",
+  "subtopic": "Or a Sites Deep-Dive",
+  "outline": "Learn basic HTML tags (headings, paragraphs, links) and simple CSS styling, or go deeper into Google Sites layout tools.",
+  "sowResources": "Text editor / browser, or Google Sites, HTML/CSS cheat sheet.",
+  "objectives": ["Write basic HTML tags for headings, paragraphs and links.", "Apply simple CSS styling.", "Preview the page in a browser."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "First HTML tags", "detail": "Write <h1>, <p> and <a> tags in a simple text file and preview in the browser."},
+   {"mins": 25, "title": "Add CSS", "detail": "Add simple CSS to change colour, font size or spacing."},
+   {"mins": 10, "title": "Preview and compare", "detail": "Preview the styled page and compare with the unstyled version. Save and log out."}
+  ],
+  "activities": ["Write basic HTML tags", "Apply simple CSS", "Preview and compare"],
+  "successCriteria": ["I wrote working heading, paragraph and link tags.", "I applied at least one CSS style.", "I previewed my page in a browser."],
+  "resources": [{"label": "HTML/CSS cheat sheet"}, {"label": "Text editor / browser"}]
+ },
+ "3": {
+  "topic": "Build a Topic Site",
+  "subtopic": "A Site on a Chosen Topic",
+  "outline": "Start building a small website on a chosen topic, applying the structure and styling learned this term.",
+  "sowResources": "Google Sites / HTML editor.",
+  "objectives": ["Choose a topic for the site.", "Build the first pages with structure and styling.", "Follow the planned sitemap."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build the site", "detail": "Build the first 2-3 pages of the topic site, applying headings and styling."},
+   {"mins": 15, "title": "Check structure", "detail": "Check the pages follow the sitemap plan. Save and log out."}
+  ],
+  "activities": ["Choose a topic", "Build the first pages", "Structure check"],
+  "successCriteria": ["I chose a clear topic for my site.", "My first pages use headings and styling.", "My pages follow my planned sitemap."],
+  "resources": [{"label": "Google Sites / HTML editor"}]
+ },
+ "4": {
+  "topic": "AI Tool/Game",
+  "subtopic": "Build One with AI Help",
+  "outline": "Under teacher guidance, build a small tool or game related to the site's topic using an AI tool.",
+  "sowResources": "Teacher-guided AI tool.",
+  "objectives": ["Use a guided AI tool to build a topic-related tool or game.", "Test that it works.", "Plan where it will sit on the site."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Build with AI", "detail": "Under supervision, use the guided AI tool to build a small tool or game related to the topic."},
+   {"mins": 20, "title": "Test it", "detail": "Test the tool works as expected."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Guided AI tool/game build", "Test the tool", "Save"],
+  "successCriteria": ["I built a tool or game related to my topic.", "I tested that it works.", "I planned where it fits on my site."],
+  "resources": [{"label": "Teacher-guided AI tool"}]
+ },
+ "5": {
+  "topic": "Embed It",
+  "subtopic": "Add the AI Creation to the Site",
+  "outline": "Embed the AI-built tool into the website and check it works for a visitor.",
+  "sowResources": "Google Sites / HTML editor.",
+  "objectives": ["Embed the AI tool into the site.", "Check it works when accessed as a visitor would.", "Add a short description."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Embed the tool", "detail": "Embed the AI-built tool into a chosen page."},
+   {"mins": 15, "title": "Visitor test", "detail": "Test it as a visitor would, without prior knowledge."},
+   {"mins": 10, "title": "Describe it", "detail": "Write a short description of what the tool does. Save and log out."}
+  ],
+  "activities": ["Embed the AI tool", "Visitor-perspective test", "Write a description"],
+  "successCriteria": ["My AI tool is embedded on the site.", "It works when tested as a visitor.", "It has a short description."],
+  "resources": [{"label": "Google Sites / HTML editor"}]
+ },
+ "6": {
+  "topic": "Ethics",
+  "subtopic": "MCMC, Bias, Privacy",
+  "outline": "Discuss Malaysian digital law basics (MCMC), AI bias, and privacy — one ethics issue relevant to the built site.",
+  "sowResources": "Discussion cards, MCMC awareness summary.",
+  "objectives": ["Explain what MCMC oversees in Malaysia.", "Give an example of AI bias.", "Discuss a privacy issue relevant to the site."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "MCMC basics", "detail": "Introduce what MCMC (Malaysian Communications and Multimedia Commission) oversees, in age-appropriate terms."},
+   {"mins": 20, "title": "AI bias example", "detail": "Discuss an example of AI bias and why it happens."},
+   {"mins": 15, "title": "Privacy discussion", "detail": "Discuss one privacy issue relevant to the built site. Log out."}
+  ],
+  "activities": ["MCMC awareness discussion", "AI bias example discussion", "Site-relevant privacy discussion"],
+  "successCriteria": ["I can explain what MCMC oversees.", "I can give an example of AI bias.", "I discussed a privacy issue relevant to my site."],
+  "resources": [{"label": "Discussion cards"}, {"label": "MCMC awareness summary"}]
+ },
+ "7": {
+  "topic": "Publish & Review",
+  "subtopic": "Publish and Check",
+  "outline": "Publish the site and review it against the ethics discussion — privacy, bias, honesty about AI use.",
+  "sowResources": "Google Sites / HTML editor, ethics checklist.",
+  "objectives": ["Publish the finished site.", "Review it against the ethics checklist.", "Fix any issues found."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Ethics review", "detail": "Check the site against the ethics checklist: privacy, AI credit, appropriate content."},
+   {"mins": 20, "title": "Publish", "detail": "Fix any issues and publish the site."},
+   {"mins": 10, "title": "Peer check", "detail": "A partner visits the published site to confirm it works. Log out."}
+  ],
+  "activities": ["Ethics checklist review", "Publish the site", "Peer visit check"],
+  "successCriteria": ["I checked my site against the ethics checklist.", "My site is published correctly.", "A partner confirmed my published site works."],
+  "resources": [{"label": "Google Sites / HTML editor"}, {"label": "Ethics checklist"}]
+ },
+ "8": {
+  "topic": "Present",
+  "subtopic": "Present the Build",
+  "outline": "Present the finished site and AI tool to the class, including a short reflection on the ethics issue discussed.",
+  "sowResources": "Class projector.",
+  "objectives": ["Present the finished site and AI tool.", "Reflect on one ethics issue discussed this term.", "Save the site to the portfolio."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Present the build", "detail": "Present the site and demo the AI tool to the class."},
+   {"mins": 15, "title": "Ethics reflection", "detail": "Give a short reflection on one ethics issue relevant to the build."},
+   {"mins": 10, "title": "Save", "detail": "Save the site link to the portfolio folder. Log out."}
+  ],
+  "activities": ["Class site presentation", "Ethics reflection", "Portfolio save"],
+  "successCriteria": ["I presented my finished site and AI tool.", "I gave a short reflection on one ethics issue.", "My site link is saved to the portfolio folder."],
+  "resources": [{"label": "Class projector"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add a Third Page",
+  "outline": "Extend the site with a third page, applying feedback received during the presentation.",
+  "sowResources": "Google Sites / HTML editor.",
+  "objectives": ["Add a third page to the site.", "Apply at least one piece of feedback.", "Re-publish the site."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Add a page", "detail": "Add a third page and apply at least one piece of presentation feedback."},
+   {"mins": 15, "title": "Re-publish", "detail": "Re-publish and check the new page appears correctly."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Add a third page", "Apply feedback", "Re-publish"],
+  "successCriteria": ["My site now has a third page.", "I applied at least one piece of feedback.", "My re-published site works correctly."],
+  "resources": [{"label": "Google Sites / HTML editor"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Skills Practice for the Exam",
+  "outline": "Rehearse the term's web and AI skills in pairs: structure a page, style it, embed a tool, publish.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's web-building process in order.", "Rehearse building and publishing a page with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Process recap", "detail": "Recap: structure, HTML/CSS or Sites, AI tool, ethics, publish — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Build and publish a short page with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Process recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's process in order.", "I rehearsed the practical task with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 3 Practical Assessment",
+  "outline": "Individual task: publish a site with an AI-built tool/game and a short written reflection on one ethics issue.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Structure and publish a working site.", "Embed an AI-built tool/game.", "Write a short reflection on one ethics issue."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task."},
+   {"mins": 30, "title": "Build the site", "detail": "Individual practical: structure and build pages, embed the AI tool."},
+   {"mins": 15, "title": "Publish and reflect", "detail": "Publish the site and write the ethics reflection."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the year's progress. Log out."}
+  ],
+  "activities": ["Individual practical site build", "Publish and write reflection", "End-of-year celebration"],
+  "successCriteria": ["My site is structured and published.", "My AI-built tool/game is embedded and works.", "My ethics reflection is clear and relevant."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Google Sites / HTML editor"}]
+ },
+ "12": {
+  "topic": "End of Term Project",
+  "subtopic": "Web Builders Showcase — Plan",
+  "outline": "Plan a final, polished version of the site with a fourth page and a more advanced AI-built feature.",
+  "sowResources": "Printed planning sheet.",
+  "objectives": ["Plan a fourth page and an advanced AI feature.", "Sketch how it fits the existing site.", "Consider ethics implications of the new feature."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Plan the extension", "detail": "Plan a fourth page and a more advanced AI feature, considering ethics."},
+   {"mins": 15, "title": "Pitch it", "detail": "Tell a partner the plan. Collect plans. Log out."}
+  ],
+  "activities": ["Plan the extension", "Ethics consideration", "Partner pitch"],
+  "successCriteria": ["My plan adds a fourth page and an AI feature.", "My plan considers one ethics implication.", "I can tell a partner my plan."],
+  "resources": [{"label": "Printed planning sheet"}]
+ },
+ "13": {
+  "topic": "End of Term Project",
+  "subtopic": "Web Builders Showcase — Build",
+  "outline": "Build the fourth page and the advanced AI feature, following the plan.",
+  "sowResources": "Google Sites / HTML editor, teacher-guided AI tool.",
+  "objectives": ["Build the fourth page.", "Build and embed the advanced AI feature.", "Test everything works together."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 35, "title": "Build the extension", "detail": "Build the fourth page and the advanced AI feature, embedding it correctly."},
+   {"mins": 10, "title": "Test it", "detail": "Test the whole site works together. Save and log out."}
+  ],
+  "activities": ["Build the fourth page", "Build and embed the AI feature", "Full site test"],
+  "successCriteria": ["My site now has four pages.", "My advanced AI feature is embedded and works.", "My whole site works together correctly."],
+  "resources": [{"label": "Google Sites / HTML editor"}, {"label": "Teacher-guided AI tool"}]
+ },
+ "14": {
+  "topic": "End of Term Project",
+  "subtopic": "Web Builders Showcase — Publish",
+  "outline": "Final ethics and privacy check, re-publish the extended site, and rehearse presenting it.",
+  "sowResources": "Google Sites / HTML editor, ethics checklist.",
+  "objectives": ["Do a final ethics and privacy check.", "Re-publish the extended site.", "Rehearse presenting it."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Final check", "detail": "Check the whole site against the ethics checklist one more time."},
+   {"mins": 15, "title": "Re-publish", "detail": "Re-publish the extended site."},
+   {"mins": 15, "title": "Rehearse", "detail": "Practise presenting the full site to a partner. Log out."}
+  ],
+  "activities": ["Final ethics check", "Re-publish the site", "Presentation rehearsal"],
+  "successCriteria": ["My site passed a final ethics check.", "My extended site is re-published.", "I rehearsed presenting it to a partner."],
+  "resources": [{"label": "Google Sites / HTML editor"}, {"label": "Ethics checklist"}]
+ },
+ "15": {
+  "topic": "Portfolio Showcase",
+  "subtopic": "Web Builders Fair",
+  "outline": "Present the finished, extended site to the class as a 'Web Builders Fair', and save the whole year's portfolio.",
+  "sowResources": "Class projector, portfolio folder.",
+  "objectives": ["Present the finished site confidently.", "Demo the AI features and explain the ethics considerations.", "Save the whole year's portfolio."],
+  "plan": [
+   {"mins": 10, "title": "Final rehearsal", "detail": "One last run-through with a partner before presenting."},
+   {"mins": 25, "title": "Web Builders Fair", "detail": "Present sites to the class in small groups."},
+   {"mins": 15, "title": "Portfolio save", "detail": "Save the finished site and review the whole year's portfolio folder."},
+   {"mins": 10, "title": "Year celebration", "detail": "Name three things learned this year. Log out."}
+  ],
+  "activities": ["Final rehearsal", "Web Builders Fair presentations", "Year-end portfolio review"],
+  "successCriteria": ["I presented my finished site confidently.", "I demoed the AI features and explained the ethics considerations.", "My whole year's work is saved in the portfolio."],
+  "resources": [{"label": "Class projector"}, {"label": "Portfolio folder"}]
+ }
+}

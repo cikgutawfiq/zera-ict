@@ -6,10 +6,11 @@ import { useData } from "@/lib/store";
 import { CLASS_BY_ID } from "@/data/timetable";
 import type { Lesson } from "@/lib/types";
 
-type Card = { heading: string; bullets: string[]; steps?: Lesson["plan"] };
+type Card = { heading: string; bullets: string[]; steps?: Lesson["plan"]; moral?: Lesson };
 
 function buildCards(lesson: Lesson): Card[] {
   const cards: Card[] = [];
+  if (lesson.moralValue) cards.push({ heading: "Value of the day", bullets: [], moral: lesson });
   if (lesson.objectives.length) cards.push({ heading: "Learning objectives", bullets: lesson.objectives });
   if (lesson.plan.length) cards.push({ heading: "Lesson plan", bullets: [], steps: lesson.plan });
   if (lesson.activities.length) cards.push({ heading: "Activities", bullets: lesson.activities });
@@ -77,7 +78,22 @@ export default function PresentPage() {
 
       <main className="flex-1 px-5 py-6">
         <h2 className="text-xs font-bold uppercase tracking-widest text-[color:var(--accent)]">{card.heading}</h2>
-        {card.steps ? (
+        {card.moral ? (
+          <div className="mt-6 space-y-6">
+            <p className="text-3xl font-extrabold">{card.moral.moralValue}</p>
+            <p className="text-lg text-[color:var(--muted)]">{card.moral.moralDescription}</p>
+            <blockquote className="text-2xl italic leading-snug">
+              <span className="text-4xl not-italic text-[color:var(--accent)] leading-none align-top">&ldquo;</span>
+              {card.moral.quote}
+              <span className="text-4xl not-italic text-[color:var(--accent)] leading-none align-bottom">&rdquo;</span>
+              <footer className="mt-2 text-base not-italic text-[color:var(--muted)]">— {card.moral.quoteAuthor}</footer>
+            </blockquote>
+            <p className="text-lg font-medium">
+              <span className="text-[color:var(--accent)]">Food for thought: </span>
+              {card.moral.foodForThought}
+            </p>
+          </div>
+        ) : card.steps ? (
           <ol className="mt-5 space-y-5">
             {card.steps.map((step, i) => (
               <li key={i}>

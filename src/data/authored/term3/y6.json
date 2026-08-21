@@ -1,0 +1,239 @@
+{
+ "1": {
+  "topic": "Plan the Site",
+  "subtopic": "Map Pages for a Portfolio",
+  "outline": "Term theme: 'Capstone — Site, Portfolio & AI'. Plan a portfolio website showcasing the whole primary journey, ready for secondary school.",
+  "sowResources": "Printed planning sheet, example portfolio site.",
+  "objectives": ["Plan a portfolio site covering multiple years of work.", "Decide the pages needed.", "Sketch a clear sitemap."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Look at an example", "detail": "Explore an example portfolio site and discuss what makes it effective."},
+   {"mins": 25, "title": "Plan the sitemap", "detail": "Sketch pages: Home, About, best work, and a 'ready for secondary' reflection page."},
+   {"mins": 10, "title": "Pitch it", "detail": "Pitch the plan to a partner. Log out."}
+  ],
+  "activities": ["Example portfolio exploration", "Sitemap planning", "Partner pitch"],
+  "successCriteria": ["My sitemap covers Home, About and best work.", "My plan includes a reflection page.", "I can pitch my plan to a partner."],
+  "resources": [{"label": "Printed planning sheet"}, {"label": "Example portfolio site"}]
+ },
+ "2": {
+  "topic": "Home & About",
+  "subtopic": "Build the First Pages",
+  "outline": "Build the Home and About pages: a welcoming introduction and some information about the pupil as a learner.",
+  "sowResources": "Google Sites.",
+  "objectives": ["Build a Home page with a clear introduction.", "Build an About page describing myself as a learner.", "Apply consistent design across both."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build Home and About", "detail": "Write and format the Home introduction and the About page."},
+   {"mins": 15, "title": "Consistency check", "detail": "Check both pages use the same theme and layout style. Save and log out."}
+  ],
+  "activities": ["Build the Home page", "Build the About page", "Design consistency check"],
+  "successCriteria": ["My Home page has a clear introduction.", "My About page describes me as a learner.", "Both pages use a consistent design."],
+  "resources": [{"label": "Google Sites"}]
+ },
+ "3": {
+  "topic": "Add Best Work",
+  "subtopic": "Docs, Sheets, Video, Code",
+  "outline": "Add a page showcasing the year's best work: a document, a spreadsheet, a video and a coding project, linked or embedded.",
+  "sowResources": "Google Sites, links/exports of past work.",
+  "objectives": ["Choose the best piece of work in each category.", "Link or embed each piece on a showcase page.", "Write a short caption for each."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Choose the best", "detail": "Look back through the year's work and choose one document, one spreadsheet, one video and one coding project."},
+   {"mins": 25, "title": "Add and caption", "detail": "Link or embed each piece on the showcase page with a short caption."},
+   {"mins": 10, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Review and choose best work", "Link/embed each piece", "Write captions"],
+  "successCriteria": ["I chose one piece of work in each category.", "Each piece is linked or embedded correctly.", "Each piece has a short caption."],
+  "resources": [{"label": "Google Sites"}, {"label": "Links/exports of past work"}]
+ },
+ "4": {
+  "topic": "AI Tool Page",
+  "subtopic": "Build a Game/Tool with AI",
+  "outline": "Under teacher guidance, build a small game or tool using an AI tool and add it to its own page on the site.",
+  "sowResources": "Teacher-guided AI tool, Google Sites.",
+  "objectives": ["Use a guided AI tool to build a small game or tool.", "Test that it works.", "Add it to a new page with a description."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Build with AI", "detail": "Under supervision, use the guided AI tool to build a small game or tool."},
+   {"mins": 20, "title": "Add the page", "detail": "Create a new page, embed the tool, and write a short description."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Guided AI tool/game build", "Create and describe the AI page", "Save"],
+  "successCriteria": ["I built a working tool or game with the guided AI tool.", "It is embedded on its own page.", "The page has a short description."],
+  "resources": [{"label": "Teacher-guided AI tool"}, {"label": "Google Sites"}]
+ },
+ "5": {
+  "topic": "Citizenship Review",
+  "subtopic": "MCMC / Interland Recap",
+  "outline": "Recap digital citizenship lessons from across the year — online safety, kindness, privacy and passwords — through discussion.",
+  "sowResources": "Interland recap slides, discussion cards.",
+  "objectives": ["Recall key digital citizenship rules from the year.", "Discuss a real-life scenario applying these rules.", "Write one citizenship tip for a younger pupil."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Recap the year", "detail": "Recap key rules: privacy, kindness, passwords, checking information."},
+   {"mins": 20, "title": "Scenario discussion", "detail": "Discuss a real-life scenario and apply the rules to decide what to do."},
+   {"mins": 10, "title": "Write a tip", "detail": "Write one citizenship tip for a younger pupil. Log out."}
+  ],
+  "activities": ["Year-long citizenship recap", "Scenario discussion", "Write a tip for a younger pupil"],
+  "successCriteria": ["I recalled key digital citizenship rules from the year.", "I applied the rules to a real-life scenario.", "I wrote a useful tip for a younger pupil."],
+  "resources": [{"label": "Interland recap slides"}, {"label": "Discussion cards"}]
+ },
+ "6": {
+  "topic": "Test & Privacy",
+  "subtopic": "Check Navigation and Privacy",
+  "outline": "Test every link on the site works, and check every page for personal information that shouldn't be public.",
+  "sowResources": "Google Sites, privacy checklist.",
+  "objectives": ["Test every link on the site.", "Check every page for inappropriate personal information.", "Fix any issues found."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Navigation test", "detail": "Click every link on every page and note anything broken."},
+   {"mins": 20, "title": "Privacy sweep", "detail": "Check every page for full names, addresses or personal photos that shouldn't be public."},
+   {"mins": 10, "title": "Fix it", "detail": "Fix any issues found. Save and log out."}
+  ],
+  "activities": ["Full navigation test", "Privacy checklist sweep", "Fix issues found"],
+  "successCriteria": ["I tested every link on my site.", "I checked every page for privacy issues.", "I fixed any issues found."],
+  "resources": [{"label": "Google Sites"}, {"label": "Privacy checklist"}]
+ },
+ "7": {
+  "topic": "Publish",
+  "subtopic": "Publish the Site",
+  "outline": "Publish the finished portfolio site with the correct sharing settings.",
+  "sowResources": "Google Sites.",
+  "objectives": ["Publish the finished site.", "Set the correct sharing/visibility settings.", "Confirm the published link works."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Publish", "detail": "Publish the site with correct sharing settings."},
+   {"mins": 20, "title": "Confirm it works", "detail": "Open the published link in a new tab and click through it."},
+   {"mins": 10, "title": "Save the link", "detail": "Save the published link. Log out."}
+  ],
+  "activities": ["Publish the site", "Confirm published link works", "Save the link"],
+  "successCriteria": ["My site is published with correct settings.", "I confirmed the published link works.", "I saved the published link."],
+  "resources": [{"label": "Google Sites"}]
+ },
+ "8": {
+  "topic": "Present",
+  "subtopic": "Present; Ready for Secondary",
+  "outline": "Present the finished portfolio site to the class, reflecting on readiness for secondary school ICT.",
+  "sowResources": "Class projector.",
+  "objectives": ["Present the finished portfolio site.", "Reflect on readiness for secondary school ICT.", "Save the site link to the portfolio."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Present", "detail": "Present the portfolio site to the class."},
+   {"mins": 15, "title": "Ready-for-secondary reflection", "detail": "Discuss: what skills am I taking into secondary ICT?"},
+   {"mins": 10, "title": "Save", "detail": "Save the site link to the portfolio folder. Log out."}
+  ],
+  "activities": ["Class portfolio presentation", "Ready-for-secondary reflection", "Portfolio save"],
+  "successCriteria": ["I presented my finished portfolio site.", "I reflected on my readiness for secondary ICT.", "My site link is saved to the portfolio folder."],
+  "resources": [{"label": "Class projector"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add a Skills Summary",
+  "outline": "Add a page summarising the ICT skills learned across all three years of upper primary.",
+  "sowResources": "Google Sites.",
+  "objectives": ["List the ICT skills learned across the years.", "Build a summary page for the site.", "Re-publish the site."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build the summary", "detail": "List and briefly describe the ICT skills learned since Year 4."},
+   {"mins": 15, "title": "Re-publish", "detail": "Add the page and re-publish the site."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["List skills learned", "Build a summary page", "Re-publish"],
+  "successCriteria": ["My summary page lists key ICT skills.", "My summary page is added to the site.", "My re-published site works correctly."],
+  "resources": [{"label": "Google Sites"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Skills Practice for the Exam",
+  "outline": "Rehearse the term's site-building skills in pairs: build a page, embed work, check privacy, publish.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's site-building process in order.", "Rehearse building and publishing a page with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Process recap", "detail": "Recap: plan, pages, best work, AI, privacy, publish — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Build and publish a short page with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Process recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's site-building steps in order.", "I rehearsed building and publishing with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 3 Practical Assessment",
+  "outline": "Individual task: build and publish a portfolio site showcasing the year's work, including an AI-made tool.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Build a portfolio site showcasing best work.", "Include an AI-made tool.", "Publish with correct privacy settings."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task."},
+   {"mins": 30, "title": "Build the portfolio", "detail": "Individual practical: build pages showcasing work and the AI tool."},
+   {"mins": 15, "title": "Privacy check and publish", "detail": "Check for personal information, then publish."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the year's progress. Log out."}
+  ],
+  "activities": ["Individual practical portfolio build", "Privacy check and publish", "End-of-year celebration"],
+  "successCriteria": ["My portfolio site showcases my best work.", "My site includes an AI-made tool.", "My site is published with correct privacy settings."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Google Sites"}]
+ },
+ "12": {
+  "topic": "End of Term Project",
+  "subtopic": "Ready for Secondary — Plan",
+  "outline": "Plan a final showcase page: 'My ICT Journey', reflecting on growth from Year 1 to Year 6.",
+  "sowResources": "Printed planning sheet.",
+  "objectives": ["Reflect on ICT skills learned since Year 1.", "Plan a 'My ICT Journey' page.", "Choose evidence to include."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Reflect and plan", "detail": "Reflect on growth since Year 1 and plan the journey page with evidence to include."},
+   {"mins": 15, "title": "Pitch it", "detail": "Tell a partner the plan. Collect plans. Log out."}
+  ],
+  "activities": ["Reflect on ICT journey", "Plan the journey page", "Partner pitch"],
+  "successCriteria": ["My plan reflects on growth since Year 1.", "My plan lists evidence to include.", "I can tell a partner my plan."],
+  "resources": [{"label": "Printed planning sheet"}]
+ },
+ "13": {
+  "topic": "End of Term Project",
+  "subtopic": "Ready for Secondary — Build",
+  "outline": "Build the 'My ICT Journey' page, following the plan.",
+  "sowResources": "Google Sites.",
+  "objectives": ["Build the journey page.", "Include the planned evidence.", "Write a short reflection."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 35, "title": "Build the page", "detail": "Build the journey page with evidence and a short written reflection."},
+   {"mins": 10, "title": "Check", "detail": "Check it matches the original plan. Save and log out."}
+  ],
+  "activities": ["Build the journey page", "Write a reflection", "Match check"],
+  "successCriteria": ["My journey page includes the planned evidence.", "My journey page has a written reflection.", "My page matches my original plan."],
+  "resources": [{"label": "Google Sites"}]
+ },
+ "14": {
+  "topic": "End of Term Project",
+  "subtopic": "Ready for Secondary — Publish",
+  "outline": "Final privacy check, republish the complete portfolio site, and rehearse presenting the whole thing.",
+  "sowResources": "Google Sites, privacy checklist.",
+  "objectives": ["Do a final privacy check.", "Re-publish the complete site.", "Rehearse presenting it."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Final privacy check", "detail": "Check every page one more time."},
+   {"mins": 15, "title": "Re-publish", "detail": "Re-publish the complete portfolio site."},
+   {"mins": 15, "title": "Rehearse", "detail": "Practise presenting the whole portfolio to a partner. Log out."}
+  ],
+  "activities": ["Final privacy check", "Re-publish the site", "Presentation rehearsal"],
+  "successCriteria": ["My portfolio passed a final privacy check.", "My complete site is re-published.", "I rehearsed presenting it to a partner."],
+  "resources": [{"label": "Google Sites"}, {"label": "Privacy checklist"}]
+ },
+ "15": {
+  "topic": "Portfolio Showcase",
+  "subtopic": "micro:bit Project Fair",
+  "outline": "Present the finished portfolio site to Year 5 or another class, celebrating the primary ICT journey before moving to secondary.",
+  "sowResources": "Class projector, portfolio folder.",
+  "objectives": ["Present the finished portfolio confidently to visitors.", "Explain my ICT journey and growth.", "Save the whole primary portfolio."],
+  "plan": [
+   {"mins": 10, "title": "Final rehearsal", "detail": "One last run-through before visitors arrive."},
+   {"mins": 25, "title": "Fair with visitors", "detail": "Present portfolio sites to visiting classmates or a younger year group."},
+   {"mins": 15, "title": "Save the portfolio", "detail": "Save the final site link and all files into the portfolio folder."},
+   {"mins": 10, "title": "Farewell reflection", "detail": "Reflect on the whole primary ICT journey, ready for secondary. Log out."}
+  ],
+  "activities": ["Final rehearsal", "Fair with visitors", "Primary-journey reflection"],
+  "successCriteria": ["I presented my portfolio confidently to visitors.", "I explained my ICT journey and growth.", "My whole primary portfolio is saved."],
+  "resources": [{"label": "Class projector"}, {"label": "Portfolio folder"}]
+ }
+}

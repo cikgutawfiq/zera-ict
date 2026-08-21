@@ -1,0 +1,178 @@
+{
+ "1": {
+  "topic": "TypingClub — Home Row",
+  "subtopic": "Say Hello to the Home Row Keys",
+  "outline": "Term theme: 'My First Words on Screen'. Recap sitting posture and finger position. Find ASDF and JKL; with eyes closed, then start the first Term 2 TypingClub unit.",
+  "sowResources": "TypingClub, posture poster, printed keyboard mat.",
+  "objectives": ["Sit with good posture and find the home row without looking.", "Complete a TypingClub unit using only home-row keys.", "Set a small personal typing goal for Term 2."],
+  "plan": [
+   {"mins": 10, "title": "Posture and home row recap", "detail": "Chant the posture rule, then find F and J with eyes closed three times."},
+   {"mins": 20, "title": "Home row unit", "detail": "Work through a TypingClub home-row unit, freezing every 5 minutes for a posture check."},
+   {"mins": 15, "title": "Term 2 goal", "detail": "Write one typing goal for this term on the goal sheet — a star count or a level."},
+   {"mins": 10, "title": "Show a partner", "detail": "Show a partner your fingers finding the home row without looking. Log out."}
+  ],
+  "activities": ["Eyes-closed home-row finding", "TypingClub home-row unit", "Term 2 goal setting"],
+  "successCriteria": ["I can find F and J without looking.", "I completed a home-row typing unit.", "I have written a typing goal for this term."],
+  "resources": [{"label": "TypingClub", "url": "https://www.typingclub.com"}, {"label": "Posture poster"}, {"label": "Goal sheet"}]
+ },
+ "2": {
+  "topic": "Open Docs & Word",
+  "subtopic": "Two Tools, One Job",
+  "outline": "Recap that Word and Google Docs do the same job, two different ways. Open both, type first name in each, and save with a sensible name.",
+  "sowResources": "Microsoft Word, Google Docs, class login cards.",
+  "objectives": ["Open both Microsoft Word and Google Docs.", "Type my name in each program.", "Save each file with my name."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes of TypingClub, posture check."},
+   {"mins": 15, "title": "Two tools, one job", "detail": "Recap the Word/Docs comparison from Year 1's earlier work: same buttons, different shop."},
+   {"mins": 20, "title": "Open and type", "detail": "Open Word, type name, save. Then open Docs, type name — notice it saves itself."},
+   {"mins": 15, "title": "Show and tell", "detail": "Show a partner both files open side by side. Log out."}
+  ],
+  "activities": ["Word vs Docs comparison recap", "Type name in both programs", "Save and reopen check"],
+  "successCriteria": ["I opened both Word and Google Docs.", "I typed my name correctly in each.", "Both files are saved with my name."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Class login cards"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "3": {
+  "topic": "Capitals & Shift",
+  "subtopic": "Use the Shift Key for Capital Letters",
+  "outline": "Practise holding Shift and pressing a letter to make a capital. Type first and last name, each starting with a capital.",
+  "sowResources": "Microsoft Word, Google Docs, printed name cards.",
+  "objectives": ["Use the Shift key to make a capital letter.", "Type my first and last name correctly.", "Explain when a word needs a capital letter."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Shift key practice", "detail": "Air-practise 'hold Shift, press letter, let go' before touching the keyboard."},
+   {"mins": 20, "title": "Type my full name", "detail": "Type first and last name in Word and Docs, each starting with a capital letter."},
+   {"mins": 15, "title": "Capital hunt", "detail": "Spot capital letters in a printed sentence and say why each one is there. Save and log out."}
+  ],
+  "activities": ["Shift-key air practice", "Type full name with capitals", "Capital-letter spotting"],
+  "successCriteria": ["I can use Shift to make a capital letter.", "My first and last name both start with capitals.", "I can point to a capital letter and say why it's there."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Printed name cards"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "4": {
+  "topic": "A Whole Sentence",
+  "subtopic": "Spaces and Full Stops Make Sense",
+  "outline": "Type a short sentence about myself, using the space bar correctly between words and a full stop at the end.",
+  "sowResources": "Microsoft Word, Google Docs, printed sentence starters.",
+  "objectives": ["Use the space bar once between each word.", "End my sentence with a full stop.", "Read my sentence back and check it makes sense."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "What makes a sentence", "detail": "Read example sentences on the board; count the words and spot the full stop."},
+   {"mins": 25, "title": "Type my sentence", "detail": "Type one sentence about myself, e.g. 'My name is ___ and I like ___.' One space between words, full stop at the end."},
+   {"mins": 10, "title": "Read-back check", "detail": "Read the sentence aloud to a partner — does it make sense? Save and log out."}
+  ],
+  "activities": ["Sentence-spotting starter", "Type a personal sentence", "Partner read-back check"],
+  "successCriteria": ["My sentence has one space between each word.", "My sentence ends with a full stop.", "My sentence makes sense when read aloud."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Printed sentence starters"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "5": {
+  "topic": "Make It Big",
+  "subtopic": "Change the Font Size of My Title",
+  "outline": "Select the title of my sentence and make it bigger using the font size dropdown, so it stands out from the rest of the text.",
+  "sowResources": "Microsoft Word, Google Docs, font-size cheat sheet.",
+  "objectives": ["Select a word or line of text.", "Change the font size using the toolbar.", "Explain why a title should look different from the body text."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Selecting text", "detail": "Practise clicking and dragging to select a word, then a whole line."},
+   {"mins": 20, "title": "Make it big", "detail": "Add a title above the sentence, select it, and change the font size to something much bigger."},
+   {"mins": 15, "title": "Compare", "detail": "Compare with a partner — does the bigger title stand out? Save and log out."}
+  ],
+  "activities": ["Text-selection practice", "Change title font size", "Partner comparison"],
+  "successCriteria": ["I can select text by clicking and dragging.", "My title is a bigger font size than the body text.", "I can explain why a big title is easier to spot."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Font-size cheat sheet"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "6": {
+  "topic": "Add a Colour",
+  "subtopic": "Give My Title a Colour",
+  "outline": "Select the title again and use the font colour tool to give it a colour that is still easy to read.",
+  "sowResources": "Microsoft Word, Google Docs, readable-colours poster.",
+  "objectives": ["Use the font colour tool to change text colour.", "Choose a colour that is still easy to read.", "Explain why yellow-on-white is hard to read."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Readable or not?", "detail": "Show two colour examples — one easy to read, one hard. Vote and discuss why."},
+   {"mins": 20, "title": "Colour my title", "detail": "Select the title and apply a font colour. Try two or three colours before choosing the best one."},
+   {"mins": 20, "title": "Class gallery", "detail": "Project three examples — which colours work best and why? Save and log out."}
+  ],
+  "activities": ["Readable-colour voting starter", "Apply a font colour to the title", "Class gallery review"],
+  "successCriteria": ["I changed my title's colour using the toolbar.", "My title colour is still easy to read.", "I can say why some colour combinations are hard to read."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Readable-colours poster"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "7": {
+  "topic": "Save Routine",
+  "subtopic": "Save to Drive and to OneDrive; Reopen It",
+  "outline": "Practise the full save routine: save the Word file to OneDrive and the Docs file to Drive, then close everything and reopen both to prove it worked.",
+  "sowResources": "Google Drive, Microsoft OneDrive, file-naming poster.",
+  "objectives": ["Save a file to OneDrive and a file to Drive.", "Use a sensible file name.", "Close and reopen my own files."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Naming rule recap", "detail": "Recap Firstname_Topic naming from Year 1 Term 1. Rename today's files to follow the rule."},
+   {"mins": 20, "title": "Save to both clouds", "detail": "Save the Word file to OneDrive and the Docs file stays in Drive automatically. Check both are really there."},
+   {"mins": 15, "title": "Close and reopen", "detail": "Close both files completely, then reopen them from the cloud to prove the save worked. Log out."}
+  ],
+  "activities": ["File-naming recap", "Save to OneDrive and Drive", "Close-and-reopen proof"],
+  "successCriteria": ["My files are named sensibly.", "One file is saved in OneDrive and one in Drive.", "I reopened both files after closing them."],
+  "resources": [{"label": "Google Drive / Microsoft OneDrive"}, {"label": "File-naming poster"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "8": {
+  "topic": "All About Me",
+  "subtopic": "A One-Line 'About Me' — Portfolio Piece",
+  "outline": "Bring together everything this term: type a one-line 'about me' sentence, make the title big and coloured, and save it to both clouds as the term's portfolio piece.",
+  "sowResources": "Microsoft Word, Google Docs, portfolio folder.",
+  "objectives": ["Type a one-line sentence about myself.", "Format the title with size and colour.", "Save the finished piece to both clouds."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Plan my sentence", "detail": "Say the sentence out loud to a partner before typing it."},
+   {"mins": 25, "title": "Build the piece", "detail": "Type the sentence, add a big coloured title, check spaces and full stop."},
+   {"mins": 15, "title": "Save to portfolio", "detail": "Save to both OneDrive and Drive with the correct name, into the portfolio folder. Log out."}
+  ],
+  "activities": ["Say-it-before-you-type practice", "Build the 'about me' piece", "Portfolio save to both clouds"],
+  "successCriteria": ["My sentence is about me and makes sense.", "My title is bigger and coloured.", "My piece is saved to both clouds in the portfolio folder."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Portfolio folder"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add a Picture to My 'About Me'",
+  "outline": "Return to the 'about me' sentence and add a picture — a self-portrait drawing or a copyright-safe image — so the finished piece has words and a picture together.",
+  "sowResources": "Tux Paint / Microsoft Paint, class picture folder, Microsoft Word / Google Docs.",
+  "objectives": ["Draw or choose a picture for my 'about me' piece.", "Insert the picture next to my sentence.", "Resize the picture so it fits neatly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Picture choice", "detail": "Choose: draw a quick self-portrait in Paint, or pick a picture from the class folder."},
+   {"mins": 25, "title": "Insert and resize", "detail": "Insert the picture into the document and resize it using the corner handles so it doesn't cover the text."},
+   {"mins": 10, "title": "Check together", "detail": "Partner check: does the picture fit neatly? Save and log out."}
+  ],
+  "activities": ["Choose or draw a picture", "Insert and resize into the document", "Partner neatness check"],
+  "successCriteria": ["I chose or drew a picture for my piece.", "My picture is inserted next to my sentence.", "My picture is resized neatly, not squashed."],
+  "resources": [{"label": "Tux Paint / Microsoft Paint"}, {"label": "Class picture folder"}, {"label": "Microsoft Word / Google Docs"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Ready for the Practical",
+  "outline": "Recap the whole term: open a program, type a sentence with capitals and a full stop, format a title, insert a picture, and save to both clouds. Rehearse in pairs.",
+  "sowResources": "Recap slide deck, practice task cards, Microsoft Word / Google Docs.",
+  "objectives": ["Recall every skill learned this term in order.", "Rehearse the practical task with a partner.", "Identify which step I still find tricky."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Skill recap", "detail": "Recap slide deck: open, type, format, picture, save — in order, as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "One partner does the full task while the other reads the task card aloud, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Each pupil names the step they still find hardest. Log out."}
+  ],
+  "activities": ["Skill-order recap chant", "Paired practical rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's skills in order.", "I completed the practical task with a partner's help.", "I know which step I need more practice on."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}, {"label": "TypingClub", "url": "https://www.typingclub.com"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 2 Practical Assessment",
+  "outline": "Individual task: open a program, type a short sentence with a capital letter and a full stop, make the title big and coloured, insert a picture, and save to both clouds.",
+  "sowResources": "Observation checklist, assessment rubric.",
+  "objectives": ["Complete the Term 2 practical task independently.", "Use everything learned this term: typing, formatting, a picture, saving.", "Save my finished work with the correct name."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain this is a 'show me what you can do' task."},
+   {"mins": 20, "title": "Group A practical", "detail": "First group works through the task while others do independent TypingClub."},
+   {"mins": 20, "title": "Group B practical", "detail": "Second group, same task, same checklist."},
+   {"mins": 15, "title": "Save and celebrate", "detail": "Final saves checked, then celebrate the whole class's progress since January. Log out."}
+  ],
+  "activities": ["Individual observed practical: type, format, picture, save", "TypingClub while waiting", "End-of-term celebration"],
+  "successCriteria": ["I typed a sentence with a capital and a full stop on my own.", "I formatted my title with size and colour.", "I inserted a picture and saved to both clouds."],
+  "resources": [{"label": "Observation checklist"}, {"label": "Assessment rubric"}, {"label": "Microsoft Word / Google Docs"}]
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "1": {
+  "topic": "IF & Nested IF",
+  "subtopic": "Multiple Decisions",
+  "outline": "Term theme: 'Spreadsheet Modelling Pro'. Extend IF to nested IF for problems with more than two outcomes.",
+  "sowResources": "Microsoft Excel, Google Sheets, nested-IF reference.",
+  "objectives": ["Write a basic IF formula.", "Extend it to a nested IF with three outcomes.", "Test all three outcomes with sample data."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Beyond two outcomes", "detail": "Recap IF, then show a grade-band problem needing more than two outcomes."},
+   {"mins": 25, "title": "Build a nested IF", "detail": "Write =IF(B2>=80,\"A\",IF(B2>=60,\"B\",\"C\")) and test with three score ranges."},
+   {"mins": 10, "title": "Boundary testing", "detail": "Test scores of 59, 60, 79, 80 specifically — boundaries are where bugs hide. Save and log out."}
+  ],
+  "activities": ["Grade-band problem discussion", "Build a nested IF formula", "Boundary value testing"],
+  "successCriteria": ["I wrote a working nested IF formula.", "My formula correctly handles all three outcomes.", "I tested boundary values specifically."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Nested-IF reference"}]
+ },
+ "2": {
+  "topic": "COUNTIF / SUMIF",
+  "subtopic": "Count and Total by Criteria",
+  "outline": "Learn COUNTIF to count matching records and SUMIF to total matching values, both filtered by a condition.",
+  "sowResources": "Microsoft Excel, Google Sheets, COUNTIF/SUMIF reference.",
+  "objectives": ["Write a COUNTIF formula to count matches.", "Write a SUMIF formula to total matches.", "Explain the difference between COUNTIF and SUMIF."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Count vs total", "detail": "Explain: COUNTIF counts how many, SUMIF adds up values, both filtered by a condition."},
+   {"mins": 25, "title": "Build both", "detail": "Write =COUNTIF(range,\"criteria\") and =SUMIF(range,\"criteria\",sum_range) on sample data."},
+   {"mins": 10, "title": "Check against a manual count", "detail": "Manually count a small subset to verify the formula result matches. Save and log out."}
+  ],
+  "activities": ["Count vs total explanation", "Build COUNTIF and SUMIF formulas", "Manual verification check"],
+  "successCriteria": ["I wrote a working COUNTIF formula.", "I wrote a working SUMIF formula.", "I can explain the difference between them."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "COUNTIF/SUMIF reference"}]
+ },
+ "3": {
+  "topic": "Lookups",
+  "subtopic": "Find Matching Values",
+  "outline": "Learn a lookup function (VLOOKUP or XLOOKUP/INDEX-MATCH) to find a value in a table based on a key.",
+  "sowResources": "Microsoft Excel, Google Sheets, lookup reference.",
+  "objectives": ["Explain what a lookup does.", "Write a working lookup formula.", "Fix a lookup formula that returns an error."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "What a lookup does", "detail": "Real-world analogy: looking up a name in a phone book to find a number."},
+   {"mins": 25, "title": "Build a lookup", "detail": "Write a lookup formula that finds a price or grade from a code, on a sample product/price table."},
+   {"mins": 10, "title": "Fix the error", "detail": "Given a lookup formula with a deliberate mistake, find and fix it. Save and log out."}
+  ],
+  "activities": ["Phone-book lookup analogy", "Build a lookup formula", "Fix a broken lookup"],
+  "successCriteria": ["I can explain what a lookup does in my own words.", "I wrote a working lookup formula.", "I fixed a broken lookup formula."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Lookup reference"}]
+ },
+ "4": {
+  "topic": "Refs & Names",
+  "subtopic": "Absolute Refs; Named Ranges",
+  "outline": "Recap absolute references, then learn named ranges so formulas can refer to a range by a readable name instead of cell coordinates.",
+  "sowResources": "Microsoft Excel, Google Sheets, named-ranges reference.",
+  "objectives": ["Recap when to use an absolute reference.", "Create a named range.", "Use a named range inside a formula."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Absolute refs recap", "detail": "Quick recap from Year 6/7: $ signs lock a reference when copying."},
+   {"mins": 25, "title": "Named ranges", "detail": "Name a range (e.g. TaxRate) and use it in a formula instead of a cell reference."},
+   {"mins": 10, "title": "Readability check", "detail": "Compare a formula with named ranges to one without — which is easier to read? Save and log out."}
+  ],
+  "activities": ["Absolute reference recap", "Create and use a named range", "Readability comparison"],
+  "successCriteria": ["I can explain when to use an absolute reference.", "I created a named range.", "I used a named range inside a formula."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Named-ranges reference"}]
+ },
+ "5": {
+  "topic": "Build a Model",
+  "subtopic": "A Small Simulation",
+  "outline": "Start building a small simulation model — for example a simple game of chance or a savings-growth model — using this term's formulas.",
+  "sowResources": "Microsoft Excel, Google Sheets, model exemplar.",
+  "objectives": ["Plan a simulation model.", "Set up inputs and formulas using IF, lookups or named ranges.", "Check the model calculates sensibly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Choose a simulation", "detail": "Choose a simple simulation idea and sketch what inputs and formulas it needs."},
+   {"mins": 30, "title": "Build it", "detail": "Set up inputs and formulas — using IF, a lookup, or a named range — to model the chosen scenario."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Choose and sketch a simulation", "Build inputs and formulas", "Save"],
+  "successCriteria": ["My model has clearly labelled inputs.", "My model uses at least one of this term's formulas correctly.", "My model calculates sensible results."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Model exemplar"}]
+ },
+ "6": {
+  "topic": "Dashboard",
+  "subtopic": "Charts That Summarise",
+  "outline": "Add a small dashboard of charts that summarise the model's results at a glance.",
+  "sowResources": "Microsoft Excel, Google Sheets, dashboard exemplar.",
+  "objectives": ["Choose charts that summarise the model well.", "Arrange charts into a simple dashboard layout.", "Check the dashboard is clear without extra explanation."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Add summary charts", "detail": "Add one or two charts that summarise the model's key results."},
+   {"mins": 20, "title": "Arrange the dashboard", "detail": "Arrange charts and key numbers together on one view, titled clearly."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Add summary charts", "Arrange a dashboard layout", "Save"],
+  "successCriteria": ["My dashboard has at least one summary chart.", "My dashboard is arranged clearly on one view.", "My dashboard is understandable without extra explanation."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Dashboard exemplar"}]
+ },
+ "7": {
+  "topic": "Interpret",
+  "subtopic": "Explain the Results",
+  "outline": "Write a short explanation of what the model and dashboard show, and what decision it might support.",
+  "sowResources": "Microsoft Word / Google Docs, writing frame.",
+  "objectives": ["Interpret the model's key results.", "Write a clear explanation for a non-technical reader.", "Suggest one decision the results might support."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Explain to a non-expert", "detail": "Discuss: how would you explain this model to someone who has never seen it?"},
+   {"mins": 25, "title": "Write it up", "detail": "Write a short, clear explanation of the results and a suggested decision."},
+   {"mins": 10, "title": "Peer check", "detail": "Partner checks the explanation matches the actual dashboard. Save and log out."}
+  ],
+  "activities": ["Explain-to-a-non-expert discussion", "Write an interpretation", "Peer accuracy check"],
+  "successCriteria": ["My explanation is clear to a non-technical reader.", "My explanation matches my actual results.", "I suggested one decision the results support."],
+  "resources": [{"label": "Microsoft Word / Google Docs"}, {"label": "Writing frame"}]
+ },
+ "8": {
+  "topic": "Portfolio",
+  "subtopic": "A Finished Model",
+  "outline": "Finish and polish the portfolio piece: a model using IF and a lookup or COUNTIF, presented with a dashboard chart.",
+  "sowResources": "Microsoft Excel, Google Sheets, portfolio folder.",
+  "objectives": ["Finish the model with IF and a lookup or COUNTIF.", "Ensure the dashboard and write-up are complete.", "Save the finished piece to the portfolio folder."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Finish the model", "detail": "Complete the model, dashboard and write-up, ensuring at least IF plus one of lookup/COUNTIF are present."},
+   {"mins": 15, "title": "Rubric self-check", "detail": "Check against the assessment rubric before saving."},
+   {"mins": 5, "title": "Save", "detail": "Save to the portfolio folder. Log out."}
+  ],
+  "activities": ["Finish the model", "Rubric self-check", "Portfolio save"],
+  "successCriteria": ["My model uses IF and a lookup or COUNTIF.", "My model has a dashboard chart and write-up.", "My finished model is saved to the portfolio folder."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Portfolio folder"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Tidy and Name the Ranges",
+  "outline": "Return to the model and tidy it: replace loose cell references with named ranges and check formatting is consistent.",
+  "sowResources": "Microsoft Excel, Google Sheets.",
+  "objectives": ["Replace at least one cell reference with a named range.", "Check formatting is consistent throughout.", "Re-test the model still calculates correctly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Tidy the model", "detail": "Add named ranges where useful and tidy up formatting inconsistencies."},
+   {"mins": 15, "title": "Re-test", "detail": "Re-check every formula still calculates correctly after the changes."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Add named ranges", "Tidy formatting", "Re-test formulas"],
+  "successCriteria": ["I replaced at least one reference with a named range.", "My model's formatting is consistent.", "My model still calculates correctly after tidying."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Practise the Exam Skills",
+  "outline": "Rehearse the term's modelling skills in pairs: nested IF, COUNTIF/SUMIF, a lookup, a dashboard chart.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's modelling skills in order.", "Rehearse building a formula-driven model with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Skill recap", "detail": "Recap: nested IF, COUNTIF/SUMIF, lookup, dashboard — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Build a small model with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Skill-order recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's modelling skills in order.", "I rehearsed the practical task with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 2 Practical Assessment",
+  "outline": "Individual task: build a model using IF and a lookup or COUNTIF, presented with a dashboard chart.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Use nested IF, and a lookup or COUNTIF/SUMIF, correctly.", "Use absolute references and/or named ranges appropriately.", "Build and interpret a dashboard chart."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task and rubric."},
+   {"mins": 30, "title": "Build the model", "detail": "Individual practical: apply this term's formulas to a given dataset."},
+   {"mins": 15, "title": "Dashboard and write-up", "detail": "Add a dashboard chart and a one-sentence interpretation."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the term's progress. Log out."}
+  ],
+  "activities": ["Individual practical model build", "Dashboard chart and interpretation", "End-of-term celebration"],
+  "successCriteria": ["My model uses nested IF correctly.", "My model uses a lookup or COUNTIF/SUMIF correctly.", "My dashboard chart is clear and interpreted."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Microsoft Excel / Google Sheets"}]
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "1": {
+  "topic": "Shots & Storyboard",
+  "subtopic": "Plan a 60-Second Video",
+  "outline": "Term theme: 'Camera & Video'. Plan a 60-second video shot by shot on a storyboard before filming anything.",
+  "sowResources": "Printed storyboard sheet, example video.",
+  "objectives": ["Plan a video in a sequence of shots.", "Sketch each shot on a storyboard.", "Estimate roughly how long each shot will be."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Watch and break down", "detail": "Watch a short example video and count how many shots it uses."},
+   {"mins": 25, "title": "Storyboard", "detail": "Sketch 5-6 shots for a 60-second video on a chosen topic (school tour or safety message)."},
+   {"mins": 10, "title": "Pitch it", "detail": "Pitch the storyboard to a partner in 30 seconds. Log out."}
+  ],
+  "activities": ["Shot-count video breakdown", "Paper storyboard", "Partner pitch"],
+  "successCriteria": ["My storyboard has 5-6 planned shots.", "Each shot has a rough time estimate.", "I can pitch my video plan to a partner."],
+  "resources": [{"label": "Printed storyboard sheet"}, {"label": "Example video"}]
+ },
+ "2": {
+  "topic": "Filming Basics",
+  "subtopic": "Steady, Lit, Clear Sound",
+  "outline": "Learn three filming rules: hold the camera steady, film with good light on the subject, and record in a quiet space for clear sound.",
+  "sowResources": "Class tablets / phones (school-approved), filming-rules handout.",
+  "objectives": ["Hold a camera steady while filming.", "Film with the light on the subject, not behind it.", "Choose a quiet space for clear sound."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Three filming rules", "detail": "Steady, lit, quiet — demonstrate a bad and a good example of each."},
+   {"mins": 25, "title": "Practice shots", "detail": "In pairs, film two of the storyboard's shots following the three rules."},
+   {"mins": 10, "title": "Review", "detail": "Watch back and check: steady, lit, clear sound? Devices counted in."}
+  ],
+  "activities": ["Bad vs good filming demo", "Practice filming in pairs", "Playback review"],
+  "successCriteria": ["I filmed a shot that stayed steady.", "My subject was well lit.", "My audio was clear, without background noise."],
+  "resources": [{"label": "Class tablets / phones (school-approved)"}, {"label": "Filming-rules handout"}]
+ },
+ "3": {
+  "topic": "Import & Trim",
+  "subtopic": "Bring Clips In and Trim Them",
+  "outline": "Import filmed clips into Clipchamp or CapCut and trim off the unwanted start and end of each clip.",
+  "sowResources": "Clipchamp / CapCut, class shared drive for clips.",
+  "objectives": ["Import video clips into an editor.", "Trim the start and end of a clip.", "Arrange clips in storyboard order."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Import clips", "detail": "Import the filmed clips into the editor's timeline."},
+   {"mins": 25, "title": "Trim and order", "detail": "Trim each clip and drag them into the storyboard's shot order."},
+   {"mins": 10, "title": "Playback check", "detail": "Play the trimmed sequence through and check the order makes sense. Save and log out."}
+  ],
+  "activities": ["Import clips to the timeline", "Trim and reorder clips", "Playback check"],
+  "successCriteria": ["My clips are imported into the editor.", "Each clip is trimmed to remove unwanted footage.", "My clips are in the storyboard's order."],
+  "resources": [{"label": "Clipchamp / CapCut"}, {"label": "Class shared drive"}]
+ },
+ "4": {
+  "topic": "Titles & Captions",
+  "subtopic": "Add Text on Screen",
+  "outline": "Add a title at the start of the video and captions on key shots to help the audience follow along.",
+  "sowResources": "Clipchamp / CapCut.",
+  "objectives": ["Add a title text to the start of the video.", "Add a caption to at least one shot.", "Choose readable text size and colour."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Add a title", "detail": "Add a title card at the start with the video's name."},
+   {"mins": 20, "title": "Add captions", "detail": "Add one or two captions to key shots, checking they are readable against the background."},
+   {"mins": 10, "title": "Check readability", "detail": "Partner checks all text is readable. Save and log out."}
+  ],
+  "activities": ["Add a title card", "Add captions to key shots", "Peer readability check"],
+  "successCriteria": ["My video has a title at the start.", "At least one shot has a readable caption.", "My text colour is readable against its background."],
+  "resources": [{"label": "Clipchamp / CapCut"}]
+ },
+ "5": {
+  "topic": "Music & Transitions",
+  "subtopic": "Add Music and Cuts",
+  "outline": "Add background music at a sensible volume and a simple transition between two shots.",
+  "sowResources": "Clipchamp / CapCut, royalty-free music library.",
+  "objectives": ["Add background music to the video.", "Set the music volume so it doesn't drown the voice.", "Add one simple transition between shots."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 20, "title": "Add music", "detail": "Add a royalty-free music track and adjust the volume so any speech stays clear."},
+   {"mins": 20, "title": "Add a transition", "detail": "Add one simple transition between two shots — not one on every cut."},
+   {"mins": 10, "title": "Full playback", "detail": "Play the whole video and check music, captions and transitions all work together. Save and log out."}
+  ],
+  "activities": ["Add and balance background music", "Add one transition", "Full playback check"],
+  "successCriteria": ["My video has background music at a sensible volume.", "My video has one simple transition.", "My video plays through smoothly."],
+  "resources": [{"label": "Clipchamp / CapCut"}, {"label": "Royalty-free music library"}]
+ },
+ "6": {
+  "topic": "Export Safely",
+  "subtopic": "Export; Sharing and Consent",
+  "outline": "Export the finished video and discuss sharing and consent: who is allowed to be filmed, and who the video can be shown to.",
+  "sowResources": "Clipchamp / CapCut, consent discussion cards.",
+  "objectives": ["Export a finished video file.", "Explain why consent matters before filming someone.", "Explain who the video is appropriate to share with."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Export the video", "detail": "Export the finished edit to a file, checking it plays back correctly."},
+   {"mins": 20, "title": "Consent discussion", "detail": "Discuss: why should you ask before filming someone? What if they say no?"},
+   {"mins": 15, "title": "Who can see it?", "detail": "Discuss appropriate sharing: class only, school only, or public — and why that matters. Log out."}
+  ],
+  "activities": ["Export the finished video", "Consent discussion", "Appropriate-sharing discussion"],
+  "successCriteria": ["I exported my video successfully.", "I can explain why consent matters before filming someone.", "I can explain who is appropriate to share the video with."],
+  "resources": [{"label": "Clipchamp / CapCut"}, {"label": "Consent discussion cards"}]
+ },
+ "7": {
+  "topic": "Make the Video",
+  "subtopic": "School Tour or Safety PSA",
+  "outline": "Finish producing the chosen video — a school tour or an online-safety PSA — pulling together filming, editing, titles and music.",
+  "sowResources": "Clipchamp / CapCut, class tablets.",
+  "objectives": ["Finish filming any remaining shots.", "Complete the full edit with titles, captions and music.", "Meet the storyboard's brief."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Fill gaps", "detail": "Film any remaining shots from the storyboard."},
+   {"mins": 25, "title": "Complete the edit", "detail": "Finish editing: all shots trimmed, title, captions, music, one transition."},
+   {"mins": 10, "title": "Brief check", "detail": "Check the video matches the original storyboard brief. Save and log out."}
+  ],
+  "activities": ["Film remaining shots", "Complete the full edit", "Brief compliance check"],
+  "successCriteria": ["All planned shots are filmed.", "My edit includes title, captions and music.", "My video matches the storyboard brief."],
+  "resources": [{"label": "Clipchamp / CapCut"}, {"label": "Class tablets"}]
+ },
+ "8": {
+  "topic": "Premiere",
+  "subtopic": "Screen It; Give Feedback",
+  "outline": "Screen the finished videos to the class and give each other kind, specific feedback.",
+  "sowResources": "Class projector, feedback slips.",
+  "objectives": ["Watch classmates' finished videos.", "Give kind, specific feedback on one video.", "Reflect on what worked well in my own video."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Premiere screening", "detail": "Screen the videos to the class on the projector, one after another."},
+   {"mins": 15, "title": "Feedback slips", "detail": "Write one piece of kind, specific feedback on a feedback slip for a classmate's video."},
+   {"mins": 5, "title": "Portfolio save", "detail": "Save the finished video to the portfolio folder. Log out."}
+  ],
+  "activities": ["Class premiere screening", "Written feedback slips", "Portfolio save"],
+  "successCriteria": ["I watched and responded to classmates' videos.", "I gave one kind, specific piece of feedback.", "My finished video is saved to the portfolio folder."],
+  "resources": [{"label": "Class projector"}, {"label": "Feedback slips"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Apply One Piece of Feedback",
+  "outline": "Return to the video and apply one piece of feedback received during the premiere, then re-export.",
+  "sowResources": "Clipchamp / CapCut.",
+  "objectives": ["Choose one useful piece of feedback to act on.", "Apply the change to the video.", "Re-export the improved version."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Apply feedback", "detail": "Choose one feedback slip and make the suggested change to the video."},
+   {"mins": 15, "title": "Re-export", "detail": "Export the improved version and check it plays correctly."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Choose and apply feedback", "Re-export the video", "Save"],
+  "successCriteria": ["I chose one useful piece of feedback.", "I applied the change to my video.", "My improved video is re-exported and saved."],
+  "resources": [{"label": "Clipchamp / CapCut"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Practise the Exam Skills",
+  "outline": "Rehearse the term's video skills in pairs: film a short shot, trim it, add a title, export.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's video production process in order.", "Rehearse filming, trimming and exporting with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Process recap", "detail": "Recap: storyboard, film, trim, title, music, export — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Film and edit one short shot with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Process recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's video production steps in order.", "I rehearsed filming and editing with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 2 Practical Assessment",
+  "outline": "Individual task: film and edit a short video meeting a given brief, using at least one trim, one title/caption and appropriate export.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Film and edit a short video to a given brief.", "Trim clips and add a title.", "Export the finished video correctly."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task and rubric."},
+   {"mins": 30, "title": "Film and edit", "detail": "Individual practical: film 2-3 short shots to the brief, trim and add a title."},
+   {"mins": 15, "title": "Export and save", "detail": "Export the finished video and save with the correct name."},
+   {"mins": 10, "title": "Celebrate", "detail": "Celebrate the term's progress. Log out."}
+  ],
+  "activities": ["Individual practical video task", "Export and save", "End-of-term celebration"],
+  "successCriteria": ["I filmed and edited a short video to the brief.", "My video is trimmed and has a title.", "My video is exported and saved correctly."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Clipchamp / CapCut"}]
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "1": {
+  "topic": "Blocks to Text",
+  "subtopic": "Same Idea, New Form",
+  "outline": "Term theme: 'Text Coding: Python'. Compare a block program with the same logic written as Python text in Thonny.",
+  "sowResources": "Thonny (thonny.org, free), block-to-text comparison sheet.",
+  "objectives": ["Compare a block program with its Python text equivalent.", "Open and run a simple program in Thonny.", "Identify print() as the block equivalent of 'say' or 'show'."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Same idea, new form", "detail": "Show a simple block program next to its Python text equivalent — same logic, different look."},
+   {"mins": 25, "title": "First Thonny run", "detail": "Open Thonny, type print(\"Hello\"), run it, and change the message."},
+   {"mins": 10, "title": "Spot the pattern", "detail": "Match three more block-to-text pairs on the comparison sheet. Log out."}
+  ],
+  "activities": ["Block vs text comparison", "First Thonny program", "Match block-to-text pairs"],
+  "successCriteria": ["I can compare a block and its Python equivalent.", "I ran a working Python program in Thonny.", "I can match blocks to their Python text form."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Block-to-text comparison sheet"}]
+ },
+ "2": {
+  "topic": "Input/Output",
+  "subtopic": "Ask, Respond, Print",
+  "outline": "Learn input() to ask the user a question and print() to respond, building a simple 'ask and answer' program.",
+  "sowResources": "Thonny, input/output reference card.",
+  "objectives": ["Use input() to ask a question.", "Store the answer in a variable.", "Use print() to respond using that variable."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Ask and respond", "detail": "Demo name = input(\"What's your name? \") then print(\"Hello \" + name)."},
+   {"mins": 25, "title": "Build one", "detail": "Write a program that asks two questions and responds using both answers."},
+   {"mins": 10, "title": "Test it", "detail": "Test with a partner's real answers. Save and log out."}
+  ],
+  "activities": ["Ask-and-respond demo", "Build a two-question program", "Partner testing"],
+  "successCriteria": ["I used input() to ask a question.", "I stored the answer in a variable.", "I used print() to respond using that variable."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Input/output reference card"}]
+ },
+ "3": {
+  "topic": "Data Types & Maths",
+  "subtopic": "Numbers, Text, Calculations",
+  "outline": "Learn the difference between text (str) and numbers (int), and use int() to convert typed input into a number for maths.",
+  "sowResources": "Thonny, data-types reference.",
+  "objectives": ["Explain the difference between text and number data.", "Use int() to convert input into a number.", "Perform a calculation using converted input."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Text vs numbers", "detail": "Show input() always returns text — try to add two typed numbers and watch it fail or concatenate oddly."},
+   {"mins": 25, "title": "int(input())", "detail": "Fix it with int(input(...)), then build a program that adds two numbers the user types in."},
+   {"mins": 10, "title": "Test edge cases", "detail": "Test with 0, a negative number, and a large number. Save and log out."}
+  ],
+  "activities": ["Text vs number demo", "Build a number-adding program", "Edge-case testing"],
+  "successCriteria": ["I can explain why input() needs int() for maths.", "I built a working number-adding program.", "I tested my program with edge-case values."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Data-types reference"}]
+ },
+ "4": {
+  "topic": "Python on micro:bit",
+  "subtopic": "Run Code on the Device",
+  "outline": "Move from the desktop to the micro:bit, writing simple Python that runs on the physical device.",
+  "sowResources": "MakeCode (Python view) or Mu editor, micro:bit devices.",
+  "objectives": ["Write a simple Python program for the micro:bit.", "Flash it onto a physical device.", "Compare it with the equivalent desktop Python."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "micro:bit Python setup", "detail": "Open the Python editor for micro:bit and look at a simple starter program."},
+   {"mins": 25, "title": "Write and flash", "detail": "Write a short program (e.g. show a scrolling message) and flash it onto the device."},
+   {"mins": 10, "title": "Compare", "detail": "Compare the micro:bit code with the desktop version from earlier weeks. Log out."}
+  ],
+  "activities": ["micro:bit Python editor tour", "Write and flash a program", "Compare desktop vs micro:bit code"],
+  "successCriteria": ["I wrote a working Python program for the micro:bit.", "I flashed it onto a physical device successfully.", "I can compare it with the desktop version."],
+  "resources": [{"label": "MakeCode (Python view)", "url": "https://makecode.microbit.org"}, {"label": "micro:bit devices"}]
+ },
+ "5": {
+  "topic": "Debugging",
+  "subtopic": "Read and Fix Error Messages",
+  "outline": "Practise reading a Python error message to find the line and the fault, then fix it.",
+  "sowResources": "Thonny, buggy code files.",
+  "objectives": ["Read a Python traceback to find the error line.", "Identify common error types: NameError, SyntaxError.", "Fix a broken program using the error message."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Reading a traceback", "detail": "Show a traceback and point out the line number and error type."},
+   {"mins": 25, "title": "Fix three bugs", "detail": "Work through three short broken programs, reading each error before fixing it."},
+   {"mins": 10, "title": "Share a fix", "detail": "Share the trickiest bug found and how the error message helped. Log out."}
+  ],
+  "activities": ["Reading a traceback", "Fix three broken programs", "Share a tricky fix"],
+  "successCriteria": ["I can find the line number from an error message.", "I can name at least one common error type.", "I fixed at least two of the three broken programs."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Buggy code files"}]
+ },
+ "6": {
+  "topic": "A Small Program",
+  "subtopic": "Calculator or Converter",
+  "outline": "Build a small useful program — a simple calculator or a unit converter — using input, variables and maths.",
+  "sowResources": "Thonny, project brief.",
+  "objectives": ["Plan a small useful program.", "Build it using input, variables and calculations.", "Test it with sensible values."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Choose a project", "detail": "Choose calculator or converter (e.g. cm to inches)."},
+   {"mins": 30, "title": "Build it", "detail": "Write the program using input(), int()/float() and a calculation."},
+   {"mins": 10, "title": "Test it", "detail": "Test with two or three sensible values. Save and log out."}
+  ],
+  "activities": ["Choose a small project", "Build the calculator/converter", "Test with sensible values"],
+  "successCriteria": ["I chose and planned a small program.", "My program takes input and calculates a result.", "I tested it with sensible values."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Project brief"}]
+ },
+ "7": {
+  "topic": "Test & Refine",
+  "subtopic": "Try Edge Cases; Improve",
+  "outline": "Test the program with edge cases (zero, negative, very large numbers) and improve it based on what breaks.",
+  "sowResources": "Thonny.",
+  "objectives": ["Test a program with edge-case values.", "Identify what breaks or behaves oddly.", "Improve the program to handle it better."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "What is an edge case?", "detail": "Recap edge cases from earlier weeks: zero, negative, very large or very small."},
+   {"mins": 25, "title": "Test and fix", "detail": "Test the calculator/converter with edge cases and fix anything that breaks or looks wrong."},
+   {"mins": 10, "title": "Peer test", "detail": "Swap with a partner and try to break each other's program. Save and log out."}
+  ],
+  "activities": ["Edge-case recap", "Test and fix own program", "Peer break-it testing"],
+  "successCriteria": ["I tested my program with at least two edge cases.", "I fixed at least one issue found.", "A partner tested my program and it held up."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}]
+ },
+ "8": {
+  "topic": "Showcase",
+  "subtopic": "Present the Program",
+  "outline": "Demo the finished program to the class, explaining what it does and how the code works.",
+  "sowResources": "Class projector.",
+  "objectives": ["Demo a working program to the class.", "Explain how the program works in simple terms.", "Answer one question about the code."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Showcase demos", "detail": "Each pupil demos their program briefly, running it live."},
+   {"mins": 15, "title": "Code explanation", "detail": "Explain one part of the code to a partner or the class."},
+   {"mins": 10, "title": "Portfolio save", "detail": "Save the .py file to the portfolio folder. Log out."}
+  ],
+  "activities": ["Class showcase demos", "Explain the code", "Portfolio save"],
+  "successCriteria": ["I demoed my working program.", "I explained how part of my code works.", "My .py file is saved to the portfolio folder."],
+  "resources": [{"label": "Class projector"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add One More Feature",
+  "outline": "Add one useful improvement to the program — input validation, a friendlier message, or an extra calculation.",
+  "sowResources": "Thonny.",
+  "objectives": ["Choose one useful improvement.", "Implement it without breaking existing features.", "Re-test after the change."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Add a feature", "detail": "Add validation, a friendlier message, or an extra calculation to the program."},
+   {"mins": 15, "title": "Re-test", "detail": "Re-run the program to check the original features still work."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Choose and add a feature", "Re-test the whole program", "Save"],
+  "successCriteria": ["I added one useful improvement.", "The original features still work.", "My improved program is saved."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Practise the Exam Skills",
+  "outline": "Rehearse the term's Python skills in pairs: input, variables, calculation, debugging.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's Python skills in order.", "Rehearse writing and testing a small program with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Skill recap", "detail": "Recap: input, convert, calculate, debug — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Write and test a small program with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Skill-order recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's Python skills in order.", "I rehearsed writing a program with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 2 Practical Assessment",
+  "outline": "Individual task: write a Python program that takes input, uses variables, and produces output — on screen and, if time allows, on a micro:bit.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Translate a given brief into working Python code.", "Use input, output and variables correctly.", "Debug a text-code error if one appears."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task and rubric."},
+   {"mins": 30, "title": "Build the program", "detail": "Individual practical: write a program to the given brief using input/output/variables."},
+   {"mins": 15, "title": "Test and fix", "detail": "Test the program and fix any errors found."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the term's progress. Log out."}
+  ],
+  "activities": ["Individual practical Python task", "Test and debug", "End-of-term celebration"],
+  "successCriteria": ["My program takes input and produces output.", "I used variables and data types correctly.", "I read an error message and fixed it if needed."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Thonny", "url": "https://thonny.org"}]
+ }
+}

@@ -21,6 +21,11 @@ export type Lesson = {
   activities: string[];
   successCriteria: string[];
   resources: ResourceLink[];
+  moralValue: string;
+  moralDescription: string;
+  quote: string;
+  quoteAuthor: string;
+  foodForThought: string;
   status: Status;
   note: string;
   order: number;

@@ -1,0 +1,178 @@
+{
+ "1": {
+  "topic": "Analysis Functions",
+  "subtopic": "SUM, AVERAGE, IF, Lookup",
+  "outline": "Term theme: 'Analyse, Present & Code'. Bring together this year's spreadsheet toolkit — SUM, AVERAGE, IF and a lookup — on a real dataset.",
+  "sowResources": "Microsoft Excel, Google Sheets, sample dataset.",
+  "objectives": ["Apply SUM, AVERAGE, IF and a lookup to a dataset.", "Choose the right function for a given question.", "Check results are sensible against the raw data."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Apply the toolkit", "detail": "On a real dataset (e.g. sports results or survey data), apply SUM, AVERAGE, IF and a lookup to answer given questions."},
+   {"mins": 15, "title": "Sanity check", "detail": "Check two results manually against the raw data to catch formula mistakes."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Apply four functions to real data", "Manual sanity check", "Save"],
+  "successCriteria": ["I applied SUM, AVERAGE, IF and a lookup correctly.", "I chose the right function for each question.", "I checked my results made sense."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Sample dataset"}]
+ },
+ "2": {
+  "topic": "Charts for Analysis",
+  "subtopic": "Right Chart for the Point",
+  "outline": "Choose the chart type that best makes an analytical point — not just any chart, but the one that answers the question.",
+  "sowResources": "Microsoft Excel, Google Sheets, chart-choice poster.",
+  "objectives": ["State the analytical question a chart should answer.", "Choose the chart type that best answers it.", "Justify the choice against an alternative."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Question first", "detail": "Given a question (e.g. 'has this trend changed over time?'), decide the chart type before building it."},
+   {"mins": 25, "title": "Build and compare", "detail": "Build the chosen chart, then build an alternative type and compare which answers the question better."},
+   {"mins": 10, "title": "Justify", "detail": "Write one sentence justifying the final choice. Save and log out."}
+  ],
+  "activities": ["Question-first chart planning", "Build and compare two chart types", "Written justification"],
+  "successCriteria": ["I chose a chart type based on the question, not habit.", "I compared it against an alternative.", "I justified my final choice."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Chart-choice poster"}]
+ },
+ "3": {
+  "topic": "Build the Analysis",
+  "subtopic": "Analysis + Dashboard",
+  "outline": "Build a small analysis dashboard combining formulas and charts that together answer a real question about the dataset.",
+  "sowResources": "Microsoft Excel, Google Sheets, dashboard exemplar.",
+  "objectives": ["Combine formulas and charts into one analysis.", "Arrange them so the analysis is easy to follow.", "Check the dashboard actually answers the chosen question."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Build the dashboard", "detail": "Combine key formulas and one or two charts into a single, clearly arranged view."},
+   {"mins": 15, "title": "Question check", "detail": "Check the dashboard actually answers the analytical question chosen this week."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Build a combined dashboard", "Question-alignment check", "Save"],
+  "successCriteria": ["My dashboard combines formulas and at least one chart.", "My dashboard is clearly arranged.", "My dashboard answers the chosen analytical question."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Dashboard exemplar"}]
+ },
+ "4": {
+  "topic": "Design a Deck",
+  "subtopic": "A Strong Presentation",
+  "outline": "Design a presentation deck to communicate the analysis findings, applying strong slide-design principles.",
+  "sowResources": "Microsoft PowerPoint, Google Slides, design principles handout.",
+  "objectives": ["Apply strong slide-design principles.", "Build a deck that communicates the analysis clearly.", "Include the dashboard chart in the deck."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Design principles recap", "detail": "Recap one idea per slide, minimal text, consistent theme."},
+   {"mins": 30, "title": "Build the deck", "detail": "Build a 4-5 slide deck: title, context, findings with the chart, conclusion."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Design principles recap", "Build the analysis deck", "Save"],
+  "successCriteria": ["My deck follows strong design principles.", "My deck clearly communicates the analysis.", "My deck includes the dashboard chart."],
+  "resources": [{"label": "Microsoft PowerPoint / Google Slides"}, {"label": "Design principles handout"}]
+ },
+ "5": {
+  "topic": "Python Consolidation",
+  "subtopic": "Revisit Core Python",
+  "outline": "Revisit core Python from Year 7-8: input/output, variables, if/elif/else, loops — ready to build a small tool.",
+  "sowResources": "Thonny, Python recap worksheet.",
+  "objectives": ["Recall input, output, variables and conditions.", "Recall for and while loops.", "Write a short program using several of these together."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Rapid recap", "detail": "Quickfire recap: input/output, variables, if/elif/else, loops — one example of each."},
+   {"mins": 25, "title": "Combine them", "detail": "Write a short program combining at least three of these concepts."},
+   {"mins": 10, "title": "Test it", "detail": "Test the program with a partner. Save and log out."}
+  ],
+  "activities": ["Quickfire Python recap", "Build a combined program", "Partner testing"],
+  "successCriteria": ["I recalled the core Python concepts correctly.", "My program combines at least three of them.", "My program was tested and works."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Python recap worksheet"}]
+ },
+ "6": {
+  "topic": "A Python Tool",
+  "subtopic": "Build Something Useful",
+  "outline": "Build a small, genuinely useful Python tool — for example a grade calculator, a simple quiz, or a unit converter.",
+  "sowResources": "Thonny, project brief.",
+  "objectives": ["Plan a small useful Python tool.", "Build it using variables, conditions and/or loops.", "Test it with realistic use."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 10, "title": "Choose a tool", "detail": "Choose a small tool idea and plan its inputs and outputs."},
+   {"mins": 30, "title": "Build it", "detail": "Build the tool using this term's Python skills."},
+   {"mins": 10, "title": "Test it", "detail": "Test it as a real user would. Save and log out."}
+  ],
+  "activities": ["Choose and plan a tool", "Build the tool", "Realistic testing"],
+  "successCriteria": ["I planned a small useful tool.", "My tool works using variables and conditions/loops.", "I tested it as a real user would."],
+  "resources": [{"label": "Thonny", "url": "https://thonny.org"}, {"label": "Project brief"}]
+ },
+ "7": {
+  "topic": "Present",
+  "subtopic": "Present the Findings",
+  "outline": "Present the data analysis deck to the class, and briefly demo the Python tool.",
+  "sowResources": "Class projector, presentation timer.",
+  "objectives": ["Present the analysis findings clearly.", "Demo the Python tool briefly.", "Answer one question about either piece of work."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Present findings", "detail": "Present the analysis deck, timed, to a small group or the class."},
+   {"mins": 15, "title": "Demo the tool", "detail": "Briefly demo the Python tool running live."},
+   {"mins": 10, "title": "Questions", "detail": "Answer one audience question about either piece of work. Log out."}
+  ],
+  "activities": ["Timed presentation of findings", "Live Python tool demo", "Audience questions"],
+  "successCriteria": ["I presented my analysis findings clearly and within time.", "I demoed my Python tool live.", "I answered a question about my work."],
+  "resources": [{"label": "Class projector"}, {"label": "Presentation timer"}]
+ },
+ "8": {
+  "topic": "Portfolio",
+  "subtopic": "Curate the Work",
+  "outline": "Curate this term's work into the portfolio: the analysis dashboard, the presentation deck, and the Python tool.",
+  "sowResources": "Portfolio folder.",
+  "objectives": ["Gather this term's finished work into one place.", "Check all three pieces are complete and correctly named.", "Save everything to the portfolio folder."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 25, "title": "Gather and check", "detail": "Collect the dashboard, deck and Python tool; check each is finished and correctly named."},
+   {"mins": 20, "title": "Portfolio save", "detail": "Save all three into the term portfolio folder."},
+   {"mins": 5, "title": "Log out", "detail": "Log out."}
+  ],
+  "activities": ["Gather this term's work", "Check completeness and naming", "Portfolio save"],
+  "successCriteria": ["All three pieces of work are gathered together.", "Each piece is finished and correctly named.", "Everything is saved in the portfolio folder."],
+  "resources": [{"label": "Portfolio folder"}]
+ },
+ "9": {
+  "topic": "Consolidation",
+  "subtopic": "Add One Polish Feature",
+  "outline": "Choose one piece of work — dashboard, deck or Python tool — and add one polish feature to it.",
+  "sowResources": "Microsoft Excel / Google Sheets, Thonny, Microsoft PowerPoint / Google Slides.",
+  "objectives": ["Choose one piece of work to improve.", "Add one meaningful polish feature.", "Re-check the piece still works correctly."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 30, "title": "Add polish", "detail": "Choose and improve one piece of work with a meaningful addition."},
+   {"mins": 15, "title": "Re-check", "detail": "Re-check the piece still works correctly after the change."},
+   {"mins": 5, "title": "Save", "detail": "Save and log out."}
+  ],
+  "activities": ["Choose a piece to improve", "Add a polish feature", "Re-check correctness"],
+  "successCriteria": ["I chose one piece of work to improve.", "I added a meaningful polish feature.", "The piece still works correctly."],
+  "resources": [{"label": "Microsoft Excel / Google Sheets"}, {"label": "Thonny", "url": "https://thonny.org"}]
+ },
+ "10": {
+  "topic": "Revision",
+  "subtopic": "Practise the Exam Skills",
+  "outline": "Rehearse the term's full skill set in pairs: analysis formula, chart choice, deck design, Python basics.",
+  "sowResources": "Recap slide deck, practice task cards.",
+  "objectives": ["Recall the term's full skill set.", "Rehearse an analysis-to-presentation task with a partner.", "Identify the trickiest step."],
+  "plan": [
+   {"mins": 10, "title": "TypingClub warm-up", "detail": "10 minutes, posture check."},
+   {"mins": 15, "title": "Skill recap", "detail": "Recap: analyse, chart, present, code — as a class chant."},
+   {"mins": 25, "title": "Paired rehearsal", "detail": "Practise a mini analysis-to-slide task with a partner reading the task card, then swap."},
+   {"mins": 10, "title": "Tricky step check", "detail": "Name the step you still find hardest. Log out."}
+  ],
+  "activities": ["Skill-order recap chant", "Paired rehearsal", "Tricky-step self-check"],
+  "successCriteria": ["I can list the term's skill set in order.", "I rehearsed the practical task with a partner.", "I know which step needs more practice."],
+  "resources": [{"label": "Recap slide deck"}, {"label": "Practice task cards"}]
+ },
+ "11": {
+  "topic": "Examination Week",
+  "subtopic": "Term 2 Practical Assessment",
+  "outline": "Individual task: analyse a dataset with functions and a chart, then present the findings clearly.",
+  "sowResources": "Assessment rubric, marking checklist.",
+  "objectives": ["Analyse a dataset with functions.", "Choose and build the right chart.", "Present findings clearly."],
+  "plan": [
+   {"mins": 5, "title": "Settle and explain", "detail": "Calm start — explain the task and rubric."},
+   {"mins": 30, "title": "Analyse and chart", "detail": "Individual practical: apply functions to a dataset and build a suitable chart."},
+   {"mins": 15, "title": "Present findings", "detail": "Give a short spoken summary of the findings to the teacher."},
+   {"mins": 10, "title": "Celebrate", "detail": "Save and celebrate the term's progress. Log out."}
+  ],
+  "activities": ["Individual practical analysis task", "Spoken findings summary", "End-of-term celebration"],
+  "successCriteria": ["My analysis uses the right functions correctly.", "My chart suits the data and question.", "I presented my findings clearly."],
+  "resources": [{"label": "Assessment rubric"}, {"label": "Microsoft Excel / Google Sheets"}]
+ }
+}
