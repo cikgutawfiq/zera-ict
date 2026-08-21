@@ -121,7 +121,8 @@ export default function AdminPage() {
     <>
       <PageHeader title="Admin" subtitle={user?.email ?? undefined} />
 
-      <main className="mx-auto max-w-3xl space-y-3 p-4">
+      <main className="mx-auto max-w-6xl space-y-3 p-4 lg:p-6">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-2">
         <section className="card p-4">
           <h2 className="text-sm font-bold">Update Term 1 from Excel</h2>
           <p className="mt-1 text-xs text-[color:var(--muted)]">
@@ -180,6 +181,7 @@ export default function AdminPage() {
           </button>
           {message && <p className="mt-3 text-xs text-[color:var(--accent)]">{message}</p>}
         </section>
+        </div>
 
         <section className="card p-4">
           <div className="flex items-center gap-2">

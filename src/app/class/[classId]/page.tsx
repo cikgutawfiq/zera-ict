@@ -115,7 +115,7 @@ export default function ClassPage() {
         }
       />
 
-      <main className="mx-auto max-w-3xl space-y-3 p-4">
+      <main className="mx-auto max-w-4xl space-y-3 p-4 lg:p-6">
         {adding && (
           <div className="card space-y-3 p-4">
             <h2 className="text-base font-bold">Add a week</h2>
@@ -192,7 +192,7 @@ export default function ClassPage() {
                 </button>
               )}
               {open && (
-                <div className="space-y-2 border-t border-[color:var(--border)] p-3">
+                <div className="grid grid-cols-1 gap-2 border-t border-[color:var(--border)] p-3 lg:grid-cols-2">
                   {group.items.length === 0 && (
                     <p className="px-1 py-2 text-sm text-[color:var(--muted)]">No lessons in this term yet.</p>
                   )}

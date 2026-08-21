@@ -49,7 +49,7 @@ export default function TodayPage() {
         }
       />
 
-      <main className="mx-auto max-w-3xl space-y-3 p-4">
+      <main className="mx-auto max-w-4xl space-y-3 p-4 lg:p-6">
         {week && (
           <div className="card px-4 py-3">
             <p className="text-base font-semibold">

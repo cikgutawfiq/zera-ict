@@ -77,109 +77,113 @@ export default function LessonPage() {
         }
       />
 
-      <main className="mx-auto max-w-3xl space-y-3 p-4">
-        <div className="card p-4">
-          <div className="flex flex-wrap items-center gap-1.5">
-            <span className="chip">
-              <ClassDot classId={lesson.classId} /> {info?.subject ?? lesson.subject}
-            </span>
-            {slots.map((s, i) => (
-              <span key={i} className="chip">
-                {DAY_SHORT[s.day]} {prettyTime(s.start)}–{prettyTime(s.end)} · {s.periods}
-              </span>
-            ))}
-            <StatusChip status={lesson.status} />
-          </div>
+      <main className="mx-auto flex max-w-6xl flex-col gap-4 p-4 lg:grid lg:grid-cols-[1fr_20rem] lg:items-start lg:p-6">
+        <div className="order-2 space-y-3 lg:order-1">
+          <TextSection title="Topic" value={lesson.topic} multiline={false} onSave={(topic) => patch({ topic })} />
+          <TextSection
+            title="Subtopic"
+            value={lesson.subtopic}
+            multiline={false}
+            onSave={(subtopic) => patch({ subtopic })}
+          />
+          <ListSection
+            title="Learning objectives"
+            items={lesson.objectives}
+            onSave={(objectives) => patch({ objectives })}
+          />
+          <PlanSection steps={lesson.plan} onSave={(plan) => patch({ plan })} />
+          <ListSection
+            title="Recommended activities"
+            items={lesson.activities}
+            onSave={(activities) => patch({ activities })}
+          />
+          <ListSection
+            title="Success criteria"
+            items={lesson.successCriteria}
+            onSave={(successCriteria) => patch({ successCriteria })}
+          />
+          <ResourceSection items={lesson.resources} onSave={(resources) => patch({ resources })} />
 
-          <div className="mt-3 flex flex-wrap gap-2">
-            <button
-              className={`btn btn-sm ${lesson.status === "done" ? "btn-primary" : ""}`}
-              disabled={busy}
-              onClick={() => setStatus(lesson.status === "done" ? "planned" : "done")}
-            >
-              ✓ Done
-            </button>
-            <button
-              className={`btn btn-sm ${lesson.status === "carried-over" ? "btn-primary" : ""}`}
-              disabled={busy}
-              onClick={() => setStatus(lesson.status === "carried-over" ? "planned" : "carried-over")}
-            >
-              → Carried over
-            </button>
-            <Link href={`/class/${lesson.classId}`} className="btn btn-sm">
-              All {info?.label} weeks
-            </Link>
-          </div>
+          <TextSection
+            title="Scheme of work — outline"
+            value={lesson.outline}
+            onSave={(outline) => patch({ outline })}
+          />
+          <TextSection
+            title="Scheme of work — suggested resources"
+            value={lesson.sowResources}
+            onSave={(sowResources) => patch({ sowResources })}
+          />
+          <TextSection
+            title="After the lesson"
+            value={lesson.note}
+            placeholder="Where did you stop? What to pick up next week?"
+            onSave={(note) => patch({ note })}
+          />
 
-          {lesson.remark && (
-            <p className="mt-3 whitespace-pre-line rounded-lg bg-[color:var(--surface-2)] p-3 text-sm text-[color:var(--warn)]">
-              {lesson.remark}
-            </p>
-          )}
+          <div className="no-print pt-2 pb-4">
+            <button className="btn btn-sm w-full" style={{ color: "var(--warn)" }} disabled={busy} onClick={remove}>
+              Delete this lesson
+            </button>
+          </div>
         </div>
 
-        <MoralSection
-          moralValue={lesson.moralValue}
-          moralDescription={lesson.moralDescription}
-          quote={lesson.quote}
-          quoteAuthor={lesson.quoteAuthor}
-          foodForThought={lesson.foodForThought}
-          onSave={(next) => patch(next)}
-        />
+        <div className="order-1 space-y-3 lg:sticky lg:top-20 lg:order-2">
+          <div className="card p-4">
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="chip">
+                <ClassDot classId={lesson.classId} /> {info?.subject ?? lesson.subject}
+              </span>
+              {slots.map((s, i) => (
+                <span key={i} className="chip">
+                  {DAY_SHORT[s.day]} {prettyTime(s.start)}–{prettyTime(s.end)} · {s.periods}
+                </span>
+              ))}
+              <StatusChip status={lesson.status} />
+            </div>
 
-        <IceBreakerSection
-          title={lesson.iceBreakerTitle}
-          description={lesson.iceBreakerDescription}
-          minutes={lesson.iceBreakerMinutes}
-          onSave={(next) => patch(next)}
-        />
+            <div className="mt-3 flex flex-wrap gap-2">
+              <button
+                className={`btn btn-sm ${lesson.status === "done" ? "btn-primary" : ""}`}
+                disabled={busy}
+                onClick={() => setStatus(lesson.status === "done" ? "planned" : "done")}
+              >
+                ✓ Done
+              </button>
+              <button
+                className={`btn btn-sm ${lesson.status === "carried-over" ? "btn-primary" : ""}`}
+                disabled={busy}
+                onClick={() => setStatus(lesson.status === "carried-over" ? "planned" : "carried-over")}
+              >
+                → Carried over
+              </button>
+              <Link href={`/class/${lesson.classId}`} className="btn btn-sm">
+                All {info?.label} weeks
+              </Link>
+            </div>
 
-        <TextSection title="Topic" value={lesson.topic} multiline={false} onSave={(topic) => patch({ topic })} />
-        <TextSection
-          title="Subtopic"
-          value={lesson.subtopic}
-          multiline={false}
-          onSave={(subtopic) => patch({ subtopic })}
-        />
-        <ListSection
-          title="Learning objectives"
-          items={lesson.objectives}
-          onSave={(objectives) => patch({ objectives })}
-        />
-        <PlanSection steps={lesson.plan} onSave={(plan) => patch({ plan })} />
-        <ListSection
-          title="Recommended activities"
-          items={lesson.activities}
-          onSave={(activities) => patch({ activities })}
-        />
-        <ListSection
-          title="Success criteria"
-          items={lesson.successCriteria}
-          onSave={(successCriteria) => patch({ successCriteria })}
-        />
-        <ResourceSection items={lesson.resources} onSave={(resources) => patch({ resources })} />
+            {lesson.remark && (
+              <p className="mt-3 whitespace-pre-line rounded-lg bg-[color:var(--surface-2)] p-3 text-sm text-[color:var(--warn)]">
+                {lesson.remark}
+              </p>
+            )}
+          </div>
 
-        <TextSection
-          title="Scheme of work — outline"
-          value={lesson.outline}
-          onSave={(outline) => patch({ outline })}
-        />
-        <TextSection
-          title="Scheme of work — suggested resources"
-          value={lesson.sowResources}
-          onSave={(sowResources) => patch({ sowResources })}
-        />
-        <TextSection
-          title="After the lesson"
-          value={lesson.note}
-          placeholder="Where did you stop? What to pick up next week?"
-          onSave={(note) => patch({ note })}
-        />
+          <MoralSection
+            moralValue={lesson.moralValue}
+            moralDescription={lesson.moralDescription}
+            quote={lesson.quote}
+            quoteAuthor={lesson.quoteAuthor}
+            foodForThought={lesson.foodForThought}
+            onSave={(next) => patch(next)}
+          />
 
-        <div className="no-print pt-2 pb-4">
-          <button className="btn btn-sm w-full" style={{ color: "var(--warn)" }} disabled={busy} onClick={remove}>
-            Delete this lesson
-          </button>
+          <IceBreakerSection
+            title={lesson.iceBreakerTitle}
+            description={lesson.iceBreakerDescription}
+            minutes={lesson.iceBreakerMinutes}
+            onSave={(next) => patch(next)}
+          />
         </div>
       </main>
     </>

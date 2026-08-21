@@ -1,20 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f2f2f7;
+  /* Corporate light blue / grey — Outlook & SharePoint-adjacent. */
+  --bg: #f3f5f9;
   --surface: #ffffff;
-  --surface-2: #eef0f4;
-  --surface-blur: rgba(255, 255, 255, 0.78);
-  --border: #e2e4ea;
-  --text: #14161b;
-  --muted: #6b7280;
-  --accent: #0a6cff;
-  --accent-soft: #e8f1ff;
-  --good: #16a34a;
-  --warn: #c2650a;
-  --shadow: 0 1px 1px rgba(16, 24, 40, 0.03), 0 4px 14px rgba(16, 24, 40, 0.07);
+  --surface-2: #eaeff5;
+  --surface-blur: rgba(255, 255, 255, 0.85);
+  --border: #dde3ec;
+  --text: #1f2937;
+  --muted: #5b6577;
+  --accent: #2563eb;
+  --accent-soft: #dde9fd;
+  --good: #16803d;
+  --warn: #b45309;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 2px 8px rgba(16, 24, 40, 0.06);
 
-  /* iOS-flavoured motion: ease-out-quart, no bounce. */
+  --sidebar-bg: #101a2c;
+  --sidebar-text: #cbd5e1;
+  --sidebar-text-active: #ffffff;
+  --sidebar-border: #223350;
+  --sidebar-active-bg: #1c2c4a;
+
   --ease: cubic-bezier(0.165, 0.84, 0.44, 1);
   --dur-fast: 150ms;
   --dur: 220ms;
@@ -22,34 +28,40 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #000000;
-    --surface: #1c1c1e;
-    --surface-2: #2c2c2e;
-    --surface-blur: rgba(28, 28, 30, 0.78);
-    --border: #38383a;
-    --text: #f2f2f7;
-    --muted: #98989f;
-    --accent: #409cff;
-    --accent-soft: #10233d;
-    --good: #32d74b;
-    --warn: #ffb340;
-    --shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.45);
+    --bg: #0e1420;
+    --surface: #17202f;
+    --surface-2: #202b3d;
+    --surface-blur: rgba(23, 32, 47, 0.85);
+    --border: #2c3a52;
+    --text: #e7ecf5;
+    --muted: #93a1b8;
+    --accent: #5b9cff;
+    --accent-soft: #1c2c48;
+    --good: #4ade80;
+    --warn: #fbbf24;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 4px 14px rgba(0, 0, 0, 0.35);
+    --sidebar-bg: #0a0f1a;
+    --sidebar-border: #1c2739;
+    --sidebar-active-bg: #182338;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #000000;
-  --surface: #1c1c1e;
-  --surface-2: #2c2c2e;
-  --surface-blur: rgba(28, 28, 30, 0.78);
-  --border: #38383a;
-  --text: #f2f2f7;
-  --muted: #98989f;
-  --accent: #409cff;
-  --accent-soft: #10233d;
-  --good: #32d74b;
-  --warn: #ffb340;
-  --shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.45);
+  --bg: #0e1420;
+  --surface: #17202f;
+  --surface-2: #202b3d;
+  --surface-blur: rgba(23, 32, 47, 0.85);
+  --border: #2c3a52;
+  --text: #e7ecf5;
+  --muted: #93a1b8;
+  --accent: #5b9cff;
+  --accent-soft: #1c2c48;
+  --good: #4ade80;
+  --warn: #fbbf24;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 4px 14px rgba(0, 0, 0, 0.35);
+  --sidebar-bg: #0a0f1a;
+  --sidebar-border: #1c2739;
+  --sidebar-active-bg: #182338;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -105,7 +117,7 @@ select {
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 18px;
+  border-radius: 10px;
   box-shadow: var(--shadow);
   transition: transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
 }
@@ -122,7 +134,7 @@ button:active > .card {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  border-radius: 12px;
+  border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--surface);
   padding: 10px 16px;
@@ -155,7 +167,7 @@ button:active > .card {
 .btn-sm {
   padding: 6px 12px;
   font-size: 14px;
-  border-radius: 9px;
+  border-radius: 7px;
 }
 
 .btn-icon {
@@ -167,7 +179,7 @@ button:active > .card {
   width: 100%;
   background: var(--surface-2);
   border: 1px solid var(--border);
-  border-radius: 11px;
+  border-radius: 8px;
   padding: 10px 12px;
   font-size: 16px;
   line-height: 1.5;

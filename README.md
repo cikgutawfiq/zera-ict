@@ -14,9 +14,17 @@ Google account; embedded as an iframe on `cikgutawfiq.com/zera-ict`.
 | `/` **Today** | The classes you teach today, in period order with times. Deep link a date with `/?date=2026-09-22`. |
 | `/lesson/[id]` | Value of the Day (moral value, quote, food-for-thought), a 5–10 min Ice Breaker, objectives, timed lesson plan, activities, success criteria, resources, plus the original SOW text. Every field is editable in place. Mark **Done** / **Carried over** and leave an after-the-lesson note. |
 | `/lesson/[id]/present` | Full-screen presentation mode: big type, arrow keys or buttons, screen wake-lock on. Opens on the Value of the Day, then the Ice Breaker, then the lesson plan. |
-| `/calendar` | Day / Week / Month views with a segmented switcher. Month view shows a dot per class scheduled that day; tap a day to jump into Day view. |
+| `/calendar` **This week** | The five weekdays, each with its own column on desktop (a real week board) and stacked on mobile. |
 | `/classes`, `/class/[id]` | Every class; each term is its own collapsible section (the current term opens by default), with **+ Week** to add more. |
 | `/admin` | Upload the two SOW workbooks to re-sync Term 1 from your phone, seed / re-sync from the bundled SOW, add or remove terms and weeks, sign out. |
+
+## Look and feel
+
+Corporate light blue / grey, Outlook-and-SharePoint-adjacent — see the tokens at the top of
+`src/app/globals.css`. On screens ≥1024px a fixed dark-navy sidebar replaces the mobile bottom
+tab bar, and pages widen and grid-ify to use the space (Classes becomes a 2–3 column grid, the
+lesson page splits into a content column plus a sticky status/Value-of-the-Day/Ice-Breaker rail).
+Below 1024px everything collapses back to the single-column, bottom-tab mobile layout.
 
 ## Data
 

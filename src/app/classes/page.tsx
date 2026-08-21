@@ -14,7 +14,7 @@ export default function ClassesPage() {
   return (
     <>
       <PageHeader title="Classes" subtitle="27 periods a week across 11 classes" />
-      <main className="mx-auto max-w-3xl space-y-3 p-4">
+      <main className="mx-auto grid max-w-6xl grid-cols-1 gap-3 p-4 sm:grid-cols-2 lg:grid-cols-3 lg:p-6">
         {CLASSES.map((c) => {
           const lessons = lessonsForClass(c.id);
           const done = lessons.filter((l) => l.status === "done").length;
