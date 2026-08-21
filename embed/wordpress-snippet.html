@@ -1,0 +1,39 @@
+<!-- Paste into a WordPress Custom HTML block (or any page builder HTML widget)
+     on cikgutawfiq.com/zera-ict. Use this when you want your site header and
+     footer to stay visible. For a completely full-screen dashboard, upload
+     embed/index.html as /zera-ict/index.html instead. -->
+
+<div class="zera-ict-embed">
+  <iframe
+    src="https://zera-ict.vercel.app/"
+    title="Zera ICT Lesson Dashboard"
+    allow="clipboard-write; fullscreen; screen-wake-lock; publickey-credentials-get"
+    referrerpolicy="strict-origin-when-cross-origin"
+    loading="lazy"
+  ></iframe>
+</div>
+
+<style>
+  .zera-ict-embed {
+    /* Fills the space left by the site header, with a sane minimum. */
+    height: calc(100vh - 120px);
+    min-height: 640px;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #0d1117;
+  }
+  .zera-ict-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  @media (max-width: 782px) {
+    .zera-ict-embed {
+      height: calc(100vh - 80px);
+      border-radius: 0;
+    }
+  }
+</style>
