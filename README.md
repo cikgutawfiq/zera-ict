@@ -16,6 +16,7 @@ Google account; embedded as an iframe on `cikgutawfiq.com/zera-ict`.
 | `/lesson/[id]/present` | Full-screen presentation mode: big type, arrow keys or buttons, screen wake-lock on. Opens on the Value of the Day, then the Ice Breaker, then the lesson plan. |
 | `/calendar` **This week** | The five weekdays, each with its own column on desktop (a real week board) and stacked on mobile. |
 | `/classes`, `/class/[id]` | Every class; each term is its own collapsible section (the current term opens by default), with **+ Week** to add more. |
+| `/overview` | Pick a year/class and a term, see every week's topic (and subtopic) for that term laid out as a radial mind map, then **📥 Save as PDF** — a clean, borderless single-page export with no header or footer, ready to hand or send straight to students. |
 | `/admin` | Upload the two SOW workbooks to re-sync Term 1 from your phone, seed / re-sync from the bundled SOW, add or remove terms and weeks (each term is an accordion — collapsed by default, only one open at a time), sign out. |
 
 ## Look and feel

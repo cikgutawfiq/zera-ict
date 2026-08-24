@@ -10,6 +10,7 @@ const TABS = [
   { href: "/", label: "Today", icon: "●" },
   { href: "/calendar", label: "This week", icon: "▦" },
   { href: "/classes", label: "Classes", icon: "▤" },
+  { href: "/overview", label: "Overview", icon: "◈" },
   { href: "/admin", label: "Admin", icon: "⚙" },
 ];
 
