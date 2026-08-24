@@ -12,7 +12,7 @@ Google account; embedded as an iframe on `cikgutawfiq.com/zera-ict`.
 | Screen | What it does |
 | --- | --- |
 | `/` **Today** | The classes you teach today, in period order with times. Deep link a date with `/?date=2026-09-22`. |
-| `/lesson/[id]` | Value of the Day (moral value, quote, food-for-thought), a 5–10 min Ice Breaker (with a 🎲 Randomize button), side-by-side topic/subtopic, objectives, a per-step lesson plan (instructions / what students do / how to assess), activities, success criteria, resources and a Reflection box. Every field is editable in place. Mark **Done** / **Carried over**. |
+| `/lesson/[id]` | Value of the Day (moral value, quote, food-for-thought), a 5–10 min Ice Breaker (with a 🎲 Randomize button), side-by-side topic/subtopic, objectives, a per-step lesson plan (instructions / what students do / how to assess), activities, success criteria, resources, a **Worksheets & assessment** section (printable PDFs, see below) and a Reflection box. Every field is editable in place. Mark **Done** / **Carried over**. |
 | `/lesson/[id]/present` | Full-screen presentation mode: big type, arrow keys or buttons, screen wake-lock on. Opens on the Value of the Day, then the Ice Breaker, then the lesson plan. |
 | `/calendar` **This week** | The five weekdays, each with its own column on desktop (a real week board) and stacked on mobile. |
 | `/classes`, `/class/[id]` | Every class; each term is its own collapsible section (the current term opens by default), with **+ Week** to add more. |
@@ -51,6 +51,15 @@ Below 1024px everything collapses back to the single-column, bottom-tab mobile l
   filling them in is an ongoing pass.
 - **Re-uploading Term 1**: `/admin` has file pickers for both workbooks — parsing happens in the
   browser (`read-excel-file`, no server, no Python needed) and feeds the same seed/re-sync flow.
+- **Worksheets & rubric**: every lesson page has a **📄 3 worksheets** button that generates a
+  three-page PDF (Foundation / Core / Challenge) client-side, using that lesson's own topic,
+  subtopic, objectives, activities and success criteria as the source text — no two lessons
+  produce the same worksheet. A separate **📊 Assessment rubric** button generates a 4-point
+  scale (Excellent / Good / Satisfactory / Needs Improvement) built from the lesson's success
+  criteria, so a cover teacher or a student can see exactly how each criterion is graded. Both
+  are generated entirely in the browser with `jspdf`/`jspdf-autotable` — nothing is stored or
+  pre-rendered, so they always reflect the lesson's current (possibly edited) content. See
+  `src/lib/worksheets.ts`.
 
 Regenerate the seed after editing the workbooks or the authored content:
 

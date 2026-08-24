@@ -16,6 +16,7 @@ import {
   TextSection,
 } from "@/components/Editable";
 import type { Lesson, Status } from "@/lib/types";
+import { generateRubricPdf, generateWorksheetsPdf } from "@/lib/worksheets";
 
 const DAY_SHORT = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -24,6 +25,7 @@ export default function LessonPage() {
   const router = useRouter();
   const { lessonById, saveLesson, deleteLesson, loading } = useData();
   const [busy, setBusy] = useState(false);
+  const [pdfBusy, setPdfBusy] = useState<"worksheets" | "rubric" | null>(null);
   const lesson = lessonById(id);
 
   if (loading) return <p className="p-6 text-sm text-[color:var(--muted)]">Loading…</p>;
@@ -42,6 +44,24 @@ export default function LessonPage() {
   const info = CLASS_BY_ID[lesson.classId];
   const slots = slotsForClass(lesson.classId);
   const patch = (p: Partial<Lesson>) => saveLesson(lesson.id, p);
+
+  const downloadWorksheets = async () => {
+    setPdfBusy("worksheets");
+    try {
+      generateWorksheetsPdf(lesson, info);
+    } finally {
+      setPdfBusy(null);
+    }
+  };
+
+  const downloadRubric = async () => {
+    setPdfBusy("rubric");
+    try {
+      generateRubricPdf(lesson, info);
+    } finally {
+      setPdfBusy(null);
+    }
+  };
 
   const setStatus = async (status: Status) => {
     setBusy(true);
@@ -105,6 +125,24 @@ export default function LessonPage() {
             onSave={(successCriteria) => patch({ successCriteria })}
           />
           <ResourceSection items={lesson.resources} onSave={(resources) => patch({ resources })} />
+
+          <section className="card p-4">
+            <h2 className="mb-1 text-[15px] font-bold uppercase tracking-wide text-[color:var(--muted)]">
+              Worksheets &amp; assessment
+            </h2>
+            <p className="mb-3 text-sm text-[color:var(--muted)]">
+              Printable PDFs built from this lesson&rsquo;s topic, objectives, activities and success
+              criteria — for cover lessons or independent work.
+            </p>
+            <div className="no-print flex flex-wrap gap-2">
+              <button className="btn btn-sm btn-primary" disabled={pdfBusy !== null} onClick={downloadWorksheets}>
+                {pdfBusy === "worksheets" ? "Generating…" : "📄 3 worksheets (Foundation / Core / Challenge)"}
+              </button>
+              <button className="btn btn-sm" disabled={pdfBusy !== null} onClick={downloadRubric}>
+                {pdfBusy === "rubric" ? "Generating…" : "📊 Assessment rubric"}
+              </button>
+            </div>
+          </section>
 
           <TextSection
             title="Reflection"
