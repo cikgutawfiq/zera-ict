@@ -33,6 +33,9 @@ export type Lesson = {
   note: string;
   order: number;
   updatedAt?: number;
+  /** Transient: set by `lessonFor` when a carried-over lesson is being shown in place of
+   *  the lesson naturally scheduled for this slot. Never persisted. */
+  carriedIntoWeekLabel?: string;
 };
 
 export type PlanStep = {

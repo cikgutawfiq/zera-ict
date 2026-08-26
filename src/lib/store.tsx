@@ -93,8 +93,19 @@ export function DataProvider({ children }: { children: ReactNode }) {
       loading,
       error,
       lessonById: (id) => sortedLessons.find((l) => l.id === id),
-      lessonFor: (classId, dateISO) =>
-        sortedLessons.find((l) => l.classId === classId && dateISO >= l.dateStart && dateISO <= l.dateEnd),
+      lessonFor: (classId, dateISO) => {
+        const classLessons = sortedLessons.filter((l) => l.classId === classId);
+        const idx = classLessons.findIndex((l) => dateISO >= l.dateStart && dateISO <= l.dateEnd);
+        if (idx === -1) return undefined;
+        const natural = classLessons[idx];
+        const prev = classLessons[idx - 1];
+        // A lesson that didn't get finished stays front-and-centre on the next scheduled
+        // slot for this class, instead of quietly falling behind the calendar.
+        if (prev && prev.status === "carried-over") {
+          return { ...prev, carriedIntoWeekLabel: natural.weekLabel };
+        }
+        return natural;
+      },
       lessonsForClass: (classId) => sortedLessons.filter((l) => l.classId === classId),
       saveLesson: async (id, patch) => {
         await updateDoc(doc(db(), "lessons", id), { ...patch, updatedAt: Date.now() });

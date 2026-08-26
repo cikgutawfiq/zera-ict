@@ -102,6 +102,11 @@ export function SlotCard({ slot, lesson }: { slot: Slot; lesson?: Lesson }) {
           </p>
           {lesson ? (
             <>
+              {lesson.carriedIntoWeekLabel && (
+                <p className="mb-1 text-xs font-bold uppercase tracking-wide" style={{ color: "var(--warn)" }}>
+                  ↻ Carried over from {lesson.weekLabel} — not yet done
+                </p>
+              )}
               <p className="mt-0.5 truncate text-base">{lesson.topic || "No topic set"}</p>
               {lesson.subtopic && (
                 <p className="truncate text-sm text-[color:var(--muted)]">{lesson.subtopic}</p>

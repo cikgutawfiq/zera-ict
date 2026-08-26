@@ -6,8 +6,16 @@ import type { ClassInfo, Lesson } from "./types";
 
 const MARGIN = 14;
 const PAGE_W = 210; // A4 portrait, mm
+const PAGE_BOTTOM = 283;
 
-function header(doc: jsPDF, info: ClassInfo | undefined, lesson: Lesson, kicker: string, title: string) {
+function header(
+  doc: jsPDF,
+  info: ClassInfo | undefined,
+  lesson: Lesson,
+  kicker: string,
+  title: string,
+  difficulty: string,
+) {
   doc.setFont("helvetica", "bold");
   doc.setFontSize(9);
   doc.setTextColor(120);
@@ -18,41 +26,59 @@ function header(doc: jsPDF, info: ClassInfo | undefined, lesson: Lesson, kicker:
   doc.setFontSize(18);
   doc.text(title, MARGIN, 24);
 
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(9);
+  doc.setTextColor(37, 99, 235);
+  doc.text(`Difficulty: ${difficulty}`, MARGIN, 29.5);
+
   doc.setFont("helvetica", "normal");
   doc.setFontSize(10);
   doc.setTextColor(90);
   const subject = `${info?.label ?? lesson.classId} · ${lesson.weekLabel}`;
   const topic = [lesson.topic, lesson.subtopic].filter(Boolean).join(" — ");
-  doc.text(subject, MARGIN, 31);
-  if (topic) doc.text(topic, MARGIN, 36.5);
-
-  doc.setDrawColor(210);
-  doc.line(MARGIN, 40, PAGE_W - MARGIN, 40);
+  doc.text(subject, MARGIN, 35.5);
+  if (topic) doc.text(topic, MARGIN, 41);
 
   doc.setFontSize(10);
   doc.setTextColor(60);
-  doc.text("Name: ______________________________", MARGIN, 47);
-  doc.text("Date: ____________", PAGE_W - MARGIN - 45, 47);
+  doc.text("Name: ______________________________", MARGIN, 48.5);
+  doc.text("Date: ____________", PAGE_W - MARGIN - 45, 48.5);
 
   return 55;
 }
 
-function questionBlock(
-  doc: jsPDF,
-  y: number,
-  n: number,
-  prompt: string,
-  lines: number,
-): number {
+function teacherNote(doc: jsPDF, y: number, text: string): number {
+  const maxWidth = PAGE_W - MARGIN * 2 - 10;
+  const wrapped = doc.splitTextToSize(text, maxWidth);
+  const boxH = wrapped.length * 4.4 + 9;
+  doc.setFillColor(234, 240, 250);
+  doc.roundedRect(MARGIN, y, PAGE_W - MARGIN * 2, boxH, 2, 2, "F");
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(8);
+  doc.setTextColor(37, 99, 235);
+  doc.text("HOW TO RUN THIS", MARGIN + 4, y + 5.5);
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(8.5);
+  doc.setTextColor(70);
+  doc.text(wrapped, MARGIN + 4, y + 10);
+  return y + boxH + 7;
+}
+
+function ensureSpace(doc: jsPDF, y: number, needed: number): number {
+  if (y + needed > PAGE_BOTTOM) {
+    doc.addPage();
+    return 20;
+  }
+  return y;
+}
+
+function qaBlock(doc: jsPDF, y: number, n: number, prompt: string, lines: number): number {
   const maxWidth = PAGE_W - MARGIN * 2 - 8;
   doc.setFont("helvetica", "bold");
   doc.setFontSize(11);
   doc.setTextColor(20);
   const wrapped = doc.splitTextToSize(`${n}. ${prompt}`, maxWidth);
-  if (y + wrapped.length * 5.5 + lines * 8 > 285) {
-    doc.addPage();
-    y = 20;
-  }
+  y = ensureSpace(doc, y, wrapped.length * 5.5 + lines * 8);
   doc.text(wrapped, MARGIN, y);
   y += wrapped.length * 5.5 + 3;
 
@@ -64,66 +90,205 @@ function questionBlock(
   return y + 3;
 }
 
-type Difficulty = { label: string; kicker: string };
-
-const DIFFICULTIES: Difficulty[] = [
-  { label: "Foundation", kicker: "Worksheet A · Foundation" },
-  { label: "Core", kicker: "Worksheet B · Core" },
-  { label: "Challenge", kicker: "Worksheet C · Challenge" },
-];
-
-function foundationQuestions(lesson: Lesson): string[] {
-  const qs: string[] = [];
-  if (lesson.topic) qs.push(`In your own words, what is "${lesson.topic}"? Write 1–2 sentences.`);
-  if (lesson.subtopic) qs.push(`Write down what "${lesson.subtopic}" means, in your own words.`);
-  for (const obj of lesson.objectives.slice(0, 3)) {
-    qs.push(`This lesson's goal is: "${obj}". Give one example of this.`);
-  }
-  if (qs.length < 3) qs.push(`List 3 things you learned about ${lesson.topic || "today's lesson"}.`);
-  return qs.slice(0, 5);
+function pickKeyword(lesson: Lesson): string {
+  const source = `${lesson.subtopic} ${lesson.topic}`.replace(/[^a-zA-Z ]/g, "");
+  const words = source
+    .split(" ")
+    .map((w) => w.trim())
+    .filter((w) => w.length >= 4)
+    .sort((a, b) => b.length - a.length);
+  return (words[0] ?? "TOPIC").toUpperCase();
 }
 
-function coreQuestions(lesson: Lesson): string[] {
-  const qs: string[] = [];
-  for (const act of lesson.activities.slice(0, 2)) {
-    qs.push(`Task: ${act} — describe what you did and what happened.`);
+function scramble(word: string): string {
+  if (word.length < 2) return word;
+  const letters = word.split("");
+  let out = word;
+  for (let attempt = 0; attempt < 12 && out === word; attempt++) {
+    for (let i = letters.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [letters[i], letters[j]] = [letters[j], letters[i]];
+    }
+    out = letters.join("");
   }
-  if (lesson.topic) qs.push(`Explain why "${lesson.topic}" is useful. Give one real-life example.`);
-  for (const sc of lesson.successCriteria.slice(0, 2)) {
-    qs.push(`Show that you can do this: "${sc}". Describe or demonstrate it below.`);
-  }
-  if (qs.length < 3) qs.push(`Explain, step by step, how you would use ${lesson.topic || "what you learned today"}.`);
-  return qs.slice(0, 5);
+  return out;
 }
 
-function challengeQuestions(lesson: Lesson): string[] {
-  const qs: string[] = [];
-  if (lesson.topic) qs.push(`Design your own example that shows "${lesson.topic}" in action. Describe it in detail.`);
-  if (lesson.subtopic) qs.push(`What could go wrong if someone did not understand "${lesson.subtopic}"? How would you fix it?`);
-  qs.push(`Extension: connect what you learned today to something you already knew. Explain the link.`);
-  qs.push(`Write 3 questions you would ask a partner to check they understood today's lesson, and model answers.`);
-  return qs.slice(0, 4);
+function wordPuzzleBlock(doc: jsPDF, y: number, n: number, lesson: Lesson): number {
+  const word = pickKeyword(lesson);
+  const scrambled = scramble(word);
+  const hintSource = lesson.subtopic || lesson.topic || "today's lesson";
+
+  const maxWidth = PAGE_W - MARGIN * 2 - 8;
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(11);
+  doc.setTextColor(20);
+  const wrapped = doc.splitTextToSize(`${n}. WORD PUZZLE — unscramble the letters below.`, maxWidth);
+  y = ensureSpace(doc, y, wrapped.length * 5.5 + 34);
+  doc.text(wrapped, MARGIN, y);
+  y += wrapped.length * 5.5 + 5;
+
+  doc.setFont("courier", "bold");
+  doc.setFontSize(20);
+  doc.setTextColor(37, 99, 235);
+  doc.text(scrambled.split("").join("  "), MARGIN + 6, y + 6);
+  y += 14;
+
+  doc.setFont("helvetica", "italic");
+  doc.setFontSize(9);
+  doc.setTextColor(110);
+  const hintWrapped = doc.splitTextToSize(`Hint: it's something to do with "${hintSource}".`, maxWidth - 6);
+  doc.text(hintWrapped, MARGIN + 6, y);
+  y += hintWrapped.length * 4.5 + 4;
+
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(10);
+  doc.setTextColor(60);
+  doc.text("Answer: ______________________________", MARGIN + 6, y);
+  return y + 10;
 }
 
-const QUESTION_BUILDERS: Record<string, (lesson: Lesson) => string[]> = {
-  Foundation: foundationQuestions,
-  Core: coreQuestions,
-  Challenge: challengeQuestions,
+function timedBlock(doc: jsPDF, y: number, n: number, task: string, minutes: number): number {
+  const maxWidth = PAGE_W - MARGIN * 2 - 8;
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(11);
+  doc.setTextColor(20);
+  const wrapped = doc.splitTextToSize(`${n}. BEAT THE CLOCK (${minutes} minutes) — ${task}`, maxWidth);
+  y = ensureSpace(doc, y, wrapped.length * 5.5 + 28);
+  doc.text(wrapped, MARGIN, y);
+  y += wrapped.length * 5.5 + 4;
+
+  doc.setDrawColor(217, 119, 6);
+  doc.setLineWidth(0.6);
+  doc.rect(MARGIN + 6, y, PAGE_W - MARGIN * 2 - 6, 22);
+  doc.setLineWidth(0.2);
+  return y + 27;
+}
+
+function checkInBlock(doc: jsPDF, y: number, n: number): number {
+  const maxWidth = PAGE_W - MARGIN * 2 - 8;
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(11);
+  doc.setTextColor(20);
+  const wrapped = doc.splitTextToSize(`${n}. QUICK CHECK-IN — circle one, then tell us why in a sentence.`, maxWidth);
+  y = ensureSpace(doc, y, wrapped.length * 5.5 + 24);
+  doc.text(wrapped, MARGIN, y);
+  y += wrapped.length * 5.5 + 5;
+
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(11);
+  doc.setTextColor(60);
+  doc.text("Nailed it          Getting there          Still stuck", MARGIN + 6, y);
+  y += 9;
+
+  doc.setDrawColor(200);
+  doc.line(MARGIN + 6, y, PAGE_W - MARGIN, y);
+  return y + 9;
+}
+
+function bonusBlock(doc: jsPDF, y: number, n: number, prompt: string): number {
+  const maxWidth = PAGE_W - MARGIN * 2 - 14;
+  doc.setFont("helvetica", "bolditalic");
+  doc.setFontSize(11);
+  doc.setTextColor(124, 58, 237);
+  const wrapped = doc.splitTextToSize(`${n}. BONUS CHALLENGE — ${prompt}`, maxWidth);
+  const boxH = wrapped.length * 5.5 + 33;
+  y = ensureSpace(doc, y, boxH + 6);
+  doc.setDrawColor(124, 58, 237);
+  doc.setLineWidth(0.6);
+  doc.roundedRect(MARGIN, y - 4, PAGE_W - MARGIN * 2, boxH, 3, 3);
+  doc.setLineWidth(0.2);
+  doc.text(wrapped, MARGIN + 5, y + 3);
+  let ly = y + wrapped.length * 5.5 + 8;
+  doc.setDrawColor(210);
+  for (let i = 0; i < 3; i++) {
+    doc.line(MARGIN + 8, ly, PAGE_W - MARGIN - 5, ly);
+    ly += 7;
+  }
+  return y - 4 + boxH + 8;
+}
+
+type Level = "Foundation" | "Core" | "Challenge";
+
+const DIFFICULTY_LABEL: Record<Level, string> = {
+  Foundation: "Easy — recall & understand",
+  Core: "Medium — apply & explain",
+  Challenge: "Hard — design & extend",
 };
 
-const LINES_PER_LEVEL: Record<string, number> = { Foundation: 2, Core: 3, Challenge: 4 };
+const NOTES: Record<Level, string> = {
+  Foundation:
+    "Best as a starter, cover-lesson task, or independent catch-up. Allow about 15 minutes; students may use their notes.",
+  Core: "Best run in pairs or small groups as the main task. Allow 20-25 minutes. The timed round works well read aloud.",
+  Challenge:
+    "For fast finishers, homework, or an extension group. No time pressure - depth and creativity over speed.",
+};
+
+function renderFoundation(doc: jsPDF, lesson: Lesson, y: number): void {
+  y = teacherNote(doc, y, NOTES.Foundation);
+  let n = 1;
+  if (lesson.topic) y = qaBlock(doc, y, n++, `In your own words, what is "${lesson.topic}"? Write 1-2 sentences.`, 2);
+  y = wordPuzzleBlock(doc, y, n++, lesson);
+  for (const obj of lesson.objectives.slice(0, 2)) {
+    y = qaBlock(doc, y, n++, `This lesson's goal is: "${obj}". Give one example of this.`, 2);
+  }
+  y = checkInBlock(doc, y, n++);
+}
+
+function renderCore(doc: jsPDF, lesson: Lesson, y: number): void {
+  y = teacherNote(doc, y, NOTES.Core);
+  let n = 1;
+  for (const act of lesson.activities.slice(0, 2)) {
+    y = qaBlock(doc, y, n++, `Task: ${act} — describe what you did and what happened.`, 3);
+  }
+  if (lesson.topic) y = qaBlock(doc, y, n++, `Explain why "${lesson.topic}" is useful. Give one real-life example.`, 3);
+  const timedTask = lesson.activities[0] || lesson.topic || "today's skill";
+  y = timedBlock(doc, y, n++, `Go as far as you can with: ${timedTask}. Ready, set, go!`, 5);
+  for (const sc of lesson.successCriteria.slice(0, 1)) {
+    y = qaBlock(doc, y, n++, `Show that you can do this: "${sc}". Describe or demonstrate it below.`, 3);
+  }
+}
+
+function renderChallenge(doc: jsPDF, lesson: Lesson, y: number): void {
+  y = teacherNote(doc, y, NOTES.Challenge);
+  let n = 1;
+  if (lesson.topic)
+    y = qaBlock(doc, y, n++, `Design your own example that shows "${lesson.topic}" in action. Describe it in detail.`, 4);
+  if (lesson.subtopic)
+    y = qaBlock(
+      doc,
+      y,
+      n++,
+      `What could go wrong if someone did not understand "${lesson.subtopic}"? How would you fix it?`,
+      4,
+    );
+  y = bonusBlock(
+    doc,
+    y,
+    n++,
+    `Connect what you learned today to something you already knew from another lesson or subject. Explain the link, then write 3 quiz questions (with answers) you'd use to check a partner really understood it.`,
+  );
+}
+
+const RENDERERS: Record<Level, (doc: jsPDF, lesson: Lesson, y: number) => void> = {
+  Foundation: renderFoundation,
+  Core: renderCore,
+  Challenge: renderChallenge,
+};
+
+const LEVELS: { key: Level; kicker: string }[] = [
+  { key: "Foundation", kicker: "Worksheet A - Foundation" },
+  { key: "Core", kicker: "Worksheet B - Core" },
+  { key: "Challenge", kicker: "Worksheet C - Challenge" },
+];
 
 export function generateWorksheetsPdf(lesson: Lesson, info: ClassInfo | undefined) {
   const doc = new jsPDF({ unit: "mm", format: "a4" });
 
-  DIFFICULTIES.forEach((d, idx) => {
+  LEVELS.forEach(({ key, kicker }, idx) => {
     if (idx > 0) doc.addPage();
-    let y = header(doc, info, lesson, d.kicker, `${d.label} worksheet`);
-    const questions = QUESTION_BUILDERS[d.label](lesson);
-    const lines = LINES_PER_LEVEL[d.label];
-    questions.forEach((q, i) => {
-      y = questionBlock(doc, y, i + 1, q, lines);
-    });
+    const y = header(doc, info, lesson, kicker, `${key} worksheet`, DIFFICULTY_LABEL[key]);
+    RENDERERS[key](doc, lesson, y);
   });
 
   const filename = `${(info?.label ?? lesson.classId).replace(/\s+/g, "-")}_${lesson.weekLabel.replace(/\s+/g, "-")}_worksheets.pdf`;
@@ -131,15 +296,16 @@ export function generateWorksheetsPdf(lesson: Lesson, info: ClassInfo | undefine
 }
 
 const RUBRIC_LEVELS = [
-  { label: "Excellent", score: 4, tone: "Consistently and independently demonstrates" },
-  { label: "Good", score: 3, tone: "Usually demonstrates, with minor support" },
-  { label: "Satisfactory", score: 2, tone: "Sometimes demonstrates, needs support" },
-  { label: "Needs Improvement", score: 1, tone: "Rarely demonstrates, needs significant support" },
+  { label: "Superstar", score: 4, tone: "Consistently and independently demonstrates" },
+  { label: "Solid", score: 3, tone: "Usually demonstrates, with minor support" },
+  { label: "Growing", score: 2, tone: "Sometimes demonstrates, needs support" },
+  { label: "Just Starting", score: 1, tone: "Rarely demonstrates, needs significant support" },
 ];
 
 export function generateRubricPdf(lesson: Lesson, info: ClassInfo | undefined) {
   const doc = new jsPDF({ unit: "mm", format: "a4", orientation: "landscape" });
   const criteria = lesson.successCriteria.length ? lesson.successCriteria : lesson.objectives;
+  const criteriaCount = criteria.length || 1;
 
   doc.setFont("helvetica", "bold");
   doc.setFontSize(9);
@@ -157,9 +323,20 @@ export function generateRubricPdf(lesson: Lesson, info: ClassInfo | undefined) {
   const topic = [lesson.topic, lesson.subtopic].filter(Boolean).join(" — ");
   if (topic) doc.text(topic, MARGIN, 27);
 
+  doc.setFont("helvetica", "italic");
+  doc.setFontSize(8.5);
+  doc.setTextColor(110);
+  doc.text(
+    "How to use: score each row 1-4 as the lesson goes, or hand this to students to self-assess first, then compare.",
+    MARGIN,
+    32.5,
+  );
+
+  doc.setFont("helvetica", "normal");
   doc.setFontSize(9);
-  doc.text("Name: ______________________________", MARGIN, 34);
-  doc.text("Total: _____ / " + criteria.length * 4, 297 - MARGIN - 35, 34);
+  doc.setTextColor(60);
+  doc.text("Name: ______________________________", MARGIN, 38.5);
+  doc.text(`Total: _____ / ${criteriaCount * 4}`, 297 - MARGIN - 35, 38.5);
 
   const head = [["Criteria", ...RUBRIC_LEVELS.map((l) => `${l.label} (${l.score})`)]];
   const body = (criteria.length ? criteria : ["Participation and effort in today's lesson"]).map((c) => [
@@ -168,7 +345,7 @@ export function generateRubricPdf(lesson: Lesson, info: ClassInfo | undefined) {
   ]);
 
   autoTable(doc, {
-    startY: 39,
+    startY: 43,
     head,
     body,
     styles: { fontSize: 8, cellPadding: 2.5, valign: "top", overflow: "linebreak" },
@@ -181,6 +358,20 @@ export function generateRubricPdf(lesson: Lesson, info: ClassInfo | undefined) {
       4: { cellWidth: 55 },
     },
     margin: { left: MARGIN, right: MARGIN },
+    didDrawPage: (data) => {
+      const pageH = doc.internal.pageSize.getHeight();
+      const finalY = data.cursor?.y ?? pageH - 20;
+      if (finalY < pageH - 22) {
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(8);
+        doc.setTextColor(120);
+        doc.text(
+          `Grade bands: ${criteriaCount * 4}-${Math.ceil(criteriaCount * 3.6)} Superstar · ${Math.ceil(criteriaCount * 3.5)}-${Math.ceil(criteriaCount * 2.6)} Solid · ${Math.ceil(criteriaCount * 2.5)}-${Math.ceil(criteriaCount * 1.6)} Growing · below that, Just Starting.`,
+          MARGIN,
+          finalY + 8,
+        );
+      }
+    },
   });
 
   const filename = `${(info?.label ?? lesson.classId).replace(/\s+/g, "-")}_${lesson.weekLabel.replace(/\s+/g, "-")}_rubric.pdf`;
