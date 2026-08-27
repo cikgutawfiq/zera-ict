@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import { useData } from "@/lib/store";
 import { CLASSES } from "@/data/timetable";
 import { PageHeader } from "@/components/ui";
@@ -9,6 +10,7 @@ import { buildOverviewRows, generateAllClassesOverviewPdf, generateClassOverview
 const ICT_CLASSES = CLASSES.filter((c) => c.subject === "ICT");
 
 export default function OverviewPage() {
+  const router = useRouter();
   const { lessons, terms, loading } = useData();
   const [classId, setClassId] = useState(CLASSES[0].id);
   const [exporting, setExporting] = useState<"one" | "all" | null>(null);
@@ -85,15 +87,27 @@ export default function OverviewPage() {
                   <th className="px-3 py-2.5">Week</th>
                   <th className="px-3 py-2.5">Topic</th>
                   <th className="px-3 py-2.5">What students will learn</th>
+                  <th className="px-3 py-2.5" />
                 </tr>
               </thead>
               <tbody>
-                {rows.map((r, i) => (
-                  <tr key={i} className="border-b border-[color:var(--border)] align-top last:border-0">
+                {rows.map((r) => (
+                  <tr
+                    key={r.id}
+                    tabIndex={0}
+                    role="button"
+                    onClick={() => router.push(`/lesson/${r.id}`)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") router.push(`/lesson/${r.id}`);
+                    }}
+                    className="cursor-pointer border-b border-[color:var(--border)] align-top transition-colors last:border-0 hover:bg-[color:var(--accent-soft)]"
+                    style={{ transitionDuration: "var(--dur-fast)", transitionTimingFunction: "var(--ease)" }}
+                  >
                     <td className="whitespace-nowrap px-3 py-2.5 text-[color:var(--muted)]">{r.termName}</td>
                     <td className="whitespace-nowrap px-3 py-2.5 font-semibold">{r.weekLabel}</td>
                     <td className="px-3 py-2.5 font-semibold">{r.topic}</td>
                     <td className="px-3 py-2.5 text-[color:var(--muted)]">{r.explanation || "—"}</td>
+                    <td className="px-3 py-2.5 text-[color:var(--muted)]">›</td>
                   </tr>
                 ))}
               </tbody>

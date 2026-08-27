@@ -17,6 +17,7 @@ import {
 } from "@/components/Editable";
 import type { Lesson, Status } from "@/lib/types";
 import { generateRubricPdf, generateWorksheetsPdf } from "@/lib/worksheets";
+import { AlternativeTopicsSection } from "@/components/AlternativeTopics";
 
 const DAY_SHORT = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -108,6 +109,14 @@ export default function LessonPage() {
               onSave={(subtopic) => patch({ subtopic })}
             />
           </div>
+
+          <AlternativeTopicsSection
+            subject={info?.subject ?? lesson.subject}
+            keyStage={info?.keyStage ?? "KS2"}
+            currentTopic={lesson.topic}
+            onSwap={(next) => patch(next)}
+          />
+
           <ListSection
             title="Learning objectives"
             items={lesson.objectives}

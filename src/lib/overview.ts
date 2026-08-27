@@ -5,6 +5,7 @@ import autoTable from "jspdf-autotable";
 import type { ClassInfo, Lesson, Term } from "./types";
 
 export type OverviewRow = {
+  id: string;
   termName: string;
   weekLabel: string;
   topic: string;
@@ -22,7 +23,7 @@ export function buildOverviewRows(lessons: Lesson[], terms: Term[], classId: str
     .map((l) => {
       const term = terms.find((t) => t.id === l.termId);
       const explanation = l.subtopic || l.objectives[0] || l.activities[0] || "";
-      return { termName: term?.name ?? l.termId, weekLabel: l.weekLabel, topic: l.topic, explanation };
+      return { id: l.id, termName: term?.name ?? l.termId, weekLabel: l.weekLabel, topic: l.topic, explanation };
     });
 }
 
