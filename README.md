@@ -32,13 +32,21 @@ Below 1024px everything collapses back to the single-column, bottom-tab mobile l
 - **Source**: `SOW_ICT_KS1_KS2_Y1-6_2026-2027.xlsx` and `SOW_ICT_KS3_Y7-9_2026-2027.xlsx`
   (Term 1: Weeks 1–15, 26 Aug – 11 Dec 2026, plus a mid-term break and Examination Week).
 - **Seeded**: 369 ICT lessons (Y1–Y9, all three terms) with authored objectives / plan /
-  activities / success criteria, plus 82 blank week rows for **Maths Y1** and
-  **Malay Enrichment Y8**, which have no scheme of work yet.
+  activities / success criteria, 123 **Maths Y1** lessons (see below), plus 82 blank session
+  rows for **Malay Enrichment Y8**, which has no scheme of work yet.
   - **Term 1** comes straight from the two workbooks.
   - **Term 2** (11 weeks, 6 Jan – 19 Mar 2027) and **Term 3** (15 weeks, 24 Mar – ~9 Jul
     2027, estimated) are generated from the Zera ICT curriculum hub's 8-week topic
     outlines, expanded into full lesson plans. Term 2 is compressed to fit before Term 3's
     confirmed start date — correct both once the official calendar is published.
+- **Maths Y1**: a suggested scope & sequence aligned to Cambridge Primary Mathematics Stage 1
+  (Number, Geometry, Measure, Statistics) — original topics/objectives written to match that
+  framework's structure, not verbatim Cambridge text. 41 weekly topics run across all 3 terms
+  in the same rhythm as the ICT classes (consolidation / revision / examination week / end-of-
+  term project / portfolio showcase). Maths Y1 meets 3x/week (Tue/Thu/Fri), so each week's topic
+  becomes 3 linked-but-separate sessions — Tue *explore*, Thu *practise*, Fri *consolidate* —
+  each independently editable and markable Done. See `scripts/maths_y1_content.py` (the 41
+  topics) and `scripts/build_maths_y1.py` (the day-variant lesson-plan generator).
 - **Moral value / quote / food-for-thought**: every lesson gets one, assigned deterministically
   per class from a 41-entry pool so nothing repeats across a class's full year (see
   `src/data/values.ts`).
@@ -74,10 +82,24 @@ python scripts/extract_sow.py && python scripts/build_terms23.py && python scrip
 `scripts/extract_sow.py` reads the two workbooks from `~/Downloads` (override with `SOW_DIR`)
 and writes `src/data/sow.raw.json`. `scripts/build_terms23.py` generates the Term 2/3 week
 calendars into `src/data/terms23.json`. `scripts/build_seed.py` merges all of that with
-`src/data/authored/{y1..y9}.json`, `src/data/authored/term2/{y1..y9}.json` and
-`src/data/authored/term3/{y1..y9}.json`, assigns moral values/quotes/ice breakers, and writes
-`src/data/seed.json`, which `/admin` writes to Firestore in batches. Existing lessons you have
-edited are skipped unless you tick **Overwrite**.
+`src/data/authored/{y1..y9}.json`, `src/data/authored/term2/{y1..y9}.json`,
+`src/data/authored/term3/{y1..y9}.json` and `scripts/build_maths_y1.py`'s Maths Y1 sessions,
+assigns moral values/quotes/ice breakers, and writes `src/data/seed.json`, which `/admin`
+writes to Firestore in batches. Existing lessons you have edited are skipped unless you tick
+**Overwrite**.
+
+### Multi-session classes
+
+Maths Y1 (3x/week) and Malay Enrichment Y8 (2x/week) each get one lesson **per session**
+instead of one shared lesson for the whole week — id `{classId}_{termId}_w{weekNo}_d{day}`
+(`day` is 1=Mon..5=Fri, matching `Slot.day` in `timetable.ts`), with `weekLabel` like
+`"Week 1 (Tue)"` to tell sessions apart. `lessonFor(classId, dateISO)` in `src/lib/store.tsx`
+matches on both the week range and the weekday, so each session is independently plannable and
+markable Done — marking Tuesday's session Done no longer marks Thursday's or Friday's Done too.
+Classes with a single weekly session (all 9 ICT classes) keep the older
+`{classId}_{termId}_w{weekNo}` id with no `day` field, unaffected. `/class/[classId]`'s
+**+ Week** button detects a class's session count from `slotsForClass()` and creates one lesson
+per session automatically.
 
 The moral value / quote / ice breaker bank lives in `src/data/values.ts` (TypeScript, used by
 the app and the browser upload path) with a Python mirror in `scripts/values.py` (used by
@@ -85,7 +107,8 @@ the app and the browser upload path) with a Python mirror in `scripts/values.py`
 
 ## Firestore
 
-Collections: `lessons` (flat, id `{classId}_{termId}_w{weekNo}`) and `terms`.
+Collections: `lessons` (flat, id `{classId}_{termId}_w{weekNo}`, or `..._d{day}` for
+multi-session classes — see "Multi-session classes" above) and `terms`.
 Access is locked to one verified Google account in `firestore.rules` — publish it with:
 
 ```bash

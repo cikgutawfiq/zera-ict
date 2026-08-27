@@ -11,6 +11,11 @@ export type Lesson = {
   weekLabel: string;
   dateStart: string; // ISO yyyy-mm-dd (Monday of the week)
   dateEnd: string;
+  /** Which weekday session (Mon=1..Fri=5) this lesson is for, matching Slot.day in
+   *  timetable.ts. Only set for classes that meet more than once a week (each session
+   *  gets its own lesson doc); undefined for classes with a single weekly session, where
+   *  the whole dateStart-dateEnd week range is unambiguous. */
+  day?: number;
   topic: string;
   subtopic: string;
   outline: string;

@@ -43,44 +43,56 @@ export default function ClassPage() {
       return next;
     });
 
+  // Classes that meet more than once a week (e.g. Maths Y1: Tue/Thu/Fri) get one lesson
+  // per session day instead of one shared lesson for the whole week, so each session is
+  // independently plannable and markable Done.
+  const sessionDays = Array.from(new Set(slotsForClass(classId).map((s) => s.day))).sort((a, b) => a - b);
+
   const add = async () => {
     const no = Number.parseInt(weekNo, 10);
     if (!no || !start) return;
-    const id = `${classId}_${termId}_w${no}`;
-    if (lessons.some((l) => l.id === id)) {
+
+    const days = sessionDays.length > 1 ? sessionDays : [undefined];
+    const ids = days.map((day) => (day === undefined ? `${classId}_${termId}_w${no}` : `${classId}_${termId}_w${no}_d${day}`));
+    if (ids.some((id) => lessons.some((l) => l.id === id))) {
       alert(`Week ${no} already exists for this class in that term.`);
       return;
     }
-    const moral = assignMoralContent(classId, lessons.length);
-    const iceBreaker = assignIceBreaker(classId, info?.keyStage ?? "KS2", lessons.length);
-    const lesson: Lesson = {
-      id,
-      classId,
-      subject: info?.subject ?? "",
-      termId,
-      weekNo: no,
-      weekLabel: `Week ${no}`,
-      dateStart: start,
-      dateEnd: addDays(start, 4),
-      topic,
-      subtopic: "",
-      outline: "",
-      sowResources: "",
-      remark: "",
-      objectives: [],
-      plan: [],
-      activities: [],
-      successCriteria: [],
-      resources: [],
-      ...moral,
-      ...iceBreaker,
-      status: "planned",
-      note: "",
-      order: no,
-    };
+
     setBusy(true);
     try {
-      await createLesson(lesson);
+      for (let i = 0; i < days.length; i++) {
+        const day = days[i];
+        const moral = assignMoralContent(classId, lessons.length + i);
+        const iceBreaker = assignIceBreaker(classId, info?.keyStage ?? "KS2", lessons.length + i);
+        const lesson: Lesson = {
+          id: ids[i],
+          classId,
+          subject: info?.subject ?? "",
+          termId,
+          weekNo: no,
+          weekLabel: day === undefined ? `Week ${no}` : `Week ${no} (${DAY_SHORT[day]})`,
+          dateStart: start,
+          dateEnd: addDays(start, 4),
+          ...(day !== undefined ? { day } : {}),
+          topic,
+          subtopic: "",
+          outline: "",
+          sowResources: "",
+          remark: "",
+          objectives: [],
+          plan: [],
+          activities: [],
+          successCriteria: [],
+          resources: [],
+          ...moral,
+          ...iceBreaker,
+          status: "planned",
+          note: "",
+          order: no,
+        };
+        await createLesson(lesson);
+      }
       setAdding(false);
       setTopic("");
       setWeekNo(String(no + 1));
@@ -186,7 +198,8 @@ export default function ClassPage() {
                   </span>
                   <span className="flex-1 text-base font-bold">{group.term}</span>
                   <span className="chip">
-                    {group.items.length} week{group.items.length === 1 ? "" : "s"}
+                    {group.items.length} {sessionDays.length > 1 ? "session" : "week"}
+                    {group.items.length === 1 ? "" : "s"}
                   </span>
                   {done > 0 && <span className="chip">{done} done</span>}
                 </button>

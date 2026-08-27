@@ -14,6 +14,7 @@ import json
 import os
 
 from values import assign_ice_breaker, assign_moral_content
+from build_maths_y1 import build_maths_y1_lessons
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "src", "data")
@@ -23,10 +24,14 @@ AUTHORED = os.path.join(DATA, "authored")
 OUT = os.path.join(DATA, "seed.json")
 
 ICT_YEARS = list(range(1, 10))
+# classId -> weekly session days (JS Date.getDay() convention, Mon=1..Fri=5),
+# for classes that meet more than once a week and need one lesson per session
+# instead of one shared lesson for the whole week. Matches SLOTS in
+# src/data/timetable.ts.
 BLANK_CLASSES = [
-    {"classId": "maths-y1", "subject": "Mathematics"},
-    {"classId": "me-y8", "subject": "Malay Enrichment"},
+    {"classId": "me-y8", "subject": "Malay Enrichment", "days": [1, 2]},
 ]
+DAY_SHORT = {1: "Mon", 2: "Tue", 3: "Wed", 4: "Thu", 5: "Fri"}
 EMPTY = {"objectives": [], "plan": [], "activities": [], "successCriteria": [], "resources": []}
 
 
@@ -121,28 +126,32 @@ def build_blank_rows(term_id: str, weeks: list) -> list:
     out = []
     teaching_weeks = [w for w in weeks if not w["isBreak"]]
     for spec in BLANK_CLASSES:
-        for order, week in enumerate(teaching_weeks):
-            out.append(
-                {
-                    "id": lesson_id(spec["classId"], term_id, week["no"]),
-                    "classId": spec["classId"],
-                    "subject": spec["subject"],
-                    "termId": term_id,
-                    "weekNo": week["no"],
-                    "weekLabel": week["label"],
-                    "dateStart": week["start"],
-                    "dateEnd": week["end"],
-                    "topic": "",
-                    "subtopic": "",
-                    "outline": "",
-                    "sowResources": "",
-                    "remark": week["remark"],
-                    "status": "planned",
-                    "note": "",
-                    "order": order,
-                    **EMPTY,
-                }
-            )
+        order = 0
+        for week in teaching_weeks:
+            for day in spec["days"]:
+                out.append(
+                    {
+                        "id": f"{spec['classId']}_{term_id}_w{week['no']}_d{day}",
+                        "classId": spec["classId"],
+                        "subject": spec["subject"],
+                        "termId": term_id,
+                        "weekNo": week["no"],
+                        "weekLabel": f"{week['label']} ({DAY_SHORT[day]})",
+                        "dateStart": week["start"],
+                        "dateEnd": week["end"],
+                        "day": day,
+                        "topic": "",
+                        "subtopic": "",
+                        "outline": "",
+                        "sowResources": "",
+                        "remark": week["remark"],
+                        "status": "planned",
+                        "note": "",
+                        "order": order,
+                        **EMPTY,
+                    }
+                )
+                order += 1
     return out
 
 
@@ -184,7 +193,13 @@ def main():
         + build_blank_rows("term-3", terms23["term3"]["weeks"])
     )
 
-    lessons = term1_lessons + term2_lessons + term3_lessons + blanks
+    maths_y1_lessons = (
+        build_maths_y1_lessons("term-1", term1_cal)
+        + build_maths_y1_lessons("term-2", term2_cal)
+        + build_maths_y1_lessons("term-3", term3_cal)
+    )
+
+    lessons = term1_lessons + term2_lessons + term3_lessons + blanks + maths_y1_lessons
     attach_moral_content(lessons)
 
     terms = [raw["term"], terms23["term2"], terms23["term3"]]
@@ -194,7 +209,9 @@ def main():
         json.dump(payload, fh, indent=1, ensure_ascii=False)
 
     ict = sum(1 for x in lessons if x["subject"] == "ICT")
-    print(f"lessons: {len(lessons)} total ({ict} ICT, {len(lessons) - ict} blank)")
+    maths = sum(1 for x in lessons if x["subject"] == "Mathematics")
+    blank = len(lessons) - ict - maths
+    print(f"lessons: {len(lessons)} total ({ict} ICT, {maths} Maths Y1, {blank} blank)")
     for t in terms:
         print(f"  {t['name']}: {len(t['weeks'])} weeks")
     print(f"wrote {os.path.abspath(OUT)}")

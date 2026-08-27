@@ -15,6 +15,7 @@ import { getDb } from "./firebase";
 import { useAuth } from "./auth";
 import { DEV_PREVIEW } from "./devPreview";
 import seedData from "@/data/seed.json";
+import { fromISO } from "./dates";
 import type { Lesson, Term } from "./types";
 
 type Store = {
@@ -83,7 +84,10 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const value = useMemo<Store>(() => {
     const sortedTerms = [...terms].sort((a, b) => a.order - b.order);
     const sortedLessons = [...lessons].sort(
-      (a, b) => a.dateStart.localeCompare(b.dateStart) || a.classId.localeCompare(b.classId),
+      (a, b) =>
+        a.dateStart.localeCompare(b.dateStart) ||
+        (a.day ?? 0) - (b.day ?? 0) ||
+        a.classId.localeCompare(b.classId),
     );
     const db = () => getDb();
 
@@ -95,7 +99,10 @@ export function DataProvider({ children }: { children: ReactNode }) {
       lessonById: (id) => sortedLessons.find((l) => l.id === id),
       lessonFor: (classId, dateISO) => {
         const classLessons = sortedLessons.filter((l) => l.classId === classId);
-        const idx = classLessons.findIndex((l) => dateISO >= l.dateStart && dateISO <= l.dateEnd);
+        const dow = fromISO(dateISO).getDay();
+        const idx = classLessons.findIndex(
+          (l) => dateISO >= l.dateStart && dateISO <= l.dateEnd && (l.day === undefined || l.day === dow),
+        );
         if (idx === -1) return undefined;
         const natural = classLessons[idx];
         const prev = classLessons[idx - 1];
