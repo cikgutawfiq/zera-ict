@@ -100,9 +100,12 @@ export function DataProvider({ children }: { children: ReactNode }) {
       lessonFor: (classId, dateISO) => {
         const classLessons = sortedLessons.filter((l) => l.classId === classId);
         const dow = fromISO(dateISO).getDay();
-        const idx = classLessons.findIndex(
-          (l) => dateISO >= l.dateStart && dateISO <= l.dateEnd && (l.day === undefined || l.day === dow),
-        );
+        const inRange = (l: Lesson) => dateISO >= l.dateStart && dateISO <= l.dateEnd;
+        // Prefer an exact day match (multi-session classes) over a day-less lesson that
+        // spans the whole week — otherwise a stray pre-migration doc with no `day` field
+        // would win the sort order and get shown (and marked Done) for every session.
+        let idx = classLessons.findIndex((l) => inRange(l) && l.day === dow);
+        if (idx === -1) idx = classLessons.findIndex((l) => inRange(l) && l.day === undefined);
         if (idx === -1) return undefined;
         const natural = classLessons[idx];
         const prev = classLessons[idx - 1];
@@ -134,6 +137,17 @@ export function DataProvider({ children }: { children: ReactNode }) {
       seed: async (payload, overwriteEdited) => {
         const edited = new Set(lessons.filter((l) => l.updatedAt).map((l) => l.id));
         const targets = payload.lessons.filter((l) => overwriteEdited || !edited.has(l.id));
+
+        // Multi-session classes (Maths Y1, Malay Enrichment Y8) migrated from one lesson
+        // per week to one lesson per session (id "..._d{day}"). Any doc still sitting on
+        // the old id with no `day` field is a pre-migration leftover — clear it out so it
+        // can't shadow the new per-session lessons (see lessonFor in this file).
+        const MULTI_SESSION_CLASS_IDS = new Set(["maths-y1", "me-y8"]);
+        const legacyIds = lessons
+          .filter((l) => MULTI_SESSION_CLASS_IDS.has(l.classId) && l.day === undefined)
+          .filter((l) => overwriteEdited || !l.updatedAt)
+          .map((l) => l.id);
+
         let batch = writeBatch(db());
         let ops = 0;
         let written = 0;
@@ -146,6 +160,14 @@ export function DataProvider({ children }: { children: ReactNode }) {
           const { id, ...rest } = lesson;
           batch.set(doc(db(), "lessons", id), rest, { merge: true });
           written++;
+          if (++ops >= 400) {
+            await batch.commit();
+            batch = writeBatch(db());
+            ops = 0;
+          }
+        }
+        for (const id of legacyIds) {
+          batch.delete(doc(db(), "lessons", id));
           if (++ops >= 400) {
             await batch.commit();
             batch = writeBatch(db());

@@ -39,14 +39,23 @@ Below 1024px everything collapses back to the single-column, bottom-tab mobile l
     2027, estimated) are generated from the Zera ICT curriculum hub's 8-week topic
     outlines, expanded into full lesson plans. Term 2 is compressed to fit before Term 3's
     confirmed start date — correct both once the official calendar is published.
-- **Maths Y1**: a suggested scope & sequence aligned to Cambridge Primary Mathematics Stage 1
-  (Number, Geometry, Measure, Statistics) — original topics/objectives written to match that
-  framework's structure, not verbatim Cambridge text. 41 weekly topics run across all 3 terms
-  in the same rhythm as the ICT classes (consolidation / revision / examination week / end-of-
-  term project / portfolio showcase). Maths Y1 meets 3x/week (Tue/Thu/Fri), so each week's topic
-  becomes 3 linked-but-separate sessions — Tue *explore*, Thu *practise*, Fri *consolidate* —
-  each independently editable and markable Done. See `scripts/maths_y1_content.py` (the 41
-  topics) and `scripts/build_maths_y1.py` (the day-variant lesson-plan generator).
+- **Maths Y1**: mapped to the official **Cambridge Primary Mathematics Curriculum Framework
+  (0096), Stage 1** — every one of its 55 learning objectives (Number: Nn1–12, Nc1–22;
+  Geometry: Gs1–3, Gp1; Measure: Mm1, Ml1–3, Mt1–3; Handling data: Dh1; Problem solving:
+  Pt1–9) is covered exactly once across the year. Topic titles and wording are original
+  paraphrases, not verbatim Cambridge text; each week in `scripts/maths_y1_content.py` carries
+  a `codes` list back to the specific objectives it covers. Termly shape follows Cambridge's own
+  suggested progression: **Term 1** — counting, place value, comparing/ordering, 2D/3D shape and
+  position; **Term 2** — addition/subtraction, doubles and bridging ten, length/mass/capacity;
+  **Term 3** — early multiplication/division (doubling, halving, sharing), money, time, data
+  handling and a dedicated problem-solving week. All 3 terms close with the same consolidation /
+  revision / examination week / end-of-term project / portfolio showcase rhythm used for the
+  ICT classes. Maths Y1 meets 3x/week (Tue/Thu/Fri), so each week's topic becomes 3
+  independently-plannable sessions — Tue *explore*, Thu *practise*, Fri *consolidate* — each with
+  its own lesson doc, its own editable content, and its own Done status (see "Multi-session
+  classes" below — this is also where the Thu/Fri "marking one marks both" bug was fixed). See
+  `scripts/maths_y1_content.py` (the 41 topics + codes) and `scripts/build_maths_y1.py` (the
+  day-variant lesson-plan generator).
 - **Moral value / quote / food-for-thought**: every lesson gets one, assigned deterministically
   per class from a 41-entry pool so nothing repeats across a class's full year (see
   `src/data/values.ts`).
@@ -100,6 +109,13 @@ Classes with a single weekly session (all 9 ICT classes) keep the older
 `{classId}_{termId}_w{weekNo}` id with no `day` field, unaffected. `/class/[classId]`'s
 **+ Week** button detects a class's session count from `slotsForClass()` and creates one lesson
 per session automatically.
+
+If your live Firestore still has old pre-migration docs (one lesson shared across a whole
+week, no `day` field), `lessonFor` now always prefers an exact weekday match over a day-less
+lesson, so the old docs can no longer shadow the new per-session ones — but they'll still sit
+there unused. Hit **Seed / re-sync** in `/admin` once to have `seed()` clean them up (it deletes
+any Maths Y1 / Malay Enrichment Y8 doc with no `day` field, same edit-protection rules as
+everything else it writes).
 
 The moral value / quote / ice breaker bank lives in `src/data/values.ts` (TypeScript, used by
 the app and the browser upload path) with a Python mirror in `scripts/values.py` (used by
