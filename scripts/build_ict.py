@@ -19,6 +19,17 @@ DEVICE_NOTE = {
     "1-1-devices": "Each pupil (or pair, if devices are limited) works on their own device for this session.",
 }
 
+
+def _resources(mode: str, week_spec: dict) -> list:
+    """The device note, plus — where this week has one — a direct link to the
+    real tool or Oak unit thread it's teaching, so the lesson page can open
+    it in one click."""
+    resources = [{"label": DEVICE_NOTE[mode]}]
+    url = week_spec.get("resourceUrl")
+    if url:
+        resources.append({"label": week_spec.get("resourceLabel") or "Related resource", "url": url})
+    return resources
+
 STARTER_TEMPLATE = {
     "unplugged": "Gather in a circle, away from any devices. Quick recap or hook question related to '{topic}'.",
     "shared-laptops": "Gather pupils away from the laptops first. Quick recap or hook question related to '{topic}', then explain today's groups and roles.",
@@ -115,7 +126,7 @@ def build_week_lesson(class_id, term_id, week_no, cal, week_spec, order):
             f"I had a go at {subtopic.lower()}.",
             "I shared what I made or found with the class.",
         ],
-        "resources": [{"label": DEVICE_NOTE[mode]}],
+        "resources": _resources(mode, week_spec),
         "status": "planned",
         "note": "",
         "order": order,

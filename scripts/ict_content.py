@@ -100,59 +100,101 @@ OAK_UNITS = {
     ],
 }
 
-# Original KS3 units (Y7-9): no Oak primary units apply here. Designed for
-# more depth than Y1-6 and explicit groupwork every unit.
+# Real unit titles from Oak National Academy's Computing (Secondary Core)
+# programme (https://www.thenational.academy/teachers/programmes/computing-
+# secondary-core/units) -- original session content written to fit these
+# unit names, not verbatim Oak lesson content. Each (title, thread, group
+# note) becomes 2 of our weekly sessions.
 KS3_UNITS = {
     "ict-y7": [
-        ("Networks and How the Internet Works", "groups build and present a network diagram of the school"),
-        ("Python Fundamentals: Variables and Input/Output", "pair programming throughout"),
-        ("Python Fundamentals: Selection and Loops", "pair programming with a group debugging challenge"),
-        ("Productivity Deep Dive: Advanced Documents", "groups co-produce one shared report"),
-        ("Data Representation: Binary and Images", "team puzzle stations, rotating every 10 minutes"),
-        ("Group Project: Build a Simple Website", "teams of 3-4 build and present a multi-page site"),
+        ("Clear Messaging in Digital Media", "Creating media", "groups design and critique a digital media message"),
+        ("Computer Networks and Data Transmission", "Networks", "groups build and present a network diagram of the school"),
+        ("Using Media to Gain Support for a Cause", "Creating media", "groups produce a persuasive media campaign"),
+        ("Fundamental Programming Constructs (Block-Based)", "Programming", "pair programming throughout"),
+        ("Physical Computing with the micro:bit", "Design and development", "small groups share kits, rotating roles"),
+        ("Data Modelling", "Data and information", "groups build and present a data model"),
     ],
     "ict-y8": [
-        ("Cybersecurity and Digital Forensics", "groups investigate a case study and present findings"),
-        ("Python: Functions and Lists", "pair programming with a code-review swap between pairs"),
-        ("Spreadsheets: Modelling and Formulas", "groups build and present a shared data model"),
-        ("Databases: Design and Query Basics", "groups design a database for a real scenario"),
-        ("Media Project: Video or Podcast Production", "production teams of 3-4, roles rotate"),
-        ("Group Hackathon: Solve a School Problem with Tech", "teams pitch, build and present a solution"),
+        ("Developing Vector Graphics", "Creating media", "peer critique in pairs"),
+        ("Computer Systems and Data Science", "Computing systems", "groups investigate and present a systems topic"),
+        ("Developing for the Web", "Design and development", "teams of 3-4 build a multi-page site"),
+        ("Data Representation: Text and Numbers", "Data and information", "pair investigation stations"),
+        ("Mobile App Development", "Design and development", "teams of 3-4 design and prototype an app"),
+        ("Introduction to Python Programming", "Programming", "pair programming with a code-review swap"),
     ],
     "ict-y9": [
-        ("Advanced Python: Algorithms and Problem Solving", "pair programming, algorithm relay challenges"),
-        ("Computer Systems and Architecture", "groups research a component and present to the class"),
-        ("Web Development: Interactive Sites", "teams of 3-4 build an interactive site (HTML/CSS/JS basics)"),
-        ("Data Science Basics: Analysing a Real Dataset", "groups investigate and present findings from real data"),
-        ("Ethics and Impact of AI", "structured group debate with roles, then a class panel discussion"),
-        ("Capstone Group Project: Pitch, Build, Present", "self-selected team project, presented to an audience"),
+        ("Python Programming with Sequences of Data", "Programming", "pair programming, algorithm relay challenges"),
+        ("3D Animation", "Creating media", "production teams of 3-4, roles rotate"),
+        ("Using Data Science", "Data and information", "groups investigate a real dataset and present findings"),
+        ("Data Representation: Images and Sound", "Data and information", "pair investigation stations"),
+        ("Introduction to Cybersecurity", "Safety and security", "groups investigate a case study and present findings"),
+        ("Machine Learning Using the micro:bit", "Artificial intelligence", "small groups share kits, rotating roles"),
     ],
 }
 
+OAK_SECONDARY_UNITS_URL = "https://www.thenational.academy/teachers/programmes/computing-secondary-core/units"
+
+# Oak "thread" filter slugs, matching the pattern of the ?threads=... URL
+# param (e.g. ?threads=artificial-intelligence).
+THREAD_SLUGS = {
+    "Creating media": "creating-media",
+    "Networks": "networks",
+    "Programming": "programming",
+    "Design and development": "design-and-development",
+    "Data and information": "data-and-information",
+    "Computing systems": "computing-systems",
+    "Safety and security": "safety-and-security",
+    "Artificial intelligence": "artificial-intelligence",
+}
+
+
+def thread_url(thread: str) -> str:
+    slug = THREAD_SLUGS.get(thread)
+    return f"{OAK_SECONDARY_UNITS_URL}?threads={slug}" if slug else OAK_SECONDARY_UNITS_URL
+
+
 CUSTOM_POOL = {
     "KS1": [
-        ("Typing Club — Home Row Warm-Up", "Find and practise the home-row keys, a few minutes at a time"),
-        ("Typing Club — Building Speed", "Short, timed typing games to build confidence and speed"),
-        ("Google Workspace — My Drive and Docs", "Create, name and save a simple document in Google Docs"),
-        ("Microsoft Office — Word Basics", "Create, name and save a simple document in Word"),
-        ("Digital Portfolio — Choosing My Best Work", "Pick a favourite piece of work and say why it's good"),
-        ("Typing Club — Whole Keyboard Challenge", "Practise reaching beyond the home row, letter by letter"),
-        ("Google Workspace — Slides: My First Presentation", "Make a 2-3 slide presentation about a favourite thing"),
-        ("Microsoft Office — PowerPoint Basics", "Make a 2-3 slide presentation about a favourite thing"),
-        ("Coding Playground — Free Choice", "A free-choice session with a simple block-coding tool"),
-        ("Digital Portfolio — Show and Tell Prep", "Choose and rehearse sharing one piece of work with the class"),
+        ("Typing Club — Home Row Warm-Up", "Find and practise the home-row keys, a few minutes at a time", "https://www.typingclub.com/"),
+        ("Typing Club — Building Speed", "Short, timed typing games to build confidence and speed", "https://www.typingclub.com/"),
+        ("Google Workspace — My Drive and Docs", "Create, name and save a simple document in Google Docs", "https://docs.google.com/"),
+        ("Microsoft Office — Word Basics", "Create, name and save a simple document in Word", "https://www.microsoft.com/en-us/microsoft-365/word"),
+        ("Digital Portfolio — Choosing My Best Work", "Pick a favourite piece of work and say why it's good", None),
+        ("Typing Club — Whole Keyboard Challenge", "Practise reaching beyond the home row, letter by letter", "https://www.typingclub.com/"),
+        ("Google Workspace — Slides: My First Presentation", "Make a 2-3 slide presentation about a favourite thing", "https://slides.google.com/"),
+        ("Microsoft Office — PowerPoint Basics", "Make a 2-3 slide presentation about a favourite thing", "https://www.microsoft.com/en-us/microsoft-365/powerpoint"),
+        ("Coding Playground — Free Choice", "A free-choice session with a simple block-coding tool", None),
+        ("Digital Portfolio — Show and Tell Prep", "Choose and rehearse sharing one piece of work with the class", None),
     ],
     "KS2": [
-        ("Typing Club — Speed and Accuracy Challenge", "A timed typing challenge, tracking personal-best progress"),
-        ("Google Workspace — Docs, Sheets and Slides Refresher", "A mixed refresher task across the three tools"),
-        ("Microsoft Office — Word, Excel and PowerPoint Refresher", "A mixed refresher task across the three tools"),
-        ("Independent Project — Choose Your Own Mini-Challenge", "Pick a mini-challenge from a menu and complete it"),
+        ("Typing Club — Speed and Accuracy Challenge", "A timed typing challenge, tracking personal-best progress", "https://www.typingclub.com/"),
+        ("Google Workspace — Docs, Sheets and Slides Refresher", "A mixed refresher task across the three tools", "https://workspace.google.com/"),
+        ("Microsoft Office — Word, Excel and PowerPoint Refresher", "A mixed refresher task across the three tools", "https://www.microsoft.com/en-us/microsoft-365"),
+        ("Independent Project — Choose Your Own Mini-Challenge", "Pick a mini-challenge from a menu and complete it", None),
     ],
-    "KS3": [
-        ("Typing Club — Professional Speed Challenge", "A timed challenge aiming for real touch-typing speed"),
-        ("Productivity Masterclass — Google Workspace for Group Projects", "Shared docs, comments and version history for teamwork"),
-        ("Productivity Masterclass — Microsoft 365 for Group Projects", "Co-authoring, comments and version history for teamwork"),
-        ("Independent/Group Choice Project", "Pick a challenge from a menu, solo or in a self-formed group"),
+}
+
+# Y7-9 custom slots: the specific tools requested, spread across the 3 years
+# (4 slots/year) so every tool gets covered exactly once across KS3, each
+# linked straight to the real tool so it's one click away from the lesson.
+CUSTOM_KS3_BY_CLASS = {
+    "ict-y7": [
+        ("Google Interland", "Play through Interland's challenges to practise online safety skills", "https://beinternetawesome.withgoogle.com/en_us/interland"),
+        ("Typing Club — Speed and Accuracy", "Timed typing practice, tracking personal-best progress", "https://www.typingclub.com/"),
+        ("Microsoft Word — Document Skills", "Format a multi-page document using styles, headers and a table of contents", "https://www.microsoft.com/en-us/microsoft-365/word"),
+        ("Google Docs — Collaborative Writing", "Co-author a shared document with comments and suggestions", "https://docs.google.com/"),
+    ],
+    "ict-y8": [
+        ("Microsoft Excel — Data Skills", "Build a spreadsheet with formulas, charts and conditional formatting", "https://www.microsoft.com/en-us/microsoft-365/excel"),
+        ("Google Sheets — Shared Data Projects", "Build a shared spreadsheet model with a group, using formulas and charts", "https://sheets.google.com/"),
+        ("Canva Design — Poster and Social Graphic", "Design a poster or social graphic using Canva's templates and tools", "https://www.canva.com/"),
+        ("Google Forms — Build a Survey", "Design a survey, collect responses, and read the results", "https://forms.google.com/"),
+    ],
+    "ict-y9": [
+        ("Microsoft PowerPoint — Presentation Skills", "Design and deliver a polished presentation with strong visuals", "https://www.microsoft.com/en-us/microsoft-365/powerpoint"),
+        ("Google Slides — Team Presentation", "Co-build a shared team presentation with comments and version history", "https://slides.google.com/"),
+        ("Google Sites — Build a Simple Website", "Design and publish a simple multi-page website with Google Sites", "https://sites.google.com/"),
+        ("Independent/Group Choice Project", "Pick a challenge from a menu, solo or in a self-formed group", None),
     ],
 }
 
@@ -225,16 +267,30 @@ def _unit_sessions(title, group_note=None):
     ]
 
 
-def _ks3_unit_sessions(title, group_note):
+def _ks3_unit_sessions(title, thread, group_note):
+    url = thread_url(thread)
+    label = f"Oak National Academy — {thread} units"
     return [
-        {"topic": title, "subtopic": f"Explore & learn: {title} ({group_note})", "source": "Original KS3 unit"},
-        {"topic": title, "subtopic": f"Build & present: {title} ({group_note})", "source": "Original KS3 unit"},
+        {
+            "topic": title,
+            "subtopic": f"Explore & learn: {title} ({group_note})",
+            "source": f"Oak National Academy: {title} ({thread})",
+            "resourceUrl": url,
+            "resourceLabel": label,
+        },
+        {
+            "topic": title,
+            "subtopic": f"Build & present: {title} ({group_note})",
+            "source": f"Oak National Academy: {title} ({thread})",
+            "resourceUrl": url,
+            "resourceLabel": label,
+        },
     ]
 
 
 def build_class_weeks(class_id: str) -> list:
     """Returns exactly CONTENT_WEEKS_TARGET (24) week dicts:
-    {topic, subtopic, source, equipmentMode}."""
+    {topic, subtopic, source, equipmentMode, resourceUrl?, resourceLabel?}."""
     key_stage = CLASS_KEY_STAGE[class_id]
 
     weeks = []
@@ -247,15 +303,24 @@ def build_class_weeks(class_id: str) -> list:
             for s in _unit_sessions(title):
                 weeks.append({**s, "equipmentMode": "shared-laptops"})
     else:
-        for title, group_note in KS3_UNITS[class_id]:
-            for s in _ks3_unit_sessions(title, group_note):
+        for title, thread, group_note in KS3_UNITS[class_id]:
+            for s in _ks3_unit_sessions(title, thread, group_note):
                 weeks.append({**s, "equipmentMode": "1-1-devices"})
 
     remaining = CONTENT_WEEKS_TARGET - len(weeks)
-    pool = CUSTOM_POOL[key_stage]
+    pool = CUSTOM_KS3_BY_CLASS.get(class_id) or CUSTOM_POOL[key_stage]
     for i in range(remaining):
-        topic, subtopic = pool[i % len(pool)]
-        weeks.append({"topic": topic, "subtopic": subtopic, "source": "Custom (flexible slot)", "equipmentMode": "shared-laptops"})
+        topic, subtopic, url = pool[i % len(pool)]
+        weeks.append(
+            {
+                "topic": topic,
+                "subtopic": subtopic,
+                "source": "Custom (flexible slot)",
+                "equipmentMode": "shared-laptops",
+                "resourceUrl": url,
+                "resourceLabel": topic,
+            }
+        )
 
     assert len(weeks) == CONTENT_WEEKS_TARGET, f"{class_id}: {len(weeks)} weeks, expected {CONTENT_WEEKS_TARGET}"
     return weeks

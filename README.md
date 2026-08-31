@@ -46,14 +46,23 @@ Below 1024px everything collapses back to the single-column, bottom-tab mobile l
   device-free (paper, discussion, movement), not just relabelled.
 - **ICT curriculum (Y1-Y9)**: Years 1-6 follow the real unit titles from **Oak National
   Academy's Computing (Primary) programme**
-  (thenational.academy/teachers/programmes/computing-primary/units) — original session content
-  written to fit those unit names, not verbatim Oak lesson content. Years 7-9 have no Oak
-  primary units to draw on, so they're original KS3 units designed for more depth and explicit
-  groupwork every unit (pair programming, group investigations, team builds, presentations).
-  Every class also gets flexible custom slots — Typing Club, Microsoft 365, Google Workspace,
-  independent project time — filling out the rest of the 24-content-week year alongside the
-  unit content; every field stays editable per lesson, so any slot can be swapped for your own
-  material. Source: `scripts/ict_content.py` (the unit/custom-slot spine per class) and
+  (thenational.academy/teachers/programmes/computing-primary/units); Years 7-9 follow the real
+  unit titles from **Oak's Computing (Secondary Core) programme**
+  (thenational.academy/teachers/programmes/computing-secondary-core/units) — original session
+  content written to fit those unit names, not verbatim Oak lesson content. Each Y7-9 unit is
+  tagged with its Oak "thread" (Creating media, Networks, Programming, Design and development,
+  Data and information, Computing systems, Safety and security, Artificial intelligence) and
+  every unit week links straight to that thread's Oak units page (e.g.
+  `?threads=artificial-intelligence`) via the Resources section, so the source material is one
+  click away. Y7-9 units keep explicit groupwork baked in (pair programming, group
+  investigations, team builds, presentations).
+  Every class also gets flexible custom slots filling out the rest of the 24-content-week year;
+  for Y7-9 these are the specific tools requested — **Google Interland, Typing Club, Microsoft
+  Word/Excel/PowerPoint, Google Docs/Sheets/Slides/Forms/Sites, Canva Design** — spread one each
+  across the 3 years (4 slots/year) and every one links directly to the real tool via its
+  Resources section too. Every field stays editable per lesson, so any slot can be swapped for
+  your own material. Source: `scripts/ict_content.py` (the unit/custom-slot spine per class,
+  including the `PROJECTS`, `KS3_UNITS`, `THREAD_SLUGS` and `CUSTOM_KS3_BY_CLASS` tables) and
   `scripts/build_ict.py` (the equipment-mode-aware lesson-plan generator — a starter / teach &
   model / main task / plenary shape whose wording genuinely changes with `equipmentMode`, rather
   than one generic paragraph with the topic swapped in). The original SOW workbooks and their derived files
