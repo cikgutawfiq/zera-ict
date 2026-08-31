@@ -17,7 +17,7 @@ Google account; embedded as an iframe on `cikgutawfiq.com/zera-ict`.
 | `/calendar` **This week** | The five weekdays, each with its own column on desktop (a real week board) and stacked on mobile. |
 | `/classes`, `/class/[id]` | Every class; each term is its own collapsible section (the current term opens by default), with **+ Week** to add more. |
 | `/overview` | Pick a year/class and see every week's topic for the *whole year* (all 3 terms) as one top-down table — Term / Week / Topic / "what students will learn" / **Lesson detail** (a fuller, genuinely week-specific description of what actually happens). **Click any row** to jump straight into that week's full lesson plan — going **Back** returns to this same class, not the default. **📥 Save (PDF)** exports that one class as a single landscape page; **📚 Export Y1–Y9 pack (PDF)** builds a 9-page pack, one page per ICT class, in one file. End-of-term project weeks show the actual project name right in the Topic column (e.g. "End of Term Project — Build My Own Webpage"), so what students are building is visible at a glance, not hidden behind a generic label. |
-| `/admin` | Upload the two SOW workbooks to re-sync Term 1 from your phone, seed / re-sync from the bundled SOW, add or remove terms and weeks (each term is an accordion — collapsed by default, only one open at a time), sign out. |
+| `/admin` | Upload the two SOW workbooks to re-sync Term 1 from your phone, seed / re-sync from the bundled SOW, add or remove terms and weeks (each term is an accordion — collapsed by default, only one open at a time), an **ICT module & project plan** table (every module, its term/week, its live tool link, and its KS1/KS2/KS3 project side by side), sign out. |
 
 ## Look and feel
 
@@ -44,31 +44,27 @@ Below 1024px everything collapses back to the single-column, bottom-tab mobile l
   since laptop access may be limited (as few as 4 shared machines, in rotating groups) for the
   first couple of months of term. Content and plan wording for those weeks is genuinely
   device-free (paper, discussion, movement), not just relabelled.
-- **ICT curriculum (Y1-Y9)**: Years 1-6 follow the real unit titles from **Oak National
-  Academy's Computing (Primary) programme**
-  (thenational.academy/teachers/programmes/computing-primary/units); Years 7-9 follow the real
-  unit titles from **Oak's Computing (Secondary Core) programme**
-  (thenational.academy/teachers/programmes/computing-secondary-core/units) — original session
-  content written to fit those unit names, not verbatim Oak lesson content. Each Y7-9 unit is
-  tagged with its Oak "thread" (Creating media, Networks, Programming, Design and development,
-  Data and information, Computing systems, Safety and security, Artificial intelligence) and
-  every unit week links straight to that thread's Oak units page (e.g.
-  `?threads=artificial-intelligence`) via the Resources section, so the source material is one
-  click away. Y7-9 units keep explicit groupwork baked in (pair programming, group
-  investigations, team builds, presentations).
-  Every class also gets flexible custom slots filling out the rest of the 24-content-week year;
-  for Y7-9 these are the specific tools requested — **Google Interland, Typing Club, Microsoft
-  Word/Excel/PowerPoint, Google Docs/Sheets/Slides/Forms/Sites, Canva Design** — spread one each
-  across the 3 years (4 slots/year) and every one links directly to the real tool via its
-  Resources section too. Every field stays editable per lesson, so any slot can be swapped for
-  your own material. Source: `scripts/ict_content.py` (the unit/custom-slot spine per class,
-  including the `PROJECTS`, `KS3_UNITS`, `THREAD_SLUGS` and `CUSTOM_KS3_BY_CLASS` tables) and
-  `scripts/build_ict.py` (the equipment-mode-aware lesson-plan generator — a starter / teach &
-  model / main task / plenary shape whose wording genuinely changes with `equipmentMode`, rather
-  than one generic paragraph with the topic swapped in). The original SOW workbooks and their derived files
-  (`sow.raw.json`, `authored/`) still exist for the `/admin` re-upload path and historical
-  reference, but no longer feed the seed — that pipeline is entirely `ict_content.py`/
-  `build_ict.py` now.
+- **ICT curriculum (Y1-Y9)**: every ICT class follows the **same 16 modules**, one per week —
+  Google Interland, Typing Club, Microsoft Word, Google Docs, Microsoft Excel, Google Sheets,
+  Canva Design, Google Forms, Microsoft PowerPoint, Google Slides, Google Sites, Artificial
+  Intelligence, Data and Information, Safety and Security, Design and Development, and Creating
+  Media — instead of a different topic list per year. Content, vocabulary and each module's
+  **project** (see below) scale up by key stage (KS1/KS2/KS3) rather than swapping the topic out,
+  so the whole school shares one consistent map of "what ICT covers." Every module links straight
+  to the real tool (canva.com, typingclub.com, the Microsoft 365 / Google Workspace app pages,
+  Interland) via the lesson's Resources section; the 5 non-tool modules link to Oak National
+  Academy's matching Computing (Secondary Core) thread page instead (e.g.
+  `?threads=artificial-intelligence`). Modules land in Term 2 (1-8) and Term 3 (9-16), after
+  each class's 8 low/no-device settling-in weeks in Term 1. Source: `scripts/ict_content.py`
+  (the `MODULES` table — name, tool link, and KS1/KS2/KS3 subtopic+objectives+project for each)
+  and `scripts/build_ict.py` (the equipment-mode-aware lesson-plan generator). The original SOW
+  workbooks and their derived files (`sow.raw.json`, `authored/`) still exist for the `/admin`
+  re-upload path and historical reference, but no longer feed the seed.
+- **Module & project plan (Admin)**: `/admin` has an **ICT module & project plan** table — every
+  module, which term/week it falls in, its live tool/reference link, and its project at each key
+  stage, all in one place so the whole year's "what will they make" plan is visible without
+  clicking into 200+ individual lessons. Generated from `ict_content.py`'s `module_plan_table()`
+  into `src/data/modulePlan.json` by `build_seed.py`.
 - **Maths Y1**: aligned to **Oak National Academy's Year 1 Maths units**
   (thenational.academy/teachers/programmes/maths-primary/units) — the 18 real unit titles, each
   allocated roughly 1-2 of our weeks in proportion to its Oak lesson count, so all 18 fit

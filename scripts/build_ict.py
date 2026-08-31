@@ -55,7 +55,10 @@ MAIN_STUDENT_TEMPLATE = {
 }
 
 
-def session_plan(topic: str, subtopic: str, mode: str) -> list:
+def session_plan(topic: str, subtopic: str, mode: str, project: str | None = None) -> list:
+    main_detail = MAIN_TEMPLATE[mode].format(subtopic=subtopic)
+    if project:
+        main_detail += f" Today's task builds towards this module's project: {project}"
     return [
         {
             "mins": 10,
@@ -74,7 +77,7 @@ def session_plan(topic: str, subtopic: str, mode: str) -> list:
         {
             "mins": 30,
             "title": "Main task",
-            "detail": MAIN_TEMPLATE[mode].format(subtopic=subtopic),
+            "detail": main_detail,
             "studentActivity": MAIN_STUDENT_TEMPLATE[mode],
             "assessment": "Circulate and support; note 2-3 pupils/groups to check in on first next session.",
         },
@@ -91,6 +94,30 @@ def session_plan(topic: str, subtopic: str, mode: str) -> list:
 def build_week_lesson(class_id, term_id, week_no, cal, week_spec, order):
     topic, subtopic, mode = week_spec["topic"], week_spec["subtopic"], week_spec["equipmentMode"]
     key_stage = CLASS_KEY_STAGE[class_id]
+    project = week_spec.get("project")
+
+    objectives = week_spec.get("objectives") or [
+        f"Understand what '{topic}' involves and why it matters.",
+        f"Practise '{subtopic}' with the right level of support for {key_stage}.",
+        "Talk about their work using the correct vocabulary.",
+    ]
+
+    activities = [f"Main task: {subtopic}"]
+    if project:
+        activities.append(f"Work towards this module's project: {project}")
+    else:
+        activities.append(
+            {
+                "unplugged": f"Unplugged partner/group task on {topic.lower()}",
+                "shared-laptops": f"Shared-laptop group task on {topic.lower()}",
+                "1-1-devices": f"Independent device task on {topic.lower()}",
+            }[mode]
+        )
+    activities.append("Plenary share-back")
+
+    success_criteria = [f"I can talk about {topic.lower()}.", f"I had a go at {subtopic.lower()}."]
+    success_criteria.append(f"I made progress on: {project}" if project else "I shared what I made or found with the class.")
+
     return {
         "id": f"{class_id}_{term_id}_w{week_no}",
         "classId": class_id,
@@ -106,26 +133,10 @@ def build_week_lesson(class_id, term_id, week_no, cal, week_spec, order):
         "outline": week_spec.get("source", ""),
         "sowResources": "",
         "remark": cal.get("remark", ""),
-        "objectives": [
-            f"Understand what '{topic}' involves and why it matters.",
-            f"Practise '{subtopic}' with the right level of support for {key_stage}.",
-            "Talk about their work using the correct vocabulary.",
-        ],
-        "plan": session_plan(topic, subtopic, mode),
-        "activities": [
-            f"Main task: {subtopic}",
-            {
-                "unplugged": f"Unplugged partner/group task on {topic.lower()}",
-                "shared-laptops": f"Shared-laptop group task on {topic.lower()}",
-                "1-1-devices": f"Independent device task on {topic.lower()}",
-            }[mode],
-            "Plenary share-back",
-        ],
-        "successCriteria": [
-            f"I can talk about {topic.lower()}.",
-            f"I had a go at {subtopic.lower()}.",
-            "I shared what I made or found with the class.",
-        ],
+        "objectives": objectives,
+        "plan": session_plan(topic, subtopic, mode, project),
+        "activities": activities,
+        "successCriteria": success_criteria,
         "resources": _resources(mode, week_spec),
         "status": "planned",
         "note": "",

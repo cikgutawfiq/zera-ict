@@ -1,0 +1,338 @@
+[
+ {
+  "order": 1,
+  "term": 2,
+  "weekInTerm": 1,
+  "name": "Google Interland",
+  "resourceUrl": "https://beinternetawesome.withgoogle.com/en_us/interland",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Playing Kind Kingdom and Mindful Mountain",
+    "project": "Draw a 'Being Safe and Kind Online' poster using one idea from Interland."
+   },
+   "KS2": {
+    "subtopic": "Completing Reality River and Tower of Treasure",
+    "project": "Write a one-page online-safety tips leaflet based on what Interland taught."
+   },
+   "KS3": {
+    "subtopic": "Completing all 4 Interland worlds and discussing real scenarios",
+    "project": "Produce a short online-safety awareness poster or 60-second video script for younger pupils."
+   }
+  }
+ },
+ {
+  "order": 2,
+  "term": 2,
+  "weekInTerm": 2,
+  "name": "Typing Club",
+  "resourceUrl": "https://www.typingclub.com/",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Finding the home-row keys",
+    "project": "Reach a personal-best score on a home-row typing game."
+   },
+   "KS2": {
+    "subtopic": "Building speed and accuracy across the keyboard",
+    "project": "Reach a target WPM with under 10% errors, recorded in a typing log."
+   },
+   "KS3": {
+    "subtopic": "Professional speed and sustained accuracy",
+    "project": "Reach a professional target WPM and write a short typed reflection on their progress."
+   }
+  }
+ },
+ {
+  "order": 3,
+  "term": 2,
+  "weekInTerm": 3,
+  "name": "Microsoft Word",
+  "resourceUrl": "https://www.microsoft.com/en-us/microsoft-365/word",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Typing and formatting a simple sentence",
+    "project": "A simple 'All About Me' page with a title, one sentence and a picture."
+   },
+   "KS2": {
+    "subtopic": "Formatting a multi-paragraph document",
+    "project": "A one-page formatted report with a heading, an image and a bullet list."
+   },
+   "KS3": {
+    "subtopic": "Styles, headers/footers and a table of contents",
+    "project": "A multi-page formatted report using styles and an auto-generated table of contents."
+   }
+  }
+ },
+ {
+  "order": 4,
+  "term": 2,
+  "weekInTerm": 4,
+  "name": "Google Docs",
+  "resourceUrl": "https://docs.google.com/",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Typing a shared class sentence together",
+    "project": "A shared class page, each pupil contributing one sentence."
+   },
+   "KS2": {
+    "subtopic": "Co-authoring a shared document with comments",
+    "project": "A group-written short story, each pupil contributing a section and commenting on others'."
+   },
+   "KS3": {
+    "subtopic": "Co-authoring with suggestions and version history",
+    "project": "A collaboratively edited report with tracked suggestions and resolved comments."
+   }
+  }
+ },
+ {
+  "order": 5,
+  "term": 2,
+  "weekInTerm": 5,
+  "name": "Microsoft Excel",
+  "resourceUrl": "https://www.microsoft.com/en-us/microsoft-365/excel",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Entering numbers into a simple table",
+    "project": "A simple table counting a class's favourite colours or fruits."
+   },
+   "KS2": {
+    "subtopic": "Simple formulas and a chart",
+    "project": "A survey-results spreadsheet with a total, an average, and a chart."
+   },
+   "KS3": {
+    "subtopic": "Formulas, conditional formatting and charts",
+    "project": "A data-model or simple budget spreadsheet with formulas, conditional formatting and a chart."
+   }
+  }
+ },
+ {
+  "order": 6,
+  "term": 2,
+  "weekInTerm": 6,
+  "name": "Google Sheets",
+  "resourceUrl": "https://sheets.google.com/",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Entering numbers into a shared sheet together",
+    "project": "A class shared counting sheet everyone contributes a row to."
+   },
+   "KS2": {
+    "subtopic": "Building a shared spreadsheet with simple formulas",
+    "project": "A group survey spreadsheet with a shared formula and chart."
+   },
+   "KS3": {
+    "subtopic": "Building a shared data model with formulas and charts",
+    "project": "A group data-modelling spreadsheet with formulas, a chart and shared editing."
+   }
+  }
+ },
+ {
+  "order": 7,
+  "term": 2,
+  "weekInTerm": 7,
+  "name": "Canva Design",
+  "resourceUrl": "https://www.canva.com/",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Making a simple picture from a template",
+    "project": "A simple poster made from a Canva template."
+   },
+   "KS2": {
+    "subtopic": "Designing a poster with text and images",
+    "project": "An original poster promoting something, e.g. a class event."
+   },
+   "KS3": {
+    "subtopic": "Designing with brand consistency for a real audience",
+    "project": "A branded poster or social-media graphic campaign for a chosen cause."
+   }
+  }
+ },
+ {
+  "order": 8,
+  "term": 2,
+  "weekInTerm": 8,
+  "name": "Google Forms",
+  "resourceUrl": "https://forms.google.com/",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Answering a simple class survey",
+    "project": "Answer a class survey and look at the results together as a class."
+   },
+   "KS2": {
+    "subtopic": "Building a simple survey and reading results",
+    "project": "A short class survey with results read and summarised."
+   },
+   "KS3": {
+    "subtopic": "Designing, collecting and analysing survey responses",
+    "project": "A designed survey with collected responses and a short written results analysis."
+   }
+  }
+ },
+ {
+  "order": 9,
+  "term": 3,
+  "weekInTerm": 1,
+  "name": "Microsoft PowerPoint",
+  "resourceUrl": "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
+  "tiers": {
+   "KS1": {
+    "subtopic": "A 2-3 slide presentation about a favourite thing",
+    "project": "A 2-3 slide 'my favourite...' presentation."
+   },
+   "KS2": {
+    "subtopic": "A multi-slide presentation with images and transitions",
+    "project": "A 5-slide presentation on a class topic, presented to the class."
+   },
+   "KS3": {
+    "subtopic": "A polished presentation with strong visuals",
+    "project": "A polished multi-slide presentation delivered to an audience."
+   }
+  }
+ },
+ {
+  "order": 10,
+  "term": 3,
+  "weekInTerm": 2,
+  "name": "Google Slides",
+  "resourceUrl": "https://slides.google.com/",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Adding to a shared class slide",
+    "project": "One shared class slideshow, each pupil adding a picture to their own slide."
+   },
+   "KS2": {
+    "subtopic": "Building a group presentation with shared slides",
+    "project": "A group presentation, each pupil owning and presenting one slide."
+   },
+   "KS3": {
+    "subtopic": "Co-building a team presentation with comments and history",
+    "project": "A team presentation co-built and delivered together."
+   }
+  }
+ },
+ {
+  "order": 11,
+  "term": 3,
+  "weekInTerm": 3,
+  "name": "Google Sites",
+  "resourceUrl": "https://sites.google.com/",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Looking at and adding to a simple class site",
+    "project": "A simple one-page class site about a favourite topic, built together."
+   },
+   "KS2": {
+    "subtopic": "Building a simple personal website",
+    "project": "A 2-3 page personal website about a hobby or interest."
+   },
+   "KS3": {
+    "subtopic": "Building a multi-page site with navigation and design choices",
+    "project": "A multi-page website for a chosen purpose — portfolio, campaign or club."
+   }
+  }
+ },
+ {
+  "order": 12,
+  "term": 3,
+  "weekInTerm": 4,
+  "name": "Artificial Intelligence",
+  "resourceUrl": "https://www.thenational.academy/teachers/programmes/computing-secondary-core/units?threads=artificial-intelligence",
+  "tiers": {
+   "KS1": {
+    "subtopic": "What is AI? Spotting AI in everyday life",
+    "project": "A simple poster: 'AI in My Life', with 3 examples."
+   },
+   "KS2": {
+    "subtopic": "Trying safe AI tools and discussing how they work",
+    "project": "A short write-up comparing 2 AI tools they tried, with one strength and one limitation each."
+   },
+   "KS3": {
+    "subtopic": "Using AI tools critically: bias, ethics and limitations",
+    "project": "A short report or presentation on an AI ethics issue, with real examples."
+   }
+  }
+ },
+ {
+  "order": 13,
+  "term": 3,
+  "weekInTerm": 5,
+  "name": "Data and Information",
+  "resourceUrl": "https://www.thenational.academy/teachers/programmes/computing-secondary-core/units?threads=data-and-information",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Sorting and counting simple data",
+    "project": "A simple pictogram of a class survey (e.g. favourite fruit)."
+   },
+   "KS2": {
+    "subtopic": "Collecting, organising and presenting data",
+    "project": "A data report with a chart and a one-paragraph written conclusion."
+   },
+   "KS3": {
+    "subtopic": "Data representation, analysis and drawing conclusions",
+    "project": "A data-investigation report analysing a real or class dataset, with a justified conclusion."
+   }
+  }
+ },
+ {
+  "order": 14,
+  "term": 3,
+  "weekInTerm": 6,
+  "name": "Safety and Security",
+  "resourceUrl": "https://www.thenational.academy/teachers/programmes/computing-secondary-core/units?threads=safety-and-security",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Simple online safety rules",
+    "project": "A class online-safety rules poster."
+   },
+   "KS2": {
+    "subtopic": "Passwords, privacy and spotting scams",
+    "project": "A cybersecurity tips leaflet or poster for younger pupils."
+   },
+   "KS3": {
+    "subtopic": "Cybersecurity threats, case studies and protection",
+    "project": "A cybersecurity awareness campaign (poster or video) based on a real case study."
+   }
+  }
+ },
+ {
+  "order": 15,
+  "term": 3,
+  "weekInTerm": 7,
+  "name": "Design and Development",
+  "resourceUrl": "https://www.thenational.academy/teachers/programmes/computing-secondary-core/units?threads=design-and-development",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Simple sequencing with instructions",
+    "project": "A simple sequence of instructions (on paper or with a simple app) for a everyday task."
+   },
+   "KS2": {
+    "subtopic": "Block-based programming with loops and selection",
+    "project": "A simple game or animation built with block-based coding."
+   },
+   "KS3": {
+    "subtopic": "Text-based programming with functions and logic",
+    "project": "A working Python program — e.g. a simple game or useful tool — using at least one function."
+   }
+  }
+ },
+ {
+  "order": 16,
+  "term": 3,
+  "weekInTerm": 8,
+  "name": "Creating Media",
+  "resourceUrl": "https://www.thenational.academy/teachers/programmes/computing-secondary-core/units?threads=creating-media",
+  "tiers": {
+   "KS1": {
+    "subtopic": "Simple digital painting/drawing",
+    "project": "A digital picture or painting on a chosen theme."
+   },
+   "KS2": {
+    "subtopic": "Combining images, audio or simple animation",
+    "project": "A short animation, or an audio/video piece, on a chosen topic."
+   },
+   "KS3": {
+    "subtopic": "Producing and editing polished media",
+    "project": "A polished media production — video, podcast or animation — with visible editing."
+   }
+  }
+ }
+]

@@ -20,12 +20,14 @@ from values import assign_ice_breaker, assign_moral_content
 from build_maths_y1 import build_maths_y1_lessons
 from build_malay_y8 import build_malay_y8_lessons
 from build_ict import build_all_ict_lessons
+from ict_content import module_plan_table
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "src", "data")
 RAW = os.path.join(DATA, "sow.raw.json")
 TERMS23 = os.path.join(DATA, "terms23.json")
 OUT = os.path.join(DATA, "seed.json")
+MODULE_PLAN_OUT = os.path.join(DATA, "modulePlan.json")
 
 
 def attach_moral_content(lessons: list) -> None:
@@ -70,6 +72,9 @@ def main():
 
     with open(OUT, "w", encoding="utf-8") as fh:
         json.dump(payload, fh, indent=1, ensure_ascii=False)
+
+    with open(MODULE_PLAN_OUT, "w", encoding="utf-8") as fh:
+        json.dump(module_plan_table(), fh, indent=1, ensure_ascii=False)
 
     ict = sum(1 for x in lessons if x["subject"] == "ICT")
     maths = sum(1 for x in lessons if x["subject"] == "Mathematics")

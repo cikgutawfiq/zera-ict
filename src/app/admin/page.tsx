@@ -6,10 +6,21 @@ import { useData } from "@/lib/store";
 import { PageHeader } from "@/components/ui";
 import { addDays, formatRange, mondayOf, todayISO } from "@/lib/dates";
 import seed from "@/data/seed.json";
+import modulePlan from "@/data/modulePlan.json";
 import { parseSowWorkbooks } from "@/lib/parseSow";
 import type { Lesson, Term, TermWeek } from "@/lib/types";
 
 const SEED = seed as unknown as { terms: Term[]; lessons: Lesson[] };
+
+type ModulePlanRow = {
+  order: number;
+  term: number;
+  weekInTerm: number;
+  name: string;
+  resourceUrl?: string;
+  tiers: Record<"KS1" | "KS2" | "KS3", { subtopic: string; project: string }>;
+};
+const MODULE_PLAN = modulePlan as unknown as ModulePlanRow[];
 
 export default function AdminPage() {
   const { user, signOut } = useAuth();
@@ -257,6 +268,54 @@ export default function AdminPage() {
                 </div>
               );
             })}
+          </div>
+        </section>
+
+        <section className="card overflow-hidden p-4">
+          <h2 className="text-sm font-bold">ICT module &amp; project plan</h2>
+          <p className="mt-1 text-xs text-[color:var(--muted)]">
+            Every ICT class (Y1–Y9) follows the same 16 modules, one per week, spread across Term 2
+            and Term 3 (8 each) after the 8 low/no-device settling-in weeks in Term 1 — content and
+            the project scale up by key stage. See each module&rsquo;s tool live via the link icon.
+          </p>
+          <div className="mt-3 overflow-x-auto">
+            <table className="w-full min-w-[720px] border-collapse text-xs">
+              <thead>
+                <tr className="border-b border-[color:var(--border)] text-left font-bold uppercase tracking-wide text-[color:var(--muted)]">
+                  <th className="py-1.5 pr-2">Term · Wk</th>
+                  <th className="py-1.5 pr-2">Module</th>
+                  <th className="py-1.5 pr-2">KS1 project</th>
+                  <th className="py-1.5 pr-2">KS2 project</th>
+                  <th className="py-1.5 pr-2">KS3 project</th>
+                </tr>
+              </thead>
+              <tbody>
+                {MODULE_PLAN.map((row) => (
+                  <tr key={row.order} className="border-b border-[color:var(--border)] align-top last:border-0">
+                    <td className="whitespace-nowrap py-2 pr-2 font-semibold text-[color:var(--muted)]">
+                      T{row.term} · W{row.weekInTerm}
+                    </td>
+                    <td className="py-2 pr-2 font-semibold">
+                      {row.resourceUrl ? (
+                        <a
+                          href={row.resourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[color:var(--accent)] underline underline-offset-2"
+                        >
+                          {row.name} ↗
+                        </a>
+                      ) : (
+                        row.name
+                      )}
+                    </td>
+                    <td className="py-2 pr-2 text-[color:var(--muted)]">{row.tiers.KS1.project}</td>
+                    <td className="py-2 pr-2 text-[color:var(--muted)]">{row.tiers.KS2.project}</td>
+                    <td className="py-2 pr-2 text-[color:var(--muted)]">{row.tiers.KS3.project}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </section>
 
