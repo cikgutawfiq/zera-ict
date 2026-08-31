@@ -156,6 +156,50 @@ CUSTOM_POOL = {
     ],
 }
 
+# Each class's named End-of-Term project, one for Term 1 (built from the
+# "settling-in" unplugged weeks — deliberately low-tech since T1 has limited
+# device access) and one for Term 3 (a flagship build using skills from that
+# class's Term 2 unit work). Shown directly in the Overview topic column as
+# "End of Term Project - <name>".
+PROJECTS = {
+    "ict-y1": {
+        1: "Being Safe & Kind Online Poster",
+        3: "My Favourite Animal Fact-File",
+    },
+    "ict-y2": {
+        1: "Our ICT Room Rules & Safety Guide",
+        3: "My Hobby Data Survey",
+    },
+    "ict-y3": {
+        1: "Internet Safety Campaign Poster",
+        3: "Stop-Frame Animation Short Film",
+    },
+    "ict-y4": {
+        1: "How the Internet Works Infographic",
+        3: "My Own Simple Game",
+    },
+    "ict-y5": {
+        1: "Computer Systems Explainer",
+        3: "Class News Report (Video Production)",
+    },
+    "ict-y6": {
+        1: "Staying Safe Online Campaign",
+        3: "Build My Own Webpage",
+    },
+    "ict-y7": {
+        1: "School Network Investigation Report",
+        3: "Python Text Adventure Game",
+    },
+    "ict-y8": {
+        1: "Cybersecurity Awareness Campaign",
+        3: "School News Podcast/Video Series",
+    },
+    "ict-y9": {
+        1: "Computer Systems Deep-Dive Report",
+        3: "Data Science Investigation — Analysing a Real Dataset",
+    },
+}
+
 CLASS_KEY_STAGE = {
     "ict-y1": "KS1",
     "ict-y2": "KS1",

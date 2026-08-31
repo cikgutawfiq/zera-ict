@@ -16,7 +16,7 @@ Google account; embedded as an iframe on `cikgutawfiq.com/zera-ict`.
 | `/lesson/[id]/present` | Full-screen presentation mode: big type, arrow keys or buttons, screen wake-lock on. Opens on the Value of the Day, then the Ice Breaker, then the lesson plan. |
 | `/calendar` **This week** | The five weekdays, each with its own column on desktop (a real week board) and stacked on mobile. |
 | `/classes`, `/class/[id]` | Every class; each term is its own collapsible section (the current term opens by default), with **+ Week** to add more. |
-| `/overview` | Pick a year/class and see every week's topic for the *whole year* (all 3 terms) as one top-down table — Term / Week / Topic / a plain-English "what students will learn" column. **Click any row** to jump straight into that week's full lesson plan. **📥 Save (PDF)** exports that one class as a single landscape page; **📚 Export Y1–Y9 pack (PDF)** builds a 9-page pack, one page per ICT class, in one file. |
+| `/overview` | Pick a year/class and see every week's topic for the *whole year* (all 3 terms) as one top-down table — Term / Week / Topic / "what students will learn" / **Lesson detail** (a fuller, genuinely week-specific description of what actually happens). **Click any row** to jump straight into that week's full lesson plan — going **Back** returns to this same class, not the default. **📥 Save (PDF)** exports that one class as a single landscape page; **📚 Export Y1–Y9 pack (PDF)** builds a 9-page pack, one page per ICT class, in one file. End-of-term project weeks show the actual project name right in the Topic column (e.g. "End of Term Project — Build My Own Webpage"), so what students are building is visible at a glance, not hidden behind a generic label. |
 | `/admin` | Upload the two SOW workbooks to re-sync Term 1 from your phone, seed / re-sync from the bundled SOW, add or remove terms and weeks (each term is an accordion — collapsed by default, only one open at a time), sign out. |
 
 ## Look and feel
@@ -30,8 +30,14 @@ Below 1024px everything collapses back to the single-column, bottom-tab mobile l
 ## Data
 
 - **Seeded**: 369 ICT lessons (Y1–Y9, all three terms, see "ICT curriculum" below), 123
-  **Maths Y1** sessions (see "Maths Y1" below), plus 82 blank session rows for **Malay
-  Enrichment Y8**, which has no scheme of work yet.
+  **Maths Y1** sessions (see "Maths Y1" below), and 82 **Malay Enrichment Y8** sessions (see
+  "Malay Enrichment Y8" below).
+- **Projects**: every class (all 9 ICT classes, Maths Y1, Malay Enrichment Y8) has at least one
+  named, concrete End-of-Term Project — not a generic "the project" placeholder. ICT classes get
+  two (Term 1: a low-tech campaign/report tied to that term's unplugged weeks; Term 3: a
+  flagship build using that term's unit skills, e.g. Y3 "Stop-Frame Animation Short Film", Y6
+  "Build My Own Webpage", Y9 "Data Science Investigation"). Project names are defined in
+  `scripts/ict_content.py`'s `PROJECTS` dict and show directly in the Overview's Topic column.
 - **Equipment mode**: every lesson optionally carries `equipmentMode` —
   `unplugged` / `shared-laptops` / `1-1-devices` — shown as a chip on the lesson card and
   lesson page. Every class opens its year with 8 low/no-device weeks (Term 1, weeks 1-8),
@@ -67,6 +73,15 @@ Below 1024px everything collapses back to the single-column, bottom-tab mobile l
   classes" below — this is also where the Thu/Fri "marking one marks both" bug was fixed). See
   `scripts/maths_y1_content.py` (the 18 units, redistributed into 41 weeks) and
   `scripts/build_maths_y1.py` (the day-variant lesson-plan generator).
+- **Malay Enrichment Y8**: a beginner Bahasa Malaysia course for international students with
+  little or no prior Malay — 24 themed weeks (greetings, numbers, family, food, directions,
+  shopping, weather, culture, festivals...) covering listening, speaking, reading and writing
+  every week, in the same consolidation/revision/exam/project/showcase rhythm as the other
+  classes. Malay Enrichment Y8 meets 2x/week (Mon 75min, Tue 35min), so each week is a 2-day
+  arc — Mon *teach* (new vocabulary across all 4 skills), Tue *practise* (a shorter game-based
+  consolidation and speaking session) — each an independently editable, independently
+  gradeable session. See `scripts/malay_y8_content.py` (the 24 themes) and
+  `scripts/build_malay_y8.py` (the day-variant lesson-plan generator).
 - **Moral value / quote / food-for-thought**: every lesson gets one, assigned deterministically
   per class from a 41-entry pool so nothing repeats across a class's full year (see
   `src/data/values.ts`).
@@ -102,10 +117,11 @@ python scripts/extract_sow.py && python scripts/build_terms23.py && python scrip
 `scripts/extract_sow.py` reads the two original SOW workbooks from `~/Downloads` (override with
 `SOW_DIR`) — only the term dates/weeks are still used from it (`src/data/sow.raw.json`).
 `scripts/build_terms23.py` generates the Term 2/3 week calendars into `src/data/terms23.json`.
-`scripts/build_seed.py` merges those calendars with `scripts/build_ict.py`'s ICT lessons and
-`scripts/build_maths_y1.py`'s Maths Y1 sessions, assigns moral values/quotes/ice breakers, and
-writes `src/data/seed.json`, which `/admin` writes to Firestore in batches. Existing lessons you
-have edited are skipped unless you tick **Overwrite**.
+`scripts/build_seed.py` merges those calendars with `scripts/build_ict.py`'s ICT lessons,
+`scripts/build_maths_y1.py`'s Maths Y1 sessions and `scripts/build_malay_y8.py`'s Malay
+Enrichment Y8 sessions, assigns moral values/quotes/ice breakers, and writes
+`src/data/seed.json`, which `/admin` writes to Firestore in batches. Existing lessons you have
+edited are skipped unless you tick **Overwrite**.
 
 ### Multi-session classes
 

@@ -8,7 +8,7 @@ read as genuinely group-rotation, rather than one generic template pasted
 41 times with the topic swapped in.
 """
 
-from ict_content import build_class_weeks, CLASS_KEY_STAGE
+from ict_content import build_class_weeks, CLASS_KEY_STAGE, PROJECTS
 
 CLASS_ID = None  # set by caller loop
 SUBJECT = "ICT"
@@ -130,7 +130,19 @@ META_PLAN_NOTE = {
 
 
 def meta_lesson(class_id, term_id, week_no, cal, topic, subtopic, order, mode="shared-laptops"):
-    key_stage = CLASS_KEY_STAGE[class_id]
+    is_project = topic.startswith("End of Term Project") or topic == "Portfolio Showcase"
+    if is_project:
+        objectives = [
+            f"Make progress on the term's project: {subtopic if not subtopic.startswith('Present') else topic}.",
+            "Apply skills learned this term to a real, finished piece of work.",
+            "Give and receive feedback from a partner or group.",
+        ]
+    else:
+        objectives = [
+            "Revisit and strengthen this term's skills.",
+            "Identify what feels secure and what still needs practice.",
+            "Support a partner with a skill they find secure.",
+        ]
     return {
         "id": f"{class_id}_{term_id}_w{week_no}",
         "classId": class_id,
@@ -146,23 +158,27 @@ def meta_lesson(class_id, term_id, week_no, cal, topic, subtopic, order, mode="s
         "outline": "",
         "sowResources": "",
         "remark": cal.get("remark", ""),
-        "objectives": [
-            f"Revisit and strengthen this {'term' if 'Consolidation' in topic or 'Revision' in topic else 'unit'}'s skills.",
-            "Identify what feels secure and what still needs practice.",
-            "Support a partner with a skill they find secure.",
-        ],
+        "objectives": objectives,
         "plan": [
             {
                 "mins": 10,
                 "title": "Recap",
-                "detail": f"Quick recap of the term's work on {subtopic.lower()}.",
+                "detail": (
+                    f"Quick recap of progress so far on '{topic}'."
+                    if is_project
+                    else f"Quick recap of the term's work on {subtopic.lower()}."
+                ),
                 "studentActivity": "Share what they remember.",
                 "assessment": "Note common gaps to target in the main task.",
             },
             {
                 "mins": 35,
                 "title": "Main task",
-                "detail": f"{subtopic} — {META_PLAN_NOTE[mode]}",
+                "detail": (
+                    f"{topic} — {subtopic} stage. {META_PLAN_NOTE[mode]}"
+                    if is_project
+                    else f"{subtopic} — {META_PLAN_NOTE[mode]}"
+                ),
                 "studentActivity": "Work through the task, choosing an area to focus on.",
                 "assessment": "Circulate and support; identify pupils needing extra help before the practical check.",
             },
@@ -201,7 +217,7 @@ def build_class_term_lessons(class_id, term_id, weeks_by_week_no, content_weeks,
         out.append(build_week_lesson(class_id, term_id, week_no, cal, content_weeks[i], order))
         order += 1
 
-    meta = [(t, s) for t, s in _meta_sequence(term_index)]
+    meta = [(t, s) for t, s in _meta_sequence(term_index, class_id)]
     for j, (topic, subtopic) in enumerate(meta):
         week_no, cal = ordered[n_content + j]
         mode = "unplugged" if topic in ("Consolidation", "Revision") else "shared-laptops"
@@ -215,18 +231,19 @@ def build_class_term_lessons(class_id, term_id, weeks_by_week_no, content_weeks,
     return out
 
 
-def _meta_sequence(term_index):
+def _meta_sequence(term_index, class_id):
     seq = [
         ("Consolidation", "Whole-unit skills rotation"),
         ("Revision", "Ready for the practical check"),
         ("Examination Week", f"Term {term_index} Practical Assessment"),
     ]
     if term_index in (1, 3):
+        project = PROJECTS[class_id][term_index]
         seq += [
-            ("End of Term Project", "Plan the project"),
-            ("End of Term Project", "Build the project"),
-            ("End of Term Project", "Refine and prepare to present"),
-            ("Portfolio Showcase", "Show & tell"),
+            (f"End of Term Project — {project}", "Plan"),
+            (f"End of Term Project — {project}", "Build"),
+            (f"End of Term Project — {project}", "Refine and prepare to present"),
+            ("Portfolio Showcase", f"Present: {project}"),
         ]
     return seq
 

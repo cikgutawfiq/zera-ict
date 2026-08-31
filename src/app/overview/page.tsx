@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useData } from "@/lib/store";
 import { CLASSES } from "@/data/timetable";
@@ -14,6 +14,20 @@ export default function OverviewPage() {
   const { lessons, terms, loading } = useData();
   const [classId, setClassId] = useState(CLASSES[0].id);
   const [exporting, setExporting] = useState<"one" | "all" | null>(null);
+
+  // Restore whichever class was selected last time this page was open, so navigating
+  // into a lesson and back doesn't reset the dropdown to the default (ICT Y1).
+  useEffect(() => {
+    const wanted = new URLSearchParams(window.location.search).get("class");
+    if (wanted && CLASSES.some((c) => c.id === wanted)) setClassId(wanted);
+  }, []);
+
+  const selectClass = (id: string) => {
+    setClassId(id);
+    const params = new URLSearchParams(window.location.search);
+    params.set("class", id);
+    router.replace(`/overview?${params.toString()}`, { scroll: false });
+  };
 
   const info = CLASSES.find((c) => c.id === classId) ?? CLASSES[0];
   const rows = useMemo(() => buildOverviewRows(lessons, terms, classId), [lessons, terms, classId]);
@@ -41,11 +55,11 @@ export default function OverviewPage() {
     <>
       <PageHeader title="Overview" subtitle="Whole-year topic list, by class — all 3 terms at a glance" />
 
-      <main className="mx-auto max-w-5xl space-y-4 p-4 lg:p-6">
+      <main className="mx-auto max-w-6xl space-y-4 p-4 lg:p-6">
         <section className="card flex flex-wrap items-end gap-4 p-4">
           <label className="flex flex-col gap-1 text-sm font-semibold text-[color:var(--muted)]">
             Year / class
-            <select className="field" value={classId} onChange={(e) => setClassId(e.target.value)}>
+            <select className="field" value={classId} onChange={(e) => selectClass(e.target.value)}>
               {CLASSES.map((c) => (
                 <option key={c.id} value={c.id}>
                   {c.label}
@@ -80,13 +94,14 @@ export default function OverviewPage() {
           </div>
         ) : (
           <div className="card overflow-x-auto p-0">
-            <table className="w-full min-w-[640px] border-collapse text-sm">
+            <table className="w-full min-w-[900px] border-collapse text-sm">
               <thead>
                 <tr className="border-b border-[color:var(--border)] bg-[color:var(--surface-2)] text-left text-xs font-bold uppercase tracking-wide text-[color:var(--muted)]">
                   <th className="px-3 py-2.5">Term</th>
                   <th className="px-3 py-2.5">Week</th>
                   <th className="px-3 py-2.5">Topic</th>
                   <th className="px-3 py-2.5">What students will learn</th>
+                  <th className="px-3 py-2.5">Lesson detail</th>
                   <th className="px-3 py-2.5" />
                 </tr>
               </thead>
@@ -107,6 +122,7 @@ export default function OverviewPage() {
                     <td className="whitespace-nowrap px-3 py-2.5 font-semibold">{r.weekLabel}</td>
                     <td className="px-3 py-2.5 font-semibold">{r.topic}</td>
                     <td className="px-3 py-2.5 text-[color:var(--muted)]">{r.explanation || "—"}</td>
+                    <td className="max-w-xs px-3 py-2.5 text-[color:var(--muted)]">{r.detail || "—"}</td>
                     <td className="px-3 py-2.5 text-[color:var(--muted)]">›</td>
                   </tr>
                 ))}

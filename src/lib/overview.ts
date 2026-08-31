@@ -10,7 +10,21 @@ export type OverviewRow = {
   weekLabel: string;
   topic: string;
   explanation: string;
+  detail: string;
 };
+
+/** The richest single piece of "what actually happens" text available on a lesson.
+ *  Activities are preferred over plan-step detail — some plan templates (e.g. ICT's
+ *  equipment-mode-driven steps) intentionally keep the step body generic across a
+ *  whole class of weeks, while activities always name the actual topic/subtopic, so
+ *  they stay genuinely distinct week to week. Used for the Overview's detail column
+ *  and PDF export. */
+function pickDetail(l: Lesson): string {
+  if (l.activities.length) return l.activities.slice(0, 2).join("; ");
+  if (l.objectives.length) return l.objectives.join(" ");
+  const mainStep = l.plan.find((s) => /main|task|explore|practice|apply|show/i.test(s.title));
+  return mainStep?.detail ?? "";
+}
 
 export function buildOverviewRows(lessons: Lesson[], terms: Term[], classId: string): OverviewRow[] {
   const termOrder = new Map(terms.map((t) => [t.id, t.order]));
@@ -23,7 +37,14 @@ export function buildOverviewRows(lessons: Lesson[], terms: Term[], classId: str
     .map((l) => {
       const term = terms.find((t) => t.id === l.termId);
       const explanation = l.subtopic || l.objectives[0] || l.activities[0] || "";
-      return { id: l.id, termName: term?.name ?? l.termId, weekLabel: l.weekLabel, topic: l.topic, explanation };
+      return {
+        id: l.id,
+        termName: term?.name ?? l.termId,
+        weekLabel: l.weekLabel,
+        topic: l.topic,
+        explanation,
+        detail: pickDetail(l),
+      };
     });
 }
 
@@ -42,16 +63,17 @@ function addClassPage(doc: jsPDF, info: ClassInfo, rows: OverviewRow[], first: b
 
   autoTable(doc, {
     startY: 25,
-    head: [["Term", "Week", "Topic", "What students will learn"]],
-    body: rows.map((r) => [r.termName, r.weekLabel, r.topic, r.explanation || "—"]),
-    styles: { fontSize: 7.5, cellPadding: 1.6, valign: "top", overflow: "linebreak" },
+    head: [["Term", "Week", "Topic", "What students will learn", "Lesson detail"]],
+    body: rows.map((r) => [r.termName, r.weekLabel, r.topic, r.explanation || "—", r.detail || "—"]),
+    styles: { fontSize: 7, cellPadding: 1.6, valign: "top", overflow: "linebreak" },
     headStyles: { fillColor: [37, 99, 235], textColor: 255, fontStyle: "bold", fontSize: 8 },
     alternateRowStyles: { fillColor: [245, 247, 251] },
     columnStyles: {
-      0: { cellWidth: 26 },
-      1: { cellWidth: 20 },
-      2: { cellWidth: 68, fontStyle: "bold" },
-      3: { cellWidth: "auto" },
+      0: { cellWidth: 22 },
+      1: { cellWidth: 18 },
+      2: { cellWidth: 52, fontStyle: "bold" },
+      3: { cellWidth: 68 },
+      4: { cellWidth: "auto" },
     },
     margin: { left: 14, right: 14, top: 25, bottom: 12 },
     theme: "striped",
