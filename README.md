@@ -12,7 +12,7 @@ Google account; embedded as an iframe on `cikgutawfiq.com/zera-ict`.
 | Screen | What it does |
 | --- | --- |
 | `/` **Today** | The classes you teach today, in period order with times. Deep link a date with `/?date=2026-09-22`. |
-| `/lesson/[id]` | Value of the Day (moral value, quote, food-for-thought), a 5–10 min Ice Breaker (with a 🎲 Randomize button), side-by-side topic/subtopic, a **"Not feeling this topic?"** panel with 3 level-appropriate alternative topic ideas (🔀 reroll, or swap one straight in), objectives, a per-step lesson plan (instructions / what students do / how to assess), activities, success criteria, resources, a **Worksheets & assessment** section (printable PDFs, see below) and a Reflection box. Every field is editable in place. Mark **Done** / **Carried over** — a carried-over lesson automatically takes over that class's *next* scheduled slot (flagged with a "Carried over from Week N" banner) instead of quietly falling behind the calendar; it stays there until marked Done. |
+| `/lesson/[id]` | Value of the Day (moral value, quote, food-for-thought), a 5–10 min Ice Breaker (with a 🎲 Randomize button), side-by-side topic/subtopic, an equipment chip (✏️ Unplugged / 👥 Shared laptops / 💻 1 device each), a **"Not feeling this topic?"** panel with 3 level-appropriate alternative topic ideas (🔀 reroll, or swap one straight in), objectives, a per-step lesson plan (instructions / what students do / how to assess), activities, success criteria, resources, a **Worksheets & assessment** section (printable PDFs, see below) and a Reflection box. Every field is editable in place. Mark **Done** / **Carried over** — a carried-over lesson automatically takes over that class's *next* scheduled slot (flagged with a "Carried over from Week N" banner) instead of quietly falling behind the calendar; it stays there until marked Done. |
 | `/lesson/[id]/present` | Full-screen presentation mode: big type, arrow keys or buttons, screen wake-lock on. Opens on the Value of the Day, then the Ice Breaker, then the lesson plan. |
 | `/calendar` **This week** | The five weekdays, each with its own column on desktop (a real week board) and stacked on mobile. |
 | `/classes`, `/class/[id]` | Every class; each term is its own collapsible section (the current term opens by default), with **+ Week** to add more. |
@@ -29,33 +29,44 @@ Below 1024px everything collapses back to the single-column, bottom-tab mobile l
 
 ## Data
 
-- **Source**: `SOW_ICT_KS1_KS2_Y1-6_2026-2027.xlsx` and `SOW_ICT_KS3_Y7-9_2026-2027.xlsx`
-  (Term 1: Weeks 1–15, 26 Aug – 11 Dec 2026, plus a mid-term break and Examination Week).
-- **Seeded**: 369 ICT lessons (Y1–Y9, all three terms) with authored objectives / plan /
-  activities / success criteria, 123 **Maths Y1** lessons (see below), plus 82 blank session
-  rows for **Malay Enrichment Y8**, which has no scheme of work yet.
-  - **Term 1** comes straight from the two workbooks.
-  - **Term 2** (11 weeks, 6 Jan – 19 Mar 2027) and **Term 3** (15 weeks, 24 Mar – ~9 Jul
-    2027, estimated) are generated from the Zera ICT curriculum hub's 8-week topic
-    outlines, expanded into full lesson plans. Term 2 is compressed to fit before Term 3's
-    confirmed start date — correct both once the official calendar is published.
-- **Maths Y1**: mapped to the official **Cambridge Primary Mathematics Curriculum Framework
-  (0096), Stage 1** — every one of its 55 learning objectives (Number: Nn1–12, Nc1–22;
-  Geometry: Gs1–3, Gp1; Measure: Mm1, Ml1–3, Mt1–3; Handling data: Dh1; Problem solving:
-  Pt1–9) is covered exactly once across the year. Topic titles and wording are original
-  paraphrases, not verbatim Cambridge text; each week in `scripts/maths_y1_content.py` carries
-  a `codes` list back to the specific objectives it covers. Termly shape follows Cambridge's own
-  suggested progression: **Term 1** — counting, place value, comparing/ordering, 2D/3D shape and
-  position; **Term 2** — addition/subtraction, doubles and bridging ten, length/mass/capacity;
-  **Term 3** — early multiplication/division (doubling, halving, sharing), money, time, data
-  handling and a dedicated problem-solving week. All 3 terms close with the same consolidation /
-  revision / examination week / end-of-term project / portfolio showcase rhythm used for the
-  ICT classes. Maths Y1 meets 3x/week (Tue/Thu/Fri), so each week's topic becomes 3
-  independently-plannable sessions — Tue *explore*, Thu *practise*, Fri *consolidate* — each with
-  its own lesson doc, its own editable content, and its own Done status (see "Multi-session
+- **Seeded**: 369 ICT lessons (Y1–Y9, all three terms, see "ICT curriculum" below), 123
+  **Maths Y1** sessions (see "Maths Y1" below), plus 82 blank session rows for **Malay
+  Enrichment Y8**, which has no scheme of work yet.
+- **Equipment mode**: every lesson optionally carries `equipmentMode` —
+  `unplugged` / `shared-laptops` / `1-1-devices` — shown as a chip on the lesson card and
+  lesson page. Every class opens its year with 8 low/no-device weeks (Term 1, weeks 1-8),
+  since laptop access may be limited (as few as 4 shared machines, in rotating groups) for the
+  first couple of months of term. Content and plan wording for those weeks is genuinely
+  device-free (paper, discussion, movement), not just relabelled.
+- **ICT curriculum (Y1-Y9)**: Years 1-6 follow the real unit titles from **Oak National
+  Academy's Computing (Primary) programme**
+  (thenational.academy/teachers/programmes/computing-primary/units) — original session content
+  written to fit those unit names, not verbatim Oak lesson content. Years 7-9 have no Oak
+  primary units to draw on, so they're original KS3 units designed for more depth and explicit
+  groupwork every unit (pair programming, group investigations, team builds, presentations).
+  Every class also gets flexible custom slots — Typing Club, Microsoft 365, Google Workspace,
+  independent project time — filling out the rest of the 24-content-week year alongside the
+  unit content; every field stays editable per lesson, so any slot can be swapped for your own
+  material. Source: `scripts/ict_content.py` (the unit/custom-slot spine per class) and
+  `scripts/build_ict.py` (the equipment-mode-aware lesson-plan generator — a starter / teach &
+  model / main task / plenary shape whose wording genuinely changes with `equipmentMode`, rather
+  than one generic paragraph with the topic swapped in). The original SOW workbooks and their derived files
+  (`sow.raw.json`, `authored/`) still exist for the `/admin` re-upload path and historical
+  reference, but no longer feed the seed — that pipeline is entirely `ict_content.py`/
+  `build_ict.py` now.
+- **Maths Y1**: aligned to **Oak National Academy's Year 1 Maths units**
+  (thenational.academy/teachers/programmes/maths-primary/units) — the 18 real unit titles, each
+  allocated roughly 1-2 of our weeks in proportion to its Oak lesson count, so all 18 fit
+  exactly into the 24 content weeks across the year (**Term 1**: units 1-5, counting/comparing/
+  shape; **Term 2**: units 6-11a, composition of numbers, addition/subtraction facts; **Term
+  3**: units 11b-18, composition 11-19, coins, position, time). All 3 terms close with the same
+  consolidation / revision / examination week / end-of-term project / portfolio showcase rhythm
+  used for the ICT classes. Maths Y1 meets 3x/week (Tue/Thu/Fri), so each week's topic becomes 3
+  independently-plannable sessions — Tue *explore*, Thu *practise*, Fri *consolidate* — each
+  with its own lesson doc, its own editable content, and its own Done status (see "Multi-session
   classes" below — this is also where the Thu/Fri "marking one marks both" bug was fixed). See
-  `scripts/maths_y1_content.py` (the 41 topics + codes) and `scripts/build_maths_y1.py` (the
-  day-variant lesson-plan generator).
+  `scripts/maths_y1_content.py` (the 18 units, redistributed into 41 weeks) and
+  `scripts/build_maths_y1.py` (the day-variant lesson-plan generator).
 - **Moral value / quote / food-for-thought**: every lesson gets one, assigned deterministically
   per class from a 41-entry pool so nothing repeats across a class's full year (see
   `src/data/values.ts`).
@@ -82,20 +93,19 @@ Below 1024px everything collapses back to the single-column, bottom-tab mobile l
   `jspdf`/`jspdf-autotable` — nothing is stored or pre-rendered, so they always reflect the
   lesson's current (possibly edited) content. See `src/lib/worksheets.ts`.
 
-Regenerate the seed after editing the workbooks or the authored content:
+Regenerate the seed after editing the curriculum content or the term calendars:
 
 ```bash
 python scripts/extract_sow.py && python scripts/build_terms23.py && python scripts/build_seed.py
 ```
 
-`scripts/extract_sow.py` reads the two workbooks from `~/Downloads` (override with `SOW_DIR`)
-and writes `src/data/sow.raw.json`. `scripts/build_terms23.py` generates the Term 2/3 week
-calendars into `src/data/terms23.json`. `scripts/build_seed.py` merges all of that with
-`src/data/authored/{y1..y9}.json`, `src/data/authored/term2/{y1..y9}.json`,
-`src/data/authored/term3/{y1..y9}.json` and `scripts/build_maths_y1.py`'s Maths Y1 sessions,
-assigns moral values/quotes/ice breakers, and writes `src/data/seed.json`, which `/admin`
-writes to Firestore in batches. Existing lessons you have edited are skipped unless you tick
-**Overwrite**.
+`scripts/extract_sow.py` reads the two original SOW workbooks from `~/Downloads` (override with
+`SOW_DIR`) — only the term dates/weeks are still used from it (`src/data/sow.raw.json`).
+`scripts/build_terms23.py` generates the Term 2/3 week calendars into `src/data/terms23.json`.
+`scripts/build_seed.py` merges those calendars with `scripts/build_ict.py`'s ICT lessons and
+`scripts/build_maths_y1.py`'s Maths Y1 sessions, assigns moral values/quotes/ice breakers, and
+writes `src/data/seed.json`, which `/admin` writes to Firestore in batches. Existing lessons you
+have edited are skipped unless you tick **Overwrite**.
 
 ### Multi-session classes
 

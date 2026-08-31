@@ -1,5 +1,7 @@
 export type Status = "planned" | "done" | "carried-over";
 
+export type EquipmentMode = "unplugged" | "shared-laptops" | "1-1-devices";
+
 export type ResourceLink = { label: string; url?: string };
 
 export type Lesson = {
@@ -16,6 +18,10 @@ export type Lesson = {
    *  gets its own lesson doc); undefined for classes with a single weekly session, where
    *  the whole dateStart-dateEnd week range is unambiguous. */
   day?: number;
+  /** What kind of device access this lesson assumes. Unset/"1-1-devices" means one device
+   *  per pupil as normal; "shared-laptops" means small groups rotate around a shared device;
+   *  "unplugged" means no devices at all — paper, discussion or movement-based. */
+  equipmentMode?: EquipmentMode;
   topic: string;
   subtopic: string;
   outline: string;

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import type { Lesson, Status } from "@/lib/types";
+import type { EquipmentMode, Lesson, Status } from "@/lib/types";
 import { CLASS_BY_ID, DUTIES, type Slot } from "@/data/timetable";
 import { prettyTime } from "@/lib/dates";
 
@@ -11,6 +11,33 @@ export const STATUS_LABEL: Record<Status, string> = {
   done: "Done",
   "carried-over": "Carried over",
 };
+
+export const EQUIPMENT_LABEL: Record<EquipmentMode, { label: string; icon: string; hint: string }> = {
+  unplugged: {
+    label: "Unplugged",
+    icon: "✏️",
+    hint: "No devices needed — paper, discussion or movement-based.",
+  },
+  "shared-laptops": {
+    label: "Shared laptops",
+    icon: "👥",
+    hint: "Small groups rotate around one shared laptop.",
+  },
+  "1-1-devices": {
+    label: "1 device each",
+    icon: "💻",
+    hint: "Every pupil has their own device.",
+  },
+};
+
+export function EquipmentChip({ mode }: { mode: EquipmentMode }) {
+  const e = EQUIPMENT_LABEL[mode];
+  return (
+    <span className="chip" title={e.hint}>
+      {e.icon} {e.label}
+    </span>
+  );
+}
 
 export function StatusChip({ status }: { status: Status }) {
   const color =
@@ -119,6 +146,7 @@ export function SlotCard({ slot, lesson }: { slot: Slot; lesson?: Lesson }) {
             <span className="chip">{slot.periods}</span>
             {slot.room && <span className="chip">Room {slot.room}</span>}
             {lesson && <span className="chip">{lesson.weekLabel}</span>}
+            {lesson?.equipmentMode && <EquipmentChip mode={lesson.equipmentMode} />}
             {lesson && <StatusChip status={lesson.status} />}
           </div>
         </div>

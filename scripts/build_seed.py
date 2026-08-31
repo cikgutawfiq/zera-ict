@@ -1,29 +1,31 @@
-"""Merge the SOW (Term 1) and authored Term 2/3 content into src/data/seed.json.
+"""Merges the term calendars, the ICT curriculum (build_ict.py), the Maths Y1
+curriculum (build_maths_y1.py) and blank Malay Enrichment Y8 rows into
+src/data/seed.json.
 
 Run, in order:
-  python scripts/extract_sow.py       # Term 1 from the two workbooks
+  python scripts/extract_sow.py       # Term 1 calendar from the workbook
   python scripts/build_terms23.py     # Term 2/3 week calendars
   python scripts/build_seed.py        # merge everything + assign moral content
 
 Output shape:
   { "terms": [Term, Term, Term], "lessons": [Lesson] }  -- what /admin writes
-  to Firestore, and what the browser Excel-upload path (src/lib/parseSow.ts)
-  produces for Term 1 re-uploads.
+  to Firestore. (The browser Excel-upload path, src/lib/parseSow.ts, is a
+  separate, independent way to re-import Term 1 dates/topics from a
+  workbook and does not go through this script.)
 """
 import json
 import os
 
 from values import assign_ice_breaker, assign_moral_content
 from build_maths_y1 import build_maths_y1_lessons
+from build_ict import build_all_ict_lessons
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "src", "data")
 RAW = os.path.join(DATA, "sow.raw.json")
 TERMS23 = os.path.join(DATA, "terms23.json")
-AUTHORED = os.path.join(DATA, "authored")
 OUT = os.path.join(DATA, "seed.json")
 
-ICT_YEARS = list(range(1, 10))
 # classId -> weekly session days (JS Date.getDay() convention, Mon=1..Fri=5),
 # for classes that meet more than once a week and need one lesson per session
 # instead of one shared lesson for the whole week. Matches SLOTS in
@@ -33,93 +35,6 @@ BLANK_CLASSES = [
 ]
 DAY_SHORT = {1: "Mon", 2: "Tue", 3: "Wed", 4: "Thu", 5: "Fri"}
 EMPTY = {"objectives": [], "plan": [], "activities": [], "successCriteria": [], "resources": []}
-
-
-def lesson_id(class_id: str, term_id: str, week_no) -> str:
-    return f"{class_id}_{term_id}_w{week_no}"
-
-
-def build_ict_lessons(term_id: str, weeks_by_week_no: dict, ict_source: dict) -> list:
-    """weeks_by_week_no: {weekNo: TermWeek dict}. ict_source: {"1": {...weekNo: content}}."""
-    out = []
-    for year in ICT_YEARS:
-        class_id = f"ict-y{year}"
-        authored = ict_source[str(year)]
-        order = 0
-        for week_no_str, content in sorted(authored.items(), key=lambda kv: int(kv[0])):
-            week_no = int(week_no_str)
-            cal = weeks_by_week_no.get(week_no)
-            if cal is None:
-                raise SystemExit(f"{term_id} year {year} week {week_no}: no matching calendar week")
-            out.append(
-                {
-                    "id": lesson_id(class_id, term_id, week_no),
-                    "classId": class_id,
-                    "subject": "ICT",
-                    "termId": term_id,
-                    "weekNo": week_no,
-                    "weekLabel": cal["label"],
-                    "dateStart": cal["start"],
-                    "dateEnd": cal["end"],
-                    "topic": content["topic"],
-                    "subtopic": content["subtopic"],
-                    "outline": content["outline"],
-                    "sowResources": content["sowResources"],
-                    "remark": cal.get("remark", ""),
-                    "objectives": content["objectives"],
-                    "plan": content["plan"],
-                    "activities": content["activities"],
-                    "successCriteria": content["successCriteria"],
-                    "resources": content["resources"],
-                    "status": "planned",
-                    "note": "",
-                    "order": order,
-                }
-            )
-            order += 1
-    return out
-
-
-def build_term1_lessons(raw: dict) -> tuple[list, dict]:
-    out = []
-    calendar_weeks = {w["no"]: w for w in raw["term"]["weeks"] if not w["isBreak"]}
-    for year in ICT_YEARS:
-        class_id = f"ict-y{year}"
-        authored = json.load(open(os.path.join(AUTHORED, f"y{year}.json"), encoding="utf-8"))
-        rows = [r for r in raw["years"][str(year)] if not r["isBreak"]]
-        order = 0
-        for row in rows:
-            week = row["weekNo"]
-            extra = authored.get(str(week))
-            if extra is None:
-                raise SystemExit(f"term-1 year {year} week {week}: missing authored content")
-            out.append(
-                {
-                    "id": lesson_id(class_id, "term-1", week),
-                    "classId": class_id,
-                    "subject": "ICT",
-                    "termId": "term-1",
-                    "weekNo": week,
-                    "weekLabel": row["weekLabel"],
-                    "dateStart": row["dateStart"],
-                    "dateEnd": row["dateEnd"],
-                    "topic": row["topic"],
-                    "subtopic": row["subtopic"],
-                    "outline": row["outline"],
-                    "sowResources": row["sowResources"],
-                    "remark": row["remark"],
-                    "objectives": extra["objectives"],
-                    "plan": extra["plan"],
-                    "activities": extra["activities"],
-                    "successCriteria": extra["successCriteria"],
-                    "resources": extra["resources"],
-                    "status": "planned",
-                    "note": "",
-                    "order": order,
-                }
-            )
-            order += 1
-    return out, calendar_weeks
 
 
 def build_blank_rows(term_id: str, weeks: list) -> list:
@@ -171,21 +86,11 @@ def main():
     raw = json.load(open(RAW, encoding="utf-8"))
     terms23 = json.load(open(TERMS23, encoding="utf-8"))
 
-    term1_lessons, term1_cal = build_term1_lessons(raw)
-
+    term1_cal = {w["no"]: w for w in raw["term"]["weeks"] if not w["isBreak"]}
     term2_cal = {w["no"]: w for w in terms23["term2"]["weeks"] if not w["isBreak"]}
     term3_cal = {w["no"]: w for w in terms23["term3"]["weeks"] if not w["isBreak"]}
 
-    term2_source = {
-        str(y): json.load(open(os.path.join(AUTHORED, "term2", f"y{y}.json"), encoding="utf-8"))
-        for y in ICT_YEARS
-    }
-    term3_source = {
-        str(y): json.load(open(os.path.join(AUTHORED, "term3", f"y{y}.json"), encoding="utf-8"))
-        for y in ICT_YEARS
-    }
-    term2_lessons = build_ict_lessons("term-2", term2_cal, term2_source)
-    term3_lessons = build_ict_lessons("term-3", term3_cal, term3_source)
+    ict_lessons = build_all_ict_lessons(term1_cal, term2_cal, term3_cal)
 
     blanks = (
         build_blank_rows("term-1", raw["term"]["weeks"])
@@ -199,7 +104,7 @@ def main():
         + build_maths_y1_lessons("term-3", term3_cal)
     )
 
-    lessons = term1_lessons + term2_lessons + term3_lessons + blanks + maths_y1_lessons
+    lessons = ict_lessons + blanks + maths_y1_lessons
     attach_moral_content(lessons)
 
     terms = [raw["term"], terms23["term2"], terms23["term3"]]

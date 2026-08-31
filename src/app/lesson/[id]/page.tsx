@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useData } from "@/lib/store";
 import { CLASS_BY_ID, slotsForClass } from "@/data/timetable";
 import { formatRange, prettyTime } from "@/lib/dates";
-import { PageHeader, StatusChip, ClassDot } from "@/components/ui";
+import { PageHeader, StatusChip, ClassDot, EquipmentChip } from "@/components/ui";
 import {
   IceBreakerSection,
   ListSection,
@@ -178,6 +178,7 @@ export default function LessonPage() {
                   {DAY_SHORT[s.day]} {prettyTime(s.start)}–{prettyTime(s.end)} · {s.periods}
                 </span>
               ))}
+              {lesson.equipmentMode && <EquipmentChip mode={lesson.equipmentMode} />}
               <StatusChip status={lesson.status} />
             </div>
 
